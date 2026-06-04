@@ -4,11 +4,11 @@ from email.mime.multipart import MIMEMultipart
 from config import EMAIL_SENDER, EMAIL_PASSWORD, EMAIL_RECEIVER
 
 
-def send(text: str, subject: str = "📊 StocksInfo 모닝 브리핑"):
+def send(text: str, subject: str = "📊 StocksInfo 모닝 브리핑", to: str = None):
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = EMAIL_SENDER
-    msg["To"] = EMAIL_RECEIVER
+    msg["To"] = to or EMAIL_RECEIVER
 
     # plain text 버전 (마크다운 기호 제거)
     plain = text.replace("*", "").replace("`", "").replace("━", "-")
@@ -22,7 +22,7 @@ def send(text: str, subject: str = "📊 StocksInfo 모닝 브리핑"):
     with smtplib.SMTP("smtp.gmail.com", 587) as server:
         server.starttls()
         server.login(EMAIL_SENDER, EMAIL_PASSWORD)
-        server.sendmail(EMAIL_SENDER, EMAIL_RECEIVER, msg.as_string())
+        server.sendmail(EMAIL_SENDER, to or EMAIL_RECEIVER, msg.as_string())
 
 
 def send_error(error: str):

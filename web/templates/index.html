@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StocksInfo Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="bg-slate-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-2xl">📊</span>
+      <div>
+        <h1 class="text-xl font-bold text-white">StocksInfo</h1>
+        <p class="text-xs text-slate-400">모닝 브리핑 대시보드</p>
+      </div>
+    </div>
+    <div class="flex gap-3">
+      <form method="post" action="/run-now">
+        <button type="submit"
+          class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-colors">
+          ▶ 지금 전송
+        </button>
+      </form>
+      <form method="post" action="/push">
+        <button type="submit"
+          class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-lg transition-colors">
+          ↑ GitHub 저장
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Status message -->
+  {% if msg %}
+  <div class="mx-6 mt-4 px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-sm text-emerald-400">
+    ✓ {{ msg }}
+  </div>
+  {% endif %}
+
+  <main class="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- US Watchlist -->
+    <div class="bg-slate-900 rounded-xl border border-slate-800 p-5">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-lg">🇺🇸</span>
+        <h2 class="text-base font-semibold text-white">미국 종목</h2>
+        <span class="ml-auto text-xs text-slate-500 bg-slate-800 px-2 py-0.5 rounded-full">{{ us_stocks|length }}개</span>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-4 min-h-[40px]">
+        {% for sym in us_stocks %}
+        <form method="post" action="/watchlist/delete" class="inline">
+          <input type="hidden" name="market" value="us">
+          <input type="hidden" name="symbol" value="{{ sym }}">
+          <button type="submit"
+            class="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800 hover:bg-red-900/40 border border-slate-700 hover:border-red-700 rounded-lg text-sm transition-colors group">
+            <span class="font-mono font-medium text-slate-200">{{ sym }}</span>
+            <span class="text-slate-500 group-hover:text-red-400 text-xs">✕</span>
+          </button>
+        </form>
+        {% else %}
+        <p class="text-slate-600 text-sm">종목이 없습니다</p>
+        {% endfor %}
+      </div>
+
+      <form method="post" action="/watchlist/add" class="flex gap-2">
+        <input type="hidden" name="market" value="us">
+        <input type="text" name="symbol" placeholder="NVDA, AAPL..."
+          class="flex-1 bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 uppercase">
+        <button type="submit"
+          class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white text-sm rounded-lg transition-colors">
+          추가
+        </button>
+      </form>
+    </div>
+
+    <!-- KR Watchlist -->
+    <div class="bg-slate-900 rounded-xl border border-slate-800 p-5">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-lg">🇰🇷</span>
+        <h2 class="text-base font-semibold text-white">한국 종목</h2>
+        <span class="ml-auto text-xs text-slate-500 bg-slate-800 px-2 py-0.5 rounded-full">{{ kr_stocks|length }}개</span>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-4 min-h-[40px]">
+        {% for sym in kr_stocks %}
+        <form method="post" action="/watchlist/delete" class="inline">
+          <input type="hidden" name="market" value="kr">
+          <input type="hidden" name="symbol" value="{{ sym }}">
+          <button type="submit"
+            class="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800 hover:bg-red-900/40 border border-slate-700 hover:border-red-700 rounded-lg text-sm transition-colors group">
+            <span class="font-mono font-medium text-slate-200">{{ sym }}</span>
+            <span class="text-slate-500 group-hover:text-red-400 text-xs">✕</span>
+          </button>
+        </form>
+        {% else %}
+        <p class="text-slate-600 text-sm">종목이 없습니다</p>
+        {% endfor %}
+      </div>
+
+      <form method="post" action="/watchlist/add" class="flex gap-2">
+        <input type="hidden" name="market" value="kr">
+        <input type="text" name="symbol" placeholder="005930.KS, 000660.KS..."
+          class="flex-1 bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
+        <button type="submit"
+          class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white text-sm rounded-lg transition-colors">
+          추가
+        </button>
+      </form>
+      <p class="text-xs text-slate-600 mt-2">형식: 종목코드.KS (예: 005930.KS)</p>
+    </div>
+
+    <!-- Email Recipients -->
+    <div class="bg-slate-900 rounded-xl border border-slate-800 p-5">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-lg">✉️</span>
+        <h2 class="text-base font-semibold text-white">수신자 이메일</h2>
+        <span class="ml-auto text-xs text-slate-500 bg-slate-800 px-2 py-0.5 rounded-full">{{ emails|length }}명</span>
+      </div>
+
+      <div class="flex flex-col gap-2 mb-4 min-h-[40px]">
+        {% for email in emails %}
+        <form method="post" action="/recipients/delete" class="flex items-center justify-between bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 group hover:border-red-700 transition-colors">
+          <span class="text-sm text-slate-300">{{ email }}</span>
+          <input type="hidden" name="email" value="{{ email }}">
+          <button type="submit" class="text-slate-500 group-hover:text-red-400 text-xs ml-2 transition-colors">✕</button>
+        </form>
+        {% else %}
+        <p class="text-slate-600 text-sm">수신자가 없습니다</p>
+        {% endfor %}
+      </div>
+
+      <form method="post" action="/recipients/add" class="flex gap-2">
+        <input type="email" name="email" placeholder="email@example.com"
+          class="flex-1 bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
+        <button type="submit"
+          class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white text-sm rounded-lg transition-colors">
+          추가
+        </button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Guide -->
+  <div class="max-w-6xl mx-auto px-6 pb-8">
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 text-sm text-slate-400">
+      <p class="font-medium text-slate-300 mb-2">📌 사용법</p>
+      <ul class="space-y-1 list-disc list-inside">
+        <li>종목/이메일 추가 후 <strong class="text-white">↑ GitHub 저장</strong>을 눌러야 매일 자동 실행에 반영됩니다</li>
+        <li><strong class="text-white">▶ 지금 전송</strong>으로 즉시 테스트 가능합니다</li>
+        <li>한국 종목은 <code class="text-emerald-400">종목코드.KS</code> 형식으로 입력하세요 (삼성전자: 005930.KS)</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
