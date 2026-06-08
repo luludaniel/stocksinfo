@@ -19,8 +19,7 @@ templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 async def dashboard(request: Request, msg: str = ""):
     watchlist = load_watchlist()
     recipients = load_recipients()
-    return templates.TemplateResponse("index.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "index.html", {
         "us_stocks": watchlist.get("us", []),
         "kr_stocks": watchlist.get("kr", []),
         "emails": recipients.get("emails", []),
