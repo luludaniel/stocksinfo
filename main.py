@@ -48,6 +48,8 @@ def collect_all() -> dict:
 
 
 def main():
+    from config import validate
+    validate()
     log.info("StocksInfo morning report starting...")
     try:
         data = collect_all()
