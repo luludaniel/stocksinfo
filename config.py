@@ -7,8 +7,9 @@ OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 EMAIL_SENDER = os.environ.get("EMAIL_SENDER", "")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
 EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER", "")
-
-CLAUDE_MODEL = "claude-sonnet-4-6"
+# Optional: without it, economic_cal.py falls back to a static recurring-events
+# list (FRED requires api_key on every endpoint, so unset means every call 400s).
+FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
 
 
 def validate():

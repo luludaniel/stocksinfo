@@ -2,9 +2,13 @@ name: Daily Stock Morning Report
 
 on:
   schedule:
-    # 21:00 UTC = 06:00 KST (다음날) → 수집 후 08:00 KST 발송 여유
-    - cron: "0 21 * * *"
+    # 22:30 UTC = 07:30 KST (다음날). 06:00 KST는 미국 장 마감 직후라
+    # yfinance에 당일 종가가 아직 안 잡힐 위험이 있어 07:30으로 이동.
+    - cron: "30 22 * * *"
   workflow_dispatch: # 수동 테스트용
+
+permissions:
+  contents: write
 
 jobs:
   send-report:
@@ -32,4 +36,20 @@ jobs:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
+          # Optional — unset is fine, economic_cal.py falls back to a static list.
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python main.py
+
+      # checkout is fresh every run, so the SQLite snapshot history (signals.py's
+      # valuation-band / analyst-target-trend detection) only survives day to day
+      # if it's committed back here — otherwise every run starts from an empty DB.
+      - name: Persist snapshot history
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain stocksinfo.db)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add stocksinfo.db
+            git commit -m "chore: update daily snapshot history"
+            git push
+          fi

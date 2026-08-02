@@ -1,9 +1,17 @@
 """
-Key US economic events fetched from FRED API (free, no key required for basic endpoints).
-Falls back to a curated static list of recurring weekly/monthly events.
+Key US economic events fetched from FRED API. FRED requires an api_key on every
+endpoint (including this one) — without FRED_API_KEY set, this call always 400s
+and only the curated recurring-events fallback below actually runs. Register a
+free key at https://fred.stlouisfed.org/docs/api/api_key.html to enable it.
 """
+import logging
+from datetime import date, datetime
+
 import requests
-from datetime import datetime, date
+
+from config import FRED_API_KEY
+
+log = logging.getLogger(__name__)
 
 
 # High-impact recurring US economic releases by typical weekday pattern
@@ -24,29 +32,39 @@ def fetch() -> dict:
     weekday = today.weekday()  # 0=Mon, 6=Sun
 
     scheduled = []
+    errors = []
 
     # Today's recurring high-impact events
     for ev in RECURRING_EVENTS:
         if ev["day"] == weekday:
             scheduled.append({"name": ev["name"], "source": "recurring"})
 
-    # Try FRED for today's actual releases (no API key needed for public endpoint)
-    try:
-        resp = requests.get(
-            FRED_RELEASES_URL,
-            params={"realtime_start": str(today), "realtime_end": str(today), "file_type": "json"},
-            timeout=5,
-        )
-        if resp.ok:
+    if not FRED_API_KEY:
+        log.info("[economic_cal] FRED_API_KEY not set — using recurring-events fallback only")
+    else:
+        try:
+            resp = requests.get(
+                FRED_RELEASES_URL,
+                params={
+                    "realtime_start": str(today),
+                    "realtime_end": str(today),
+                    "file_type": "json",
+                    "api_key": FRED_API_KEY,
+                },
+                timeout=5,
+            )
+            resp.raise_for_status()
             releases = resp.json().get("release_dates", [])
             for r in releases[:10]:
                 scheduled.append({"name": r.get("release_name", ""), "source": "FRED"})
-    except Exception:
-        pass
+        except Exception as e:
+            log.warning(f"[economic_cal] FRED fetch failed: {e}")
+            errors.append(f"FRED: {e}")
 
     return {
         "date": str(today),
         "events": scheduled,
+        "errors": errors,
         "fetched_at": datetime.utcnow().isoformat(),
     }
 

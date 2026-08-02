@@ -15,7 +15,6 @@ def send(text: str, subject: str = "📊 StocksInfo 모닝 브리핑", to: str =
     msg.attach(MIMEText(plain, "plain", "utf-8"))
 
     # HTML 버전 (줄바꿈 유지)
-    html_body = text.replace("\n", "<br>").replace("*", "<b>", 1)
     html = f"<html><body><pre style='font-family:monospace;font-size:14px'>{text}</pre></body></html>"
     msg.attach(MIMEText(html, "html", "utf-8"))
 
