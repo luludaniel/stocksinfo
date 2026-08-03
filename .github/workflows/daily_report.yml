@@ -40,17 +40,19 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python main.py
 
-      # checkout is fresh every run, so the SQLite snapshot history (signals.py's
-      # valuation-band / analyst-target-trend detection) only survives day to day
-      # if it's committed back here — otherwise every run starts from an empty DB.
-      - name: Persist snapshot history
+      # checkout is fresh every run, so both the SQLite snapshot history
+      # (signals.py's valuation-band / analyst-target-trend detection) and
+      # data/latest.json (the dashboard's only interface into the pipeline —
+      # it reads this file via the GitHub Contents API) only survive if
+      # they're committed back here.
+      - name: Persist snapshot history and dashboard data
         if: always()
         run: |
-          if [ -n "$(git status --porcelain stocksinfo.db)" ]; then
+          if [ -n "$(git status --porcelain stocksinfo.db data/latest.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add stocksinfo.db
-            git commit -m "chore: update daily snapshot history"
+            git add stocksinfo.db data/latest.json
+            git commit -m "chore: update daily snapshot history and dashboard data"
             # A manual dispatch overlapping the schedule (or a same-minute
             # retry) can race another push to main — retry with rebase a few
             # times instead of losing today's snapshot silently on conflict.

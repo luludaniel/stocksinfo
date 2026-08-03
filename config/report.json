@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "email": {
+    "blocks": [
+      "focus",
+      "positions",
+      "calendar"
+    ],
+    "send_when_no_signal": "one_line",
+    "send_time_kst": "07:30",
+    "recipients": [
+      "won7seo@gmail.com"
+    ]
+  },
+  "discovery": {
+    "enabled": true,
+    "max_candidates": 3,
+    "min_article_mentions": 2,
+    "min_market_cap_usd": 1000000000
+  },
+  "focus": {
+    "severity_weight": {
+      "red": 3.0,
+      "yellow": 1.0
+    },
+    "news_weight": 0.5,
+    "event_bonus": {
+      "earnings_d3": 2.0,
+      "ex_dividend_d2": 1.0
+    }
+  }
+}

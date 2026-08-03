@@ -5,8 +5,11 @@ from unittest.mock import patch
 
 @pytest.fixture
 def client(tmp_path, monkeypatch):
-    monkeypatch.setattr("store.WATCHLIST_FILE", tmp_path / "watchlist.json")
-    monkeypatch.setattr("store.RECIPIENTS_FILE", tmp_path / "recipients.json")
+    monkeypatch.setattr("store.CONFIG_DIR", tmp_path / "config")
+    monkeypatch.setattr("store.WATCHLIST_FILE", tmp_path / "config" / "watchlist.json")
+    monkeypatch.setattr("store.REPORT_CONFIG_FILE", tmp_path / "config" / "report.json")
+    monkeypatch.setattr("store._LEGACY_WATCHLIST_FILE", tmp_path / "watchlist.json")
+    monkeypatch.setattr("store._LEGACY_RECIPIENTS_FILE", tmp_path / "recipients.json")
     from web.app import app
     return TestClient(app, follow_redirects=True)
 
