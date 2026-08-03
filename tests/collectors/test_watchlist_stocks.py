@@ -110,6 +110,20 @@ def test_fetch_computes_position_metrics_with_full_year_history():
     assert m["volume_ratio"] > 1  # last-day volume spike vs 20d average
 
 
+def test_volume_ratio_excludes_todays_spike_from_the_average():
+    # Regression: averaging in today's own spike dilutes the ratio — a true
+    # 10x day would previously read as ~6.9x instead of ~10x.
+    from collectors.watchlist_stocks import fetch
+
+    mock_ticker = _make_linear_ticker_mock(n=300, start=100.0, spike_last_volume=10_000_000)
+    with patch("yfinance.Ticker", return_value=mock_ticker):
+        result = fetch(["NVDA"])
+
+    m = result["NVDA"]
+    assert m["volume_avg_20d"] == pytest.approx(1_000_000)
+    assert m["volume_ratio"] == pytest.approx(10.0)
+
+
 def test_fetch_requests_two_years_so_12m_return_is_computable():
     # yfinance's period="1y" only returns ~251 rows, one short of the 252
     # trading days a full 12-month lookback needs -> return_12m_pct would

@@ -134,6 +134,23 @@ def test_target_price_weekly_change_signal():
     assert any(s["type"] == "target_price_change" for s in result)
     sig = next(s for s in result if s["type"] == "target_price_change")
     assert "상향" in sig["message"]
+    assert "8일간" in sig["message"]  # 2026-07-25 -> 2026-08-02
+
+
+def test_target_price_change_ignores_stale_snapshot():
+    # Regression: with a sparse DB, "most recent snapshot before 6 days ago"
+    # could be months old — that shouldn't be reported as a recent change.
+    import signals
+    import history
+
+    history.save_snapshot("2026-05-01", "NVDA", {
+        "last_close": 100.0, "trailing_pe": None,
+        "target_mean_price": 100.0, "volume": None,
+    })
+
+    fundamentals = {"NVDA": {"target_mean_price": 200.0}}
+    result = signals.evaluate({}, fundamentals, "2026-08-02")
+    assert result == []
 
 
 def test_target_price_small_change_no_signal():

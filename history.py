@@ -92,3 +92,13 @@ def get_latest_snapshot_before(symbol: str, before_date: str) -> dict | None:
             (symbol, before_date),
         ).fetchone()
     return _row_to_dict(row) if row else None
+
+
+def get_distinct_dates_count() -> int:
+    """How many distinct days of snapshots exist across the whole table —
+    used to tell the user how close threshold-based signals (e.g. the PER
+    band, which needs PER_BAND_MIN_SAMPLES days) are to activating.
+    """
+    with _connect() as conn:
+        row = conn.execute("SELECT COUNT(DISTINCT date) FROM daily_snapshot").fetchone()
+    return row[0] if row else 0

@@ -63,3 +63,19 @@ def test_snapshots_are_isolated_per_symbol():
                                                     "target_mean_price": None, "volume": None})
     assert history.get_snapshot("NVDA", "2026-08-01")["last_close"] == 1.0
     assert history.get_snapshot("AAPL", "2026-08-01")["last_close"] == 2.0
+
+
+def test_get_distinct_dates_count_empty_db():
+    import history
+    assert history.get_distinct_dates_count() == 0
+
+
+def test_get_distinct_dates_count_counts_days_not_rows():
+    import history
+    history.save_snapshot("2026-08-01", "NVDA", {"last_close": 1.0, "trailing_pe": None,
+                                                    "target_mean_price": None, "volume": None})
+    history.save_snapshot("2026-08-01", "AAPL", {"last_close": 2.0, "trailing_pe": None,
+                                                    "target_mean_price": None, "volume": None})
+    history.save_snapshot("2026-08-02", "NVDA", {"last_close": 3.0, "trailing_pe": None,
+                                                    "target_mean_price": None, "volume": None})
+    assert history.get_distinct_dates_count() == 2
