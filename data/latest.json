@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-03T23:34:50+00:00",
+  "market_date": "2026-08-03",
+  "trigger": "schedule",
+  "status": {
+    "ok": true,
+    "failed_symbols": [],
+    "collector_errors": []
+  },
+  "history_status": {
+    "days_collected": 1,
+    "per_band_ready_in_days": 19
+  },
+  "focus": [
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Semiconductor stocks pare losses amid fears of increased competition from China",
+          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-pare-losses-amid-fears-of-increased-competition-from-china-133938642.html"
+        },
+        {
+          "title": "Amazon, Apple, Boeing, Micron, Bristol Myers, GameStop, SpaceX, and More Stocks That Explain Today’s Market",
+          "url": "https://www.barrons.com/articles/stock-movers-6c620aae?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Micron Stock Rises Despite Rising Competition From Chinese Memory Chip",
+          "url": "https://www.barrons.com/articles/micron-stock-price-memory-china-32e96f8f?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "This valuation signal shows how investors are rethinking tech stocks",
+          "url": "https://finance.yahoo.com/markets/article/this-valuation-signal-shows-how-investors-are-rethinking-tech-stocks-144411798.html"
+        },
+        {
+          "title": "Investing in the \"Magnificent Seven?\" Pick Your Poison: Negative Free Cash Flow or an Unjustifiable Valuation.",
+          "url": "https://www.fool.com/investing/2026/08/03/magnificent-7-pick-poison-negative-fcf-or-valuatio/"
+        },
+        {
+          "title": "Amazon Hits $3 Trillion Market Cap for the First Time as Stock Closes At Record",
+          "url": "https://www.barrons.com/articles/amazon-stock-price-market-cap-36264fab?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Amazon, Apple, Boeing, Micron, Bristol Myers, GameStop, SpaceX, and More Stocks That Explain Today’s Market",
+          "url": "https://www.barrons.com/articles/stock-movers-6c620aae?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Micron Stock Rises Despite Rising Competition From Chinese Memory Chip",
+          "url": "https://www.barrons.com/articles/micron-stock-price-memory-china-32e96f8f?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "After Comparing Every AI ETF, These 3 Beat the Nasdaq Without Betting on a Single Stock",
+          "url": "https://247wallst.com/investing/2026/08/03/after-comparing-every-ai-etf-these-3-beat-the-nasdaq-without-betting-on-a-single-stock/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Tech stocks rally to kick off August. Can chipmakers keep up with demand?",
+          "url": "https://finance.yahoo.com/video/tech-stocks-rally-kick-off-213000641.html"
+        },
+        {
+          "title": "AMD vs. Sandisk: Which company will get some post-earnings market love?",
+          "url": "https://finance.yahoo.com/video/amd-vs-sandisk-company-post-160000399.html"
+        },
+        {
+          "title": "This valuation signal shows how investors are rethinking tech stocks",
+          "url": "https://finance.yahoo.com/markets/article/this-valuation-signal-shows-how-investors-are-rethinking-tech-stocks-144411798.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Open-weight AI models add new spark to China, Silicon Valley's AI race",
+          "url": "https://finance.yahoo.com/video/open-weight-ai-models-add-140000138.html"
+        },
+        {
+          "title": "Investing in the \"Magnificent Seven?\" Pick Your Poison: Negative Free Cash Flow or an Unjustifiable Valuation.",
+          "url": "https://www.fool.com/investing/2026/08/03/magnificent-7-pick-poison-negative-fcf-or-valuatio/"
+        },
+        {
+          "title": "Larry Ellison Was Once the World’s Richest Person — Now Elon Musk Is Four Times Wealthier",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/larry-ellison-once-world-richest-220024262.html"
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "profile": "watching",
+      "trailing_pe": 31.69325,
+      "next_earnings_date": "2026-08-26",
+      "last_close": 206.64,
+      "change_pct": 2.93,
+      "week52_pct": 59.1,
+      "pct_vs_ma200": 7.03,
+      "drawdown_from_high_pct": -12.24,
+      "return_3m_pct": 4.25,
+      "return_6m_pct": 8.25,
+      "return_12m_pct": 16.33,
+      "relative_strength_6m_pct": -1.28
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "profile": "watching",
+      "trailing_pe": 34.835823,
+      "next_earnings_date": "2026-10-29",
+      "last_close": 303.42,
+      "change_pct": -1.78,
+      "week52_pct": 73.5,
+      "pct_vs_ma200": 9.17,
+      "drawdown_from_high_pct": -10.78,
+      "return_3m_pct": 8.41,
+      "return_6m_pct": 17.15,
+      "return_12m_pct": 46.76,
+      "relative_strength_6m_pct": 7.62
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "profile": "watching",
+      "trailing_pe": 295.4862,
+      "next_earnings_date": "2026-10-21",
+      "last_close": 322.08,
+      "change_pct": 3.49,
+      "week52_pct": 12.4,
+      "pct_vs_ma200": -21.65,
+      "drawdown_from_high_pct": -34.25,
+      "return_3m_pct": -17.59,
+      "return_6m_pct": -25.17,
+      "return_12m_pct": 4.48,
+      "relative_strength_6m_pct": -34.7
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "SamsungElec",
+      "profile": "watching",
+      "trailing_pe": null,
+      "next_earnings_date": "2026-10-28",
+      "last_close": 262500.0,
+      "change_pct": 26.81,
+      "week52_pct": 66.5,
+      "pct_vs_ma200": 36.23,
+      "drawdown_from_high_pct": -27.51,
+      "return_3m_pct": 18.37,
+      "return_6m_pct": 73.13,
+      "return_12m_pct": 298.49,
+      "relative_strength_6m_pct": 40.96
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK hynix",
+      "profile": "watching",
+      "trailing_pe": null,
+      "next_earnings_date": "2026-10-27",
+      "last_close": 1718000.0,
+      "change_pct": 29.95,
+      "week52_pct": 55.1,
+      "pct_vs_ma200": 46.25,
+      "drawdown_from_high_pct": -41.14,
+      "return_3m_pct": 32.18,
+      "return_6m_pct": 124.44,
+      "return_12m_pct": 540.14,
+      "relative_strength_6m_pct": 92.27
+    }
+  ],
+  "discovery": [],
+  "calendar": [
+    {
+      "date": "2026-08-10",
+      "weekday": "월",
+      "label": "Apple Inc. 배당락",
+      "kind": "ex_dividend"
+    }
+  ]
+}
