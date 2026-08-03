@@ -8,6 +8,10 @@ VOLUME_SPIKE_RATIO = 2.0
 PER_BAND_MIN_SAMPLES = 20
 TARGET_PRICE_CHANGE_THRESHOLD_PCT = 3.0
 EARNINGS_LOOKAHEAD_DAYS = 7
+# Ceiling on how stale the "prior" snapshot may be before a target-price
+# comparison stops being labeled a recent change. Without this, a sparse DB
+# could compare against a snapshot from months ago and still call it "주간".
+TARGET_PRICE_LOOKBACK_MAX_DAYS = 14
 
 
 def evaluate(watchlist: dict, fundamentals: dict, today: str) -> list[dict]:
@@ -108,14 +112,19 @@ def _fundamental_signals(symbol: str, fund: dict, today: str) -> list[dict]:
     if target_mean is not None:
         prior = history.get_latest_snapshot_before(symbol, _days_ago(today, 6))
         prior_target = prior.get("target_mean_price") if prior else None
-        if prior_target:
-            change_pct = (target_mean - prior_target) / prior_target * 100
-            if abs(change_pct) >= TARGET_PRICE_CHANGE_THRESHOLD_PCT:
-                direction = "상향" if change_pct > 0 else "하향"
-                out.append({
-                    "symbol": symbol, "severity": "yellow", "type": "target_price_change",
-                    "message": f"애널리스트 목표주가 주간 {direction} {abs(change_pct):.1f}%",
-                })
+        if prior_target and prior.get("date"):
+            elapsed_days = (date.fromisoformat(today) - date.fromisoformat(prior["date"])).days
+            # A sparse DB can return a snapshot from months ago as "the most
+            # recent one before 6 days ago" — cap how stale it may be before
+            # we stop calling the comparison recent.
+            if elapsed_days <= TARGET_PRICE_LOOKBACK_MAX_DAYS:
+                change_pct = (target_mean - prior_target) / prior_target * 100
+                if abs(change_pct) >= TARGET_PRICE_CHANGE_THRESHOLD_PCT:
+                    direction = "상향" if change_pct > 0 else "하향"
+                    out.append({
+                        "symbol": symbol, "severity": "yellow", "type": "target_price_change",
+                        "message": f"애널리스트 목표주가 {elapsed_days}일간 {direction} {abs(change_pct):.1f}%",
+                    })
 
     return out
 

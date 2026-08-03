@@ -51,5 +51,14 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add stocksinfo.db
             git commit -m "chore: update daily snapshot history"
-            git push
+            # A manual dispatch overlapping the schedule (or a same-minute
+            # retry) can race another push to main — retry with rebase a few
+            # times instead of losing today's snapshot silently on conflict.
+            for attempt in 1 2 3; do
+              if git push; then
+                break
+              fi
+              echo "push failed (attempt $attempt), retrying with rebase..."
+              git pull --rebase origin main
+            done
           fi

@@ -2,13 +2,13 @@ from __future__ import annotations
 
 import logging
 import traceback
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError, as_completed
 from datetime import date, datetime
 
 import history
 import report
 import signals as signal_engine
-from collectors import economic_cal, fundamentals, kr_market, news, us_market
+from collectors import economic_cal, fundamentals, news
 from collectors import watchlist_stocks
 from delivery.email_sender import send, send_error
 from store import load_recipients, load_watchlist
@@ -19,12 +19,14 @@ log = logging.getLogger(__name__)
 
 WEEKDAY_KR = ["월", "화", "수", "목", "금", "토", "일"]
 CALENDAR_LOOKAHEAD_DAYS = 7
+COLLECT_TIMEOUT_SECONDS = 120
 
 
 def collect_all(all_symbols: list) -> dict:
+    # Raw index/sector data (us_market, kr_market) is deliberately not
+    # collected here — REDESIGN.md's whole thesis is that daily index % moves
+    # are noise for a long-term holder, and nothing downstream ever read it.
     collectors = {
-        "us_market": us_market.fetch,
-        "kr_market": kr_market.fetch,
         "news": news.fetch,
         "economic_cal": economic_cal.fetch,
     }
@@ -38,14 +40,27 @@ def collect_all(all_symbols: list) -> dict:
             futures[pool.submit(watchlist_stocks.fetch, all_symbols)] = "watchlist"
             futures[pool.submit(fundamentals.fetch, all_symbols)] = "fundamentals"
 
-        for future in as_completed(futures):
-            name = futures[future]
-            try:
-                results[name] = future.result(timeout=30)
-                log.info(f"[OK] {name}")
-            except Exception as e:
-                log.error(f"[FAIL] {name}: {e}")
-                errors.append(f"{name}: {e}")
+        # as_completed() only ever yields futures that already finished, so a
+        # per-future timeout passed to future.result() never actually blocks
+        # anything — the timeout has to be on as_completed() itself. Anything
+        # still outstanding when it fires is recorded as failed below.
+        try:
+            for future in as_completed(futures, timeout=COLLECT_TIMEOUT_SECONDS):
+                name = futures[future]
+                try:
+                    results[name] = future.result()
+                    log.info(f"[OK] {name}")
+                except Exception as e:
+                    log.error(f"[FAIL] {name}: {e}")
+                    errors.append(f"{name}: {e}")
+                    results[name] = None
+        except FutureTimeoutError:
+            pass
+
+        for future, name in futures.items():
+            if name not in results:
+                log.error(f"[FAIL] {name}: timed out after {COLLECT_TIMEOUT_SECONDS}s")
+                errors.append(f"{name}: timed out after {COLLECT_TIMEOUT_SECONDS}s")
                 results[name] = None
 
     for name in ("news", "economic_cal"):
@@ -71,19 +86,20 @@ def _parse_date(value) -> date | None:
         return None
 
 
-def _ticker_calendar_events(fundamentals_data: dict, today: date) -> list:
+def _ticker_calendar_events(fundamentals_data: dict, names: dict, today: date) -> list:
     events = []
     for symbol, fund in (fundamentals_data or {}).items():
         if not fund or "error" in fund:
             continue
+        label = names.get(symbol, symbol)
 
         edate = _parse_date(fund.get("next_earnings_date"))
         if edate and 0 <= (edate - today).days <= CALENDAR_LOOKAHEAD_DAYS:
-            events.append(f"{symbol} 실적({_weekday_kr(edate)})")
+            events.append(f"{label} 실적({_weekday_kr(edate)})")
 
         exdiv = _parse_date(fund.get("ex_dividend_date"))
         if exdiv and 0 <= (exdiv - today).days <= CALENDAR_LOOKAHEAD_DAYS:
-            events.append(f"{symbol} 배당락({_weekday_kr(exdiv)})")
+            events.append(f"{label} 배당락({_weekday_kr(exdiv)})")
 
     return events
 
@@ -101,31 +117,75 @@ def _save_snapshots(watchlist: dict, fundamentals_data: dict, today_str: str):
         })
 
 
-def _attach_related_news(detected_signals: list, watchlist: dict) -> list:
+def _symbol_names(fundamentals_data: dict) -> dict:
+    return {
+        sym: fund["name"]
+        for sym, fund in (fundamentals_data or {}).items()
+        if fund and fund.get("name")
+    }
+
+
+def _match_related_articles(symbol: str, name: str, articles: list) -> list:
+    """Substring-match general market news titles against a symbol's ticker
+    root / display name — a cheap secondary source on top of the per-ticker
+    yfinance news already used, so the RSS feeds collected in collect_all
+    don't just get thrown away after being fetched.
+    """
+    needles = {symbol.split(".")[0].lower()}
+    if name:
+        needles.add(name.lower())
+    matches = []
+    for article in articles or []:
+        title = (article.get("title") or "").lower()
+        if any(needle and needle in title for needle in needles):
+            matches.append(article)
+    return matches
+
+
+def _attach_related_news(detected_signals: list, watchlist: dict, names: dict, general_articles: list) -> list:
     enriched = []
     for sig in detected_signals:
-        pos = (watchlist or {}).get(sig["symbol"]) or {}
-        enriched.append({**sig, "related_news": (pos.get("news") or [])[:3]})
+        symbol = sig["symbol"]
+        pos = (watchlist or {}).get(symbol) or {}
+        related = list(pos.get("news") or [])
+        seen_urls = {a.get("url") for a in related}
+        for article in _match_related_articles(symbol, names.get(symbol), general_articles):
+            if article.get("url") not in seen_urls:
+                related.append(article)
+                seen_urls.add(article.get("url"))
+        enriched.append({**sig, "related_news": related[:3]})
     return enriched
 
 
-def build_email(watchlist: dict, fundamentals_data: dict, econ_cal: dict) -> str:
+def _history_note(today_str: str) -> str:
+    days_collected = history.get_distinct_dates_count()
+    ready_in = max(0, signal_engine.PER_BAND_MIN_SAMPLES - days_collected)
+    note = f"히스토리 축적 {days_collected}일차"
+    if ready_in > 0:
+        note += f" · PER 밴드 활성화까지 {ready_in}일"
+    return note
+
+
+def build_email(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_data: dict) -> str:
     today = date.today()
     today_str = today.isoformat()
+    names = _symbol_names(fundamentals_data)
 
     detected_signals = signal_engine.evaluate(watchlist, fundamentals_data, today_str)
-    _save_snapshots(watchlist, fundamentals_data, today_str)
 
-    watchlist_symbols = list((watchlist or {}).keys())
-    calendar_events = _ticker_calendar_events(fundamentals_data, today)
+    calendar_events = _ticker_calendar_events(fundamentals_data, names, today)
     calendar_events += [ev["name"] for ev in (econ_cal or {}).get("events", []) if ev.get("name")]
 
-    if not detected_signals:
-        return report.build_no_signal_report(watchlist_symbols, today_str, calendar_events)
+    detail_text = ""
+    if detected_signals:
+        general_articles = (news_data or {}).get("articles", [])
+        enriched_signals = _attach_related_news(detected_signals, watchlist, names, general_articles)
+        detail_text = interpret_signals(enriched_signals)
 
-    enriched_signals = _attach_related_news(detected_signals, watchlist)
-    detail_text = interpret_signals(enriched_signals)
-    return report.build_report(detected_signals, watchlist_symbols, today_str, calendar_events, detail_text)
+    return report.build_report(
+        detected_signals, watchlist, names, today_str, calendar_events,
+        detail_text=detail_text, history_note=_history_note(today_str),
+    )
 
 
 def main():
@@ -141,11 +201,17 @@ def main():
         if data.get("_errors"):
             log.warning(f"Partial data — errors: {data['_errors']}")
 
+        watchlist = data.get("watchlist") or {}
+        fundamentals_data = data.get("fundamentals") or {}
+
         email_body = build_email(
-            data.get("watchlist") or {},
-            data.get("fundamentals") or {},
-            data.get("economic_cal") or {},
+            watchlist, fundamentals_data, data.get("economic_cal") or {}, data.get("news") or {},
         )
+
+        # Persisted regardless of email outcome — the snapshot history matters
+        # even if delivery fails, and shouldn't be a hidden side effect of
+        # "building an email".
+        _save_snapshots(watchlist, fundamentals_data, date.today().isoformat())
 
         # 수신자 목록에서 발송 (없으면 .env의 EMAIL_RECEIVER로 fallback)
         recipients = load_recipients()

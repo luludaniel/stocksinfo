@@ -113,10 +113,12 @@ def _position_metrics(hist) -> dict:
         else:
             returns[label] = None
 
+    # Excludes today: including it drags the average toward today's own spike
+    # and understates the ratio (a 10x day would read as ~6.9x, not ~10x).
     volume_avg_20d = None
     volume_ratio = None
-    if len(volume) >= 20:
-        volume_avg_20d = float(volume.iloc[-20:].mean())
+    if len(volume) >= 21:
+        volume_avg_20d = float(volume.iloc[-21:-1].mean())
         last_vol = float(volume.iloc[-1])
         volume_ratio = round(last_vol / volume_avg_20d, 2) if volume_avg_20d else None
 
