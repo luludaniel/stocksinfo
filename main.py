@@ -5,13 +5,17 @@ import traceback
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError, as_completed
 from datetime import date, datetime
 
+import os
+
 import history
+import publish
+import recommend
 import report
 import signals as signal_engine
+import store
 from collectors import economic_cal, fundamentals, news
 from collectors import watchlist_stocks
 from delivery.email_sender import send, send_error
-from store import load_recipients, load_watchlist
 from summarizer.openrouter_client import interpret_signals
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -142,36 +146,51 @@ def _match_related_articles(symbol: str, name: str, articles: list) -> list:
     return matches
 
 
-def _attach_related_news(detected_signals: list, watchlist: dict, names: dict, general_articles: list) -> list:
-    enriched = []
-    for sig in detected_signals:
-        symbol = sig["symbol"]
-        pos = (watchlist or {}).get(symbol) or {}
+def _related_news_by_symbol(watchlist: dict, names: dict, general_articles: list) -> dict:
+    """Per-ticker yfinance news plus title-matched general RSS articles, for
+    every watchlist symbol — computed once and shared by the email's detail
+    section and the dashboard's focus scoring, instead of re-matching per use.
+    """
+    by_symbol = {}
+    for symbol, pos in (watchlist or {}).items():
+        if not pos or "error" in pos:
+            continue
         related = list(pos.get("news") or [])
         seen_urls = {a.get("url") for a in related}
         for article in _match_related_articles(symbol, names.get(symbol), general_articles):
             if article.get("url") not in seen_urls:
                 related.append(article)
                 seen_urls.add(article.get("url"))
-        enriched.append({**sig, "related_news": related[:3]})
-    return enriched
+        by_symbol[symbol] = related
+    return by_symbol
 
 
-def _history_note(today_str: str) -> str:
-    days_collected = history.get_distinct_dates_count()
-    ready_in = max(0, signal_engine.PER_BAND_MIN_SAMPLES - days_collected)
-    note = f"히스토리 축적 {days_collected}일차"
-    if ready_in > 0:
-        note += f" · PER 밴드 활성화까지 {ready_in}일"
+def _attach_related_news(detected_signals: list, related_news_by_symbol: dict) -> list:
+    return [
+        {**sig, "related_news": related_news_by_symbol.get(sig["symbol"], [])[:3]}
+        for sig in detected_signals
+    ]
+
+
+def _history_status() -> dict:
+    return publish.build_history_status(history.get_distinct_dates_count(), signal_engine.PER_BAND_MIN_SAMPLES)
+
+
+def _history_note() -> str:
+    status = _history_status()
+    note = f"히스토리 축적 {status['days_collected']}일차"
+    if status["per_band_ready_in_days"] > 0:
+        note += f" · PER 밴드 활성화까지 {status['per_band_ready_in_days']}일"
     return note
 
 
-def build_email(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_data: dict) -> str:
+def build_email(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_data: dict,
+                 resolved_config: dict | None = None) -> str:
     today = date.today()
     today_str = today.isoformat()
     names = _symbol_names(fundamentals_data)
 
-    detected_signals = signal_engine.evaluate(watchlist, fundamentals_data, today_str)
+    detected_signals = signal_engine.evaluate(watchlist, fundamentals_data, today_str, resolved_config)
 
     calendar_events = _ticker_calendar_events(fundamentals_data, names, today)
     calendar_events += [ev["name"] for ev in (econ_cal or {}).get("events", []) if ev.get("name")]
@@ -179,12 +198,43 @@ def build_email(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_d
     detail_text = ""
     if detected_signals:
         general_articles = (news_data or {}).get("articles", [])
-        enriched_signals = _attach_related_news(detected_signals, watchlist, names, general_articles)
+        related_news_by_symbol = _related_news_by_symbol(watchlist, names, general_articles)
+        enriched_signals = _attach_related_news(detected_signals, related_news_by_symbol)
         detail_text = interpret_signals(enriched_signals)
 
     return report.build_report(
         detected_signals, watchlist, names, today_str, calendar_events,
-        detail_text=detail_text, history_note=_history_note(today_str),
+        detail_text=detail_text, history_note=_history_note(),
+    )
+
+
+def _trigger_name() -> str:
+    return os.environ.get("GITHUB_EVENT_NAME") or "manual"
+
+
+def build_latest_payload(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_data: dict,
+                          resolved_config: dict, collector_errors: list, focus_config: dict | None) -> dict:
+    """Data-contract payload for data/latest.json — the dashboard's only
+    interface into the pipeline (SPEC-DASHBOARD.md §5).
+    """
+    today = date.today()
+    today_str = today.isoformat()
+    names = _symbol_names(fundamentals_data)
+
+    detected_signals = signal_engine.evaluate(watchlist, fundamentals_data, today_str, resolved_config)
+    general_articles = (news_data or {}).get("articles", [])
+    related_news_by_symbol = _related_news_by_symbol(watchlist, names, general_articles)
+
+    profiles_by_symbol = {sym: cfg.get("profile") for sym, cfg in (resolved_config or {}).items()}
+    focus = recommend.build_focus(
+        detected_signals, watchlist, fundamentals_data, related_news_by_symbol, today, focus_config,
+    )
+    calendar = publish.build_calendar(fundamentals_data, names, today)
+
+    return publish.build_latest(
+        market_date=today_str, trigger=_trigger_name(), collector_errors=collector_errors,
+        watchlist=watchlist, fundamentals_data=fundamentals_data, profiles_by_symbol=profiles_by_symbol,
+        history_status=_history_status(), focus=focus, discovery=[], calendar=calendar,
     )
 
 
@@ -193,8 +243,9 @@ def main():
     validate()
     log.info("StocksInfo morning report starting...")
     try:
-        wl = load_watchlist()
-        all_symbols = wl.get("us", []) + wl.get("kr", [])
+        wl_config = store.load_watchlist()
+        all_symbols = store.watchlist_symbols(wl_config)
+        resolved_config = store.resolve_all_symbols(wl_config)
 
         data = collect_all(all_symbols)
 
@@ -204,8 +255,11 @@ def main():
         watchlist = data.get("watchlist") or {}
         fundamentals_data = data.get("fundamentals") or {}
 
+        report_config = store.load_report_config()
+
         email_body = build_email(
             watchlist, fundamentals_data, data.get("economic_cal") or {}, data.get("news") or {},
+            resolved_config,
         )
 
         # Persisted regardless of email outcome — the snapshot history matters
@@ -213,9 +267,14 @@ def main():
         # "building an email".
         _save_snapshots(watchlist, fundamentals_data, date.today().isoformat())
 
+        latest_payload = build_latest_payload(
+            watchlist, fundamentals_data, data.get("economic_cal") or {}, data.get("news") or {},
+            resolved_config, data.get("_errors") or [], report_config.get("focus"),
+        )
+        publish.save_latest(latest_payload)
+
         # 수신자 목록에서 발송 (없으면 .env의 EMAIL_RECEIVER로 fallback)
-        recipients = load_recipients()
-        emails = recipients.get("emails", [])
+        emails = report_config.get("email", {}).get("recipients", [])
         if not emails:
             from config import EMAIL_RECEIVER
             emails = [EMAIL_RECEIVER]

@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "profiles": {
+    "core_holding": {
+      "label": "핵심보유",
+      "signals": [
+        "ma200_cross",
+        "earnings_soon",
+        "valuation_band",
+        "target_price_change"
+      ],
+      "thresholds": {
+        "volume_spike_ratio": 3.0,
+        "earnings_lookahead_days": 7
+      }
+    },
+    "watching": {
+      "label": "관찰중",
+      "signals": [
+        "ma200_cross",
+        "week52_high",
+        "week52_low",
+        "volume_spike",
+        "earnings_soon",
+        "valuation_band",
+        "target_price_change"
+      ],
+      "thresholds": {
+        "volume_spike_ratio": 2.0,
+        "earnings_lookahead_days": 7
+      }
+    },
+    "accumulating": {
+      "label": "장기적립",
+      "signals": [
+        "earnings_soon",
+        "valuation_band"
+      ],
+      "thresholds": {
+        "earnings_lookahead_days": 3
+      }
+    }
+  },
+  "symbols": [
+    {
+      "symbol": "NVDA",
+      "name": "",
+      "market": "us",
+      "profile": "watching",
+      "memo": ""
+    },
+    {
+      "symbol": "AAPL",
+      "name": "",
+      "market": "us",
+      "profile": "watching",
+      "memo": ""
+    },
+    {
+      "symbol": "TSLA",
+      "name": "",
+      "market": "us",
+      "profile": "watching",
+      "memo": ""
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "",
+      "market": "kr",
+      "profile": "watching",
+      "memo": ""
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "",
+      "market": "kr",
+      "profile": "watching",
+      "memo": ""
+    }
+  ]
+}

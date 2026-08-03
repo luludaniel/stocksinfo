@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StocksInfo 대시보드</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+  <div class="max-w-3xl mx-auto px-4 py-6">
+
+    <header class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold">📊 StocksInfo</h1>
+      <div id="header-meta" class="text-sm text-slate-500 text-right"></div>
+    </header>
+
+    <nav class="flex gap-2 mb-6 border-b border-slate-200">
+      <button id="tab-btn-briefing" class="px-3 py-2 text-sm font-medium border-b-2 border-slate-900">브리핑</button>
+      <button id="tab-btn-settings" class="px-3 py-2 text-sm font-medium border-b-2 border-transparent text-slate-500">설정</button>
+    </nav>
+
+    <div id="toast" class="hidden fixed bottom-4 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-sm px-4 py-2 rounded-lg shadow-lg"></div>
+
+    <section id="tab-briefing">
+      <div id="loading" class="text-slate-500 py-12 text-center">불러오는 중...</div>
+      <div id="load-error" class="hidden bg-red-50 border border-red-200 text-red-700 rounded-lg p-4 mb-4"></div>
+      <main id="content" class="hidden space-y-6"></main>
+    </section>
+
+    <section id="tab-settings" class="hidden space-y-8">
+      <div class="bg-white rounded-lg border border-slate-200 p-4">
+        <div class="font-semibold mb-2">GitHub 액세스 토큰</div>
+        <p class="text-xs text-slate-500 mb-2">
+          설정을 저장하려면 <code>Contents: Read and write</code> 권한의
+          <a class="underline" href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">
+            Fine-grained Personal Access Token</a>이 필요합니다. 이 브라우저에만 저장되며 언제든 삭제할 수 있습니다.
+        </p>
+        <div class="flex gap-2">
+          <input id="token-input" type="password" placeholder="github_pat_..." class="flex-1 border border-slate-300 rounded px-3 py-2 text-sm">
+          <button id="token-save-btn" class="bg-slate-900 text-white text-sm px-3 py-2 rounded">저장</button>
+          <button id="token-clear-btn" class="border border-slate-300 text-sm px-3 py-2 rounded">삭제</button>
+        </div>
+        <div id="token-status" class="text-xs text-slate-500 mt-2"></div>
+      </div>
+
+      <div id="settings-loading" class="text-slate-500 py-8 text-center">불러오는 중...</div>
+      <div id="settings-body" class="hidden space-y-8"></div>
+    </section>
+
+  </div>
+
+  <script>
+    const REPO = "luludaniel/stocksinfo";
+    const BRANCH = "main";
+    // Reading the briefing tab hits raw.githubusercontent.com directly (the
+    // repo is public, so no token/rate-limit needed for that). Editing always
+    // goes through the Contents API instead, since writing needs auth no
+    // matter how the repo's visibility is set.
+    const DATA_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/latest.json`;
+    const API_BASE = `https://api.github.com/repos/${REPO}/contents`;
+    const TOKEN_KEY = "stocksinfo_pat";
+
+    const SEVERITY_DOT = { red: "🔴", yellow: "🟡" };
+    const SIGNAL_TYPE_LABELS = {
+      ma200_cross: "200일선 교차",
+      week52_high: "52주 신고가",
+      week52_low: "52주 신저가",
+      volume_spike: "거래량 급증",
+      earnings_soon: "실적 임박",
+      valuation_band: "PER 밴드",
+      target_price_change: "목표주가 변화",
+    };
+    const ALL_SIGNAL_TYPES = Object.keys(SIGNAL_TYPE_LABELS);
+    const EMAIL_BLOCK_LABELS = { focus: "오늘 볼 순서", positions: "전체 포지션", calendar: "이번 주 일정", discovery: "신규 발굴" };
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    function fmtPct(value, digits = 1) {
+      if (value === null || value === undefined) return "—";
+      const sign = value > 0 ? "+" : "";
+      return `${sign}${value.toFixed(digits)}%`;
+    }
+
+    function fmtNum(value, digits = 2) {
+      if (value === null || value === undefined) return "—";
+      return value.toLocaleString("ko-KR", { maximumFractionDigits: digits });
+    }
+
+    function showToast(message, isError = false) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.className = `fixed bottom-4 left-1/2 -translate-x-1/2 text-white text-sm px-4 py-2 rounded-lg shadow-lg ${isError ? "bg-red-600" : "bg-slate-900"}`;
+      setTimeout(() => toast.classList.add("hidden"), 4000);
+    }
+
+    // ---------- Tabs ----------
+    function selectTab(name) {
+      const briefing = name === "briefing";
+      document.getElementById("tab-briefing").classList.toggle("hidden", !briefing);
+      document.getElementById("tab-settings").classList.toggle("hidden", briefing);
+      document.getElementById("tab-btn-briefing").className =
+        `px-3 py-2 text-sm font-medium border-b-2 ${briefing ? "border-slate-900" : "border-transparent text-slate-500"}`;
+      document.getElementById("tab-btn-settings").className =
+        `px-3 py-2 text-sm font-medium border-b-2 ${!briefing ? "border-slate-900" : "border-transparent text-slate-500"}`;
+      if (!briefing) loadSettings();
+    }
+
+    // ---------- Briefing tab (read-only, SPEC Phase 5) ----------
+    function renderMeta(data) {
+      const meta = document.getElementById("header-meta");
+      meta.textContent = `${data.market_date} 기준 · ${new Date(data.generated_at).toLocaleString("ko-KR")}`;
+    }
+
+    function renderFailedBanner(container, status) {
+      if (!status || status.ok || !status.failed_symbols || status.failed_symbols.length === 0) return;
+      const banner = el("div", "bg-red-50 border border-red-200 text-red-700 rounded-lg p-4 text-sm");
+      banner.appendChild(el("div", "font-semibold mb-1", `⚠️ 수집 실패 ${status.failed_symbols.length}건`));
+      status.failed_symbols.forEach((f) => banner.appendChild(el("div", "", `${f.symbol} — ${f.reason}`)));
+      (status.collector_errors || []).forEach((e) => banner.appendChild(el("div", "text-red-500", e)));
+      container.appendChild(banner);
+    }
+
+    function renderFocus(container, focus) {
+      const section = el("section");
+      section.appendChild(el("h2", "text-lg font-semibold mb-3", "① 오늘 볼 순서"));
+      if (!focus || focus.length === 0) {
+        section.appendChild(el("div", "text-slate-500 text-sm", "오늘은 특별히 먼저 볼 종목이 없습니다."));
+        container.appendChild(section);
+        return;
+      }
+      const list = el("div", "space-y-3");
+      focus.forEach((f) => {
+        const card = el("div", "bg-white rounded-lg border border-slate-200 p-4");
+        const head = el("div", "flex items-baseline justify-between");
+        head.appendChild(el("div", "font-semibold", `${f.rank}. ${f.symbol}`));
+        head.appendChild(el("div", "text-sm text-slate-500", `점수 ${f.score}`));
+        card.appendChild(head);
+        (f.signals || []).forEach((s) => {
+          card.appendChild(el("div", "text-sm mt-1", `${SEVERITY_DOT[s.severity] || "⚪"} ${s.message}`));
+        });
+        if (f.news && f.news.length > 0) {
+          card.appendChild(el("div", "text-sm text-slate-500 mt-1", `📰 관련 기사 ${f.news.length}건 · "${f.news[0].title}"`));
+        }
+        list.appendChild(card);
+      });
+      section.appendChild(list);
+      container.appendChild(section);
+    }
+
+    function renderPositions(container, positions) {
+      const section = el("section");
+      section.appendChild(el("h2", "text-lg font-semibold mb-3", "② 전체 포지션"));
+      if (!positions || positions.length === 0) {
+        section.appendChild(el("div", "text-slate-500 text-sm", "표시할 종목이 없습니다."));
+        container.appendChild(section);
+        return;
+      }
+      const grid = el("div", "grid grid-cols-1 sm:grid-cols-2 gap-3");
+      positions.forEach((p) => {
+        const card = el("div", "bg-white rounded-lg border border-slate-200 p-4");
+        const head = el("div", "flex items-baseline justify-between");
+        head.appendChild(el("div", "font-semibold", p.name ? `${p.symbol} ${p.name}` : p.symbol));
+        head.appendChild(el("div", "text-sm text-slate-500", fmtNum(p.last_close)));
+        card.appendChild(head);
+        const stats = el("div", "text-sm text-slate-600 mt-2 grid grid-cols-2 gap-x-3 gap-y-1");
+        stats.appendChild(el("div", "", `52주 ${p.week52_pct != null ? p.week52_pct.toFixed(0) + "%" : "—"}`));
+        stats.appendChild(el("div", "", `200일선 ${fmtPct(p.pct_vs_ma200, 0)}`));
+        stats.appendChild(el("div", "", `6M ${fmtPct(p.relative_strength_6m_pct, 0)}p`));
+        stats.appendChild(el("div", "", `PER ${p.trailing_pe != null ? p.trailing_pe.toFixed(1) : "—"}`));
+        card.appendChild(stats);
+        grid.appendChild(card);
+      });
+      section.appendChild(grid);
+      container.appendChild(section);
+    }
+
+    function renderCalendar(container, calendar) {
+      if (!calendar || calendar.length === 0) return;
+      const section = el("section");
+      section.appendChild(el("h2", "text-lg font-semibold mb-2", "③ 이번 주 일정"));
+      section.appendChild(el("div", "text-sm text-slate-600", calendar.map((c) => `${c.label}(${c.weekday})`).join(" · ")));
+      container.appendChild(section);
+    }
+
+    function renderHistoryStatus(container, historyStatus) {
+      if (!historyStatus) return;
+      const text = historyStatus.per_band_ready_in_days > 0
+        ? `히스토리 축적 ${historyStatus.days_collected}일차 · PER 밴드 활성화까지 ${historyStatus.per_band_ready_in_days}일`
+        : `히스토리 축적 ${historyStatus.days_collected}일차`;
+      container.appendChild(el("div", "text-xs text-slate-400 pt-2 border-t border-slate-200", text));
+    }
+
+    function renderBriefing(data) {
+      renderMeta(data);
+      const content = document.getElementById("content");
+      content.innerHTML = "";
+      renderFailedBanner(content, data.status);
+      renderFocus(content, data.focus);
+      renderPositions(content, data.positions);
+      renderCalendar(content, data.calendar);
+      renderHistoryStatus(content, data.history_status);
+      content.classList.remove("hidden");
+    }
+
+    async function loadBriefing() {
+      try {
+        const resp = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
+        if (!resp.ok) throw new Error(`data/latest.json ${resp.status}`);
+        renderBriefing(await resp.json());
+      } catch (err) {
+        document.getElementById("load-error").textContent = `데이터를 불러오지 못했습니다: ${err.message}`;
+        document.getElementById("load-error").classList.remove("hidden");
+      } finally {
+        document.getElementById("loading").classList.add("hidden");
+      }
+    }
+
+    // ---------- Token management (SPEC §2.3) ----------
+    function getToken() {
+      return localStorage.getItem(TOKEN_KEY) || "";
+    }
+
+    function renderTokenStatus() {
+      const status = document.getElementById("token-status");
+      status.textContent = getToken() ? "토큰 저장됨 (이 브라우저에만 보관)" : "토큰이 없으면 설정을 저장할 수 없습니다.";
+    }
+
+    document.getElementById("token-save-btn").addEventListener("click", () => {
+      const value = document.getElementById("token-input").value.trim();
+      if (!value) return;
+      localStorage.setItem(TOKEN_KEY, value);
+      document.getElementById("token-input").value = "";
+      renderTokenStatus();
+      showToast("토큰을 저장했습니다.");
+    });
+
+    document.getElementById("token-clear-btn").addEventListener("click", () => {
+      localStorage.removeItem(TOKEN_KEY);
+      renderTokenStatus();
+      showToast("토큰을 삭제했습니다.");
+    });
+
+    // ---------- GitHub Contents API (UTF-8 safe base64) ----------
+    function utf8ToBase64(str) {
+      return btoa(String.fromCharCode(...new TextEncoder().encode(str)));
+    }
+
+    function base64ToUtf8(b64) {
+      const binary = atob(b64.replace(/\n/g, ""));
+      const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+      return new TextDecoder().decode(bytes);
+    }
+
+    async function ghGetFile(path) {
+      const resp = await fetch(`${API_BASE}/${path}?ref=${BRANCH}`, {
+        headers: { Authorization: `Bearer ${getToken()}`, Accept: "application/vnd.github+json" },
+      });
+      if (!resp.ok) throw new Error(`${path} 불러오기 실패 (${resp.status})`);
+      const body = await resp.json();
+      return { data: JSON.parse(base64ToUtf8(body.content)), sha: body.sha };
+    }
+
+    async function ghPutFile(path, dataObj, sha, message) {
+      const resp = await fetch(`${API_BASE}/${path}`, {
+        method: "PUT",
+        headers: { Authorization: `Bearer ${getToken()}`, Accept: "application/vnd.github+json" },
+        body: JSON.stringify({
+          message,
+          content: utf8ToBase64(JSON.stringify(dataObj, null, 2)),
+          sha,
+          branch: BRANCH,
+        }),
+      });
+      if (!resp.ok) {
+        const body = await resp.json().catch(() => ({}));
+        throw new Error(body.message || `${path} 저장 실패 (${resp.status})`);
+      }
+      return resp.json();
+    }
+
+    // ---------- Settings tab (SPEC Phase 6) ----------
+    let settingsState = null; // { watchlist, watchlistSha, reportConfig, reportSha }
+
+    function defaultThresholdsFor(profileName, watchlist) {
+      return ((watchlist.profiles || {})[profileName] || {}).thresholds || {};
+    }
+
+    function defaultSignalsFor(profileName, watchlist) {
+      return ((watchlist.profiles || {})[profileName] || {}).signals || [];
+    }
+
+    function renderSymbolCard(entry, watchlist) {
+      const card = el("div", "bg-white rounded-lg border border-slate-200 p-4 space-y-2");
+      card.dataset.symbol = entry.symbol;
+
+      const head = el("div", "flex items-center justify-between gap-2");
+      head.appendChild(el("div", "font-semibold", entry.symbol));
+
+      const profileSelect = el("select", "profile-select border border-slate-300 rounded px-2 py-1 text-sm");
+      Object.entries(watchlist.profiles || {}).forEach(([key, profile]) => {
+        const opt = el("option", "", profile.label || key);
+        opt.value = key;
+        if (key === entry.profile) opt.selected = true;
+        profileSelect.appendChild(opt);
+      });
+      head.appendChild(profileSelect);
+      card.appendChild(head);
+
+      const nameInput = el("input", "name-input w-full border border-slate-300 rounded px-2 py-1 text-sm");
+      nameInput.placeholder = "표시 이름 (선택)";
+      nameInput.value = entry.name || "";
+      card.appendChild(nameInput);
+
+      const memoInput = el("textarea", "memo-input w-full border border-slate-300 rounded px-2 py-1 text-sm");
+      memoInput.placeholder = "메모";
+      memoInput.value = entry.memo || "";
+      memoInput.rows = 2;
+      card.appendChild(memoInput);
+
+      const details = el("details", "text-sm");
+      details.appendChild(el("summary", "text-slate-600 cursor-pointer", "이 종목만 다르게"));
+
+      const currentSignals = new Set(
+        (entry.overrides && entry.overrides.signals) || defaultSignalsFor(entry.profile, watchlist)
+      );
+      const signalsBox = el("div", "grid grid-cols-2 gap-1 mt-2");
+      ALL_SIGNAL_TYPES.forEach((type) => {
+        const label = el("label", "flex items-center gap-1 text-xs");
+        const cb = el("input", "signal-checkbox");
+        cb.type = "checkbox";
+        cb.value = type;
+        cb.checked = currentSignals.has(type);
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(SIGNAL_TYPE_LABELS[type]));
+        signalsBox.appendChild(label);
+      });
+      details.appendChild(signalsBox);
+
+      const currentThresholds = { ...defaultThresholdsFor(entry.profile, watchlist), ...((entry.overrides && entry.overrides.thresholds) || {}) };
+      const thresholdBox = el("div", "grid grid-cols-2 gap-2 mt-2");
+      [["volume_spike_ratio", "거래량 급증 임계값(배)"], ["earnings_lookahead_days", "실적 임박 기준(일)"]].forEach(([key, label]) => {
+        const wrap = el("label", "flex flex-col gap-1 text-xs text-slate-600");
+        wrap.appendChild(document.createTextNode(label));
+        const input = el("input", "threshold-input border border-slate-300 rounded px-2 py-1");
+        input.type = "number";
+        input.step = "0.1";
+        input.dataset.key = key;
+        input.value = currentThresholds[key] ?? "";
+        wrap.appendChild(input);
+        thresholdBox.appendChild(wrap);
+      });
+      details.appendChild(thresholdBox);
+      card.appendChild(details);
+
+      const deleteBtn = el("button", "delete-symbol-btn text-xs text-red-600", "삭제");
+      card.appendChild(deleteBtn);
+      deleteBtn.addEventListener("click", () => {
+        if (confirm(`${entry.symbol}을(를) 관심종목에서 삭제할까요?`)) card.remove();
+      });
+
+      return card;
+    }
+
+    function renderProfiles(container, watchlist) {
+      const section = el("section");
+      section.appendChild(el("h2", "text-lg font-semibold mb-2", "프로필"));
+      const box = el("div", "bg-white rounded-lg border border-slate-200 divide-y divide-slate-100");
+      Object.entries(watchlist.profiles || {}).forEach(([key, profile]) => {
+        const row = el("div", "p-3 text-sm");
+        row.appendChild(el("div", "font-medium", profile.label || key));
+        row.appendChild(el("div", "text-slate-500 text-xs mt-1", (profile.signals || []).map((s) => SIGNAL_TYPE_LABELS[s] || s).join(" · ")));
+        box.appendChild(row);
+      });
+      section.appendChild(box);
+      section.appendChild(el("p", "text-xs text-slate-400 mt-1", "프로필 자체 편집은 아직 지원하지 않습니다 — 여러 종목이 같은 프로필을 공유하므로, 필요하면 종목별 \"이 종목만 다르게\"를 사용해 주세요."));
+      container.appendChild(section);
+    }
+
+    function renderSymbolsSection(container, watchlist) {
+      const section = el("section");
+      const head = el("div", "flex items-center justify-between mb-3");
+      head.appendChild(el("h2", "text-lg font-semibold", "종목 설정"));
+      const addBtn = el("button", "text-sm bg-slate-900 text-white px-3 py-1.5 rounded", "+ 종목 추가");
+      head.appendChild(addBtn);
+      section.appendChild(head);
+
+      const list = el("div", "space-y-3");
+      list.id = "symbols-list";
+      (watchlist.symbols || []).forEach((entry) => list.appendChild(renderSymbolCard(entry, watchlist)));
+      section.appendChild(list);
+      container.appendChild(section);
+
+      addBtn.addEventListener("click", () => {
+        const symbol = prompt("티커를 입력하세요 (예: NVDA, 005930.KS)");
+        if (!symbol) return;
+        const upper = symbol.trim().toUpperCase();
+        if ([...list.children].some((c) => c.dataset.symbol === upper)) {
+          showToast(`${upper}은(는) 이미 있습니다.`, true);
+          return;
+        }
+        const market = upper.endsWith(".KS") || upper.endsWith(".KQ") ? "kr" : "us";
+        const entry = { symbol: upper, name: "", market, profile: Object.keys(watchlist.profiles || {})[0] || "watching", memo: "" };
+        list.appendChild(renderSymbolCard(entry, watchlist));
+      });
+    }
+
+    function renderEmailSection(container, reportConfig) {
+      const section = el("section");
+      section.id = "email-section";
+      section.appendChild(el("h2", "text-lg font-semibold mb-3", "이메일 구성"));
+      const box = el("div", "bg-white rounded-lg border border-slate-200 p-4 space-y-4");
+
+      const blockRow = el("div");
+      blockRow.appendChild(el("div", "text-sm font-medium mb-1", "포함 블록"));
+      const blockBox = el("div", "grid grid-cols-2 gap-1");
+      const currentBlocks = new Set(reportConfig.email?.blocks || []);
+      Object.entries(EMAIL_BLOCK_LABELS).forEach(([key, label]) => {
+        const lbl = el("label", "flex items-center gap-1 text-sm");
+        const cb = el("input", "block-checkbox");
+        cb.type = "checkbox";
+        cb.value = key;
+        cb.checked = currentBlocks.has(key);
+        lbl.appendChild(cb);
+        lbl.appendChild(document.createTextNode(label));
+        blockBox.appendChild(lbl);
+      });
+      blockRow.appendChild(blockBox);
+      box.appendChild(blockRow);
+
+      const noSignalRow = el("div");
+      noSignalRow.appendChild(el("div", "text-sm font-medium mb-1", "신호 0건인 날"));
+      const noSignalBox = el("div", "flex gap-4 text-sm");
+      [["skip", "발송 안 함"], ["one_line", "한 줄로 발송"]].forEach(([value, label]) => {
+        const lbl = el("label", "flex items-center gap-1");
+        const radio = el("input", "no-signal-radio");
+        radio.type = "radio";
+        radio.name = "send_when_no_signal";
+        radio.value = value;
+        radio.checked = (reportConfig.email?.send_when_no_signal || "one_line") === value;
+        lbl.appendChild(radio);
+        lbl.appendChild(document.createTextNode(label));
+        noSignalBox.appendChild(lbl);
+      });
+      noSignalRow.appendChild(noSignalBox);
+      box.appendChild(noSignalRow);
+
+      const timeRow = el("div", "flex items-center gap-2");
+      timeRow.appendChild(el("div", "text-sm font-medium", "발송 시각 (KST)"));
+      const timeInput = el("input", "send-time-input border border-slate-300 rounded px-2 py-1 text-sm");
+      timeInput.type = "time";
+      timeInput.value = reportConfig.email?.send_time_kst || "07:30";
+      timeRow.appendChild(timeInput);
+      box.appendChild(timeRow);
+
+      const recipientsRow = el("div");
+      recipientsRow.appendChild(el("div", "text-sm font-medium mb-1", "수신자"));
+      const recipientsList = el("div", "space-y-1");
+      recipientsList.id = "recipients-list";
+      (reportConfig.email?.recipients || []).forEach((email) => recipientsList.appendChild(renderRecipientRow(email)));
+      recipientsRow.appendChild(recipientsList);
+      const addRecipientBtn = el("button", "text-xs text-slate-600 underline mt-1", "+ 수신자 추가");
+      recipientsRow.appendChild(addRecipientBtn);
+      addRecipientBtn.addEventListener("click", () => {
+        const email = prompt("추가할 이메일 주소");
+        if (email && email.trim()) recipientsList.appendChild(renderRecipientRow(email.trim()));
+      });
+      box.appendChild(recipientsRow);
+
+      section.appendChild(box);
+      container.appendChild(section);
+    }
+
+    function renderRecipientRow(email) {
+      const row = el("div", "flex items-center justify-between text-sm bg-slate-50 rounded px-2 py-1");
+      row.dataset.email = email;
+      row.appendChild(el("span", "", email));
+      const removeBtn = el("button", "text-red-600 text-xs", "삭제");
+      removeBtn.addEventListener("click", () => row.remove());
+      row.appendChild(removeBtn);
+      return row;
+    }
+
+    function collectWatchlistFromForm(baseWatchlist) {
+      const symbols = [...document.querySelectorAll("#symbols-list > div")].map((card) => {
+        const symbol = card.dataset.symbol;
+        const profile = card.querySelector(".profile-select").value;
+        const name = card.querySelector(".name-input").value.trim();
+        const memo = card.querySelector(".memo-input").value.trim();
+
+        const checkedSignals = [...card.querySelectorAll(".signal-checkbox:checked")].map((cb) => cb.value);
+        const profileSignals = defaultSignalsFor(profile, baseWatchlist);
+        const signalsChanged = JSON.stringify([...checkedSignals].sort()) !== JSON.stringify([...profileSignals].sort());
+
+        const profileThresholds = defaultThresholdsFor(profile, baseWatchlist);
+        const changedThresholds = {};
+        card.querySelectorAll(".threshold-input").forEach((input) => {
+          if (input.value === "") return;
+          const value = parseFloat(input.value);
+          if (value !== profileThresholds[input.dataset.key]) changedThresholds[input.dataset.key] = value;
+        });
+
+        const entry = { symbol, name, market: symbol.endsWith(".KS") || symbol.endsWith(".KQ") ? "kr" : "us", profile, memo };
+        const overrides = {};
+        if (signalsChanged) overrides.signals = checkedSignals;
+        if (Object.keys(changedThresholds).length > 0) overrides.thresholds = changedThresholds;
+        if (Object.keys(overrides).length > 0) entry.overrides = overrides;
+        return entry;
+      });
+
+      return { ...baseWatchlist, symbols };
+    }
+
+    function collectReportConfigFromForm(baseReportConfig) {
+      const blocks = [...document.querySelectorAll(".block-checkbox:checked")].map((cb) => cb.value);
+      const sendWhenNoSignal = document.querySelector('input[name="send_when_no_signal"]:checked')?.value || "one_line";
+      const sendTime = document.querySelector(".send-time-input").value || "07:30";
+      const recipients = [...document.querySelectorAll("#recipients-list > div")].map((row) => row.dataset.email);
+      return {
+        ...baseReportConfig,
+        email: { ...baseReportConfig.email, blocks, send_when_no_signal: sendWhenNoSignal, send_time_kst: sendTime, recipients },
+      };
+    }
+
+    async function loadSettings() {
+      if (settingsState) return; // load once per page view
+      const body = document.getElementById("settings-body");
+      const loading = document.getElementById("settings-loading");
+      if (!getToken()) {
+        loading.classList.add("hidden");
+        body.classList.remove("hidden");
+        body.appendChild(el("div", "text-sm text-slate-500", "먼저 위에 GitHub 토큰을 입력해주세요."));
+        return;
+      }
+      try {
+        const [watchlistRes, reportRes] = await Promise.all([
+          ghGetFile("config/watchlist.json"),
+          ghGetFile("config/report.json"),
+        ]);
+        settingsState = {
+          watchlist: watchlistRes.data, watchlistSha: watchlistRes.sha,
+          reportConfig: reportRes.data, reportSha: reportRes.sha,
+        };
+        body.innerHTML = "";
+        renderSymbolsSection(body, settingsState.watchlist);
+        renderProfiles(body, settingsState.watchlist);
+        renderEmailSection(body, settingsState.reportConfig);
+
+        const saveBtn = el("button", "w-full bg-slate-900 text-white py-2.5 rounded font-medium", "저장 (GitHub에 커밋)");
+        saveBtn.addEventListener("click", saveSettings);
+        body.appendChild(saveBtn);
+
+        loading.classList.add("hidden");
+        body.classList.remove("hidden");
+      } catch (err) {
+        loading.classList.add("hidden");
+        body.classList.remove("hidden");
+        body.appendChild(el("div", "text-red-600 text-sm", `설정을 불러오지 못했습니다: ${err.message}`));
+      }
+    }
+
+    async function saveSettings() {
+      if (!confirm("변경 사항을 GitHub에 커밋할까요? 다음 실행부터 반영됩니다.")) return;
+      try {
+        const newWatchlist = collectWatchlistFromForm(settingsState.watchlist);
+        const newReportConfig = collectReportConfigFromForm(settingsState.reportConfig);
+
+        const wlResult = await ghPutFile("config/watchlist.json", newWatchlist, settingsState.watchlistSha, "Update watchlist via dashboard");
+        const rcResult = await ghPutFile("config/report.json", newReportConfig, settingsState.reportSha, "Update report config via dashboard");
+
+        settingsState.watchlist = newWatchlist;
+        settingsState.watchlistSha = wlResult.content.sha;
+        settingsState.reportConfig = newReportConfig;
+        settingsState.reportSha = rcResult.content.sha;
+
+        showToast("저장됨 · 내일 아침부터 반영됩니다.");
+      } catch (err) {
+        showToast(`저장 실패: ${err.message}`, true);
+      }
+    }
+
+    // ---------- Wiring ----------
+    document.getElementById("tab-btn-briefing").addEventListener("click", () => selectTab("briefing"));
+    document.getElementById("tab-btn-settings").addEventListener("click", () => selectTab("settings"));
+
+    renderTokenStatus();
+    loadBriefing();
+  </script>
+</body>
+</html>

@@ -30,6 +30,21 @@ def test_build_email_no_signals_skips_llm():
     assert "신호 0건" in body
 
 
+def test_build_email_passes_resolved_config_to_signal_evaluation():
+    # Regression: build_email must actually forward per-symbol profile config
+    # through to signals.evaluate, not just accept and ignore the parameter.
+    import main
+
+    watchlist = {"NVDA": _pos(volume_ratio=5.0)}  # would fire volume_spike globally
+    resolved_config = {"NVDA": {"signals": ["ma200_cross"], "thresholds": {}}}
+
+    with patch("main.interpret_signals") as mock_interpret:
+        body = main.build_email(watchlist, {}, {}, {}, resolved_config)
+
+    mock_interpret.assert_not_called()
+    assert "거래량" not in body
+
+
 def test_build_email_with_signal_calls_llm():
     import main
 
@@ -197,6 +212,37 @@ def test_symbol_names_extracts_from_fundamentals():
     }
     names = main._symbol_names(fundamentals)
     assert names == {"NVDA": "NVIDIA Corporation"}
+
+
+def test_build_latest_payload_includes_positions_and_focus_and_status():
+    import main
+
+    watchlist = {"NVDA": _pos(ma200_cross="golden", ma200_cross_months_since_prior=1.0),
+                 "AAPL": {"error": "rate limited"}}
+    fundamentals = {"NVDA": {"name": "NVIDIA", "trailing_pe": 30.0}}
+    resolved_config = {"NVDA": {"signals": None, "thresholds": {}, "profile": "core_holding"}}
+
+    payload = main.build_latest_payload(
+        watchlist, fundamentals, {}, {}, resolved_config, [], None,
+    )
+
+    assert payload["schema_version"] == 1
+    assert payload["status"]["ok"] is False
+    assert payload["status"]["failed_symbols"] == [{"symbol": "AAPL", "reason": "rate limited"}]
+    assert len(payload["positions"]) == 1
+    assert payload["positions"][0]["symbol"] == "NVDA"
+    assert payload["positions"][0]["profile"] == "core_holding"
+    assert len(payload["focus"]) == 1
+    assert payload["focus"][0]["symbol"] == "NVDA"
+
+
+def test_build_latest_payload_ok_status_when_nothing_failed():
+    import main
+
+    watchlist = {"NVDA": _pos()}
+    payload = main.build_latest_payload(watchlist, {}, {}, {}, {}, [], None)
+    assert payload["status"]["ok"] is True
+    assert payload["focus"] == []
 
 
 def test_collect_all_merges_news_and_economic_cal_errors():

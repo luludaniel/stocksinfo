@@ -171,3 +171,46 @@ def test_fundamentals_error_symbol_is_skipped():
     import signals
     result = signals.evaluate({}, {"NVDA": {"error": "boom"}}, "2026-08-02")
     assert result == []
+
+
+def test_profile_excludes_signal_type_entirely():
+    import signals
+    watchlist = {"NVDA": _pos(volume_ratio=5.0)}
+    cfg = {"NVDA": {"signals": ["ma200_cross"], "thresholds": {}}}  # volume_spike not allowed
+    result = signals.evaluate(watchlist, {}, "2026-08-02", resolved_config=cfg)
+    assert result == []
+
+
+def test_profile_allows_only_listed_signal_types():
+    import signals
+    watchlist = {"NVDA": _pos(
+        volume_ratio=5.0,
+        ma200_cross="golden", ma200_cross_months_since_prior=1.0,
+    )}
+    cfg = {"NVDA": {"signals": ["ma200_cross"], "thresholds": {}}}
+    result = signals.evaluate(watchlist, {}, "2026-08-02", resolved_config=cfg)
+    assert [s["type"] for s in result] == ["ma200_cross"]
+
+
+def test_no_resolved_config_allows_all_signal_types():
+    import signals
+    watchlist = {"NVDA": _pos(volume_ratio=5.0)}
+    result = signals.evaluate(watchlist, {}, "2026-08-02", resolved_config=None)
+    assert any(s["type"] == "volume_spike" for s in result)
+
+
+def test_per_symbol_threshold_override_applies():
+    import signals
+    watchlist = {"NVDA": _pos(volume_ratio=2.5)}
+    # global default (2.0) would fire; a stricter per-symbol override (3.0) shouldn't
+    cfg = {"NVDA": {"signals": None, "thresholds": {"volume_spike_ratio": 3.0}}}
+    result = signals.evaluate(watchlist, {}, "2026-08-02", resolved_config=cfg)
+    assert result == []
+
+
+def test_per_symbol_earnings_lookahead_override():
+    import signals
+    fundamentals = {"NVDA": {"next_earnings_date": "2026-08-05"}}  # D-3
+    cfg = {"NVDA": {"signals": None, "thresholds": {"earnings_lookahead_days": 2}}}
+    result = signals.evaluate({}, fundamentals, "2026-08-02", resolved_config=cfg)
+    assert result == []  # 3 days out, but this profile only looks ahead 2
