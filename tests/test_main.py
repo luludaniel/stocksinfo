@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 
 @pytest.fixture(autouse=True)
@@ -28,6 +28,82 @@ def test_build_email_no_signals_skips_llm():
 
     mock_interpret.assert_not_called()
     assert "신호 0건" in body
+
+
+def test_build_email_focus_block_shows_ranked_list_instead_of_severity_groups():
+    import main
+
+    watchlist = {"NVDA": _pos(ma200_cross="golden", ma200_cross_months_since_prior=1.0)}
+    email_config = {"blocks": ["focus", "positions"]}
+
+    with patch("main.interpret_signals", return_value="해설"):
+        body = main.build_email(watchlist, {}, {}, {}, None, email_config)
+
+    assert "🎯 오늘 볼 순서" in body
+    assert "🟡 관찰" not in body
+
+
+def test_build_email_no_email_config_defaults_to_all_blocks_including_focus():
+    # report.DEFAULT_BLOCKS enables "focus", and the actual default
+    # config/report.json ships with it enabled too — so a caller that passes
+    # no email_config at all sees the ranked view, not just severity groups.
+    import main
+
+    watchlist = {"NVDA": _pos(ma200_cross="golden", ma200_cross_months_since_prior=1.0)}
+
+    with patch("main.interpret_signals", return_value="해설"):
+        body = main.build_email(watchlist, {}, {}, {}, None, None)
+
+    assert "🎯 오늘 볼 순서" in body
+
+
+def test_build_email_excluding_focus_from_blocks_keeps_severity_groups():
+    import main
+
+    watchlist = {"NVDA": _pos(ma200_cross="golden", ma200_cross_months_since_prior=1.0)}
+    email_config = {"blocks": ["positions"]}
+
+    with patch("main.interpret_signals", return_value="해설"):
+        body = main.build_email(watchlist, {}, {}, {}, None, email_config)
+
+    assert "🟡 관찰" in body
+    assert "🎯" not in body
+
+
+def test_build_email_calendar_block_disabled_hides_calendar():
+    import main
+    from datetime import date, timedelta
+
+    soon = (date.today() + timedelta(days=2)).isoformat()
+    fundamentals = {"NVDA": {"next_earnings_date": soon, "ex_dividend_date": None}}
+    watchlist = {"NVDA": _pos(ma200_cross="golden", ma200_cross_months_since_prior=1.0)}
+    email_config = {"blocks": ["positions"]}
+
+    with patch("main.interpret_signals", return_value="해설"):
+        body = main.build_email(watchlist, fundamentals, {}, {}, None, email_config)
+
+    assert "이번 주" not in body
+
+
+def test_has_reportable_content_true_with_signal():
+    import main
+
+    watchlist = {"NVDA": _pos(ma200_cross="golden", ma200_cross_months_since_prior=1.0)}
+    assert main._has_reportable_content(watchlist, {}, None, "2026-08-02") is True
+
+
+def test_has_reportable_content_true_with_failure_even_without_signal():
+    import main
+
+    watchlist = {"NVDA": {"error": "boom"}}
+    assert main._has_reportable_content(watchlist, {}, None, "2026-08-02") is True
+
+
+def test_has_reportable_content_false_on_quiet_day():
+    import main
+
+    watchlist = {"NVDA": _pos()}
+    assert main._has_reportable_content(watchlist, {}, None, "2026-08-02") is False
 
 
 def test_build_email_passes_resolved_config_to_signal_evaluation():
@@ -245,6 +321,46 @@ def test_build_latest_payload_ok_status_when_nothing_failed():
     assert payload["focus"] == []
 
 
+def test_build_latest_payload_passes_through_discovery():
+    import main
+
+    watchlist = {"NVDA": _pos()}
+    discovery_list = [{"symbol": "AMD", "name": "AMD", "why": "당일 기사 3건 언급"}]
+    payload = main.build_latest_payload(watchlist, {}, {}, {}, {}, [], None, discovery_list)
+    assert payload["discovery"] == discovery_list
+
+
+def test_build_latest_payload_defaults_discovery_to_empty_list():
+    import main
+
+    payload = main.build_latest_payload({"NVDA": _pos()}, {}, {}, {}, {}, [], None)
+    assert payload["discovery"] == []
+
+
+def test_build_email_discovery_block_renders_candidates():
+    import main
+
+    watchlist = {"NVDA": _pos()}
+    email_config = {"blocks": ["positions", "discovery"]}
+    discovery_list = [{"symbol": "AMD", "name": "AMD", "why": "당일 기사 3건 언급"}]
+
+    body = main.build_email(watchlist, {}, {}, {}, None, email_config, None, discovery_list)
+
+    assert "AMD" in body
+    assert "당일 기사 3건 언급" in body
+
+
+def test_build_email_discovery_omitted_without_block():
+    import main
+
+    watchlist = {"NVDA": _pos()}
+    discovery_list = [{"symbol": "AMD", "name": "AMD", "why": "당일 기사 3건 언급"}]
+
+    body = main.build_email(watchlist, {}, {}, {}, None, {"blocks": ["positions"]}, None, discovery_list)
+
+    assert "AMD" not in body
+
+
 def test_collect_all_merges_news_and_economic_cal_errors():
     import main
 
@@ -288,3 +404,49 @@ def test_collect_all_does_not_reference_removed_market_collectors():
     import main
     assert not hasattr(main, "us_market")
     assert not hasattr(main, "kr_market")
+
+
+def test_main_skips_send_when_configured_and_quiet(monkeypatch, tmp_path):
+    import main
+
+    monkeypatch.setattr("config.validate", lambda: None)
+    monkeypatch.setattr(main.store, "load_watchlist", lambda: {"version": 2, "profiles": {}, "symbols": [{"symbol": "NVDA"}]})
+    monkeypatch.setattr(main.store, "watchlist_symbols", lambda wl: ["NVDA"])
+    monkeypatch.setattr(main.store, "resolve_all_symbols", lambda wl: {"NVDA": {}})
+    monkeypatch.setattr(main.store, "load_report_config", lambda: {
+        "email": {"blocks": ["positions"], "send_when_no_signal": "skip", "recipients": ["a@test.com"]},
+        "focus": {},
+    })
+    monkeypatch.setattr(main, "collect_all", lambda symbols: {
+        "watchlist": {"NVDA": _pos()}, "fundamentals": {}, "news": {}, "economic_cal": {}, "_errors": [],
+    })
+    monkeypatch.setattr(main.publish, "save_latest", lambda payload: None)
+    mock_send = MagicMock()
+    monkeypatch.setattr(main, "send", mock_send)
+
+    main.main()
+
+    mock_send.assert_not_called()
+
+
+def test_main_sends_when_quiet_but_policy_is_one_line(monkeypatch):
+    import main
+
+    monkeypatch.setattr("config.validate", lambda: None)
+    monkeypatch.setattr(main.store, "load_watchlist", lambda: {"version": 2, "profiles": {}, "symbols": [{"symbol": "NVDA"}]})
+    monkeypatch.setattr(main.store, "watchlist_symbols", lambda wl: ["NVDA"])
+    monkeypatch.setattr(main.store, "resolve_all_symbols", lambda wl: {"NVDA": {}})
+    monkeypatch.setattr(main.store, "load_report_config", lambda: {
+        "email": {"blocks": ["positions"], "send_when_no_signal": "one_line", "recipients": ["a@test.com"]},
+        "focus": {},
+    })
+    monkeypatch.setattr(main, "collect_all", lambda symbols: {
+        "watchlist": {"NVDA": _pos()}, "fundamentals": {}, "news": {}, "economic_cal": {}, "_errors": [],
+    })
+    monkeypatch.setattr(main.publish, "save_latest", lambda payload: None)
+    mock_send = MagicMock()
+    monkeypatch.setattr(main, "send", mock_send)
+
+    main.main()
+
+    mock_send.assert_called_once()

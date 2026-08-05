@@ -119,6 +119,22 @@ def test_resolve_all_symbols_infers_market_when_missing():
     assert resolved["000660.KS"]["market"] == "kr"
 
 
+def test_resolve_all_symbols_passes_through_shares_and_avg_price():
+    from store import resolve_all_symbols
+    watchlist = {"profiles": {}, "symbols": [{"symbol": "NVDA", "shares": 10, "avg_price": 150.5}]}
+    resolved = resolve_all_symbols(watchlist)
+    assert resolved["NVDA"]["shares"] == 10
+    assert resolved["NVDA"]["avg_price"] == 150.5
+
+
+def test_resolve_all_symbols_shares_and_avg_price_default_to_none():
+    from store import resolve_all_symbols
+    watchlist = {"profiles": {}, "symbols": [{"symbol": "NVDA"}]}
+    resolved = resolve_all_symbols(watchlist)
+    assert resolved["NVDA"]["shares"] is None
+    assert resolved["NVDA"]["avg_price"] is None
+
+
 def test_load_report_config_creates_default():
     from store import load_report_config, REPORT_CONFIG_FILE
     cfg = load_report_config()

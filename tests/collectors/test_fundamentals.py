@@ -18,6 +18,7 @@ def test_fetch_extracts_valuation_and_targets():
         "dividendYield": 0.005,
         "debtToEquity": 45.2,
         "freeCashflow": 5_000_000_000,
+        "marketCap": 2_500_000_000_000,
         "targetMeanPrice": 150.0,
         "targetHighPrice": 200.0,
         "targetLowPrice": 100.0,
@@ -34,6 +35,7 @@ def test_fetch_extracts_valuation_and_targets():
     assert m["target_mean_price"] == 150.0
     assert m["recommendation"] == "buy"
     assert m["next_earnings_date"] == "2026-08-10"
+    assert m["market_cap"] == 2_500_000_000_000
 
 
 def test_fetch_empty_symbols():

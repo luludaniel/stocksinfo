@@ -58,3 +58,69 @@ def interpret_signals(signals: list) -> str:
             last_err = e
             continue
     raise RuntimeError(f"모든 모델 실패: {last_err}")
+
+
+# Generous: some of the free models in MODELS are reasoning models that think
+# out loud before answering, and that preamble alone can run past 800 tokens
+# — with a tight budget the response gets cut off before the JSON ever
+# appears. Discovery is a single low-frequency call, so the extra budget is cheap.
+DISCOVERY_MAX_TOKENS = 2500
+
+
+def _parse_json_array(content: str) -> list:
+    """Extract the JSON array from a model response, not just parse the whole
+    string as JSON — reasoning models routinely prepend chain-of-thought
+    text before the actual answer, and some wrap it in a markdown fence.
+    """
+    text = (content or "").strip()
+    start, end = text.find("["), text.rfind("]")
+    if start == -1 or end == -1 or end < start:
+        return []
+    try:
+        data = json.loads(text[start:end + 1])
+    except (json.JSONDecodeError, ValueError):
+        return []
+    if not isinstance(data, list):
+        return []
+    return [item for item in data if isinstance(item, dict) and item.get("ticker")]
+
+
+def extract_tickers_from_headlines(headlines: list, excluded_symbols: set) -> list:
+    """One batch LLM call to pull {ticker, name, mentions} candidates out of
+    today's headlines. This is discovery.py's only source of candidate
+    tickers — the LLM's output is never trusted as fact. Every ticker here
+    still has to survive a real yfinance lookup (discovery.py's hallucination
+    guard) before it's shown to anyone; a made-up or mis-matched ticker gets
+    silently dropped downstream, not surfaced.
+    """
+    if not headlines:
+        return []
+
+    excluded_text = ", ".join(sorted(excluded_symbols)) if excluded_symbols else "없음"
+    prompt = (
+        "다음은 오늘자 금융 뉴스 제목 목록입니다. 이 중 언급된 상장회사와 "
+        "정확한 거래소 티커(symbol)를 추출해주세요.\n"
+        f"이미 관심종목으로 보유 중이라 제외해야 할 티커: {excluded_text}\n\n"
+        + "\n".join(f"- {h}" for h in headlines)
+        + "\n\n중요: 단계별 추론이나 설명을 출력하지 마세요. 최종 JSON 배열만 바로 출력하세요. 형식: "
+        '[{"ticker": "정확한 거래소 티커", "name": "회사명", "mentions": 언급된 제목 개수}]\n'
+        "티커를 확신할 수 없으면 그 항목은 포함하지 마세요."
+    )
+    messages = [{"role": "user", "content": prompt}]
+
+    for model in MODELS:
+        try:
+            response = client.chat.completions.create(
+                model=model, max_tokens=DISCOVERY_MAX_TOKENS, messages=messages,
+                # Some free-tier models default to emitting long chain-of-thought
+                # before the answer; on a batch task like this (tallying mentions
+                # across ~30 headlines) that preamble alone can exceed the token
+                # budget and cut off before any JSON appears. This is OpenRouter's
+                # unified switch to turn that off — silently ignored by models
+                # that don't support it, so it's safe to always send.
+                extra_body={"reasoning": {"enabled": False}},
+            )
+            return _parse_json_array(response.choices[0].message.content)
+        except Exception:
+            continue
+    return []

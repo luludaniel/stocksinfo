@@ -106,3 +106,65 @@ def test_symbol_label_alignment_does_not_break_on_long_tickers():
     watchlist = {"005930.KS": _pos()}
     header = report.build_header([], watchlist, {}, "2026-08-02")
     assert "005930.KS — 52주" in header
+
+
+def _focus(symbol, rank, score, message="200일선 상향 돌파"):
+    return {"symbol": symbol, "rank": rank, "score": score, "signals": [{"message": message}]}
+
+
+def test_focus_block_replaces_severity_groups_with_ranked_list():
+    watchlist = {"NVDA": _pos(), "AAPL": _pos(), "TSLA": _pos()}
+    signals = [_sig("NVDA", "red"), _sig("AAPL", "yellow")]
+    focus = [_focus("NVDA", 1, 3.5), _focus("AAPL", 2, 1.0, "PER 밴드 상단")]
+    header = report.build_header(signals, watchlist, {}, "2026-08-02", blocks={"focus", "positions"}, focus=focus)
+    assert "🎯 오늘 볼 순서 (2)" in header
+    assert "1. NVDA (점수 3.5) — 200일선 상향 돌파" in header
+    assert "🔴 확인 필요" not in header
+    assert "⚪ 정상 범위 (1)" in header  # TSLA still shows, it's not in focus
+
+
+def test_without_focus_block_falls_back_to_severity_groups():
+    watchlist = {"NVDA": _pos()}
+    signals = [_sig("NVDA", "red")]
+    focus = [_focus("NVDA", 1, 3.0)]
+    header = report.build_header(signals, watchlist, {}, "2026-08-02", blocks={"positions"}, focus=focus)
+    assert "🎯" not in header
+    assert "🔴 확인 필요 (1)" in header
+
+
+def test_positions_block_disabled_hides_normal_section():
+    watchlist = {"NVDA": _pos()}
+    header = report.build_header([], watchlist, {}, "2026-08-02", blocks={"focus"}, focus=[])
+    assert "정상 범위" not in header
+
+
+def test_calendar_block_disabled_hides_calendar_line_even_when_events_exist():
+    watchlist = {"NVDA": _pos()}
+    text = report.build_report([_sig("NVDA", "yellow")], watchlist, {}, "2026-08-02",
+                                ["NVDA 실적(수)"], blocks={"positions"})
+    assert "이번 주" not in text
+
+
+def test_discovery_block_renders_candidates_with_warning():
+    watchlist = {"NVDA": _pos()}
+    discovery = [{"symbol": "AMD", "why": "NVDA와 동일 섹터 · 기사 4건"}]
+    text = report.build_report([], watchlist, {}, "2026-08-02", [], blocks={"positions", "discovery"}, discovery=discovery)
+    assert "🔎 오늘 기사에서 뜬 종목 (1)" in text
+    assert "AMD — NVDA와 동일 섹터" in text
+    assert report.DISCOVERY_WARNING in text
+
+
+def test_discovery_block_disabled_hides_section_even_with_candidates():
+    watchlist = {"NVDA": _pos()}
+    discovery = [{"symbol": "AMD", "why": "reason"}]
+    text = report.build_report([], watchlist, {}, "2026-08-02", [], blocks={"positions"}, discovery=discovery)
+    assert "AMD" not in text
+
+
+def test_default_blocks_preserve_pre_phase9_behavior():
+    # No blocks passed at all -> identical to the old hardcoded behavior.
+    watchlist = {"NVDA": _pos()}
+    signals = [_sig("NVDA", "red")]
+    text = report.build_report(signals, watchlist, {}, "2026-08-02", ["NVDA 실적(수)"])
+    assert "🔴 확인 필요 (1)" in text
+    assert "이번 주  NVDA 실적(수)" in text

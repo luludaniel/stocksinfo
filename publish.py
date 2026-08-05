@@ -54,22 +54,38 @@ def build_history_status(days_collected: int, per_band_min_samples: int) -> dict
     }
 
 
-def build_positions(watchlist: dict, fundamentals_data: dict, profiles_by_symbol: dict) -> list[dict]:
+def build_positions(watchlist: dict, fundamentals_data: dict, resolved_config: dict) -> list[dict]:
     """Every watchlist symbol, signal or not — this is what REVIEW.md's #6
     was about: axis A gets computed either way, so the dashboard should show
     it for every symbol instead of only the ones that happened to fire a rule.
+
+    shares/avg_price are optional per symbol (store.resolve_all_symbols) —
+    market_value and unrealized_return_pct are only computed when set, since
+    most of the pipeline (signals, focus scoring) works fine without them.
     """
     positions = []
     for symbol, pos in (watchlist or {}).items():
         if not pos or "error" in pos:
             continue
         fund = (fundamentals_data or {}).get(symbol) or {}
+        cfg = (resolved_config or {}).get(symbol) or {}
+        shares = cfg.get("shares")
+        avg_price = cfg.get("avg_price")
+        last_close = pos.get("last_close")
+
         entry = {
             "symbol": symbol,
             "name": fund.get("name") or "",
-            "profile": (profiles_by_symbol or {}).get(symbol),
+            "profile": cfg.get("profile"),
             "trailing_pe": fund.get("trailing_pe"),
             "next_earnings_date": fund.get("next_earnings_date"),
+            "shares": shares,
+            "avg_price": avg_price,
+            "market_value": round(shares * last_close, 2) if shares is not None and last_close is not None else None,
+            "unrealized_return_pct": (
+                round((last_close - avg_price) / avg_price * 100, 2)
+                if avg_price and last_close is not None else None
+            ),
         }
         for field in _POSITION_FIELDS:
             entry[field] = pos.get(field)
@@ -99,7 +115,7 @@ def build_calendar(fundamentals_data: dict, names: dict, today: date) -> list[di
 
 
 def build_latest(*, market_date: str, trigger: str, collector_errors: list, watchlist: dict,
-                  fundamentals_data: dict, profiles_by_symbol: dict, history_status: dict,
+                  fundamentals_data: dict, resolved_config: dict, history_status: dict,
                   focus: list, discovery: list, calendar: list) -> dict:
     failed_symbols = build_failed_symbols(watchlist)
     return {
@@ -110,7 +126,7 @@ def build_latest(*, market_date: str, trigger: str, collector_errors: list, watc
         "status": build_status(collector_errors, failed_symbols),
         "history_status": history_status,
         "focus": focus,
-        "positions": build_positions(watchlist, fundamentals_data, profiles_by_symbol),
+        "positions": build_positions(watchlist, fundamentals_data, resolved_config),
         "discovery": discovery,
         "calendar": calendar,
     }
