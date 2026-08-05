@@ -12,10 +12,14 @@
 <body class="bg-slate-50 text-slate-900 min-h-screen">
   <div class="max-w-3xl mx-auto px-4 py-6">
 
-    <header class="flex items-center justify-between mb-4">
+    <header class="flex items-center justify-between mb-1">
       <h1 class="text-xl font-bold">📊 StocksInfo</h1>
-      <div id="header-meta" class="text-sm text-slate-500 text-right"></div>
+      <div class="flex items-center gap-3">
+        <div id="header-meta" class="text-sm text-slate-500 text-right"></div>
+        <button id="refresh-btn" class="text-sm border border-slate-300 rounded px-3 py-1.5 whitespace-nowrap">🔄 지금 갱신</button>
+      </div>
     </header>
+    <div id="refresh-status" class="hidden text-xs text-slate-500 text-right mb-3"></div>
 
     <nav class="flex gap-2 mb-6 border-b border-slate-200">
       <button id="tab-btn-briefing" class="px-3 py-2 text-sm font-medium border-b-2 border-slate-900">브리핑</button>
@@ -34,7 +38,8 @@
       <div class="bg-white rounded-lg border border-slate-200 p-4">
         <div class="font-semibold mb-2">GitHub 액세스 토큰</div>
         <p class="text-xs text-slate-500 mb-2">
-          설정을 저장하려면 <code>Contents: Read and write</code> 권한의
+          설정 저장에는 <code>Contents: Read and write</code>, "지금 갱신" 버튼에는
+          <code>Actions: Read and write</code> 권한의
           <a class="underline" href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">
             Fine-grained Personal Access Token</a>이 필요합니다. 이 브라우저에만 저장되며 언제든 삭제할 수 있습니다.
         </p>
@@ -61,6 +66,8 @@
     // matter how the repo's visibility is set.
     const DATA_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/latest.json`;
     const API_BASE = `https://api.github.com/repos/${REPO}/contents`;
+    const ACTIONS_API_BASE = `https://api.github.com/repos/${REPO}/actions`;
+    const WORKFLOW_FILE = "daily_report.yml";
     const TOKEN_KEY = "stocksinfo_pat";
 
     const SEVERITY_DOT = { red: "🔴", yellow: "🟡" };
@@ -75,6 +82,7 @@
     };
     const ALL_SIGNAL_TYPES = Object.keys(SIGNAL_TYPE_LABELS);
     const EMAIL_BLOCK_LABELS = { focus: "오늘 볼 순서", positions: "전체 포지션", calendar: "이번 주 일정", discovery: "신규 발굴" };
+    const DISCOVERY_WARNING = "ⓘ 기사 빈도는 중장기 가치와 상관이 낮습니다. 매수 추천이 아니라 후보 제시입니다.";
 
     function el(tag, className, text) {
       const node = document.createElement(tag);
@@ -176,16 +184,83 @@
         stats.appendChild(el("div", "", `6M ${fmtPct(p.relative_strength_6m_pct, 0)}p`));
         stats.appendChild(el("div", "", `PER ${p.trailing_pe != null ? p.trailing_pe.toFixed(1) : "—"}`));
         card.appendChild(stats);
+
+        if (p.shares != null) {
+          const holding = el("div", "text-sm mt-2 pt-2 border-t border-slate-100 flex justify-between");
+          holding.appendChild(el("span", "text-slate-500", `보유 ${p.shares}주 · 평가금액 ${fmtNum(p.market_value, 0)}`));
+          if (p.unrealized_return_pct != null) {
+            const returnColor = p.unrealized_return_pct >= 0 ? "text-red-600" : "text-blue-600";
+            holding.appendChild(el("span", `font-medium ${returnColor}`, fmtPct(p.unrealized_return_pct, 1)));
+          }
+          card.appendChild(holding);
+        }
+
         grid.appendChild(card);
       });
       section.appendChild(grid);
       container.appendChild(section);
     }
 
+    function renderDiscovery(container, discovery) {
+      if (!discovery || discovery.length === 0) return;
+      const section = el("section");
+      const head = el("div", "flex items-center justify-between mb-2");
+      head.appendChild(el("h2", "text-lg font-semibold", "③ 오늘 기사에서 뜬 종목 (관심종목 밖)"));
+      section.appendChild(head);
+
+      const list = el("div", "space-y-2");
+      discovery.forEach((d) => {
+        const card = el("div", "bg-white rounded-lg border border-slate-200 p-3 text-sm");
+        const top = el("div", "flex items-baseline justify-between");
+        top.appendChild(el("div", "font-semibold", d.name ? `${d.symbol} ${d.name}` : d.symbol));
+        top.appendChild(el("div", "text-slate-500", d.why || ""));
+        card.appendChild(top);
+
+        if (d.headlines && d.headlines.length > 0) {
+          card.appendChild(el("div", "text-slate-500 mt-1", `"${d.headlines[0].title}"`));
+        }
+
+        const basic = d.basic || {};
+        const basicParts = [];
+        if (basic.trailing_pe != null) basicParts.push(`PER ${basic.trailing_pe.toFixed(1)}배`);
+        if (basic.week52_pct != null) basicParts.push(`52주 ${basic.week52_pct.toFixed(0)}% 지점`);
+        if (basicParts.length > 0) card.appendChild(el("div", "text-slate-500 mt-1", basicParts.join(" · ")));
+
+        const addBtn = el("button", "text-xs text-slate-900 underline mt-2", "+ 관심종목 추가");
+        addBtn.addEventListener("click", () => addDiscoveredSymbol(d));
+        card.appendChild(addBtn);
+
+        list.appendChild(card);
+      });
+      section.appendChild(list);
+      section.appendChild(el("div", "text-xs text-slate-400 mt-2", DISCOVERY_WARNING));
+      container.appendChild(section);
+    }
+
+    function addDiscoveredSymbol(candidate) {
+      selectTab("settings");
+      if (!settingsState) {
+        showToast(`설정 탭에서 토큰을 입력한 뒤 "+ 종목 추가"로 ${candidate.symbol}을(를) 추가해주세요.`);
+        return;
+      }
+      const list = document.getElementById("symbols-list");
+      if ([...list.children].some((c) => c.dataset.symbol === candidate.symbol)) {
+        showToast(`${candidate.symbol}은(는) 이미 있습니다.`, true);
+        return;
+      }
+      const market = candidate.symbol.endsWith(".KS") || candidate.symbol.endsWith(".KQ") ? "kr" : "us";
+      const entry = {
+        symbol: candidate.symbol, name: candidate.name || "", market,
+        profile: Object.keys(settingsState.watchlist.profiles || {})[0] || "watching", memo: "",
+      };
+      list.appendChild(renderSymbolCard(entry, settingsState.watchlist));
+      showToast(`${candidate.symbol} 추가됨 — 저장 버튼을 눌러야 반영됩니다.`);
+    }
+
     function renderCalendar(container, calendar) {
       if (!calendar || calendar.length === 0) return;
       const section = el("section");
-      section.appendChild(el("h2", "text-lg font-semibold mb-2", "③ 이번 주 일정"));
+      section.appendChild(el("h2", "text-lg font-semibold mb-2", "④ 이번 주 일정"));
       section.appendChild(el("div", "text-sm text-slate-600", calendar.map((c) => `${c.label}(${c.weekday})`).join(" · ")));
       container.appendChild(section);
     }
@@ -205,6 +280,7 @@
       renderFailedBanner(content, data.status);
       renderFocus(content, data.focus);
       renderPositions(content, data.positions);
+      renderDiscovery(content, data.discovery);
       renderCalendar(content, data.calendar);
       renderHistoryStatus(content, data.history_status);
       content.classList.remove("hidden");
@@ -324,6 +400,28 @@
       memoInput.value = entry.memo || "";
       memoInput.rows = 2;
       card.appendChild(memoInput);
+
+      // Optional — a symbol with neither still works fine everywhere else,
+      // this only unlocks 평가금액/수익률 display in ② 전체 포지션.
+      const holdingBox = el("div", "grid grid-cols-2 gap-2");
+      const sharesWrap = el("label", "flex flex-col gap-1 text-xs text-slate-600");
+      sharesWrap.appendChild(document.createTextNode("보유수량 (선택)"));
+      const sharesInput = el("input", "shares-input border border-slate-300 rounded px-2 py-1");
+      sharesInput.type = "number";
+      sharesInput.step = "any";
+      sharesInput.value = entry.shares ?? "";
+      sharesWrap.appendChild(sharesInput);
+      holdingBox.appendChild(sharesWrap);
+
+      const avgPriceWrap = el("label", "flex flex-col gap-1 text-xs text-slate-600");
+      avgPriceWrap.appendChild(document.createTextNode("평단가 (선택)"));
+      const avgPriceInput = el("input", "avg-price-input border border-slate-300 rounded px-2 py-1");
+      avgPriceInput.type = "number";
+      avgPriceInput.step = "any";
+      avgPriceInput.value = entry.avg_price ?? "";
+      avgPriceWrap.appendChild(avgPriceInput);
+      holdingBox.appendChild(avgPriceWrap);
+      card.appendChild(holdingBox);
 
       const details = el("details", "text-sm");
       details.appendChild(el("summary", "text-slate-600 cursor-pointer", "이 종목만 다르게"));
@@ -507,7 +605,12 @@
           if (value !== profileThresholds[input.dataset.key]) changedThresholds[input.dataset.key] = value;
         });
 
+        const sharesRaw = card.querySelector(".shares-input").value;
+        const avgPriceRaw = card.querySelector(".avg-price-input").value;
+
         const entry = { symbol, name, market: symbol.endsWith(".KS") || symbol.endsWith(".KQ") ? "kr" : "us", profile, memo };
+        if (sharesRaw !== "") entry.shares = parseFloat(sharesRaw);
+        if (avgPriceRaw !== "") entry.avg_price = parseFloat(avgPriceRaw);
         const overrides = {};
         if (signalsChanged) overrides.signals = checkedSignals;
         if (Object.keys(changedThresholds).length > 0) overrides.thresholds = changedThresholds;
@@ -586,9 +689,95 @@
       }
     }
 
+    // ---------- Refresh button (SPEC Phase 7): trigger workflow_dispatch,
+    // then poll until it completes, then reload the briefing tab. GitHub's
+    // dispatch endpoint doesn't hand back a run id (fire-and-forget 204), so
+    // the only way to find "the run we just started" is to poll the runs
+    // list for one created after we fired the request.
+    function sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    async function ghActionsFetch(path) {
+      const resp = await fetch(`${ACTIONS_API_BASE}${path}`, {
+        headers: { Authorization: `Bearer ${getToken()}`, Accept: "application/vnd.github+json" },
+      });
+      if (!resp.ok) throw new Error(`${path} 실패 (${resp.status})`);
+      return resp.json();
+    }
+
+    async function findRunAfter(dispatchedAt) {
+      for (let attempt = 0; attempt < 10; attempt++) {
+        await sleep(2000);
+        const body = await ghActionsFetch(`/workflows/${WORKFLOW_FILE}/runs?per_page=5`);
+        const candidate = (body.workflow_runs || []).find((r) => new Date(r.created_at) >= dispatchedAt);
+        if (candidate) return candidate;
+      }
+      throw new Error("실행을 찾지 못했습니다 (시간 초과)");
+    }
+
+    async function pollUntilComplete(runId, onProgress) {
+      for (let attempt = 0; attempt < 60; attempt++) {
+        const run = await ghActionsFetch(`/runs/${runId}`);
+        if (run.status === "completed") return run;
+        onProgress(run.status);
+        await sleep(5000);
+      }
+      throw new Error("실행 완료 대기 시간 초과");
+    }
+
+    async function triggerRefresh() {
+      const btn = document.getElementById("refresh-btn");
+      const statusEl = document.getElementById("refresh-status");
+
+      if (!getToken()) {
+        showToast("갱신하려면 먼저 설정 탭에서 GitHub 토큰을 입력해주세요.", true);
+        return;
+      }
+
+      btn.disabled = true;
+      statusEl.classList.remove("hidden");
+      statusEl.textContent = "갱신 요청 중...";
+      const dispatchedAt = new Date();
+
+      try {
+        const dispatchResp = await fetch(`${ACTIONS_API_BASE}/workflows/${WORKFLOW_FILE}/dispatches`, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${getToken()}`, Accept: "application/vnd.github+json" },
+          body: JSON.stringify({ ref: BRANCH }),
+        });
+        if (!dispatchResp.ok) throw new Error(`실행 요청 실패 (${dispatchResp.status})`);
+
+        statusEl.textContent = "실행 시작 대기 중...";
+        const run = await findRunAfter(dispatchedAt);
+
+        statusEl.textContent = "실행 중... (보통 2~4분 소요)";
+        const finished = await pollUntilComplete(run.id, (status) => {
+          statusEl.textContent = `실행 중... (${status}, 보통 2~4분 소요)`;
+        });
+
+        if (finished.conclusion === "success") {
+          statusEl.textContent = "완료 · 최신 데이터를 불러오는 중...";
+          await loadBriefing();
+          statusEl.textContent = "갱신 완료";
+          showToast("갱신 완료");
+        } else {
+          statusEl.textContent = `실행 실패: ${finished.conclusion}`;
+          showToast(`갱신 실패: ${finished.conclusion}`, true);
+        }
+      } catch (err) {
+        statusEl.textContent = "";
+        showToast(`갱신 실패: ${err.message}`, true);
+      } finally {
+        btn.disabled = false;
+        setTimeout(() => statusEl.classList.add("hidden"), 8000);
+      }
+    }
+
     // ---------- Wiring ----------
     document.getElementById("tab-btn-briefing").addEventListener("click", () => selectTab("briefing"));
     document.getElementById("tab-btn-settings").addEventListener("click", () => selectTab("settings"));
+    document.getElementById("refresh-btn").addEventListener("click", triggerRefresh);
 
     renderTokenStatus();
     loadBriefing();

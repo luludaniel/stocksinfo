@@ -52,7 +52,7 @@ def test_build_positions_includes_all_healthy_symbols_regardless_of_signals():
     }
     fundamentals = {"NVDA": {"name": "NVIDIA Corporation", "trailing_pe": 38.2,
                               "next_earnings_date": "2026-08-05"}}
-    positions = publish.build_positions(watchlist, fundamentals, {"NVDA": "core_holding"})
+    positions = publish.build_positions(watchlist, fundamentals, {"NVDA": {"profile": "core_holding"}})
     assert len(positions) == 1
     p = positions[0]
     assert p["symbol"] == "NVDA"
@@ -60,12 +60,35 @@ def test_build_positions_includes_all_healthy_symbols_regardless_of_signals():
     assert p["profile"] == "core_holding"
     assert p["week52_pct"] == 22.0
     assert p["trailing_pe"] == 38.2
+    assert p["shares"] is None
+    assert p["market_value"] is None
+    assert p["unrealized_return_pct"] is None
 
 
 def test_build_positions_excludes_failed_symbols():
     watchlist = {"NVDA": {"error": "boom"}}
     positions = publish.build_positions(watchlist, {}, {})
     assert positions == []
+
+
+def test_build_positions_computes_market_value_and_unrealized_return():
+    watchlist = {"NVDA": {"last_close": 150.0}}
+    resolved_config = {"NVDA": {"profile": "core_holding", "shares": 10, "avg_price": 100.0}}
+    positions = publish.build_positions(watchlist, {}, resolved_config)
+    p = positions[0]
+    assert p["shares"] == 10
+    assert p["avg_price"] == 100.0
+    assert p["market_value"] == 1500.0
+    assert p["unrealized_return_pct"] == 50.0
+
+
+def test_build_positions_market_value_needs_shares_not_avg_price():
+    watchlist = {"NVDA": {"last_close": 150.0}}
+    resolved_config = {"NVDA": {"shares": 10}}  # no avg_price
+    positions = publish.build_positions(watchlist, {}, resolved_config)
+    p = positions[0]
+    assert p["market_value"] == 1500.0
+    assert p["unrealized_return_pct"] is None
 
 
 def test_build_calendar_includes_earnings_and_ex_dividend_within_lookahead():
@@ -98,7 +121,7 @@ def test_build_latest_assembles_full_contract():
     fundamentals = {"NVDA": {"name": "NVIDIA"}}
     data = publish.build_latest(
         market_date="2026-08-02", trigger="schedule", collector_errors=[],
-        watchlist=watchlist, fundamentals_data=fundamentals, profiles_by_symbol={},
+        watchlist=watchlist, fundamentals_data=fundamentals, resolved_config={},
         history_status={"days_collected": 1, "per_band_ready_in_days": 19},
         focus=[], discovery=[], calendar=[],
     )

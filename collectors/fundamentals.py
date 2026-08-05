@@ -53,6 +53,7 @@ def fetch(symbols: list) -> dict:
 
             result[sym] = {
                 "name": info.get("shortName") or info.get("longName"),
+                "market_cap": info.get("marketCap"),
                 "trailing_pe": info.get("trailingPE"),
                 "forward_pe": info.get("forwardPE"),
                 "price_to_book": info.get("priceToBook"),

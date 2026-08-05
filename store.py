@@ -128,6 +128,10 @@ def resolve_all_symbols(watchlist: dict) -> dict:
             "name": entry.get("name", ""),
             "memo": entry.get("memo", ""),
             "profile": entry.get("profile"),
+            # Both optional — a symbol with neither is still fully usable,
+            # it just can't show a market value or unrealized return.
+            "shares": entry.get("shares"),
+            "avg_price": entry.get("avg_price"),
         }
     return resolved
 

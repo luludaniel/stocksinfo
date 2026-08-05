@@ -7,6 +7,7 @@ from datetime import date, datetime
 
 import os
 
+import discovery as discovery_engine
 import history
 import publish
 import recommend
@@ -184,27 +185,48 @@ def _history_note() -> str:
     return note
 
 
+def _has_reportable_content(watchlist: dict, fundamentals_data: dict, resolved_config: dict | None,
+                             today_str: str) -> bool:
+    """Whether today's run has anything worth a full email — a real signal or
+    a collection failure. Used to honor email.send_when_no_signal == "skip"
+    without silently treating a quiet day and a broken run the same way.
+    """
+    detected_signals = signal_engine.evaluate(watchlist, fundamentals_data, today_str, resolved_config)
+    has_failures = any(not pos or "error" in pos for pos in (watchlist or {}).values())
+    return bool(detected_signals) or has_failures
+
+
 def build_email(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_data: dict,
-                 resolved_config: dict | None = None) -> str:
+                 resolved_config: dict | None = None, email_config: dict | None = None,
+                 focus_config: dict | None = None, discovery: list | None = None) -> str:
     today = date.today()
     today_str = today.isoformat()
     names = _symbol_names(fundamentals_data)
+    blocks = frozenset((email_config or {}).get("blocks") or report.DEFAULT_BLOCKS)
 
     detected_signals = signal_engine.evaluate(watchlist, fundamentals_data, today_str, resolved_config)
 
     calendar_events = _ticker_calendar_events(fundamentals_data, names, today)
     calendar_events += [ev["name"] for ev in (econ_cal or {}).get("events", []) if ev.get("name")]
 
+    general_articles = (news_data or {}).get("articles", [])
+    related_news_by_symbol = _related_news_by_symbol(watchlist, names, general_articles)
+
+    focus = []
+    if "focus" in blocks:
+        focus = recommend.build_focus(
+            detected_signals, watchlist, fundamentals_data, related_news_by_symbol, today, focus_config,
+        )
+
     detail_text = ""
     if detected_signals:
-        general_articles = (news_data or {}).get("articles", [])
-        related_news_by_symbol = _related_news_by_symbol(watchlist, names, general_articles)
         enriched_signals = _attach_related_news(detected_signals, related_news_by_symbol)
         detail_text = interpret_signals(enriched_signals)
 
     return report.build_report(
         detected_signals, watchlist, names, today_str, calendar_events,
         detail_text=detail_text, history_note=_history_note(),
+        blocks=blocks, focus=focus, discovery=discovery,
     )
 
 
@@ -213,7 +235,8 @@ def _trigger_name() -> str:
 
 
 def build_latest_payload(watchlist: dict, fundamentals_data: dict, econ_cal: dict, news_data: dict,
-                          resolved_config: dict, collector_errors: list, focus_config: dict | None) -> dict:
+                          resolved_config: dict, collector_errors: list, focus_config: dict | None,
+                          discovery: list | None = None) -> dict:
     """Data-contract payload for data/latest.json — the dashboard's only
     interface into the pipeline (SPEC-DASHBOARD.md §5).
     """
@@ -225,7 +248,6 @@ def build_latest_payload(watchlist: dict, fundamentals_data: dict, econ_cal: dic
     general_articles = (news_data or {}).get("articles", [])
     related_news_by_symbol = _related_news_by_symbol(watchlist, names, general_articles)
 
-    profiles_by_symbol = {sym: cfg.get("profile") for sym, cfg in (resolved_config or {}).items()}
     focus = recommend.build_focus(
         detected_signals, watchlist, fundamentals_data, related_news_by_symbol, today, focus_config,
     )
@@ -233,8 +255,8 @@ def build_latest_payload(watchlist: dict, fundamentals_data: dict, econ_cal: dic
 
     return publish.build_latest(
         market_date=today_str, trigger=_trigger_name(), collector_errors=collector_errors,
-        watchlist=watchlist, fundamentals_data=fundamentals_data, profiles_by_symbol=profiles_by_symbol,
-        history_status=_history_status(), focus=focus, discovery=[], calendar=calendar,
+        watchlist=watchlist, fundamentals_data=fundamentals_data, resolved_config=resolved_config,
+        history_status=_history_status(), focus=focus, discovery=discovery or [], calendar=calendar,
     )
 
 
@@ -256,32 +278,44 @@ def main():
         fundamentals_data = data.get("fundamentals") or {}
 
         report_config = store.load_report_config()
+        today_str = date.today().isoformat()
+
+        # Computed once and shared: this is a real LLM call (extraction), so
+        # the email and the dashboard payload both consuming the same result
+        # matters for cost, not just tidiness.
+        general_articles = (data.get("news") or {}).get("articles", [])
+        discovery_list = discovery_engine.build_discovery(watchlist, general_articles, report_config.get("discovery"))
 
         email_body = build_email(
             watchlist, fundamentals_data, data.get("economic_cal") or {}, data.get("news") or {},
-            resolved_config,
+            resolved_config, report_config.get("email"), report_config.get("focus"), discovery_list,
         )
 
         # Persisted regardless of email outcome — the snapshot history matters
         # even if delivery fails, and shouldn't be a hidden side effect of
         # "building an email".
-        _save_snapshots(watchlist, fundamentals_data, date.today().isoformat())
+        _save_snapshots(watchlist, fundamentals_data, today_str)
 
         latest_payload = build_latest_payload(
             watchlist, fundamentals_data, data.get("economic_cal") or {}, data.get("news") or {},
-            resolved_config, data.get("_errors") or [], report_config.get("focus"),
+            resolved_config, data.get("_errors") or [], report_config.get("focus"), discovery_list,
         )
         publish.save_latest(latest_payload)
 
-        # 수신자 목록에서 발송 (없으면 .env의 EMAIL_RECEIVER로 fallback)
-        emails = report_config.get("email", {}).get("recipients", [])
-        if not emails:
-            from config import EMAIL_RECEIVER
-            emails = [EMAIL_RECEIVER]
+        send_when_no_signal = report_config.get("email", {}).get("send_when_no_signal", "one_line")
+        has_content = _has_reportable_content(watchlist, fundamentals_data, resolved_config, today_str)
+        if not has_content and send_when_no_signal == "skip":
+            log.info("No signals or failures today, and send_when_no_signal=skip — not sending.")
+        else:
+            # 수신자 목록에서 발송 (없으면 .env의 EMAIL_RECEIVER로 fallback)
+            emails = report_config.get("email", {}).get("recipients", [])
+            if not emails:
+                from config import EMAIL_RECEIVER
+                emails = [EMAIL_RECEIVER]
 
-        for email in emails:
-            send(email_body, to=email)
-            log.info(f"Delivered to {email}")
+            for email in emails:
+                send(email_body, to=email)
+                log.info(f"Delivered to {email}")
 
     except Exception:
         err = traceback.format_exc()
