@@ -4,9 +4,19 @@ from openai import OpenAI
 
 from config import OPENROUTER_API_KEY
 
+# The OpenAI SDK raises at construction time if api_key is empty/None (not
+# just when it's actually used) — so merely *importing* this module without
+# OPENROUTER_API_KEY set would crash, regardless of whether anything ever
+# calls out to OpenRouter. That's exactly what happened in CI: pytest
+# collection imports every test file before any fixture (including
+# conftest's fake-env-var one) has run, and CI's "Run tests" step doesn't
+# set OPENROUTER_API_KEY at all — so any module that imports this one at
+# collection time took the whole suite down before main.py ever ran.
+# config.validate() is the actual gate for "is a real key configured";
+# this fallback just keeps import-time inert.
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=OPENROUTER_API_KEY,
+    api_key=OPENROUTER_API_KEY or "unset",
 )
 
 # Verified against https://openrouter.ai/api/v1/models at write time — OpenRouter's
