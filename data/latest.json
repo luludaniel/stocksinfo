@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-07T01:36:42+00:00",
+  "generated_at": "2026-08-07T05:37:57+00:00",
   "market_date": "2026-08-07",
-  "trigger": "schedule",
+  "trigger": "workflow_dispatch",
   "status": {
     "ok": true,
     "failed_symbols": [],
@@ -13,56 +13,6 @@
     "per_band_ready_in_days": 17
   },
   "focus": [
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Why Rivian's R2 EV could be its new star vehicle",
-          "url": "https://finance.yahoo.com/video/why-rivians-r2-ev-could-213212115.html"
-        },
-        {
-          "title": "Prediction: Tesla's Share Price Dip Will Prove an Excellent Buying Opportunity",
-          "url": "https://www.fool.com/investing/2026/08/06/prediction-teslas-share-price-dip-will-prove-an-ex/"
-        },
-        {
-          "title": "Huge News For Tesla Stock Fans",
-          "url": "https://finance.yahoo.com/technology/ai/articles/huge-news-tesla-stock-fans-210128900.html"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "3 Stocks to Buy Following SpaceX's First Earnings Call",
-          "url": "https://www.fool.com/investing/2026/08/06/3-stocks-to-buy-following-spacexs-first-earnings-c/"
-        },
-        {
-          "title": "Jamie Dimon makes huge call on AI and U.S. economy",
-          "url": "https://www.thestreet.com/economy/jamie-dimon-ai-us-economy-growth"
-        },
-        {
-          "title": "2 Energy Stocks With More Hype Than Fundamentals Right Now",
-          "url": "https://www.fool.com/investing/2026/08/06/2-energy-stocks-with-more-hype-than-fundamentals-r/"
-        }
-      ],
-      "rank": 2
-    },
     {
       "symbol": "005930.KS",
       "score": 1.5,
@@ -86,6 +36,56 @@
           "url": "https://finance.yahoo.com/technology/ai/articles/sandisks-outlook-just-shook-entire-170146630.html"
         }
       ],
+      "rank": 1
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "KOSPI, Nikkei Reverse Gains as SoftBank, SK Hynix Both Drop",
+          "url": "https://beincrypto.com/kospi-nikkei-softbank-sk-hynix-selloff/"
+        },
+        {
+          "title": "Asia Pacific Share Sales Overcome Volatility to Shatter Records",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asia-pacific-share-sales-overcome-040017919.html"
+        },
+        {
+          "title": "Micron Pares Most of Its Losses Even as Other Memory Stocks Reel",
+          "url": "https://www.barrons.com/articles/micron-stock-memory-chip-73cdf24e?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Why Rivian's R2 EV could be its new star vehicle",
+          "url": "https://finance.yahoo.com/video/why-rivians-r2-ev-could-213212115.html"
+        },
+        {
+          "title": "Tesla is 'the best choice': Valvetronic Designs founder talks customized vs. everyday cars",
+          "url": "https://finance.yahoo.com/video/tesla-best-choice-valvetronic-designs-120000265.html"
+        },
+        {
+          "title": "SpaceX (SPCX) Unveils Orbital AI Network And $16.8 Billion Chip Factory Plans",
+          "url": "https://finance.yahoo.com/technology/ai/articles/spacex-spcx-unveils-orbital-ai-051429949.html"
+        }
+      ],
       "rank": 3
     },
     {
@@ -99,22 +99,22 @@
       "signals": [],
       "news": [
         {
+          "title": "Apple’s Capex Strategy Worked But Other Pressures Are Mounting Now",
+          "url": "https://247wallst.com/investing/2026/08/07/apples-capex-strategy-worked-but-other-pressures-are-mounting-now/"
+        },
+        {
           "title": "MP Earnings Show Chinese Rare-Earth Monopoly Is Fading",
           "url": "https://www.barrons.com/articles/mp-materials-earnings-stock-price-269904ba?siteid=yhoof2&yptr=yahoo"
         },
         {
           "title": "$2.9 Billion In Payouts, A Lagging Stock: The SNAP Trade-Off",
           "url": "https://www.trefis.com/articles/610341/2-9-billion-in-payouts-a-lagging-stock-the-snap-trade-off/2026-08-06"
-        },
-        {
-          "title": "Top Research Reports for Apple, Shell & Toyota Motor",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/top-research-reports-apple-shell-201400129.html"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "000660.KS",
+      "symbol": "NVDA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -124,16 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Micron Pares Most of Its Losses Even as Other Memory Stocks Reel",
-          "url": "https://www.barrons.com/articles/micron-stock-memory-chip-73cdf24e?siteid=yhoof2&yptr=yahoo"
+          "title": "SpaceX (SPCX) Unveils Orbital AI Network And $16.8 Billion Chip Factory Plans",
+          "url": "https://finance.yahoo.com/technology/ai/articles/spacex-spcx-unveils-orbital-ai-051429949.html"
         },
         {
-          "title": "The Best IPOs Are Punching Above Their Weight. 3 Surprising Winners.",
-          "url": "https://www.barrons.com/articles/ipo-spacex-sk-hynix-lime-stock-49cdea46?siteid=yhoof2&yptr=yahoo"
+          "title": "SharonAI Holdings Inc (SHAZ) (Q2 2026) Earnings Call Highlights: AI Capacity Surges to 212MW ...",
+          "url": "https://finance.yahoo.com/technology/ai/articles/sharonai-holdings-inc-shaz-q2-050635678.html"
         },
         {
-          "title": "SpaceX, Honeywell Aerospace, Sandisk, D-Wave, Datadog, and More Stocks That Explain Today’s Market",
-          "url": "https://www.barrons.com/articles/stock-movers-58e0a18d?siteid=yhoof2&yptr=yahoo"
+          "title": "SoFi and Visa Earnings Point to Consumer Confidence",
+          "url": "https://www.fool.com/investing/2026/08/07/sofi-and-visa-earnings-point-to-consumer-confidence/"
         }
       ],
       "rank": 5
@@ -164,7 +164,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.86797,
+      "trailing_pe": 35.704,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 234500.0,
-      "change_pct": 1.74,
-      "week52_pct": 57.0,
-      "pct_vs_ma200": 19.44,
-      "drawdown_from_high_pct": -35.24,
-      "return_3m_pct": -13.53,
-      "return_6m_pct": 46.57,
-      "return_12m_pct": 259.76,
-      "relative_strength_6m_pct": 26.38
+      "last_close": 233500.0,
+      "change_pct": 1.3,
+      "week52_pct": 56.7,
+      "pct_vs_ma200": 18.93,
+      "drawdown_from_high_pct": -35.52,
+      "return_3m_pct": -13.9,
+      "return_6m_pct": 45.94,
+      "return_12m_pct": 258.23,
+      "relative_strength_6m_pct": 26.03
     },
     {
       "symbol": "000660.KS",
@@ -230,15 +230,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1446000.0,
-      "change_pct": -3.28,
-      "week52_pct": 44.9,
-      "pct_vs_ma200": 20.19,
-      "drawdown_from_high_pct": -50.46,
-      "return_3m_pct": -12.56,
-      "return_6m_pct": 59.4,
-      "return_12m_pct": 438.79,
-      "relative_strength_6m_pct": 39.21
+      "last_close": 1426000.0,
+      "change_pct": -4.62,
+      "week52_pct": 44.2,
+      "pct_vs_ma200": 18.54,
+      "drawdown_from_high_pct": -51.15,
+      "return_3m_pct": -13.77,
+      "return_6m_pct": 57.19,
+      "return_12m_pct": 431.34,
+      "relative_strength_6m_pct": 37.28
     }
   ],
   "discovery": [],
