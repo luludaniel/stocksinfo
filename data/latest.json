@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-04T23:32:46+00:00",
-  "market_date": "2026-08-04",
+  "generated_at": "2026-08-07T01:36:42+00:00",
+  "market_date": "2026-08-07",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,12 +9,12 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 2,
-    "per_band_ready_in_days": 18
+    "days_collected": 3,
+    "per_band_ready_in_days": 17
   },
   "focus": [
     {
-      "symbol": "005930.KS",
+      "symbol": "TSLA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -24,16 +24,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Sandisk bulls are probably eyeing this number on earnings day: AlphaSpace stat of the evening",
-          "url": "https://finance.yahoo.com/markets/article/sandisk-bulls-are-probably-eyeing-this-number-on-earnings-day-alphaspace-stat-of-the-evening-220000368.html"
+          "title": "Why Rivian's R2 EV could be its new star vehicle",
+          "url": "https://finance.yahoo.com/video/why-rivians-r2-ev-could-213212115.html"
         },
         {
-          "title": "SK Hynix Stock Gets a Flurry of Buy Ratings. Why Analysts Love the Memory-Chip Maker.",
-          "url": "https://www.barrons.com/articles/why-sk-hynix-stock-memory-chip-sandisk-25416c02?siteid=yhoof2&yptr=yahoo"
+          "title": "Prediction: Tesla's Share Price Dip Will Prove an Excellent Buying Opportunity",
+          "url": "https://www.fool.com/investing/2026/08/06/prediction-teslas-share-price-dip-will-prove-an-ex/"
         },
         {
-          "title": "Samsung Retakes Lead as Micron Closes In",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-retakes-lead-micron-closes-195810393.html"
+          "title": "Huge News For Tesla Stock Fans",
+          "url": "https://finance.yahoo.com/technology/ai/articles/huge-news-tesla-stock-fans-210128900.html"
         }
       ],
       "rank": 1
@@ -49,19 +49,44 @@
       "signals": [],
       "news": [
         {
-          "title": "SpaceX teams up with Nvidia: Musk says Vera Rubin is 'the best AI computer'",
-          "url": "https://finance.yahoo.com/video/spacex-teams-nvidia-musk-says-221211771.html"
+          "title": "3 Stocks to Buy Following SpaceX's First Earnings Call",
+          "url": "https://www.fool.com/investing/2026/08/06/3-stocks-to-buy-following-spacexs-first-earnings-c/"
         },
         {
-          "title": "'This was not an exceptional result': Strategist talks AMD earnings & 'shocking' capex",
-          "url": "https://finance.yahoo.com/video/not-exceptional-result-strategist-talks-205254303.html"
+          "title": "Jamie Dimon makes huge call on AI and U.S. economy",
+          "url": "https://www.thestreet.com/economy/jamie-dimon-ai-us-economy-growth"
         },
         {
-          "title": "3 Reasons to Buy Apple Stock on the Dip as CEO Tim Cook Steps Down",
-          "url": "https://www.fool.com/investing/2026/08/04/3-reasons-to-buy-apple-stock-on-the-dip-as-ceo-tim/"
+          "title": "2 Energy Stocks With More Hype Than Fundamentals Right Now",
+          "url": "https://www.fool.com/investing/2026/08/06/2-energy-stocks-with-more-hype-than-fundamentals-r/"
         }
       ],
       "rank": 2
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "What Does Samsung Electronics (KOSE:A005930) Gain From Its Netlist Deal?",
+          "url": "https://finance.yahoo.com/technology/ai/articles/does-samsung-electronics-kose-a005930-001633923.html"
+        },
+        {
+          "title": "Samsung's Biggest Smartphone Bet May Be Paying Off",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsungs-biggest-smartphone-bet-may-172056351.html"
+        },
+        {
+          "title": "Sandisk's Outlook Just Shook the Entire AI Memory Trade",
+          "url": "https://finance.yahoo.com/technology/ai/articles/sandisks-outlook-just-shook-entire-170146630.html"
+        }
+      ],
+      "rank": 3
     },
     {
       "symbol": "AAPL",
@@ -74,41 +99,16 @@
       "signals": [],
       "news": [
         {
-          "title": "3 Reasons to Buy Apple Stock on the Dip as CEO Tim Cook Steps Down",
-          "url": "https://www.fool.com/investing/2026/08/04/3-reasons-to-buy-apple-stock-on-the-dip-as-ceo-tim/"
+          "title": "MP Earnings Show Chinese Rare-Earth Monopoly Is Fading",
+          "url": "https://www.barrons.com/articles/mp-materials-earnings-stock-price-269904ba?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "OpenAI Dumps Apple Employees' Text Messages to Fight Trade Secret Suit",
-          "url": "https://decrypt.co/374928/openai-emails-text-messages-apple-trade-secrets-lawsuit"
+          "title": "$2.9 Billion In Payouts, A Lagging Stock: The SNAP Trade-Off",
+          "url": "https://www.trefis.com/articles/610341/2-9-billion-in-payouts-a-lagging-stock-the-snap-trade-off/2026-08-06"
         },
         {
-          "title": "Here's When SpaceX Expects $1 Trillion in Annual Revenue",
-          "url": "https://www.barrons.com/livecoverage/spacex-earnings-stock-price-ipo-elon-musk/card/here-s-when-spacex-expects-1-trillion-in-annual-revenue--hfvz8hHOfzAcK9nfzk4c?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "SpaceX's Q2 results top estimates but stock drops on AI capex costs",
-          "url": "https://finance.yahoo.com/technology/article/spacexs-q2-results-top-estimates-but-stock-drops-on-ai-capex-costs-132323178.html"
-        },
-        {
-          "title": "SpaceX profitability will come down to Starlink's success: Lee Munson",
-          "url": "https://finance.yahoo.com/video/spacex-profitability-come-down-starlinks-150000084.html"
-        },
-        {
-          "title": "Elon Musk repeatedly one-upped his execs on SpaceX’s first earnings call",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-repeatedly-one-upped-223058512.html"
+          "title": "Top Research Reports for Apple, Shell & Toyota Motor",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/top-research-reports-apple-shell-201400129.html"
         }
       ],
       "rank": 4
@@ -124,16 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Sandisk bulls are probably eyeing this number on earnings day: AlphaSpace stat of the evening",
-          "url": "https://finance.yahoo.com/markets/article/sandisk-bulls-are-probably-eyeing-this-number-on-earnings-day-alphaspace-stat-of-the-evening-220000368.html"
+          "title": "Micron Pares Most of Its Losses Even as Other Memory Stocks Reel",
+          "url": "https://www.barrons.com/articles/micron-stock-memory-chip-73cdf24e?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Marvell, Sandisk, SK Hynix lead semiconductor stock rally as S&P 500 trades at record highs",
-          "url": "https://finance.yahoo.com/markets/article/marvell-sandisk-sk-hynix-lead-semiconductor-stock-rally-as-sp-500-trades-at-record-highs-172216048.html"
+          "title": "The Best IPOs Are Punching Above Their Weight. 3 Surprising Winners.",
+          "url": "https://www.barrons.com/articles/ipo-spacex-sk-hynix-lime-stock-49cdea46?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Even Big Profits Aren’t Enough to Keep Chip Investors Happy",
-          "url": "https://www.wsj.com/finance/stocks/even-big-profits-arent-enough-to-keep-chip-investors-happy-36acfc66?siteid=yhoof2&yptr=yahoo"
+          "title": "SpaceX, Honeywell Aerospace, Sandisk, D-Wave, Datadog, and More Stocks That Explain Today’s Market",
+          "url": "https://www.barrons.com/articles/stock-movers-58e0a18d?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -144,49 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 32.506134,
+      "trailing_pe": 33.535988,
       "next_earnings_date": "2026-08-26",
-      "last_close": 211.94,
-      "change_pct": 2.56,
-      "week52_pct": 66.6,
-      "pct_vs_ma200": 9.69,
-      "drawdown_from_high_pct": -9.99,
-      "return_3m_pct": 6.91,
-      "return_6m_pct": 14.32,
-      "return_12m_pct": 22.16,
-      "relative_strength_6m_pct": 3.43
+      "shares": null,
+      "avg_price": null,
+      "market_value": null,
+      "unrealized_return_pct": null,
+      "last_close": 218.99,
+      "change_pct": -0.1,
+      "week52_pct": 76.6,
+      "pct_vs_ma200": 13.12,
+      "drawdown_from_high_pct": -7.0,
+      "return_3m_pct": 5.49,
+      "return_6m_pct": 25.87,
+      "return_12m_pct": 23.01,
+      "relative_strength_6m_pct": 13.85
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.520092,
+      "trailing_pe": 35.86797,
       "next_earnings_date": "2026-10-29",
-      "last_close": 309.38,
-      "change_pct": 1.96,
-      "week52_pct": 77.7,
-      "pct_vs_ma200": 11.19,
-      "drawdown_from_high_pct": -9.03,
-      "return_3m_pct": 11.86,
-      "return_6m_pct": 14.79,
-      "return_12m_pct": 53.48,
-      "relative_strength_6m_pct": 3.9
+      "shares": null,
+      "avg_price": null,
+      "market_value": null,
+      "unrealized_return_pct": null,
+      "last_close": 312.41,
+      "change_pct": 0.45,
+      "week52_pct": 78.3,
+      "pct_vs_ma200": 12.03,
+      "drawdown_from_high_pct": -8.14,
+      "return_3m_pct": 8.76,
+      "return_6m_pct": 13.2,
+      "return_12m_pct": 54.57,
+      "relative_strength_6m_pct": 1.18
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 297.5909,
+      "trailing_pe": 293.1468,
       "next_earnings_date": "2026-10-21",
-      "last_close": 327.35,
-      "change_pct": 1.64,
-      "week52_pct": 15.2,
-      "pct_vs_ma200": -20.26,
-      "drawdown_from_high_pct": -33.18,
-      "return_3m_pct": -16.6,
-      "return_6m_pct": -22.39,
-      "return_12m_pct": 8.17,
-      "relative_strength_6m_pct": -33.28
+      "shares": null,
+      "avg_price": null,
+      "market_value": null,
+      "unrealized_return_pct": null,
+      "last_close": 319.53,
+      "change_pct": -0.63,
+      "week52_pct": 11.1,
+      "pct_vs_ma200": -21.95,
+      "drawdown_from_high_pct": -34.77,
+      "return_3m_pct": -19.86,
+      "return_6m_pct": -21.3,
+      "return_12m_pct": 3.5,
+      "relative_strength_6m_pct": -33.32
     },
     {
       "symbol": "005930.KS",
@@ -194,15 +206,19 @@
       "profile": "watching",
       "trailing_pe": null,
       "next_earnings_date": "2026-10-28",
-      "last_close": 240000.0,
-      "change_pct": 0.21,
-      "week52_pct": 58.9,
-      "pct_vs_ma200": 23.6,
-      "drawdown_from_high_pct": -33.72,
-      "return_3m_pct": 8.96,
-      "return_6m_pct": 50.95,
-      "return_12m_pct": 258.42,
-      "relative_strength_6m_pct": 24.53
+      "shares": null,
+      "avg_price": null,
+      "market_value": null,
+      "unrealized_return_pct": null,
+      "last_close": 234500.0,
+      "change_pct": 1.74,
+      "week52_pct": 57.0,
+      "pct_vs_ma200": 19.44,
+      "drawdown_from_high_pct": -35.24,
+      "return_3m_pct": -13.53,
+      "return_6m_pct": 46.57,
+      "return_12m_pct": 259.76,
+      "relative_strength_6m_pct": 26.38
     },
     {
       "symbol": "000660.KS",
@@ -210,15 +226,19 @@
       "profile": "watching",
       "trailing_pe": null,
       "next_earnings_date": "2026-10-27",
-      "last_close": 1577000.0,
-      "change_pct": 0.64,
-      "week52_pct": 49.8,
-      "pct_vs_ma200": 32.93,
-      "drawdown_from_high_pct": -45.97,
-      "return_3m_pct": 22.65,
-      "return_6m_pct": 97.52,
-      "return_12m_pct": 481.13,
-      "relative_strength_6m_pct": 71.1
+      "shares": null,
+      "avg_price": null,
+      "market_value": null,
+      "unrealized_return_pct": null,
+      "last_close": 1446000.0,
+      "change_pct": -3.28,
+      "week52_pct": 44.9,
+      "pct_vs_ma200": 20.19,
+      "drawdown_from_high_pct": -50.46,
+      "return_3m_pct": -12.56,
+      "return_6m_pct": 59.4,
+      "return_12m_pct": 438.79,
+      "relative_strength_6m_pct": 39.21
     }
   ],
   "discovery": [],
