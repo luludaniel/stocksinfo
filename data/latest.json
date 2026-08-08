@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-07T23:05:01+00:00",
-  "market_date": "2026-08-07",
+  "generated_at": "2026-08-08T22:57:09+00:00",
+  "market_date": "2026-08-08",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,59 +9,34 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 3,
-    "per_band_ready_in_days": 17
+    "days_collected": 4,
+    "per_band_ready_in_days": 16
   },
   "focus": [
     {
       "symbol": "AAPL",
-      "score": 1.5,
+      "score": 2.5,
       "score_breakdown": {
         "severity": 0,
         "news": 1.5,
-        "event": 0.0
+        "event": 1.0
       },
       "signals": [],
       "news": [
         {
-          "title": "OpenAI developing $300+ AI speaker to challenge Amazon Alexa",
-          "url": "https://finance.yahoo.com/video/openai-developing-300-ai-speaker-202000842.html"
+          "title": "VGT Puts 39 Cents of Every Dollar Into Just 3 Stocks. The Pairing That Fixes It Without Selling",
+          "url": "https://247wallst.com/investing/etf/2026/08/08/vgt-puts-39-cents-of-every-dollar-into-just-3-stocks-the-pairing-that-fixes-it-without-selling/"
         },
         {
-          "title": "What we know about OpenAI's upcoming handheld device: Bloomberg",
-          "url": "https://finance.yahoo.com/video/know-openais-upcoming-handheld-device-140247594.html"
+          "title": "Berkshire Hathaway Just Did Something It Hasn’t Done in More Than 3 Years",
+          "url": "https://247wallst.com/investing/2026/08/08/berkshire-hathaway-just-did-something-it-hasnt-done-in-more-than-3-years/"
         },
         {
-          "title": "MP Earnings Show Chinese Rare-Earth Monopoly Is Fading. The Stock Is Up.",
-          "url": "https://www.barrons.com/articles/mp-materials-earnings-stock-price-269904ba?siteid=yhoof2&yptr=yahoo"
+          "title": "Bank of America revamps Apple stock price target after earnings",
+          "url": "https://www.thestreet.com/investing/stocks/bank-of-america-apple-aapl-stock-price-target-after-earnings"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Nvidia ends week up more than 10% as AI chip fears ease",
-          "url": "https://finance.yahoo.com/technology/article/nvidia-ends-week-up-more-than-10-as-ai-chip-fears-ease-205751147.html"
-        },
-        {
-          "title": "Call options explained: From opening trade to expiration",
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/call-options-165604768.html"
-        },
-        {
-          "title": "Why Fluor Stock Rocked the Market Today",
-          "url": "https://www.fool.com/investing/2026/08/07/why-fluor-stock-rocked-the-market-today/"
-        }
-      ],
-      "rank": 2
     },
     {
       "symbol": "005930.KS",
@@ -74,44 +49,19 @@
       "signals": [],
       "news": [
         {
-          "title": "SK Hynix invests $38B in new plants amid AI memory shortages",
-          "url": "https://finance.yahoo.com/video/sk-hynix-invests-38b-plants-200856730.html"
+          "title": "Netlist (NLST) Reframes Its Story With Samsung As Valuation Questions Linger",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/netlist-nlst-reframes-story-samsung-091157904.html"
         },
         {
           "title": "Why Apple’s 10% Drop Fails to Tell the Whole Story",
           "url": "https://finance.yahoo.com/markets/stocks/articles/why-apple-10-drop-fails-203810284.html"
         },
         {
-          "title": "Samsung Stock Edges Higher as Investors Demand $32 Billion Buyback",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stock-edges-higher-investors-191912588.html"
+          "title": "SK Hynix invests $38B in new plants amid AI memory shortages",
+          "url": "https://finance.yahoo.com/video/sk-hynix-invests-38b-plants-200856730.html"
         }
       ],
-      "rank": 3
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Stock Market Today, Aug. 7: Space Exploration Technologies Surges on Q2 Revenue Beat, Lockup Relief, and Terafab Update",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/08/07/stock-market-today-aug-7-space-exploration-technologies-surges-on-q2-revenue-beat-lockup-relief-and-terafab-update/"
-        },
-        {
-          "title": "Tesla Stock Rises to End Good Week. Thank the Usual Suspects.",
-          "url": "https://www.barrons.com/articles/tesla-stock-rises-week-d1d90970?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "2 Reasons Tesla Could Monopolize the U.S. Robotaxi Market",
-          "url": "https://www.fool.com/investing/2026/08/07/meet-the-quiet-monopoly-hiding-in-the-industrial-s/"
-        }
-      ],
-      "rank": 4
+      "rank": 2
     },
     {
       "symbol": "000660.KS",
@@ -124,16 +74,66 @@
       "signals": [],
       "news": [
         {
-          "title": "SK Hynix Drops $38 Billion on AI Chips. Here's Why Investors Are Watching",
-          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-drops-38-billion-193140229.html"
+          "title": "SanDisk Just Unveiled the First High-Bandwidth Flash Standard. What That Means for SNDK Stock.",
+          "url": "https://www.barchart.com/story/news/3736261/sandisk-just-unveiled-the-first-high-bandwidth-flash-standard-what-that-means-for-sndk-stock"
         },
         {
-          "title": "Samsung Stock Edges Higher as Investors Demand $32 Billion Buyback",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stock-edges-higher-investors-191912588.html"
+          "title": "Is SK Hynix (SKHY) Undervalued On Its $38b Fab Expansion Plan?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-skhy-undervalued-38b-061335703.html"
         },
         {
-          "title": "Jim Cramer Didn’t Think Seagate Technology Holdings plc (NASDAQ:STX)’s Earnings Were Bad",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-didn-t-think-182716107.html"
+          "title": "Situational Awareness Bets $400 Million on Stealth Chip Startup After Crash",
+          "url": "https://www.wsj.com/livecoverage/july-jobs-report-stock-market-08-07-2026/card/situational-awareness-bets-400-million-on-stealth-chip-startup-after-crash-Gc2dffMgSDSRpRvPvOb0?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Tech stocks today: Shares climb after rocky week",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-shares-climb-after-rocky-week-140419479.html"
+        },
+        {
+          "title": "Why the Market Continues to Sleep on Micron's Growth Potential",
+          "url": "https://www.fool.com/investing/2026/08/08/why-the-market-continues-to-sleep-on-microns-growt/"
+        },
+        {
+          "title": "Warren Buffett Warned About the Dot-Com Bubble. Now, the Stock Market Is Flashing the Same Warning Signal.",
+          "url": "https://www.fool.com/investing/2026/08/08/warren-buffett-warned-about-the-dot-com-bubble-now/"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Rivian's make-or-break R2 midsize EV delivers: Road test",
+          "url": "https://finance.yahoo.com/markets/article/rivians-make-or-break-r2-midsize-ev-delivers-road-test-143152026.html"
+        },
+        {
+          "title": "When Leverage Goes Wrong on Wall Street",
+          "url": "https://www.fool.com/investing/2026/08/08/when-leverage-goes-wrong-on-wall-street/"
+        },
+        {
+          "title": "Jim Cramer Is Telling Investors to Accumulate SpaceX for the Long Term",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-telling-investors-accumulate-200218837.html"
         }
       ],
       "rank": 5
@@ -144,7 +144,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 34.29709,
+      "trailing_pe": 34.244648,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
@@ -164,7 +164,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.93234,
+      "trailing_pe": 35.97359,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -184,7 +184,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 301.44952,
+      "trailing_pe": 304.24072,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -218,7 +218,7 @@
       "return_3m_pct": -14.82,
       "return_6m_pct": 44.38,
       "return_12m_pct": 254.39,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 24.58
     },
     {
       "symbol": "000660.KS",
@@ -238,26 +238,10 @@
       "return_3m_pct": -14.01,
       "return_6m_pct": 56.75,
       "return_12m_pct": 429.85,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 36.95
     }
   ],
-  "discovery": [
-    {
-      "symbol": "TMO",
-      "name": "Thermo Fisher Scientific Inc",
-      "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "써모 피셔 CEO 마크 카스퍼, 860만 달러 TMO 주식 매각"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 32.00431,
-        "week52_pct": 77.9,
-        "market_cap_usd": 219629895680
-      }
-    }
-  ],
+  "discovery": [],
   "calendar": [
     {
       "date": "2026-08-10",
