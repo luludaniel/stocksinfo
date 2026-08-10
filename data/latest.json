@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T22:59:20+00:00",
-  "market_date": "2026-08-09",
+  "generated_at": "2026-08-10T23:06:24+00:00",
+  "market_date": "2026-08-10",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,8 +9,8 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 5,
-    "per_band_ready_in_days": 15
+    "days_collected": 6,
+    "per_band_ready_in_days": 14
   },
   "focus": [
     {
@@ -24,22 +24,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Apple CEO Tim Cook Just Passed His Successor a Mess",
-          "url": "https://www.fool.com/investing/2026/08/09/apple-ceo-tim-cook-just-passed-his-successor-a-mes/"
+          "title": "Apple downgraded at Jefferies over iPhone yields and growth concerns",
+          "url": "https://finance.yahoo.com/video/apple-downgraded-jefferies-over-iphone-202918014.html"
         },
         {
-          "title": "Canaccord Genuity Group Q1 Earnings Call Highlights",
-          "url": "https://www.marketbeat.com/instant-alerts/canaccord-genuity-group-q1-earnings-call-highlights-2026-08-09/?utm_source=yahoofinance&utm_medium=yahoofinance"
+          "title": "Dow Jones Futures: Surging Oil Prices Spark Stock Market Losses; SpaceX Rival Rocket Lab Dives On Earnings",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-oil-prices-spacex-rival-rocket-lab/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "If You Had Bought $10,000 of Apple Stock When Steve Jobs Handpicked Tim Cook as the Next CEO, Here's How Much You'd Have Today",
-          "url": "https://www.fool.com/investing/2026/08/09/if-bought-apple-stock-when-steve-jobs-tim-cook/"
+          "title": "Microsoft Stock Runs One Of The Market's Biggest Cash-Return Machines",
+          "url": "https://www.trefis.com/articles/610719/microsoft-stock-runs-one-of-the-markets-biggest-cash-return-machines/2026-08-10"
         }
       ],
       "rank": 1
     },
     {
-      "symbol": "NVDA",
+      "symbol": "005930.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -49,16 +49,16 @@
       "signals": [],
       "news": [
         {
-          "title": "How AI agents can power the S&P 500 higher",
-          "url": "https://finance.yahoo.com/markets/article/how-ai-agents-can-power-the-sp-500-higher-123000201.html"
+          "title": "Apple downgraded at Jefferies over iPhone yields and growth concerns",
+          "url": "https://finance.yahoo.com/video/apple-downgraded-jefferies-over-iphone-202918014.html"
         },
         {
-          "title": "'Very little to like': Wall Street assesses surprise July jobs report as stocks jump",
-          "url": "https://finance.yahoo.com/markets/article/very-little-to-like-wall-street-assesses-surprise-july-jobs-report-as-stocks-jump-113529334.html"
+          "title": "Memory chip crunch could last 2 more years, JPMorgan says",
+          "url": "https://finance.yahoo.com/video/memory-chip-crunch-could-last-143400576.html"
         },
         {
-          "title": "Dow Jones Futures Fall As Market Bulls Rule; Cisco, Lumentum Earnings Ahead",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-warren-buffett-cisco-lumentum-earnings/?src=A00220&yptr=yahoo"
+          "title": "The ETFs Most Exposed to the 2026 Chip Supply Chain Crisis — Winners and Losers",
+          "url": "http://www.etf.com/sections/news/etfs-most-exposed-2026-chip-supply-chain-crisis-winners-and-losers?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss"
         }
       ],
       "rank": 2
@@ -74,22 +74,22 @@
       "signals": [],
       "news": [
         {
-          "title": "What Could SK Hynix (KOSE:A000660) New AI Memory Fabs Mean For Investors?",
-          "url": "https://finance.yahoo.com/technology/ai/articles/could-sk-hynix-kose-a000660-201021545.html"
+          "title": "Memory chip crunch could last 2 more years, JPMorgan says",
+          "url": "https://finance.yahoo.com/video/memory-chip-crunch-could-last-143400576.html"
         },
         {
-          "title": "Don’t Assume Micron Will Share SanDisk’s Fate. Here's Why.",
-          "url": "https://www.barchart.com/story/news/3745065/dont-assume-micron-will-share-sandisks-fate-here-s-why"
+          "title": "The ETFs Most Exposed to the 2026 Chip Supply Chain Crisis — Winners and Losers",
+          "url": "http://www.etf.com/sections/news/etfs-most-exposed-2026-chip-supply-chain-crisis-winners-and-losers?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss"
         },
         {
-          "title": "Citi Recommends Buying the Dip in Memory Stocks as AI Cycle Gains Momentum",
-          "url": "https://investorshub.advfn.com/market-news/article/33787/citi-recommends-buying-the-dip-in-memory-stocks-as-ai-cycle-gains-momentum"
+          "title": "Samsung's $576 Billion Chip Push Gets New Government Backing",
+          "url": "https://finance.yahoo.com/technology/articles/samsungs-576-billion-chip-push-200602548.html"
         }
       ],
       "rank": 3
     },
     {
-      "symbol": "005930.KS",
+      "symbol": "NVDA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -99,16 +99,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Warby Parker Q2 Earnings Call Highlights",
-          "url": "https://www.marketbeat.com/instant-alerts/warby-parker-q2-earnings-call-highlights-2026-08-09/?utm_source=yahoofinance&utm_medium=yahoofinance"
+          "title": "SpaceX’s next chapter: How AI is reshaping the company",
+          "url": "https://finance.yahoo.com/video/spacex-next-chapter-ai-reshaping-162900507.html"
         },
         {
-          "title": "Citi Recommends Buying the Dip in Memory Stocks as AI Cycle Gains Momentum",
-          "url": "https://investorshub.advfn.com/market-news/article/33787/citi-recommends-buying-the-dip-in-memory-stocks-as-ai-cycle-gains-momentum"
+          "title": "Memory chip crunch could last 2 more years, JPMorgan says",
+          "url": "https://finance.yahoo.com/video/memory-chip-crunch-could-last-143400576.html"
         },
         {
-          "title": "Netlist (NLST) Reframes Its Story With Samsung As Valuation Questions Linger",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/netlist-nlst-reframes-story-samsung-091157904.html"
+          "title": "Dow Jones Futures: Surging Oil Prices Spark Stock Market Losses; SpaceX Rival Rocket Lab Dives On Earnings",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-oil-prices-spacex-rival-rocket-lab/?src=A00220&yptr=yahoo"
         }
       ],
       "rank": 4
@@ -124,16 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Billionaire investor shorting SpaceX says one possible fix won't work",
-          "url": "https://www.thestreet.com/investing/stocks/spcx-spacex-andersen-capital-management-ceo-peter-andersen-says-tesla-spacex-merger-would-make-situation-more-confusing"
+          "title": "Tesla Autopilot under scrutiny after crash involving 49ers coach Kyle Shanahan",
+          "url": "https://finance.yahoo.com/video/tesla-autopilot-under-scrutiny-crash-204100840.html"
         },
         {
-          "title": "Kevin O'Leary Sat Out SpaceX's IPO— Now He's Plotting His Entry as Elon Musk's Empire Takes Shape: 'As the Stock Settles... I'll Be Watching Closely...'",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/kevin-oleary-sat-spacexs-ipo-170142786.html"
+          "title": "Tesla in the spotlight as NFL's 49ers head coach says Autopilot may have been engaged during accident",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-in-the-spotlight-as-nfls-49ers-head-coach-says-autopilot-may-have-been-engaged-during-accident-160422251.html"
         },
         {
-          "title": "The Potential of Space-Based Data Centers Is Huge. It's Not Enough to Make SpaceX Stock Appealing.",
-          "url": "https://www.barchart.com/story/news/3745069/the-potential-of-space-based-data-centers-is-huge-it-s-not-enough-to-make-spacex-stock-appealing"
+          "title": "The Robot ETF Actually Exists Now: Tesla, Hyundai, and the Companies Building the Joints",
+          "url": "https://247wallst.com/investing/2026/08/10/the-robot-etf-actually-exists-now-tesla-hyundai-and-the-companies-building-the-joints/"
         }
       ],
       "rank": 5
@@ -144,61 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 34.244648,
+      "trailing_pe": 33.264526,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 223.96,
-      "change_pct": 2.27,
-      "week52_pct": 83.7,
-      "pct_vs_ma200": 15.56,
-      "drawdown_from_high_pct": -4.89,
-      "return_3m_pct": 6.01,
-      "return_6m_pct": 30.46,
-      "return_12m_pct": 24.99,
-      "relative_strength_6m_pct": 16.35
+      "last_close": 217.55,
+      "change_pct": -2.86,
+      "week52_pct": 74.6,
+      "pct_vs_ma200": 12.15,
+      "drawdown_from_high_pct": -7.61,
+      "return_3m_pct": 1.21,
+      "return_6m_pct": 17.48,
+      "return_12m_pct": 20.51,
+      "relative_strength_6m_pct": 5.64
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.97359,
+      "trailing_pe": 35.391506,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 313.33,
-      "change_pct": 0.29,
-      "week52_pct": 77.9,
-      "pct_vs_ma200": 12.25,
-      "drawdown_from_high_pct": -7.87,
-      "return_3m_pct": 9.11,
-      "return_6m_pct": 13.77,
-      "return_12m_pct": 47.51,
-      "relative_strength_6m_pct": -0.34
+      "last_close": 308.26,
+      "change_pct": -1.62,
+      "week52_pct": 72.5,
+      "pct_vs_ma200": 10.34,
+      "drawdown_from_high_pct": -9.36,
+      "return_3m_pct": 5.19,
+      "return_6m_pct": 11.04,
+      "return_12m_pct": 40.65,
+      "relative_strength_6m_pct": -0.8
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 304.24072,
+      "trailing_pe": 306.37036,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 328.58,
-      "change_pct": 2.83,
-      "week52_pct": 15.8,
-      "pct_vs_ma200": -19.62,
-      "drawdown_from_high_pct": -32.93,
-      "return_3m_pct": -20.21,
-      "return_6m_pct": -17.28,
-      "return_12m_pct": 2.71,
-      "relative_strength_6m_pct": -31.39
+      "last_close": 330.88,
+      "change_pct": 0.7,
+      "week52_pct": 17.0,
+      "pct_vs_ma200": -18.95,
+      "drawdown_from_high_pct": -32.46,
+      "return_3m_pct": -22.75,
+      "return_6m_pct": -19.52,
+      "return_12m_pct": 2.67,
+      "relative_strength_6m_pct": -31.36
     },
     {
       "symbol": "005930.KS",
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 231000.0,
-      "change_pct": 0.22,
-      "week52_pct": 55.9,
-      "pct_vs_ma200": 17.67,
-      "drawdown_from_high_pct": -36.21,
-      "return_3m_pct": -14.82,
-      "return_6m_pct": 44.38,
-      "return_12m_pct": 254.39,
-      "relative_strength_6m_pct": 24.58
+      "last_close": 230000.0,
+      "change_pct": -0.43,
+      "week52_pct": 55.3,
+      "pct_vs_ma200": 16.76,
+      "drawdown_from_high_pct": -36.48,
+      "return_3m_pct": -14.24,
+      "return_6m_pct": 53.41,
+      "return_12m_pct": 253.39,
+      "relative_strength_6m_pct": 33.61
     },
     {
       "symbol": "000660.KS",
@@ -230,18 +230,40 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1422000.0,
-      "change_pct": -4.88,
+      "last_close": 1420000.0,
+      "change_pct": -0.14,
       "week52_pct": 44.0,
-      "pct_vs_ma200": 18.2,
-      "drawdown_from_high_pct": -51.28,
-      "return_3m_pct": -14.01,
-      "return_6m_pct": 56.75,
-      "return_12m_pct": 429.85,
-      "relative_strength_6m_pct": 36.95
+      "pct_vs_ma200": 17.57,
+      "drawdown_from_high_pct": -51.35,
+      "return_3m_pct": -15.76,
+      "return_6m_pct": 71.43,
+      "return_12m_pct": 436.07,
+      "relative_strength_6m_pct": 51.63
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "JPM",
+      "name": "JP Morgan Chase & Co.",
+      "why": "당일 기사 5건 언급",
+      "headlines": [
+        {
+          "title": "JPMorgan is the latest to raise its S&P 500 target, this time to 8,000. Here's why - CNBC"
+        },
+        {
+          "title": "JPMorgan Strategists Raise S&P 500 Target as AI Capex Pays Off - Yahoo Finance"
+        },
+        {
+          "title": "JPMorgan just bumped its S&P 500 price target as it sees AI capex finally delivering for companies - Business Insider"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 15.4085655,
+        "week52_pct": 100.0,
+        "market_cap_usd": 956388868096
+      }
+    }
+  ],
   "calendar": [
     {
       "date": "2026-08-10",
