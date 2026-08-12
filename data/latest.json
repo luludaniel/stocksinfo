@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T05:56:45+00:00",
+  "generated_at": "2026-08-12T23:09:08+00:00",
   "market_date": "2026-08-12",
-  "trigger": "workflow_dispatch",
+  "trigger": "schedule",
   "status": {
     "ok": true,
     "failed_symbols": [],
@@ -14,56 +14,6 @@
   },
   "focus": [
     {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Intel's huge rally is helping pay for its AI comeback",
-          "url": "https://finance.yahoo.com/video/intels-huge-rally-helping-pay-161130430.html"
-        },
-        {
-          "title": "Put options explained: How trading puts pays off and when it doesn't",
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/put-option-130000345.html"
-        },
-        {
-          "title": "Curaleaf Just Announced a Hostile Takeover Bid for Aurora Cannabis. Here’s What This Means for Investors.",
-          "url": "https://www.fool.com/investing/2026/08/12/curaleaf-just-announced-a-hostile-takeover-bid-for-aurora-cannabis-heres-what-this-means-for-investors/"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
-          "url": "https://www.barchart.com/story/news/3792100/this-mag-7-dividend-stock-is-trading-near-2026-highs-why-it-s-still-a-buy"
-        },
-        {
-          "title": "Tesla Cybercab Wins Endorsement From Florida Governor Desantis — ‘Clearly These Things Could Be Very Beneficial’",
-          "url": "https://stocktwits.com/news-articles/markets/equity/tesla-cybercab-wins-endorsement-from-florida-governor-desantis-clearly-these-things-could-be-very-beneficial/cZoNazvRJXN"
-        },
-        {
-          "title": "2 Core Reasons Tesla Investors Should Be Getting Nervous",
-          "url": "https://www.fool.com/investing/2026/08/11/2-core-reasons-tesla-investors-should-be-getting-n/"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "symbol": "000660.KS",
       "score": 1.5,
       "score_breakdown": {
@@ -74,19 +24,44 @@
       "signals": [],
       "news": [
         {
-          "title": "Shares are mostly higher in Asia, with Kospi up 4%, while oil prices gain",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/shares-mostly-higher-asia-kospi-052056331.html"
+          "title": "Memory Stocks Rally Wednesday: SK Hynix, SanDisk, Micron All Jump. Here’s Why",
+          "url": "https://247wallst.com/investing/2026/08/12/memory-stocks-rally-wednesday-sk-hynix-sandisk-micron-all-jump-heres-why/"
         },
         {
-          "title": "Intel’s Next Big Bet? CEO Lip-Bu Tan Eyes Memory-CPU Stacking As Chip Shortage Deepens",
-          "url": "https://stocktwits.com/news-articles/markets/equity/intel-s-next-big-bet-ceo-lip-bu-tan-eyes-memory-cpu-stacking-as-chip-shortage-deepens/cZoFrg8RJgG"
+          "title": "Why Micron Stock Is Being Outpaced by Memory Chip Rival SK Hynix",
+          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-samsung-memory-chip-a17de0ae?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "3 KOSDAQ Stocks Surge Over 50% as KOSPI Slumps, AI Stocks Sink",
-          "url": "https://beincrypto.com/kosdaq-stocks-surge-kospi-slumps/"
+          "title": "Apple’s CXMT Bet Could Strengthen Its Memory Supply, But Risks Remain",
+          "url": "https://finance.yahoo.com/technology/articles/apple-cxmt-bet-could-strengthen-201946243.html"
         }
       ],
-      "rank": 3
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is",
+          "url": "https://finance.yahoo.com/video/google-pixel-11-isn-t-205900374.html"
+        },
+        {
+          "title": "Forget big tech: the real AI money is in plumbing",
+          "url": "https://finance.yahoo.com/video/forget-big-tech-real-ai-100000112.html"
+        },
+        {
+          "title": "Your Newborn’s Trump Account Auto-Buys This S&P 500 ETF: The Hidden Costs Parents Never See",
+          "url": "https://247wallst.com/investing/etf/2026/08/12/your-newborns-trump-account-auto-buys-this-sp-500-etf-the-hidden-costs-parents-never-see/"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "005930.KS",
@@ -99,22 +74,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Shares are mostly higher in Asia, with Kospi up 4%, while oil prices gain",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/shares-mostly-higher-asia-kospi-052056331.html"
+          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is",
+          "url": "https://finance.yahoo.com/video/google-pixel-11-isn-t-205900374.html"
         },
         {
-          "title": "3 KOSDAQ Stocks Surge Over 50% as KOSPI Slumps, AI Stocks Sink",
-          "url": "https://beincrypto.com/kosdaq-stocks-surge-kospi-slumps/"
+          "title": "Google launches Pixel 11 smartphone line, including Pixel 11 Pro Fold, as Apple preps foldable iPhone",
+          "url": "https://finance.yahoo.com/technology/article/google-launches-pixel-11-smartphone-line-including-pixel-11-pro-fold-as-apple-preps-foldable-iphone-140000624.html"
         },
         {
-          "title": "SK Hynix, Samsung Extend Gains After Report Temasek to Invest",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-samsung-extend-gains-033704070.html"
+          "title": "Why Micron Stock Is Being Outpaced by Memory Chip Rival SK Hynix",
+          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-samsung-memory-chip-a17de0ae?siteid=yhoof2&yptr=yahoo"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
-      "symbol": "AAPL",
+      "symbol": "TSLA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -124,16 +99,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Tech stocks today: CoreWeave and Supermicro results win over investors",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-coreweave-and-supermicro-results-win-over-investors-135605566.html"
+          "title": "The Latest Robotics IPO is 8000X Oversubscribed. These ETFs Could Take Off if Humanoid Robotics Are The Next Big Thing.",
+          "url": "https://247wallst.com/investing/etf/2026/08/12/the-latest-robotics-ipo-is-8000x-oversubscribed-these-etfs-could-take-off-if-humanoid-robotics-are-the-next-big-thing/"
         },
         {
-          "title": "S&P500, Nasdaq, Dow Futures Rangebound As Investors Await Key Inflation Data To Judge Rate Hike Possibilities  — ORCL, AAPL, NVDA, CURLF In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p500-nasdaq-dow-futures-rangebound-investors-await-key-inflation-data/cZoFmoDRJXo"
+          "title": "Tesla, Palantir Fall as CPI Sends September Fed Hike Odds to 33%",
+          "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61156417/tesla-palantir-july-cpi-fed-hike-odds?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
         },
         {
-          "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
-          "url": "https://www.barchart.com/story/news/3792100/this-mag-7-dividend-stock-is-trading-near-2026-highs-why-it-s-still-a-buy"
+          "title": "Tesla files plans for proposed $10.1B Texas solar manufacturing plant",
+          "url": "https://www.foxbusiness.com/technology/tesla-files-plans-proposed-10-1b-texas-solar-manufacturing-plant"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Nvidia partners with Goldman Sachs, BlackRock to fund AI build-out — but there's one big risk",
+          "url": "https://finance.yahoo.com/video/nvidia-partners-goldman-sachs-blackrock-152456010.html"
+        },
+        {
+          "title": "CoreWeave, Nebius soar as AI spending powers growth",
+          "url": "https://finance.yahoo.com/video/coreweave-nebius-soar-ai-spending-141200933.html"
+        },
+        {
+          "title": "Elon Musk Says AI Revenue Will Eclipse the Rest of SpaceX by September. Here’s What Investors Need to Know",
+          "url": "https://www.fool.com/investing/2026/08/12/elon-musk-says-ai-revenue-will-eclipse-the-rest-of-spacex-by-september-heres-what-investors-need-to-know/"
         }
       ],
       "rank": 5
@@ -144,61 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 33.358894,
+      "trailing_pe": 34.369633,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 217.5,
-      "change_pct": -0.02,
-      "week52_pct": 74.5,
-      "pct_vs_ma200": 12.02,
-      "drawdown_from_high_pct": -7.63,
-      "return_3m_pct": -0.77,
-      "return_6m_pct": 14.59,
-      "return_12m_pct": 19.21,
-      "relative_strength_6m_pct": 3.63
+      "last_close": 224.09,
+      "change_pct": 3.03,
+      "week52_pct": 83.9,
+      "pct_vs_ma200": 15.28,
+      "drawdown_from_high_pct": -4.83,
+      "return_3m_pct": 1.62,
+      "return_6m_pct": 19.0,
+      "return_12m_pct": 23.25,
+      "relative_strength_6m_pct": 7.38
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.3314,
+      "trailing_pe": 34.661697,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 304.91,
-      "change_pct": -1.09,
-      "week52_pct": 69.9,
-      "pct_vs_ma200": 9.15,
-      "drawdown_from_high_pct": -10.26,
-      "return_3m_pct": 4.27,
-      "return_6m_pct": 11.23,
-      "return_12m_pct": 33.59,
-      "relative_strength_6m_pct": 0.27
+      "last_close": 302.25,
+      "change_pct": -0.87,
+      "week52_pct": 67.6,
+      "pct_vs_ma200": 8.11,
+      "drawdown_from_high_pct": -11.05,
+      "return_3m_pct": 2.62,
+      "return_6m_pct": 10.64,
+      "return_12m_pct": 33.54,
+      "relative_strength_6m_pct": -0.98
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 305.33026,
+      "trailing_pe": 308.9717,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 332.81,
-      "change_pct": 0.58,
-      "week52_pct": 18.0,
-      "pct_vs_ma200": -18.37,
-      "drawdown_from_high_pct": -32.06,
-      "return_3m_pct": -25.21,
-      "return_6m_pct": -20.25,
-      "return_12m_pct": 0.96,
-      "relative_strength_6m_pct": -31.21
+      "last_close": 327.51,
+      "change_pct": -1.59,
+      "week52_pct": 15.2,
+      "pct_vs_ma200": -19.55,
+      "drawdown_from_high_pct": -33.14,
+      "return_3m_pct": -24.44,
+      "return_6m_pct": -22.98,
+      "return_12m_pct": -3.4,
+      "relative_strength_6m_pct": -34.6
     },
     {
       "symbol": "005930.KS",
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 256000.0,
-      "change_pct": 6.89,
-      "week52_pct": 64.1,
-      "pct_vs_ma200": 28.97,
-      "drawdown_from_high_pct": -29.3,
-      "return_3m_pct": -8.14,
-      "return_6m_pct": 51.87,
-      "return_12m_pct": 267.16,
-      "relative_strength_6m_pct": 29.1
+      "last_close": 255500.0,
+      "change_pct": 6.68,
+      "week52_pct": 63.9,
+      "pct_vs_ma200": 28.72,
+      "drawdown_from_high_pct": -29.44,
+      "return_3m_pct": -8.32,
+      "return_6m_pct": 51.57,
+      "return_12m_pct": 266.44,
+      "relative_strength_6m_pct": 31.57
     },
     {
       "symbol": "000660.KS",
@@ -230,17 +230,50 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1505000.0,
-      "change_pct": 5.61,
+      "last_close": 1504000.0,
+      "change_pct": 5.54,
       "week52_pct": 47.1,
-      "pct_vs_ma200": 23.59,
-      "drawdown_from_high_pct": -48.44,
-      "return_3m_pct": -17.97,
-      "return_6m_pct": 67.56,
-      "return_12m_pct": 475.73,
-      "relative_strength_6m_pct": 44.79
+      "pct_vs_ma200": 23.51,
+      "drawdown_from_high_pct": -48.48,
+      "return_3m_pct": -18.02,
+      "return_6m_pct": 67.45,
+      "return_12m_pct": 475.35,
+      "relative_strength_6m_pct": 47.45
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is"
+        },
+        {
+          "title": "Alphabet and Apple Are Among Berkshire Hathaway's Top Holdings. Here's What That Tells Us About CEO Greg Abel's Investing Style in Tech Stocks."
+        },
+        {
+          "title": "Google launches Pixel 11 smartphone line, including Pixel 11 Pro Fold, as Apple preps foldable iPhone"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 17.228685,
+        "week52_pct": 71.1,
+        "market_cap_usd": 4201472065536
+      }
+    },
+    {
+      "symbol": "INTL",
+      "name": "Main International ETF",
+      "why": "당일 기사 2건 언급",
+      "headlines": [],
+      "basic": {
+        "trailing_pe": 17.714024,
+        "week52_pct": 100.0,
+        "market_cap_usd": null
+      }
+    }
+  ],
   "calendar": []
 }
