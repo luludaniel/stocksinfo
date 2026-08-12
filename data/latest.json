@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-11T23:12:05+00:00",
-  "market_date": "2026-08-11",
-  "trigger": "schedule",
+  "generated_at": "2026-08-12T05:56:45+00:00",
+  "market_date": "2026-08-12",
+  "trigger": "workflow_dispatch",
   "status": {
     "ok": true,
     "failed_symbols": [],
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 7,
-    "per_band_ready_in_days": 13
+    "days_collected": 8,
+    "per_band_ready_in_days": 12
   },
   "focus": [
     {
@@ -32,11 +32,86 @@
           "url": "https://finance.yahoo.com/personal-finance/investing/article/put-option-130000345.html"
         },
         {
-          "title": "Why AppLovin Stock Slumped by 6% Today",
-          "url": "https://www.fool.com/investing/2026/08/11/why-applovin-stock-slumped-by-6-today/"
+          "title": "Curaleaf Just Announced a Hostile Takeover Bid for Aurora Cannabis. Here’s What This Means for Investors.",
+          "url": "https://www.fool.com/investing/2026/08/12/curaleaf-just-announced-a-hostile-takeover-bid-for-aurora-cannabis-heres-what-this-means-for-investors/"
         }
       ],
       "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
+          "url": "https://www.barchart.com/story/news/3792100/this-mag-7-dividend-stock-is-trading-near-2026-highs-why-it-s-still-a-buy"
+        },
+        {
+          "title": "Tesla Cybercab Wins Endorsement From Florida Governor Desantis — ‘Clearly These Things Could Be Very Beneficial’",
+          "url": "https://stocktwits.com/news-articles/markets/equity/tesla-cybercab-wins-endorsement-from-florida-governor-desantis-clearly-these-things-could-be-very-beneficial/cZoNazvRJXN"
+        },
+        {
+          "title": "2 Core Reasons Tesla Investors Should Be Getting Nervous",
+          "url": "https://www.fool.com/investing/2026/08/11/2-core-reasons-tesla-investors-should-be-getting-n/"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Shares are mostly higher in Asia, with Kospi up 4%, while oil prices gain",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/shares-mostly-higher-asia-kospi-052056331.html"
+        },
+        {
+          "title": "Intel’s Next Big Bet? CEO Lip-Bu Tan Eyes Memory-CPU Stacking As Chip Shortage Deepens",
+          "url": "https://stocktwits.com/news-articles/markets/equity/intel-s-next-big-bet-ceo-lip-bu-tan-eyes-memory-cpu-stacking-as-chip-shortage-deepens/cZoFrg8RJgG"
+        },
+        {
+          "title": "3 KOSDAQ Stocks Surge Over 50% as KOSPI Slumps, AI Stocks Sink",
+          "url": "https://beincrypto.com/kosdaq-stocks-surge-kospi-slumps/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Shares are mostly higher in Asia, with Kospi up 4%, while oil prices gain",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/shares-mostly-higher-asia-kospi-052056331.html"
+        },
+        {
+          "title": "3 KOSDAQ Stocks Surge Over 50% as KOSPI Slumps, AI Stocks Sink",
+          "url": "https://beincrypto.com/kosdaq-stocks-surge-kospi-slumps/"
+        },
+        {
+          "title": "SK Hynix, Samsung Extend Gains After Report Temasek to Invest",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-samsung-extend-gains-033704070.html"
+        }
+      ],
+      "rank": 4
     },
     {
       "symbol": "AAPL",
@@ -53,87 +128,12 @@
           "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-coreweave-and-supermicro-results-win-over-investors-135605566.html"
         },
         {
-          "title": "MSFT Vs Its Peers: The Return Does Not Match The Rank",
-          "url": "https://www.trefis.com/articles/610939/msft-vs-its-peers-the-return-does-not-match-the-rank/2026-08-11"
+          "title": "S&P500, Nasdaq, Dow Futures Rangebound As Investors Await Key Inflation Data To Judge Rate Hike Possibilities  — ORCL, AAPL, NVDA, CURLF In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p500-nasdaq-dow-futures-rangebound-investors-await-key-inflation-data/cZoFmoDRJXo"
         },
         {
-          "title": "NFLX Vs Its Peers: The Return Does Not Match The Rank",
-          "url": "https://www.trefis.com/articles/610943/nflx-vs-its-peers-the-return-does-not-match-the-rank/2026-08-11"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Tesla Cybercab Wins Endorsement From Florida Governor Desantis — ‘Clearly These Things Could Be Very Beneficial’",
-          "url": "https://stocktwits.com/news-articles/markets/equity/tesla-cybercab-wins-endorsement-from-florida-governor-desantis-clearly-these-things-could-be-very-beneficial/cZoNazvRJXN"
-        },
-        {
-          "title": "2 Core Reasons Tesla Investors Should Be Getting Nervous",
-          "url": "https://www.fool.com/investing/2026/08/11/2-core-reasons-tesla-investors-should-be-getting-n/"
-        },
-        {
-          "title": "General Motors Dumps Another Major EV Battery Stake; GM Stock Rises",
-          "url": "https://www.investors.com/news/gm-stock-buy-zone-general-motors-dumps-ev-battery-stake/?src=A00220&yptr=yahoo"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Update: US Equity Indexes Decline as Growth Sectors Hit Amid Gains in Crude Oil Ahead of July's Consumer Price Inflation Data",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-decline-growth-205722038.html"
-        },
-        {
-          "title": "Nvidia’s Show of Financial Force Soothes Jittery Credit Markets",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-show-financial-force-soothes-203808018.html"
-        },
-        {
-          "title": "Update: US Equity Indexes Fall as Communication Services Sector Slides, Crude Oil Extends Gains",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-communication-200023015.html"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Amazon Makes Surprise Push Into Free Gaming",
-          "url": "https://finance.yahoo.com/technology/articles/amazon-makes-surprise-push-free-183954165.html"
-        },
-        {
-          "title": "Elon Musk’s Newest Factory is 15X The Size of The Pentagon. Micron and Memory Stocks Should be Terrified.",
-          "url": "https://247wallst.com/investing/2026/08/11/elon-musks-newest-factory-is-15x-the-size-of-the-pentagon-micron-and-memory-stocks-should-be-terrified/"
-        },
-        {
-          "title": "$19 Billion AI Bet Backfires as Korean Retail Suffers Worst KOSPI Crash Since 2008",
-          "url": "https://beincrypto.com/kospi-crash-korean-retail-leveraged-etf/"
+          "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
+          "url": "https://www.barchart.com/story/news/3792100/this-mag-7-dividend-stock-is-trading-near-2026-highs-why-it-s-still-a-buy"
         }
       ],
       "rank": 5
@@ -144,7 +144,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 33.307808,
+      "trailing_pe": 33.358894,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
@@ -164,7 +164,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 34.966743,
+      "trailing_pe": 35.3314,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 239500.0,
-      "change_pct": 4.13,
-      "week52_pct": 58.5,
-      "pct_vs_ma200": 21.15,
-      "drawdown_from_high_pct": -33.86,
-      "return_3m_pct": -16.02,
-      "return_6m_pct": 43.44,
-      "return_12m_pct": 244.47,
-      "relative_strength_6m_pct": 16.17
+      "last_close": 256000.0,
+      "change_pct": 6.89,
+      "week52_pct": 64.1,
+      "pct_vs_ma200": 28.97,
+      "drawdown_from_high_pct": -29.3,
+      "return_3m_pct": -8.14,
+      "return_6m_pct": 51.87,
+      "return_12m_pct": 267.16,
+      "relative_strength_6m_pct": 29.1
     },
     {
       "symbol": "000660.KS",
@@ -230,51 +230,17 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1425000.0,
-      "change_pct": 0.35,
-      "week52_pct": 44.1,
-      "pct_vs_ma200": 17.51,
-      "drawdown_from_high_pct": -51.18,
-      "return_3m_pct": -24.19,
-      "return_6m_pct": 57.43,
-      "return_12m_pct": 446.17,
-      "relative_strength_6m_pct": 30.16
+      "last_close": 1505000.0,
+      "change_pct": 5.61,
+      "week52_pct": 47.1,
+      "pct_vs_ma200": 23.59,
+      "drawdown_from_high_pct": -48.44,
+      "return_3m_pct": -17.97,
+      "return_6m_pct": 67.56,
+      "return_12m_pct": 475.73,
+      "relative_strength_6m_pct": 44.79
     }
   ],
-  "discovery": [
-    {
-      "symbol": "MSFT",
-      "name": "Microsoft Corporation",
-      "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "Microsoft stock just cleared a big hurdle but still trails the S&P 500 - Yahoo Finance"
-        },
-        {
-          "title": "MSFT Vs Its Peers: The Return Does Not Match The Rank"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 28.036173,
-        "week52_pct": 81.2,
-        "market_cap_usd": 3741064101888
-      }
-    },
-    {
-      "symbol": "GM",
-      "name": "General Motors Company",
-      "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "General Motors Dumps Another Major EV Battery Stake; GM Stock Rises"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 39.888393,
-        "week52_pct": 97.4,
-        "market_cap_usd": 80812744704
-      }
-    }
-  ],
+  "discovery": [],
   "calendar": []
 }
