@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13T09:59:06+00:00",
+  "generated_at": "2026-08-13T23:11:55+00:00",
   "market_date": "2026-08-13",
-  "trigger": "workflow_dispatch",
+  "trigger": "schedule",
   "status": {
     "ok": true,
     "failed_symbols": [],
@@ -14,31 +14,6 @@
   },
   "focus": [
     {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is",
-          "url": "https://finance.yahoo.com/video/google-pixel-11-isn-t-205900374.html"
-        },
-        {
-          "title": "Google launches Pixel 11 smartphone line, including Pixel 11 Pro Fold, as Apple preps foldable iPhone",
-          "url": "https://finance.yahoo.com/technology/article/google-launches-pixel-11-smartphone-line-including-pixel-11-pro-fold-as-apple-preps-foldable-iphone-140000624.html"
-        },
-        {
-          "title": "AI Weekly: Nvidia does deal with Wall Street, China's AI weather forecasts",
-          "url": "https://finance.yahoo.com/video/ai-weekly-nvidia-does-deal-094706855.html"
-        }
-      ],
-      "rank": 1
-    },
-    {
       "symbol": "NVDA",
       "score": 1.5,
       "score_breakdown": {
@@ -49,22 +24,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Nvidia partners with Goldman Sachs, BlackRock to fund AI build-out — but there's one big risk",
-          "url": "https://finance.yahoo.com/video/nvidia-partners-goldman-sachs-blackrock-152456010.html"
+          "title": "Nvidia bulls may have a small problem on their hands",
+          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-bulls-may-have-a-small-problem-on-their-hands-142341243.html"
         },
         {
-          "title": "CoreWeave, Nebius soar as AI spending powers growth",
-          "url": "https://finance.yahoo.com/video/coreweave-nebius-soar-ai-spending-141200933.html"
+          "title": "Why Grocery Outlet Stock Gained Today",
+          "url": "https://www.fool.com/investing/2026/08/13/why-grocery-outlet-stock-gained-today/"
         },
         {
-          "title": "Elon Musk Says SpaceX Short-Sellers Probably Won't Survive. These 3 Earnings Numbers Say He's Wrong.",
-          "url": "https://www.fool.com/investing/2026/08/13/elon-musk-says-spacex-short-sellers-probably-wont/"
+          "title": "Down 39%, Should You Buy the Dip in Netflix Stock?",
+          "url": "https://www.fool.com/investing/2026/08/13/down-39-should-you-buy-the-dip-in-netflix-stock/"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
-      "symbol": "AAPL",
+      "symbol": "005930.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -74,16 +49,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is",
-          "url": "https://finance.yahoo.com/video/google-pixel-11-isn-t-205900374.html"
+          "title": "Micron Stock Keeps Rallying. Watch Out for This New Memory-Chip Rival.",
+          "url": "https://www.barrons.com/articles/micron-stock-chinese-memory-chip-threat-5e35bf6e?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Forget big tech: the real AI money is in plumbing",
-          "url": "https://finance.yahoo.com/video/forget-big-tech-real-ai-100000112.html"
+          "title": "Analyst Sees Trouble Brewing for Hot Chip Stocks",
+          "url": "https://finance.yahoo.com/technology/articles/analyst-sees-trouble-brewing-hot-193124128.html"
         },
         {
-          "title": "Prediction: Amazon Will Join Apple in the $4 Trillion Club Before 2030",
-          "url": "https://www.fool.com/investing/2026/08/13/prediction-amazon-join-apple-4-trillion-club-2030/"
+          "title": "Micron Just Lost Ground in Key Memory Market",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-just-lost-ground-key-165356690.html"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Sandisk Stock Jumps On Bullish Outlook, Leads Memory Names Higher",
+          "url": "https://www.investors.com/news/technology/sandisk-stock-jumps-bullish-outlook-memory-names-follow/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Dow Jones Futures: S&P 500 Hits High On Workday, Sandisk, Oil Prices; Applied Materials Earnings Late",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-high-workday-sandisk-oil-prices-applied-materials-earnings/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Applied Materials Forecast Gets Tepid Reaction After Stock Rally",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-forecast-gets-tepid-202405583.html"
         }
       ],
       "rank": 3
@@ -99,22 +99,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Michael Burry Warns of a 1987-Style Crash. Here Are 2 Index ETFs to Buy Anyway.",
-          "url": "https://www.fool.com/investing/2026/08/13/michael-burry-warns-of-a-1987-style-crash-2-index/"
+          "title": "TSLA Stock Rises As Swedish Union Ends Nearly 3-Year Strike After Tesla Buyouts",
+          "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-rises-as-swedish-union-ends-nearly-3-year-strike-after-tesla-buyouts/cZoq8tVRJLU"
         },
         {
-          "title": "South Korean import sales rise 14% in July",
-          "url": "https://www.just-auto.com/news/south-korean-import-sales-rise-14-in-july/"
+          "title": "Michael Burry Loads Up On QQQ Puts, Boosts MU Short As He Braces For ‘Larger Fall’ — Here’s What He Did To NVDA, PLTR And TSLA",
+          "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-loads-up-on-qqq-puts-boosts-mu-short-as-he-braces-for-larger-fall-heres-what-he-did-to-nvda-pltr-and-tsla/cZoqVbeRJLw"
         },
         {
-          "title": "Prediction: Nvidia Will Be Worth $6 Trillion by the End of 2026",
-          "url": "https://www.fool.com/investing/2026/08/13/prediction-nvidia-worth-6-trillion-by-end-2026/"
+          "title": "The Shipping Crunch Is Getting Worse. What It Means for Walmart, Tesla, and More.",
+          "url": "https://www.barrons.com/articles/walmart-tesla-fedex-stocks-shipping-economy-supply-chain-5518f529?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "000660.KS",
+      "symbol": "AAPL",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -124,16 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "AI Weekly: Nvidia does deal with Wall Street, China's AI weather forecasts",
-          "url": "https://finance.yahoo.com/video/ai-weekly-nvidia-does-deal-094706855.html"
+          "title": "How Apple’s New Houston AI Manufacturing Hub Could Reshape the AAPL Investment Narrative",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apple-houston-ai-manufacturing-hub-221322344.html"
         },
         {
-          "title": "South Korea orders new investors to take classes after single-stock trading frenzy",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/south-korea-orders-new-investors-to-take-classes-after-single-stock-trading-frenzy-074445607.html"
+          "title": "Apple Showcases Texas Mac Mini Factory, New Manufacturing School",
+          "url": "https://www.wsj.com/tech/apple-showcases-texas-mac-mini-factory-new-manufacturing-school-16fb8a10?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Korean Stocks Rise 22% in 10 Days as Chip Rally Regains Steam",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/korean-stocks-rise-22-10-003406262.html"
+          "title": "MP Materials Just Signed a Secret Aerospace Deal. Here's Why It Matters.",
+          "url": "https://www.fool.com/investing/2026/08/13/mp-materials-just-signed-a-secret-aerospace-deal-h/"
         }
       ],
       "rank": 5
@@ -144,61 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 34.369633,
+      "trailing_pe": 34.555214,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 224.09,
-      "change_pct": 3.03,
-      "week52_pct": 83.9,
-      "pct_vs_ma200": 15.28,
-      "drawdown_from_high_pct": -4.83,
-      "return_3m_pct": 1.62,
-      "return_6m_pct": 19.0,
-      "return_12m_pct": 23.25,
-      "relative_strength_6m_pct": 7.38
+      "last_close": 225.3,
+      "change_pct": 0.54,
+      "week52_pct": 85.6,
+      "pct_vs_ma200": 15.79,
+      "drawdown_from_high_pct": -4.32,
+      "return_3m_pct": -0.12,
+      "return_6m_pct": 18.69,
+      "return_12m_pct": 23.17,
+      "relative_strength_6m_pct": 6.19
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 34.98264,
+      "trailing_pe": 34.926777,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 302.25,
-      "change_pct": -0.87,
-      "week52_pct": 67.6,
-      "pct_vs_ma200": 8.11,
-      "drawdown_from_high_pct": -11.05,
-      "return_3m_pct": 2.62,
-      "return_6m_pct": 10.64,
-      "return_12m_pct": 33.54,
-      "relative_strength_6m_pct": -0.98
+      "last_close": 305.26,
+      "change_pct": 1.0,
+      "week52_pct": 70.2,
+      "pct_vs_ma200": 9.1,
+      "drawdown_from_high_pct": -10.16,
+      "return_3m_pct": 2.23,
+      "return_6m_pct": 11.0,
+      "return_12m_pct": 33.42,
+      "relative_strength_6m_pct": -1.5
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 311.9143,
+      "trailing_pe": 314.77777,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 327.51,
-      "change_pct": -1.59,
-      "week52_pct": 15.2,
-      "pct_vs_ma200": -19.55,
-      "drawdown_from_high_pct": -33.14,
-      "return_3m_pct": -24.44,
-      "return_6m_pct": -22.98,
-      "return_12m_pct": -3.4,
-      "relative_strength_6m_pct": -34.6
+      "last_close": 339.96,
+      "change_pct": 3.8,
+      "week52_pct": 21.7,
+      "pct_vs_ma200": -16.4,
+      "drawdown_from_high_pct": -30.6,
+      "return_3m_pct": -23.65,
+      "return_6m_pct": -20.62,
+      "return_12m_pct": -0.26,
+      "relative_strength_6m_pct": -33.12
     },
     {
       "symbol": "005930.KS",
@@ -218,7 +218,7 @@
       "return_3m_pct": -5.53,
       "return_6m_pct": 68.77,
       "return_12m_pct": 273.78,
-      "relative_strength_6m_pct": 36.82
+      "relative_strength_6m_pct": 42.84
     },
     {
       "symbol": "000660.KS",
@@ -238,53 +238,9 @@
       "return_3m_pct": -19.37,
       "return_6m_pct": 89.57,
       "return_12m_pct": 507.08,
-      "relative_strength_6m_pct": 57.62
+      "relative_strength_6m_pct": 63.64
     }
   ],
-  "discovery": [
-    {
-      "symbol": "^KS11",
-      "name": "KOSPI Composite Index",
-      "why": "당일 기사 5건 언급",
-      "headlines": [],
-      "basic": {
-        "trailing_pe": null,
-        "week52_pct": 61.6,
-        "market_cap_usd": null
-      }
-    },
-    {
-      "symbol": "^KQ11",
-      "name": "Kosdaq Composite Index",
-      "why": "당일 기사 2건 언급",
-      "headlines": [],
-      "basic": {
-        "trailing_pe": null,
-        "week52_pct": 37.3,
-        "market_cap_usd": null
-      }
-    },
-    {
-      "symbol": "^GSPC",
-      "name": "S&P 500",
-      "why": "당일 기사 5건 언급",
-      "headlines": [
-        {
-          "title": "Stock market today: S&P 500, Nasdaq edge higher on cooler inflation data, strong earnings - finance.yahoo.com"
-        },
-        {
-          "title": "Stock Market Today: S&P 500, Nasdaq rise as tech stocks rally, while Dow dips; Treasury yields erase declines after inflation data; oil slips - marketwatch.com"
-        },
-        {
-          "title": "S&P 500 closes higher after tame consumer inflation report, tech sector rises - CNBC"
-        }
-      ],
-      "basic": {
-        "trailing_pe": null,
-        "week52_pct": 99.4,
-        "market_cap_usd": null
-      }
-    }
-  ],
+  "discovery": [],
   "calendar": []
 }
