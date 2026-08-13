@@ -1,68 +1,18 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T23:09:08+00:00",
-  "market_date": "2026-08-12",
-  "trigger": "schedule",
+  "generated_at": "2026-08-13T09:59:06+00:00",
+  "market_date": "2026-08-13",
+  "trigger": "workflow_dispatch",
   "status": {
     "ok": true,
     "failed_symbols": [],
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 8,
-    "per_band_ready_in_days": 12
+    "days_collected": 9,
+    "per_band_ready_in_days": 11
   },
   "focus": [
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Memory Stocks Rally Wednesday: SK Hynix, SanDisk, Micron All Jump. Here’s Why",
-          "url": "https://247wallst.com/investing/2026/08/12/memory-stocks-rally-wednesday-sk-hynix-sandisk-micron-all-jump-heres-why/"
-        },
-        {
-          "title": "Why Micron Stock Is Being Outpaced by Memory Chip Rival SK Hynix",
-          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-samsung-memory-chip-a17de0ae?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Apple’s CXMT Bet Could Strengthen Its Memory Supply, But Risks Remain",
-          "url": "https://finance.yahoo.com/technology/articles/apple-cxmt-bet-could-strengthen-201946243.html"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is",
-          "url": "https://finance.yahoo.com/video/google-pixel-11-isn-t-205900374.html"
-        },
-        {
-          "title": "Forget big tech: the real AI money is in plumbing",
-          "url": "https://finance.yahoo.com/video/forget-big-tech-real-ai-100000112.html"
-        },
-        {
-          "title": "Your Newborn’s Trump Account Auto-Buys This S&P 500 ETF: The Hidden Costs Parents Never See",
-          "url": "https://247wallst.com/investing/etf/2026/08/12/your-newborns-trump-account-auto-buys-this-sp-500-etf-the-hidden-costs-parents-never-see/"
-        }
-      ],
-      "rank": 2
-    },
     {
       "symbol": "005930.KS",
       "score": 1.5,
@@ -82,36 +32,11 @@
           "url": "https://finance.yahoo.com/technology/article/google-launches-pixel-11-smartphone-line-including-pixel-11-pro-fold-as-apple-preps-foldable-iphone-140000624.html"
         },
         {
-          "title": "Why Micron Stock Is Being Outpaced by Memory Chip Rival SK Hynix",
-          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-samsung-memory-chip-a17de0ae?siteid=yhoof2&yptr=yahoo"
+          "title": "AI Weekly: Nvidia does deal with Wall Street, China's AI weather forecasts",
+          "url": "https://finance.yahoo.com/video/ai-weekly-nvidia-does-deal-094706855.html"
         }
       ],
-      "rank": 3
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "The Latest Robotics IPO is 8000X Oversubscribed. These ETFs Could Take Off if Humanoid Robotics Are The Next Big Thing.",
-          "url": "https://247wallst.com/investing/etf/2026/08/12/the-latest-robotics-ipo-is-8000x-oversubscribed-these-etfs-could-take-off-if-humanoid-robotics-are-the-next-big-thing/"
-        },
-        {
-          "title": "Tesla, Palantir Fall as CPI Sends September Fed Hike Odds to 33%",
-          "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61156417/tesla-palantir-july-cpi-fed-hike-odds?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
-        },
-        {
-          "title": "Tesla files plans for proposed $10.1B Texas solar manufacturing plant",
-          "url": "https://www.foxbusiness.com/technology/tesla-files-plans-proposed-10-1b-texas-solar-manufacturing-plant"
-        }
-      ],
-      "rank": 4
+      "rank": 1
     },
     {
       "symbol": "NVDA",
@@ -132,8 +57,83 @@
           "url": "https://finance.yahoo.com/video/coreweave-nebius-soar-ai-spending-141200933.html"
         },
         {
-          "title": "Elon Musk Says AI Revenue Will Eclipse the Rest of SpaceX by September. Here’s What Investors Need to Know",
-          "url": "https://www.fool.com/investing/2026/08/12/elon-musk-says-ai-revenue-will-eclipse-the-rest-of-spacex-by-september-heres-what-investors-need-to-know/"
+          "title": "Elon Musk Says SpaceX Short-Sellers Probably Won't Survive. These 3 Earnings Numbers Say He's Wrong.",
+          "url": "https://www.fool.com/investing/2026/08/13/elon-musk-says-spacex-short-sellers-probably-wont/"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is",
+          "url": "https://finance.yahoo.com/video/google-pixel-11-isn-t-205900374.html"
+        },
+        {
+          "title": "Forget big tech: the real AI money is in plumbing",
+          "url": "https://finance.yahoo.com/video/forget-big-tech-real-ai-100000112.html"
+        },
+        {
+          "title": "Prediction: Amazon Will Join Apple in the $4 Trillion Club Before 2030",
+          "url": "https://www.fool.com/investing/2026/08/13/prediction-amazon-join-apple-4-trillion-club-2030/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Michael Burry Warns of a 1987-Style Crash. Here Are 2 Index ETFs to Buy Anyway.",
+          "url": "https://www.fool.com/investing/2026/08/13/michael-burry-warns-of-a-1987-style-crash-2-index/"
+        },
+        {
+          "title": "South Korean import sales rise 14% in July",
+          "url": "https://www.just-auto.com/news/south-korean-import-sales-rise-14-in-july/"
+        },
+        {
+          "title": "Prediction: Nvidia Will Be Worth $6 Trillion by the End of 2026",
+          "url": "https://www.fool.com/investing/2026/08/13/prediction-nvidia-worth-6-trillion-by-end-2026/"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "AI Weekly: Nvidia does deal with Wall Street, China's AI weather forecasts",
+          "url": "https://finance.yahoo.com/video/ai-weekly-nvidia-does-deal-094706855.html"
+        },
+        {
+          "title": "South Korea orders new investors to take classes after single-stock trading frenzy",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/south-korea-orders-new-investors-to-take-classes-after-single-stock-trading-frenzy-074445607.html"
+        },
+        {
+          "title": "Korean Stocks Rise 22% in 10 Days as Chip Rally Regains Steam",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/korean-stocks-rise-22-10-003406262.html"
         }
       ],
       "rank": 5
@@ -164,7 +164,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 34.661697,
+      "trailing_pe": 34.98264,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -184,7 +184,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 308.9717,
+      "trailing_pe": 311.9143,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 255500.0,
-      "change_pct": 6.68,
-      "week52_pct": 63.9,
-      "pct_vs_ma200": 28.72,
-      "drawdown_from_high_pct": -29.44,
-      "return_3m_pct": -8.32,
-      "return_6m_pct": 51.57,
-      "return_12m_pct": 266.44,
-      "relative_strength_6m_pct": 31.57
+      "last_close": 268000.0,
+      "change_pct": 4.89,
+      "week52_pct": 68.1,
+      "pct_vs_ma200": 34.44,
+      "drawdown_from_high_pct": -25.99,
+      "return_3m_pct": -5.53,
+      "return_6m_pct": 68.77,
+      "return_12m_pct": 273.78,
+      "relative_strength_6m_pct": 36.82
     },
     {
       "symbol": "000660.KS",
@@ -230,47 +230,58 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1504000.0,
-      "change_pct": 5.54,
-      "week52_pct": 47.1,
-      "pct_vs_ma200": 23.51,
-      "drawdown_from_high_pct": -48.48,
-      "return_3m_pct": -18.02,
-      "return_6m_pct": 67.45,
-      "return_12m_pct": 475.35,
-      "relative_strength_6m_pct": 47.45
+      "last_close": 1593000.0,
+      "change_pct": 5.92,
+      "week52_pct": 50.4,
+      "pct_vs_ma200": 30.22,
+      "drawdown_from_high_pct": -45.43,
+      "return_3m_pct": -19.37,
+      "return_6m_pct": 89.57,
+      "return_12m_pct": 507.08,
+      "relative_strength_6m_pct": 57.62
     }
   ],
   "discovery": [
     {
-      "symbol": "GOOGL",
-      "name": "Alphabet Inc.",
-      "why": "당일 기사 3건 언급",
-      "headlines": [
-        {
-          "title": "Google’s Pixel 11 isn’t the story; Gemini AI is"
-        },
-        {
-          "title": "Alphabet and Apple Are Among Berkshire Hathaway's Top Holdings. Here's What That Tells Us About CEO Greg Abel's Investing Style in Tech Stocks."
-        },
-        {
-          "title": "Google launches Pixel 11 smartphone line, including Pixel 11 Pro Fold, as Apple preps foldable iPhone"
-        }
-      ],
+      "symbol": "^KS11",
+      "name": "KOSPI Composite Index",
+      "why": "당일 기사 5건 언급",
+      "headlines": [],
       "basic": {
-        "trailing_pe": 17.228685,
-        "week52_pct": 71.1,
-        "market_cap_usd": 4201472065536
+        "trailing_pe": null,
+        "week52_pct": 61.6,
+        "market_cap_usd": null
       }
     },
     {
-      "symbol": "INTL",
-      "name": "Main International ETF",
+      "symbol": "^KQ11",
+      "name": "Kosdaq Composite Index",
       "why": "당일 기사 2건 언급",
       "headlines": [],
       "basic": {
-        "trailing_pe": 17.714024,
-        "week52_pct": 100.0,
+        "trailing_pe": null,
+        "week52_pct": 37.3,
+        "market_cap_usd": null
+      }
+    },
+    {
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "why": "당일 기사 5건 언급",
+      "headlines": [
+        {
+          "title": "Stock market today: S&P 500, Nasdaq edge higher on cooler inflation data, strong earnings - finance.yahoo.com"
+        },
+        {
+          "title": "Stock Market Today: S&P 500, Nasdaq rise as tech stocks rally, while Dow dips; Treasury yields erase declines after inflation data; oil slips - marketwatch.com"
+        },
+        {
+          "title": "S&P 500 closes higher after tame consumer inflation report, tech sector rises - CNBC"
+        }
+      ],
+      "basic": {
+        "trailing_pe": null,
+        "week52_pct": 99.4,
         "market_cap_usd": null
       }
     }
