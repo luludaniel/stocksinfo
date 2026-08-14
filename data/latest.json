@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13T23:11:55+00:00",
-  "market_date": "2026-08-13",
+  "generated_at": "2026-08-14T22:48:34+00:00",
+  "market_date": "2026-08-14",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,12 +9,12 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 9,
-    "per_band_ready_in_days": 11
+    "days_collected": 10,
+    "per_band_ready_in_days": 10
   },
   "focus": [
     {
-      "symbol": "NVDA",
+      "symbol": "AAPL",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -24,44 +24,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Nvidia bulls may have a small problem on their hands",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-bulls-may-have-a-small-problem-on-their-hands-142341243.html"
+          "title": "Databricks vs Snowflake: Analyst explains key differences in AI platforms",
+          "url": "https://finance.yahoo.com/video/databricks-vs-snowflake-analyst-explains-210015938.html"
         },
         {
-          "title": "Why Grocery Outlet Stock Gained Today",
-          "url": "https://www.fool.com/investing/2026/08/13/why-grocery-outlet-stock-gained-today/"
+          "title": "Berkshire Boosted Alphabet, Delta Stakes in 2nd Quarter, Sold Bank of America",
+          "url": "https://www.barrons.com/articles/berkshire-hathaway-alphabet-delta-3bfd1c16?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Down 39%, Should You Buy the Dip in Netflix Stock?",
-          "url": "https://www.fool.com/investing/2026/08/13/down-39-should-you-buy-the-dip-in-netflix-stock/"
+          "title": "Apple Stock Stalls as Jefferies Cuts Target to $263.66",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-stalls-jefferies-cuts-191714058.html"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Micron Stock Keeps Rallying. Watch Out for This New Memory-Chip Rival.",
-          "url": "https://www.barrons.com/articles/micron-stock-chinese-memory-chip-threat-5e35bf6e?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Analyst Sees Trouble Brewing for Hot Chip Stocks",
-          "url": "https://finance.yahoo.com/technology/articles/analyst-sees-trouble-brewing-hot-193124128.html"
-        },
-        {
-          "title": "Micron Just Lost Ground in Key Memory Market",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-just-lost-ground-key-165356690.html"
-        }
-      ],
-      "rank": 2
     },
     {
       "symbol": "000660.KS",
@@ -74,19 +49,69 @@
       "signals": [],
       "news": [
         {
-          "title": "Sandisk Stock Jumps On Bullish Outlook, Leads Memory Names Higher",
-          "url": "https://www.investors.com/news/technology/sandisk-stock-jumps-bullish-outlook-memory-names-follow/?src=A00220&yptr=yahoo"
+          "title": "SanDisk jumps 5% as AlphaSpace chart shows AI storage rally",
+          "url": "https://finance.yahoo.com/video/sandisk-jumps-5-as-alphaspace-chart-shows-ai-storage-rally-150053701.html"
         },
         {
-          "title": "Dow Jones Futures: S&P 500 Hits High On Workday, Sandisk, Oil Prices; Applied Materials Earnings Late",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-high-workday-sandisk-oil-prices-applied-materials-earnings/?src=A00220&yptr=yahoo"
+          "title": "Dow Jones Futures: Market Ready To Run? Sandisk Soars, Nvidia In Buy Area; Walmart, Target Due",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Applied Materials Forecast Gets Tepid Reaction After Stock Rally",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-forecast-gets-tepid-202405583.html"
+          "title": "SK Hynix, IBD Stock Of The Day, Forming IPO Base But Actionable Now",
+          "url": "https://www.investors.com/research/ibd-stock-of-the-day/sk-hynix-stock-forming-ipo-base/?src=A00220&yptr=yahoo"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Upbit Profit Crashes 85% Months After Korean Giants Paid $1.5 Billion to Buy In",
+          "url": "https://beincrypto.com/upbit-dunamu-profit-crash-q2-2026/"
+        },
+        {
+          "title": "Samsung Stock Gains 2.4% as AI-Memory Momentum Holds",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stock-gains-2-4-160719809.html"
+        },
+        {
+          "title": "Stocks See Support as Weak US Economic Reports Curb Fed Rate-Hike Expectations",
+          "url": "https://www.barchart.com/story/news/3853093/stocks-see-support-as-weak-us-economic-reports-curb-fed-rate-hike-expectations"
         }
       ],
       "rank": 3
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Berkshire ups Alphabet stake under Greg Abel, making it a top-3 holding",
+          "url": "https://finance.yahoo.com/video/berkshire-ups-alphabet-stake-under-212900630.html"
+        },
+        {
+          "title": "The AI build-out has a problem that $1 trillion in cash can't fix",
+          "url": "https://finance.yahoo.com/technology/article/the-ai-build-out-has-a-problem-that-1-trillion-in-cash-cant-fix-134114624.html"
+        },
+        {
+          "title": "The next AI winners may look nothing like Nvidia or Micron: One Big Investment Idea",
+          "url": "https://finance.yahoo.com/markets/article/the-next-ai-winners-may-look-nothing-like-nvidia-or-micron-one-big-investment-idea-095700607.html"
+        }
+      ],
+      "rank": 4
     },
     {
       "symbol": "TSLA",
@@ -99,41 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "TSLA Stock Rises As Swedish Union Ends Nearly 3-Year Strike After Tesla Buyouts",
-          "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-rises-as-swedish-union-ends-nearly-3-year-strike-after-tesla-buyouts/cZoq8tVRJLU"
+          "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
+          "url": "https://finance.yahoo.com/markets/article/wall-streets-riskiest-trades-are-suddenly-back-on-top-chart-of-the-day-100100027.html"
         },
         {
-          "title": "Michael Burry Loads Up On QQQ Puts, Boosts MU Short As He Braces For ‘Larger Fall’ — Here’s What He Did To NVDA, PLTR And TSLA",
-          "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-loads-up-on-qqq-puts-boosts-mu-short-as-he-braces-for-larger-fall-heres-what-he-did-to-nvda-pltr-and-tsla/cZoqVbeRJLw"
+          "title": "Tesla owners in California have until Sept. 25 to claim this settlement money",
+          "url": "https://finance.yahoo.com/personal-finance/banking/article/tesla-owners-in-california-have-until-sept-25-to-claim-this-settlement-money-162602738.html"
         },
         {
-          "title": "The Shipping Crunch Is Getting Worse. What It Means for Walmart, Tesla, and More.",
-          "url": "https://www.barrons.com/articles/walmart-tesla-fedex-stocks-shipping-economy-supply-chain-5518f529?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "How Apple’s New Houston AI Manufacturing Hub Could Reshape the AAPL Investment Narrative",
-          "url": "https://finance.yahoo.com/technology/ai/articles/apple-houston-ai-manufacturing-hub-221322344.html"
-        },
-        {
-          "title": "Apple Showcases Texas Mac Mini Factory, New Manufacturing School",
-          "url": "https://www.wsj.com/tech/apple-showcases-texas-mac-mini-factory-new-manufacturing-school-16fb8a10?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "MP Materials Just Signed a Secret Aerospace Deal. Here's Why It Matters.",
-          "url": "https://www.fool.com/investing/2026/08/13/mp-materials-just-signed-a-secret-aerospace-deal-h/"
+          "title": "Could a Tesla (TSLA)-Space Exploration Technologies (SPCX) Merger Help Elon Musk Unlock his Massive Tesla Pay Package?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/could-tesla-tsla-space-exploration-220616552.html"
         }
       ],
       "rank": 5
@@ -144,61 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 34.555214,
+      "trailing_pe": 34.480858,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 225.3,
-      "change_pct": 0.54,
-      "week52_pct": 85.6,
-      "pct_vs_ma200": 15.79,
-      "drawdown_from_high_pct": -4.32,
-      "return_3m_pct": -0.12,
-      "return_6m_pct": 18.69,
-      "return_12m_pct": 23.17,
-      "relative_strength_6m_pct": 6.19
+      "last_close": 225.16,
+      "change_pct": -0.06,
+      "week52_pct": 85.4,
+      "pct_vs_ma200": 15.62,
+      "drawdown_from_high_pct": -4.38,
+      "return_3m_pct": -4.38,
+      "return_6m_pct": 20.59,
+      "return_12m_pct": 24.16,
+      "relative_strength_6m_pct": 6.64
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 34.926777,
+      "trailing_pe": 35.04353,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 305.26,
-      "change_pct": 1.0,
-      "week52_pct": 70.2,
-      "pct_vs_ma200": 9.1,
-      "drawdown_from_high_pct": -10.16,
-      "return_3m_pct": 2.23,
-      "return_6m_pct": 11.0,
-      "return_12m_pct": 33.42,
-      "relative_strength_6m_pct": -1.5
+      "last_close": 305.93,
+      "change_pct": 0.22,
+      "week52_pct": 70.7,
+      "pct_vs_ma200": 9.27,
+      "drawdown_from_high_pct": -9.96,
+      "return_3m_pct": 2.68,
+      "return_6m_pct": 17.1,
+      "return_12m_pct": 31.6,
+      "relative_strength_6m_pct": 3.15
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 314.77777,
+      "trailing_pe": 314.00916,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 339.96,
-      "change_pct": 3.8,
-      "week52_pct": 21.7,
-      "pct_vs_ma200": -16.4,
-      "drawdown_from_high_pct": -30.6,
-      "return_3m_pct": -23.65,
-      "return_6m_pct": -20.62,
-      "return_12m_pct": -0.26,
-      "relative_strength_6m_pct": -33.12
+      "last_close": 342.27,
+      "change_pct": 0.68,
+      "week52_pct": 22.9,
+      "pct_vs_ma200": -15.71,
+      "drawdown_from_high_pct": -30.13,
+      "return_3m_pct": -22.79,
+      "return_6m_pct": -17.93,
+      "return_12m_pct": 0.85,
+      "relative_strength_6m_pct": -31.88
     },
     {
       "symbol": "005930.KS",
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 268000.0,
-      "change_pct": 4.89,
-      "week52_pct": 68.1,
-      "pct_vs_ma200": 34.44,
-      "drawdown_from_high_pct": -25.99,
-      "return_3m_pct": -5.53,
-      "return_6m_pct": 68.77,
-      "return_12m_pct": 273.78,
-      "relative_strength_6m_pct": 42.84
+      "last_close": 274500.0,
+      "change_pct": 2.43,
+      "week52_pct": 70.3,
+      "pct_vs_ma200": 37.09,
+      "drawdown_from_high_pct": -24.19,
+      "return_3m_pct": -7.16,
+      "return_6m_pct": 73.63,
+      "return_12m_pct": 289.28,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -230,17 +230,36 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1593000.0,
-      "change_pct": 5.92,
-      "week52_pct": 50.4,
-      "pct_vs_ma200": 30.22,
-      "drawdown_from_high_pct": -45.43,
-      "return_3m_pct": -19.37,
-      "return_6m_pct": 89.57,
-      "return_12m_pct": 507.08,
-      "relative_strength_6m_pct": 63.64
+      "last_close": 1645000.0,
+      "change_pct": 3.26,
+      "week52_pct": 52.4,
+      "pct_vs_ma200": 33.83,
+      "drawdown_from_high_pct": -43.65,
+      "return_3m_pct": -16.48,
+      "return_6m_pct": 96.46,
+      "return_12m_pct": 503.98,
+      "relative_strength_6m_pct": NaN
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Berkshire ups Alphabet stake under Greg Abel, making it a top-3 holding"
+        },
+        {
+          "title": "Berkshire Boosted Alphabet, Delta Stakes in 2nd Quarter, Sold Bank of America"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 17.364458,
+        "week52_pct": 72.3,
+        "market_cap_usd": 4230334382080
+      }
+    }
+  ],
   "calendar": []
 }
