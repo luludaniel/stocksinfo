@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-14T22:48:34+00:00",
-  "market_date": "2026-08-14",
+  "generated_at": "2026-08-15T22:46:52+00:00",
+  "market_date": "2026-08-15",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,35 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 10,
-    "per_band_ready_in_days": 10
+    "days_collected": 11,
+    "per_band_ready_in_days": 9
   },
   "focus": [
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Databricks vs Snowflake: Analyst explains key differences in AI platforms",
-          "url": "https://finance.yahoo.com/video/databricks-vs-snowflake-analyst-explains-210015938.html"
-        },
-        {
-          "title": "Berkshire Boosted Alphabet, Delta Stakes in 2nd Quarter, Sold Bank of America",
-          "url": "https://www.barrons.com/articles/berkshire-hathaway-alphabet-delta-3bfd1c16?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Apple Stock Stalls as Jefferies Cuts Target to $263.66",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-stalls-jefferies-cuts-191714058.html"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "000660.KS",
       "score": 1.5,
@@ -49,69 +24,19 @@
       "signals": [],
       "news": [
         {
-          "title": "SanDisk jumps 5% as AlphaSpace chart shows AI storage rally",
-          "url": "https://finance.yahoo.com/video/sandisk-jumps-5-as-alphaspace-chart-shows-ai-storage-rally-150053701.html"
+          "title": "SK Hynix Approved $38 Billion of New Memory Fabs That Won't Produce a Chip Before December 2028",
+          "url": "https://www.fool.com/investing/2026/08/15/sk-hynix-approved-38-billion-of-new-memory-fabs-th/"
         },
         {
           "title": "Dow Jones Futures: Market Ready To Run? Sandisk Soars, Nvidia In Buy Area; Walmart, Target Due",
           "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "SK Hynix, IBD Stock Of The Day, Forming IPO Base But Actionable Now",
-          "url": "https://www.investors.com/research/ibd-stock-of-the-day/sk-hynix-stock-forming-ipo-base/?src=A00220&yptr=yahoo"
+          "title": "SK Hynix (KOSE:A000660) Unveils Open AI Memory Standard Through New HBF Spec",
+          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-unveils-001602052.html"
         }
       ],
-      "rank": 2
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Upbit Profit Crashes 85% Months After Korean Giants Paid $1.5 Billion to Buy In",
-          "url": "https://beincrypto.com/upbit-dunamu-profit-crash-q2-2026/"
-        },
-        {
-          "title": "Samsung Stock Gains 2.4% as AI-Memory Momentum Holds",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stock-gains-2-4-160719809.html"
-        },
-        {
-          "title": "Stocks See Support as Weak US Economic Reports Curb Fed Rate-Hike Expectations",
-          "url": "https://www.barchart.com/story/news/3853093/stocks-see-support-as-weak-us-economic-reports-curb-fed-rate-hike-expectations"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Berkshire ups Alphabet stake under Greg Abel, making it a top-3 holding",
-          "url": "https://finance.yahoo.com/video/berkshire-ups-alphabet-stake-under-212900630.html"
-        },
-        {
-          "title": "The AI build-out has a problem that $1 trillion in cash can't fix",
-          "url": "https://finance.yahoo.com/technology/article/the-ai-build-out-has-a-problem-that-1-trillion-in-cash-cant-fix-134114624.html"
-        },
-        {
-          "title": "The next AI winners may look nothing like Nvidia or Micron: One Big Investment Idea",
-          "url": "https://finance.yahoo.com/markets/article/the-next-ai-winners-may-look-nothing-like-nvidia-or-micron-one-big-investment-idea-095700607.html"
-        }
-      ],
-      "rank": 4
+      "rank": 1
     },
     {
       "symbol": "TSLA",
@@ -124,16 +49,91 @@
       "signals": [],
       "news": [
         {
-          "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
-          "url": "https://finance.yahoo.com/markets/article/wall-streets-riskiest-trades-are-suddenly-back-on-top-chart-of-the-day-100100027.html"
+          "title": "XMAG Is Outperforming the S&P 500 in 2026 as the Magnificent Seven Stall",
+          "url": "https://247wallst.com/investing/2026/08/15/xmag-is-outperforming-the-sp-500-in-2026-as-the-magnificent-seven-stall/"
         },
         {
-          "title": "Tesla owners in California have until Sept. 25 to claim this settlement money",
-          "url": "https://finance.yahoo.com/personal-finance/banking/article/tesla-owners-in-california-have-until-sept-25-to-claim-this-settlement-money-162602738.html"
+          "title": "Republican States Race to Cut Property Taxes Ahead of November Elections as Homeowners Demand Relief",
+          "url": "https://www.yahoo.com/news/politics/articles/republican-states-race-cut-property-183112529.html"
         },
         {
-          "title": "Could a Tesla (TSLA)-Space Exploration Technologies (SPCX) Merger Help Elon Musk Unlock his Massive Tesla Pay Package?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/could-tesla-tsla-space-exploration-220616552.html"
+          "title": "Elon Musk's $1 Trillion Pay Package Needs Tesla to Hit an $8.5 Trillion Market Cap. Here's What That Means for Shareholders.",
+          "url": "https://www.fool.com/investing/2026/08/15/elon-musk-trillion-pay-package-tesla-market-cap/"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Apple (AAPL) Launches Ads On Maps While Pursuing Siri AI Content Deals",
+          "url": "https://finance.yahoo.com/media-advertising/articles/apple-aapl-launches-ads-maps-200858734.html"
+        },
+        {
+          "title": "Tariff refunds are juicing corporate profits and GDP as more tailwinds converge to propel growth to a blistering 4.3% pace, top economist says",
+          "url": "https://finance.yahoo.com/economy/articles/tariff-refunds-juicing-corporate-profits-190804315.html"
+        },
+        {
+          "title": "DIVO or JEPI: Which Monthly Dividend Actually Protects Your Principal?",
+          "url": "https://247wallst.com/investing/2026/08/15/divo-or-jepi-which-monthly-dividend-actually-protects-your-principal/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Apple, Samsung Can Absorb the Smartphone Cost Shock — Smaller Rivals May Not Be so Lucky",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-samsung-absorb-smartphone-cost-180159241.html"
+        },
+        {
+          "title": "Samsung Electronics (KOSE:A005930) Ends Memory Patent Fight With Five Year Licensing Deal",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-ends-042049333.html"
+        },
+        {
+          "title": "Stocks Close Lower on Worries About US Economy",
+          "url": "https://www.barchart.com/story/news/3859003/stocks-close-lower-on-worries-about-us-economy"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Dara Khosrowshahi Just Delivered Fantastic News for Uber Stock Investors",
+          "url": "https://www.fool.com/investing/2026/08/15/dara-khosrowshahi-just-delivered-fantastic-news-fo/"
+        },
+        {
+          "title": "Palantir Makes Its Case Against Frontier AI",
+          "url": "https://www.fool.com/investing/2026/08/15/palantir-makes-its-case-against-frontier-ai/"
+        },
+        {
+          "title": "SpaceX Is Poised to Hit $220 by June 2027 (Hint: It's Not Too Late to Buy In)",
+          "url": "https://www.fool.com/investing/2026/08/15/spacex-is-poised-to-hit-220-by-june-2027-hint-its/"
         }
       ],
       "rank": 5
@@ -164,7 +164,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.04353,
+      "trailing_pe": 35.083714,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -184,7 +184,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 314.00916,
+      "trailing_pe": 311.15454,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -218,7 +218,7 @@
       "return_3m_pct": -7.16,
       "return_6m_pct": 73.63,
       "return_12m_pct": 289.28,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 36.52
     },
     {
       "symbol": "000660.KS",
@@ -238,26 +238,23 @@
       "return_3m_pct": -16.48,
       "return_6m_pct": 96.46,
       "return_12m_pct": 503.98,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 59.35
     }
   ],
   "discovery": [
     {
-      "symbol": "GOOGL",
-      "name": "Alphabet Inc.",
-      "why": "당일 기사 3건 언급",
+      "symbol": "HII",
+      "name": "Huntington Ingalls Industries, ",
+      "why": "당일 기사 2건 언급",
       "headlines": [
         {
-          "title": "Berkshire ups Alphabet stake under Greg Abel, making it a top-3 holding"
-        },
-        {
-          "title": "Berkshire Boosted Alphabet, Delta Stakes in 2nd Quarter, Sold Bank of America"
+          "title": "헌팅턴 잉걸스 CEO 캐스트너, HII 주식 425만 달러 매도"
         }
       ],
       "basic": {
-        "trailing_pe": 17.364458,
-        "week52_pct": 72.3,
-        "market_cap_usd": 4230334382080
+        "trailing_pe": 19.529797,
+        "week52_pct": 35.0,
+        "market_cap_usd": 12913281024
       }
     }
   ],
