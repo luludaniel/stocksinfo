@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-15T22:46:52+00:00",
-  "market_date": "2026-08-15",
+  "generated_at": "2026-08-16T22:46:18+00:00",
+  "market_date": "2026-08-16",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,35 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 11,
-    "per_band_ready_in_days": 9
+    "days_collected": 12,
+    "per_band_ready_in_days": 8
   },
   "focus": [
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "SK Hynix Approved $38 Billion of New Memory Fabs That Won't Produce a Chip Before December 2028",
-          "url": "https://www.fool.com/investing/2026/08/15/sk-hynix-approved-38-billion-of-new-memory-fabs-th/"
-        },
-        {
-          "title": "Dow Jones Futures: Market Ready To Run? Sandisk Soars, Nvidia In Buy Area; Walmart, Target Due",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "SK Hynix (KOSE:A000660) Unveils Open AI Memory Standard Through New HBF Spec",
-          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-unveils-001602052.html"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "TSLA",
       "score": 1.5,
@@ -49,22 +24,22 @@
       "signals": [],
       "news": [
         {
-          "title": "XMAG Is Outperforming the S&P 500 in 2026 as the Magnificent Seven Stall",
-          "url": "https://247wallst.com/investing/2026/08/15/xmag-is-outperforming-the-sp-500-in-2026-as-the-magnificent-seven-stall/"
+          "title": "Elon Musk’s SpaceX Holdings Revealed. (Hint: It’s A Lot.)",
+          "url": "https://www.barrons.com/articles/elon-musk-spacex-holdings-stock-8a935b9d?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Republican States Race to Cut Property Taxes Ahead of November Elections as Homeowners Demand Relief",
-          "url": "https://www.yahoo.com/news/politics/articles/republican-states-race-cut-property-183112529.html"
+          "title": "Waymo shipped 3,200 Chinese-built EVs to LA for its robotaxi fleet despite 127.5% tariffs Americans can't get around",
+          "url": "https://finance.yahoo.com/technology/articles/waymo-shipped-3-200-chinese-163000266.html"
         },
         {
-          "title": "Elon Musk's $1 Trillion Pay Package Needs Tesla to Hit an $8.5 Trillion Market Cap. Here's What That Means for Shareholders.",
-          "url": "https://www.fool.com/investing/2026/08/15/elon-musk-trillion-pay-package-tesla-market-cap/"
+          "title": "EXCLUSIVE: Ross Gerber Says Tesla Could ‘Double’ Sales Without Elon Musk, Warns Investors on SpaceX Merger",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-ross-gerber-says-tesla-140813250.html"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
-      "symbol": "AAPL",
+      "symbol": "000660.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -74,16 +49,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Apple (AAPL) Launches Ads On Maps While Pursuing Siri AI Content Deals",
-          "url": "https://finance.yahoo.com/media-advertising/articles/apple-aapl-launches-ads-maps-200858734.html"
+          "title": "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Needs This; Walmart Looms",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Tariff refunds are juicing corporate profits and GDP as more tailwinds converge to propel growth to a blistering 4.3% pace, top economist says",
-          "url": "https://finance.yahoo.com/economy/articles/tariff-refunds-juicing-corporate-profits-190804315.html"
+          "title": "Why SK Hynix Stock Skyrocketed This Week",
+          "url": "https://www.fool.com/investing/2026/08/16/why-sk-hynix-stock-skyrocketed-this-week/"
         },
         {
-          "title": "DIVO or JEPI: Which Monthly Dividend Actually Protects Your Principal?",
-          "url": "https://247wallst.com/investing/2026/08/15/divo-or-jepi-which-monthly-dividend-actually-protects-your-principal/"
+          "title": "What Could Intel (INTC) Returning To Memory Mean For Investors?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/could-intel-intc-returning-memory-130810975.html"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
+          "url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/"
+        },
+        {
+          "title": "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Needs This; Walmart Looms",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Wall Street’s Biggest Funds Are Dumping Broadcom and Adding Taiwan Semiconductor. Time to Follow the ‘Smart Money?’",
+          "url": "https://247wallst.com/investing/2026/08/16/wall-streets-biggest-funds-are-dumping-broadcom-and-adding-taiwan-semiconductor-time-to-follow-the-smart-money/"
         }
       ],
       "rank": 3
@@ -99,22 +99,22 @@
       "signals": [],
       "news": [
         {
+          "title": "Apple may finally have a $2,000 reason to enter foldables",
+          "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
+        },
+        {
           "title": "Apple, Samsung Can Absorb the Smartphone Cost Shock — Smaller Rivals May Not Be so Lucky",
           "url": "https://finance.yahoo.com/markets/stocks/articles/apple-samsung-absorb-smartphone-cost-180159241.html"
         },
         {
           "title": "Samsung Electronics (KOSE:A005930) Ends Memory Patent Fight With Five Year Licensing Deal",
           "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-ends-042049333.html"
-        },
-        {
-          "title": "Stocks Close Lower on Worries About US Economy",
-          "url": "https://www.barchart.com/story/news/3859003/stocks-close-lower-on-worries-about-us-economy"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "NVDA",
+      "symbol": "AAPL",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -124,16 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Dara Khosrowshahi Just Delivered Fantastic News for Uber Stock Investors",
-          "url": "https://www.fool.com/investing/2026/08/15/dara-khosrowshahi-just-delivered-fantastic-news-fo/"
+          "title": "Apple may finally have a $2,000 reason to enter foldables",
+          "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
         },
         {
-          "title": "Palantir Makes Its Case Against Frontier AI",
-          "url": "https://www.fool.com/investing/2026/08/15/palantir-makes-its-case-against-frontier-ai/"
+          "title": "I Checked VIG's Top Holdings. They're Not What You'd Expect From a Dividend ETF.",
+          "url": "https://www.fool.com/investing/2026/08/16/i-checked-vigs-top-holdings-theyre-not-what-youd-e/"
         },
         {
-          "title": "SpaceX Is Poised to Hit $220 by June 2027 (Hint: It's Not Too Late to Buy In)",
-          "url": "https://www.fool.com/investing/2026/08/15/spacex-is-poised-to-hit-220-by-june-2027-hint-its/"
+          "title": "Google is using a $29 gadget to tighten its grip on Android users",
+          "url": "https://www.thestreet.com/technology/google-is-using-a-29-gadget-to-tighten-its-grip-on-android-users"
         }
       ],
       "rank": 5
@@ -243,18 +243,42 @@
   ],
   "discovery": [
     {
-      "symbol": "HII",
-      "name": "Huntington Ingalls Industries, ",
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
       "why": "당일 기사 2건 언급",
       "headlines": [
         {
-          "title": "헌팅턴 잉걸스 CEO 캐스트너, HII 주식 425만 달러 매도"
+          "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges"
+        },
+        {
+          "title": "1 Jaw-Dropping Metric That Makes Alphabet Stock a No-Brainer Buy."
+        },
+        {
+          "title": "Google is using a $29 gadget to tighten its grip on Android users"
         }
       ],
       "basic": {
-        "trailing_pe": 19.529797,
-        "week52_pct": 35.0,
-        "market_cap_usd": 12913281024
+        "trailing_pe": 17.364458,
+        "week52_pct": 72.3,
+        "market_cap_usd": 4230334382080
+      }
+    },
+    {
+      "symbol": "SVV",
+      "name": "Savers Value Village, Inc.",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Savers Value Village 마크 월시 CEO, 240만 달러 이상 주식 매도"
+        },
+        {
+          "title": "Savers Value Village 최고 인적 서비스 책임자, 76.6만 달러 규모 주식 매각"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 71.066666,
+        "week52_pct": 53.9,
+        "market_cap_usd": 1633480448
       }
     }
   ],
