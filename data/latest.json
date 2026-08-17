@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-16T22:46:18+00:00",
-  "market_date": "2026-08-16",
+  "generated_at": "2026-08-17T22:49:24+00:00",
+  "market_date": "2026-08-17",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,10 +9,60 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 12,
-    "per_band_ready_in_days": 8
+    "days_collected": 13,
+    "per_band_ready_in_days": 7
   },
   "focus": [
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge",
+          "url": "https://stocktwits.com/news-articles/markets/equity/sndk-mu-rise-overnight-analyst-target-hikes-kospi-rebound-power-surge/cZo6v4ORJKA"
+        },
+        {
+          "title": "CXMT’s Rise to China’s Most Valuable Firm Heralds New Tech Era",
+          "url": "https://finance.yahoo.com/technology/articles/cxmt-rise-china-most-valuable-010738048.html"
+        },
+        {
+          "title": "Apple may finally have a $2,000 reason to enter foldables",
+          "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Tech stocks today: Anthropic's huge haul, Meta trial to kick off",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-anthropics-huge-haul-meta-trial-to-kick-off-132945569.html"
+        },
+        {
+          "title": "SpaceX shareholders include Google, Nvidia, BlackRock: Tracking the stock's volatility",
+          "url": "https://finance.yahoo.com/video/spacex-shareholders-google-nvidia-blackrock-150348057.html"
+        },
+        {
+          "title": "Top Market Strategist Warns Anthropic’s 40-50x Revenue Multiple for IPO Could Be “Dangerous”",
+          "url": "https://247wallst.com/investing/2026/08/17/top-market-strategist-warns-anthropics-40-50x-revenue-multiple-for-ipo-could-be-dangerous/"
+        }
+      ],
+      "rank": 2
+    },
     {
       "symbol": "TSLA",
       "score": 1.5,
@@ -24,19 +74,44 @@
       "signals": [],
       "news": [
         {
-          "title": "Elon Musk’s SpaceX Holdings Revealed. (Hint: It’s A Lot.)",
-          "url": "https://www.barrons.com/articles/elon-musk-spacex-holdings-stock-8a935b9d?siteid=yhoof2&yptr=yahoo"
+          "title": "S&P500, Dow, Nasdaq End Lower As Geopolitics And Oil Price Risk Take Center Stage — TSLA, PSKY, MSTR, BABA, NVDA In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/us-stocks-drop-geopolitics-and-oil-price-risk-take-center-stage/cZYG0TMRJSc"
         },
         {
-          "title": "Waymo shipped 3,200 Chinese-built EVs to LA for its robotaxi fleet despite 127.5% tariffs Americans can't get around",
-          "url": "https://finance.yahoo.com/technology/articles/waymo-shipped-3-200-chinese-163000266.html"
+          "title": "TSLA Stock In Focus As Tesla Reportedly Preps Cybercab Public Launch In Austin This Month",
+          "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-in-focus-as-tesla-reportedly-preps-cybercab-public-launch-in-austin-this-month/cZYGLCSRJST"
         },
         {
-          "title": "EXCLUSIVE: Ross Gerber Says Tesla Could ‘Double’ Sales Without Elon Musk, Warns Investors on SpaceX Merger",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-ross-gerber-says-tesla-140813250.html"
+          "title": "SpaceX Matters More for Telsa Stock Than Cybercab These Days",
+          "url": "https://www.barrons.com/articles/tesla-stock-price-today-spacex-a37b62ef?siteid=yhoof2&yptr=yahoo"
         }
       ],
-      "rank": 1
+      "rank": 3
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Trump admin. urges Apple not to purchase Chinese memory chips, but this presents a problem",
+          "url": "https://finance.yahoo.com/video/trump-admin-urges-apple-not-203543932.html"
+        },
+        {
+          "title": "Financial Advisors Love Warren Buffett, but They Don’t Always Agree With Him",
+          "url": "https://www.barrons.com/advisor/articles/warren-buffett-wisdom-financial-advisors-ec4db144?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Sandisk, Micron, Coherent, Boeing, Apple, Amazon, and More Stocks That Explain Today’s Market",
+          "url": "https://www.barrons.com/articles/stock-movers-a39cdac2?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -49,91 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Needs This; Walmart Looms",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
+          "title": "Tech searches for gains as stocks teeter at the open: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/tech-searches-for-gains-as-stocks-teeter-at-the-open-alphacheck-135155576.html"
         },
         {
-          "title": "Why SK Hynix Stock Skyrocketed This Week",
-          "url": "https://www.fool.com/investing/2026/08/16/why-sk-hynix-stock-skyrocketed-this-week/"
+          "title": "Investors Remember Why They Love Memory-Chip Stocks",
+          "url": "https://www.investors.com/news/technology/sk-hynix-sandisk-micron-memory-chip-stocks/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "What Could Intel (INTC) Returning To Memory Mean For Investors?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/could-intel-intc-returning-memory-130810975.html"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
-          "url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/"
-        },
-        {
-          "title": "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Needs This; Walmart Looms",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Wall Street’s Biggest Funds Are Dumping Broadcom and Adding Taiwan Semiconductor. Time to Follow the ‘Smart Money?’",
-          "url": "https://247wallst.com/investing/2026/08/16/wall-streets-biggest-funds-are-dumping-broadcom-and-adding-taiwan-semiconductor-time-to-follow-the-smart-money/"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Apple may finally have a $2,000 reason to enter foldables",
-          "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
-        },
-        {
-          "title": "Apple, Samsung Can Absorb the Smartphone Cost Shock — Smaller Rivals May Not Be so Lucky",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-samsung-absorb-smartphone-cost-180159241.html"
-        },
-        {
-          "title": "Samsung Electronics (KOSE:A005930) Ends Memory Patent Fight With Five Year Licensing Deal",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-ends-042049333.html"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Apple may finally have a $2,000 reason to enter foldables",
-          "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
-        },
-        {
-          "title": "I Checked VIG's Top Holdings. They're Not What You'd Expect From a Dividend ETF.",
-          "url": "https://www.fool.com/investing/2026/08/16/i-checked-vigs-top-holdings-theyre-not-what-youd-e/"
-        },
-        {
-          "title": "Google is using a $29 gadget to tighten its grip on Android users",
-          "url": "https://www.thestreet.com/technology/google-is-using-a-29-gadget-to-tighten-its-grip-on-android-users"
+          "title": "Micron Stock Closes Above $1,000 After Key Move by Trump Administration",
+          "url": "https://www.barrons.com/articles/micron-stock-price-china-memory-364ae185?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -144,61 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 34.480858,
+      "trailing_pe": 34.457886,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 225.16,
-      "change_pct": -0.06,
-      "week52_pct": 85.4,
-      "pct_vs_ma200": 15.62,
-      "drawdown_from_high_pct": -4.38,
-      "return_3m_pct": -4.38,
-      "return_6m_pct": 20.59,
-      "return_12m_pct": 24.16,
-      "relative_strength_6m_pct": 6.64
+      "last_close": 225.01,
+      "change_pct": -0.07,
+      "week52_pct": 85.2,
+      "pct_vs_ma200": 15.47,
+      "drawdown_from_high_pct": -4.44,
+      "return_3m_pct": -0.02,
+      "return_6m_pct": 23.23,
+      "return_12m_pct": 23.78,
+      "relative_strength_6m_pct": 9.93
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.083714,
+      "trailing_pe": 35.044724,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 305.93,
-      "change_pct": 0.22,
-      "week52_pct": 70.7,
-      "pct_vs_ma200": 9.27,
-      "drawdown_from_high_pct": -9.96,
-      "return_3m_pct": 2.68,
-      "return_6m_pct": 17.1,
-      "return_12m_pct": 31.6,
-      "relative_strength_6m_pct": 3.15
+      "last_close": 305.59,
+      "change_pct": -0.11,
+      "week52_pct": 70.4,
+      "pct_vs_ma200": 9.07,
+      "drawdown_from_high_pct": -10.06,
+      "return_3m_pct": 1.87,
+      "return_6m_pct": 19.69,
+      "return_12m_pct": 31.76,
+      "relative_strength_6m_pct": 6.39
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 311.15454,
+      "trailing_pe": 308.45453,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 342.27,
-      "change_pct": 0.68,
-      "week52_pct": 22.9,
-      "pct_vs_ma200": -15.71,
-      "drawdown_from_high_pct": -30.13,
-      "return_3m_pct": -22.79,
-      "return_6m_pct": -17.93,
-      "return_12m_pct": 0.85,
-      "relative_strength_6m_pct": -31.88
+      "last_close": 339.3,
+      "change_pct": -0.87,
+      "week52_pct": 21.4,
+      "pct_vs_ma200": -16.32,
+      "drawdown_from_high_pct": -30.74,
+      "return_3m_pct": -19.64,
+      "return_6m_pct": -18.72,
+      "return_12m_pct": 1.11,
+      "relative_strength_6m_pct": -32.02
     },
     {
       "symbol": "005930.KS",
@@ -243,42 +243,39 @@
   ],
   "discovery": [
     {
-      "symbol": "GOOGL",
-      "name": "Alphabet Inc.",
+      "symbol": "SNDK",
+      "name": "Sandisk Corporation",
       "why": "당일 기사 2건 언급",
       "headlines": [
         {
-          "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges"
+          "title": "Sandisk, Micron, Coherent, Boeing, Apple, Amazon, and More Stocks That Explain Today’s Market"
         },
         {
-          "title": "1 Jaw-Dropping Metric That Makes Alphabet Stock a No-Brainer Buy."
-        },
-        {
-          "title": "Google is using a $29 gadget to tighten its grip on Android users"
+          "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge"
         }
       ],
       "basic": {
-        "trailing_pe": 17.364458,
-        "week52_pct": 72.3,
-        "market_cap_usd": 4230334382080
+        "trailing_pe": 24.248201,
+        "week52_pct": 76.1,
+        "market_cap_usd": 260880089088
       }
     },
     {
-      "symbol": "SVV",
-      "name": "Savers Value Village, Inc.",
-      "why": "당일 기사 3건 언급",
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "why": "당일 기사 2건 언급",
       "headlines": [
         {
-          "title": "Savers Value Village 마크 월시 CEO, 240만 달러 이상 주식 매도"
+          "title": "Top Market Strategist Warns Anthropic’s 40-50x Revenue Multiple for IPO Could Be “Dangerous”"
         },
         {
-          "title": "Savers Value Village 최고 인적 서비스 책임자, 76.6만 달러 규모 주식 매각"
+          "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge"
         }
       ],
       "basic": {
-        "trailing_pe": 71.066666,
-        "week52_pct": 53.9,
-        "market_cap_usd": 1633480448
+        "trailing_pe": 22.885094,
+        "week52_pct": 81.6,
+        "market_cap_usd": null
       }
     }
   ],
