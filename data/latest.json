@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-17T22:49:24+00:00",
-  "market_date": "2026-08-17",
+  "generated_at": "2026-08-18T22:49:37+00:00",
+  "market_date": "2026-08-18",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,60 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 13,
-    "per_band_ready_in_days": 7
+    "days_collected": 14,
+    "per_band_ready_in_days": 6
   },
   "focus": [
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge",
-          "url": "https://stocktwits.com/news-articles/markets/equity/sndk-mu-rise-overnight-analyst-target-hikes-kospi-rebound-power-surge/cZo6v4ORJKA"
-        },
-        {
-          "title": "CXMT’s Rise to China’s Most Valuable Firm Heralds New Tech Era",
-          "url": "https://finance.yahoo.com/technology/articles/cxmt-rise-china-most-valuable-010738048.html"
-        },
-        {
-          "title": "Apple may finally have a $2,000 reason to enter foldables",
-          "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Tech stocks today: Anthropic's huge haul, Meta trial to kick off",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-anthropics-huge-haul-meta-trial-to-kick-off-132945569.html"
-        },
-        {
-          "title": "SpaceX shareholders include Google, Nvidia, BlackRock: Tracking the stock's volatility",
-          "url": "https://finance.yahoo.com/video/spacex-shareholders-google-nvidia-blackrock-150348057.html"
-        },
-        {
-          "title": "Top Market Strategist Warns Anthropic’s 40-50x Revenue Multiple for IPO Could Be “Dangerous”",
-          "url": "https://247wallst.com/investing/2026/08/17/top-market-strategist-warns-anthropics-40-50x-revenue-multiple-for-ipo-could-be-dangerous/"
-        }
-      ],
-      "rank": 2
-    },
     {
       "symbol": "TSLA",
       "score": 1.5,
@@ -74,19 +24,19 @@
       "signals": [],
       "news": [
         {
-          "title": "S&P500, Dow, Nasdaq End Lower As Geopolitics And Oil Price Risk Take Center Stage — TSLA, PSKY, MSTR, BABA, NVDA In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/us-stocks-drop-geopolitics-and-oil-price-risk-take-center-stage/cZYG0TMRJSc"
+          "title": "Tesla's new partnership: Swedish company Einride to deploy 500 Tesla semi-truck EVs",
+          "url": "https://finance.yahoo.com/video/teslas-new-partnership-swedish-company-einride-to-deploy-500-tesla-semi-truck-evs-145522754.html"
         },
         {
-          "title": "TSLA Stock In Focus As Tesla Reportedly Preps Cybercab Public Launch In Austin This Month",
-          "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-in-focus-as-tesla-reportedly-preps-cybercab-public-launch-in-austin-this-month/cZYGLCSRJST"
+          "title": "What does Tesla's Cybercab launch mean for SpaceX's own ambitions?",
+          "url": "https://finance.yahoo.com/video/does-teslas-cybercab-launch-mean-141500236.html"
         },
         {
-          "title": "SpaceX Matters More for Telsa Stock Than Cybercab These Days",
-          "url": "https://www.barrons.com/articles/tesla-stock-price-today-spacex-a37b62ef?siteid=yhoof2&yptr=yahoo"
+          "title": "Tesla's Cybercab Could Hit Austin Roads This Month",
+          "url": "https://finance.yahoo.com/technology/articles/teslas-cybercab-could-hit-austin-212807468.html"
         }
       ],
-      "rank": 3
+      "rank": 1
     },
     {
       "symbol": "AAPL",
@@ -99,16 +49,66 @@
       "signals": [],
       "news": [
         {
-          "title": "Trump admin. urges Apple not to purchase Chinese memory chips, but this presents a problem",
-          "url": "https://finance.yahoo.com/video/trump-admin-urges-apple-not-203543932.html"
+          "title": "Wall Street clearly loves Google stock, 13F filings reveal",
+          "url": "https://finance.yahoo.com/markets/stocks/article/wall-street-clearly-loves-google-stock-13f-filings-reveal-131402051.html"
         },
         {
-          "title": "Financial Advisors Love Warren Buffett, but They Don’t Always Agree With Him",
-          "url": "https://www.barrons.com/advisor/articles/warren-buffett-wisdom-financial-advisors-ec4db144?siteid=yhoof2&yptr=yahoo"
+          "title": "Warren Buffett's Successor, Greg Abel, Has 34.7% of Berkshire Hathaway's Portfolio Invested in These 2 Artificial Intelligence (AI) Stocks",
+          "url": "https://www.fool.com/investing/2026/08/18/warren-buffetts-successor-greg-abel-has-347-of-ber/"
         },
         {
-          "title": "Sandisk, Micron, Coherent, Boeing, Apple, Amazon, and More Stocks That Explain Today’s Market",
-          "url": "https://www.barrons.com/articles/stock-movers-a39cdac2?siteid=yhoof2&yptr=yahoo"
+          "title": "Berkshire Boosts Alphabet Stake 83% as Buffett Makes Major AI Bet",
+          "url": "https://finance.yahoo.com/technology/ai/articles/berkshire-boosts-alphabet-stake-83-210009667.html"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Chip-stock bears are back in control. Here's how to play the downside with limited risk: Alpha Options Playbook",
+          "url": "https://finance.yahoo.com/markets/article/chip-stock-bears-are-back-in-control-heres-how-to-play-the-downside-with-limited-risk-alpha-options-playbook-161031671.html"
+        },
+        {
+          "title": "Broadcom's Artificial Intelligence (AI) Revenues Are Forecast to Exceed $100 Billion in 2027: Should You Buy the Dip?",
+          "url": "https://www.fool.com/investing/2026/08/18/broadcom-artificial-intelligence-ai-revenues-forec/"
+        },
+        {
+          "title": "A 4X S&P 500 ETN Now Exists. A 10% Market Drop Cuts It Nearly in Half and Investors Are Buying Anyway",
+          "url": "https://247wallst.com/investing/etf/2026/08/18/a-4x-sp-500-etn-now-exists-a-10-market-drop-cuts-it-nearly-in-half-and-investors-are-buying-anyway/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Xiaomi Profit Dives After Memory Crunch Worsens Downturn",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/xiaomi-profit-dives-memory-crunch-112159230.html"
+        },
+        {
+          "title": "Trump Plays Kim Jong Un Card to Pressure South Korea Over Trade",
+          "url": "https://finance.yahoo.com/economy/policy/articles/trump-plays-kim-jong-un-104809078.html"
+        },
+        {
+          "title": "Google Plans to Move All Pixel Production Out of China in 2027",
+          "url": "https://investorshub.advfn.com/market-news/article/34502/google-plans-to-move-all-pixel-production-out-of-china-in-2027"
         }
       ],
       "rank": 4
@@ -124,16 +124,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Tech searches for gains as stocks teeter at the open: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/tech-searches-for-gains-as-stocks-teeter-at-the-open-alphacheck-135155576.html"
+          "title": "Global bond sell-off pressures stocks: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/global-bond-sell-off-pressures-stocks-alphacheck-135011383.html"
         },
         {
-          "title": "Investors Remember Why They Love Memory-Chip Stocks",
-          "url": "https://www.investors.com/news/technology/sk-hynix-sandisk-micron-memory-chip-stocks/?src=A00220&yptr=yahoo"
+          "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
+          "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Micron Stock Closes Above $1,000 After Key Move by Trump Administration",
-          "url": "https://www.barrons.com/articles/micron-stock-price-china-memory-364ae185?siteid=yhoof2&yptr=yahoo"
+          "title": "Why Micron Stock and Its Memory Peers Are Falling",
+          "url": "https://www.barrons.com/articles/micron-stock-price-memory-chips-bond-yields-3d2aeeb6?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -144,61 +144,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 34.457886,
+      "trailing_pe": 33.65084,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 225.01,
-      "change_pct": -0.07,
-      "week52_pct": 85.2,
-      "pct_vs_ma200": 15.47,
-      "drawdown_from_high_pct": -4.44,
-      "return_3m_pct": -0.02,
-      "return_6m_pct": 23.23,
-      "return_12m_pct": 23.78,
-      "relative_strength_6m_pct": 9.93
+      "last_close": 219.74,
+      "change_pct": -2.34,
+      "week52_pct": 77.7,
+      "pct_vs_ma200": 12.73,
+      "drawdown_from_high_pct": -6.68,
+      "return_3m_pct": -1.05,
+      "return_6m_pct": 18.94,
+      "return_12m_pct": 21.94,
+      "relative_strength_6m_pct": 8.13
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.044724,
+      "trailing_pe": 35.59472,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 305.59,
-      "change_pct": -0.11,
-      "week52_pct": 70.4,
-      "pct_vs_ma200": 9.07,
-      "drawdown_from_high_pct": -10.06,
-      "return_3m_pct": 1.87,
-      "return_6m_pct": 19.69,
-      "return_12m_pct": 31.76,
-      "relative_strength_6m_pct": 6.39
+      "last_close": 310.03,
+      "change_pct": 1.45,
+      "week52_pct": 74.3,
+      "pct_vs_ma200": 10.57,
+      "drawdown_from_high_pct": -8.76,
+      "return_3m_pct": 4.18,
+      "return_6m_pct": 17.7,
+      "return_12m_pct": 34.36,
+      "relative_strength_6m_pct": 6.89
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 308.45453,
+      "trailing_pe": 309.05502,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 339.3,
-      "change_pct": -0.87,
-      "week52_pct": 21.4,
-      "pct_vs_ma200": -16.32,
-      "drawdown_from_high_pct": -30.74,
-      "return_3m_pct": -19.64,
-      "return_6m_pct": -18.72,
-      "return_12m_pct": 1.11,
-      "relative_strength_6m_pct": -32.02
+      "last_close": 336.87,
+      "change_pct": -0.72,
+      "week52_pct": 20.1,
+      "pct_vs_ma200": -16.79,
+      "drawdown_from_high_pct": -31.23,
+      "return_3m_pct": -17.83,
+      "return_6m_pct": -17.96,
+      "return_12m_pct": 1.91,
+      "relative_strength_6m_pct": -28.77
     },
     {
       "symbol": "005930.KS",
@@ -210,15 +210,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 274500.0,
-      "change_pct": 2.43,
-      "week52_pct": 70.3,
-      "pct_vs_ma200": 37.09,
-      "drawdown_from_high_pct": -24.19,
-      "return_3m_pct": -7.16,
-      "return_6m_pct": 73.63,
-      "return_12m_pct": 289.28,
-      "relative_strength_6m_pct": 36.52
+      "last_close": 268500.0,
+      "change_pct": -2.19,
+      "week52_pct": 68.3,
+      "pct_vs_ma200": 33.52,
+      "drawdown_from_high_pct": -25.85,
+      "return_3m_pct": -0.63,
+      "return_6m_pct": 61.87,
+      "return_12m_pct": 294.59,
+      "relative_strength_6m_pct": 29.91
     },
     {
       "symbol": "000660.KS",
@@ -230,52 +230,45 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1645000.0,
-      "change_pct": 3.26,
-      "week52_pct": 52.4,
-      "pct_vs_ma200": 33.83,
-      "drawdown_from_high_pct": -43.65,
-      "return_3m_pct": -16.48,
-      "return_6m_pct": 96.46,
-      "return_12m_pct": 503.98,
-      "relative_strength_6m_pct": 59.35
+      "last_close": 1662000.0,
+      "change_pct": 1.03,
+      "week52_pct": 53.0,
+      "pct_vs_ma200": 34.57,
+      "drawdown_from_high_pct": -43.06,
+      "return_3m_pct": -8.62,
+      "return_6m_pct": 87.75,
+      "return_12m_pct": 546.88,
+      "relative_strength_6m_pct": 55.79
     }
   ],
   "discovery": [
     {
-      "symbol": "SNDK",
-      "name": "Sandisk Corporation",
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
       "why": "당일 기사 2건 언급",
       "headlines": [
         {
-          "title": "Sandisk, Micron, Coherent, Boeing, Apple, Amazon, and More Stocks That Explain Today’s Market"
+          "title": "Wall Street clearly loves Google stock, 13F filings reveal"
         },
         {
-          "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge"
+          "title": "Berkshire Boosts Alphabet Stake 83% as Buffett Makes Major AI Bet"
         }
       ],
       "basic": {
-        "trailing_pe": 24.248201,
-        "week52_pct": 76.1,
-        "market_cap_usd": 260880089088
+        "trailing_pe": 17.279118,
+        "week52_pct": 71.4,
+        "market_cap_usd": 4209543741440
       }
     },
     {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
+      "symbol": "BRK-B",
+      "name": "Berkshire Hathaway Inc. New",
       "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "Top Market Strategist Warns Anthropic’s 40-50x Revenue Multiple for IPO Could Be “Dangerous”"
-        },
-        {
-          "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge"
-        }
-      ],
+      "headlines": [],
       "basic": {
-        "trailing_pe": 22.885094,
-        "week52_pct": 81.6,
-        "market_cap_usd": null
+        "trailing_pe": 12.6498995,
+        "week52_pct": 58.7,
+        "market_cap_usd": 1076691337216
       }
     }
   ],
