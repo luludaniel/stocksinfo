@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-19T22:50:46+00:00",
-  "market_date": "2026-08-19",
+  "generated_at": "2026-08-20T22:54:21+00:00",
+  "market_date": "2026-08-20",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,8 +9,8 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 15,
-    "per_band_ready_in_days": 5
+    "days_collected": 16,
+    "per_band_ready_in_days": 4
   },
   "focus": [
     {
@@ -26,49 +26,24 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-7"
+          "message": "실적발표 D-6"
         }
       ],
       "news": [
         {
-          "title": "Is Nvidia stock too cheap right now?",
-          "url": "https://finance.yahoo.com/video/nvidia-stock-too-cheap-now-144036744.html"
+          "title": "Tech stocks today: Anthropic's IPO plans come into focus, Nvidia earnings provide next test for AI trade",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-anthropics-ipo-plans-come-into-focus-nvidia-earnings-provide-next-test-for-ai-trade-132945569.html"
         },
         {
-          "title": "Oil Is Up 36% and the Strait of Hormuz Is Still Closed. The QQQI Family Runs a 14.75% Energy Fund",
-          "url": "https://247wallst.com/investing/2026/08/19/oil-is-up-36-and-the-strait-of-hormuz-is-still-closed-the-qqqi-family-runs-a-14-75-energy-fund/"
+          "title": "Waymo is making its own AI chip for its robotaxi service",
+          "url": "https://finance.yahoo.com/video/waymo-making-own-ai-chip-194318039.html"
         },
         {
-          "title": "NEOS’s ‘Boosted’ S&P Fund Pays 17% While the Nasdaq Version Pays 21%",
-          "url": "https://247wallst.com/investing/2026/08/19/neoss-boosted-sp-fund-pays-17-while-the-nasdaq-version-pays-21/"
+          "title": "The U.S. Just Hit $40 Trillion in Debt — 2 Years Ahead of Schedule. Here's What Investors Need to Know.",
+          "url": "https://www.fool.com/investing/2026/08/20/the-u-s-just-hit-usd40-trillion-in-debt-2-years-ahead-of-schedule-here-s-what-investors-need-to-know/"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Stocks to Watch Recap: Oracle, SK Hynix, Moderna, Unitree",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-19-2026/card/stocks-to-watch-sk-hynix-la-z-boy-unitree-target-c8MMp4MagwjHSq0QEOSU?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Micron Gained Memory Market Share. The Stock Is Dropping Anyway.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-memory-share-c4eea8c4?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Moderna, Merck, Micron, Marvell, Estée Lauder, Honeywell Aerospace, and More Stocks That Explain Today’s Market",
-          "url": "https://www.barrons.com/articles/stock-movers-882bea6d?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 2
     },
     {
       "symbol": "005930.KS",
@@ -81,19 +56,19 @@
       "signals": [],
       "news": [
         {
-          "title": "TSMC Trades 30.87% Above GF Value as Chip Capacity Tightens",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-trades-30-87-above-220612599.html"
+          "title": "Waymo is making its own AI chip for its robotaxi service",
+          "url": "https://finance.yahoo.com/video/waymo-making-own-ai-chip-194318039.html"
         },
         {
-          "title": "Samsung Tumbled Nearly 8% in Seoul Even as AI Demand Drives Chip Prices Up To 15%",
-          "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61317561/samsung-chip-prices-ai-demand?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
+          "title": "How Much of Your Portfolio Should Actually Be in DRAM",
+          "url": "https://247wallst.com/investing/etf/2026/08/20/how-much-of-your-portfolio-should-actually-be-in-dram/"
         },
         {
-          "title": "Micron Gained Memory Market Share. The Stock Is Dropping Anyway.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-memory-share-c4eea8c4?siteid=yhoof2&yptr=yahoo"
+          "title": "The Biggest Risk Facing the Roundhill Memory ETF (DRAM) Right Now",
+          "url": "https://247wallst.com/investing/2026/08/20/the-biggest-risk-facing-the-roundhill-memory-etf-dram-right-now/"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "symbol": "AAPL",
@@ -106,16 +81,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Is Nvidia stock too cheap right now?",
-          "url": "https://finance.yahoo.com/video/nvidia-stock-too-cheap-now-144036744.html"
+          "title": "Waymo is making its own AI chip for its robotaxi service",
+          "url": "https://finance.yahoo.com/video/waymo-making-own-ai-chip-194318039.html"
         },
         {
-          "title": "Dow Jones Futures: S&P 500, Nasdaq Rise On Treasury Move; Moderna, Merck Spur Big Biopharma Gains",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-treasury-move-moderna-merck-spur-big-biopharma-gains/?src=A00220&yptr=yahoo"
+          "title": "History of TSMC & its stock: Company timeline, facts & milestones",
+          "url": "https://www.thestreet.com/investing/stocks/history-of-taiwant-semiconductor-manufacturing-company-timeline-facts"
         },
         {
-          "title": "VUG’s 0.03% Fee Hides the Real Cost: 63% of Your Money Sits in Just Ten Stocks",
-          "url": "https://247wallst.com/investing/etf/2026/08/19/vugs-0-03-fee-hides-the-real-cost-63-of-your-money-sits-in-just-ten-stocks/"
+          "title": "Apple’s New CEO Could Shake Up Its Spending Strategy to Win in AI",
+          "url": "https://www.barrons.com/articles/apple-ai-spending-john-ternus-55c1046f?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "How Much of Your Portfolio Should Actually Be in DRAM",
+          "url": "https://247wallst.com/investing/etf/2026/08/20/how-much-of-your-portfolio-should-actually-be-in-dram/"
+        },
+        {
+          "title": "The Biggest Risk Facing the Roundhill Memory ETF (DRAM) Right Now",
+          "url": "https://247wallst.com/investing/2026/08/20/the-biggest-risk-facing-the-roundhill-memory-etf-dram-right-now/"
+        },
+        {
+          "title": "SK Hynix Climbs 4% on Record Buyback, Micron Ticks Up as Memory Defies the Tech Selloff",
+          "url": "https://247wallst.com/investing/2026/08/20/sk-hynix-climbs-4-on-record-buyback-micron-ticks-up-as-memory-defies-the-tech-selloff/"
         }
       ],
       "rank": 4
@@ -131,16 +131,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Tesla's Model Y L Is Coming to America. Will It Reignite Sales Growth?",
-          "url": "https://www.fool.com/investing/2026/08/19/teslas-model-y-l-is-coming-to-america-will-it-reig/"
+          "title": "Prediction: Cybercab Adds Less Than 5% to Tesla's Revenue in Its First Full Year",
+          "url": "https://www.fool.com/investing/2026/08/20/prediction-cybercab-adds-less-than-5-to-tesla-s-revenue-in-its-first-full-year/"
         },
         {
-          "title": "General Motors Raises Guidance as Truck Demand Offsets EV and Tariff Pressures",
-          "url": "https://www.marketbeat.com/instant-alerts/general-motors-raises-guidance-as-truck-demand-offsets-ev-and-tariff-pressures-2026-08-19/?utm_source=yahoofinance&utm_medium=yahoofinance"
+          "title": "Elon Musk points to one country as AI's biggest threat",
+          "url": "https://www.thestreet.com/crypto/markets/elon-musk-points-to-one-country-as-ais-biggest-threat"
         },
         {
-          "title": "Why China’s Unitree IPO Surge Is Good News for Tesla",
-          "url": "https://www.barrons.com/articles/unitree-ipo-china-robot-tesla-7b95f6e1?siteid=yhoof2&yptr=yahoo"
+          "title": "Einride targets 1,500 trucks by 2028 with Tesla and DAF deals",
+          "url": "https://finance.yahoo.com/technology/articles/einride-targets-1-500-trucks-204613883.html"
         }
       ],
       "rank": 5
@@ -151,61 +151,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 33.316998,
+      "trailing_pe": 33.20827,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 217.56,
-      "change_pct": -0.99,
-      "week52_pct": 74.6,
-      "pct_vs_ma200": 11.56,
-      "drawdown_from_high_pct": -7.6,
-      "return_3m_pct": -1.27,
-      "return_6m_pct": 15.88,
-      "return_12m_pct": 19.69,
-      "relative_strength_6m_pct": 3.07
+      "last_close": 216.85,
+      "change_pct": -0.33,
+      "week52_pct": 73.6,
+      "pct_vs_ma200": 11.16,
+      "drawdown_from_high_pct": -7.91,
+      "return_3m_pct": -2.85,
+      "return_6m_pct": 15.55,
+      "return_12m_pct": 23.63,
+      "relative_strength_6m_pct": 3.77
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 36.375427,
+      "trailing_pe": 35.74053,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 316.83,
-      "change_pct": 2.19,
-      "week52_pct": 80.2,
-      "pct_vs_ma200": 12.91,
-      "drawdown_from_high_pct": -6.76,
-      "return_3m_pct": 6.07,
-      "return_6m_pct": 20.07,
-      "return_12m_pct": 37.73,
-      "relative_strength_6m_pct": 7.26
+      "last_close": 311.3,
+      "change_pct": -1.75,
+      "week52_pct": 75.4,
+      "pct_vs_ma200": 10.85,
+      "drawdown_from_high_pct": -8.38,
+      "return_3m_pct": 3.08,
+      "return_6m_pct": 19.68,
+      "return_12m_pct": 35.52,
+      "relative_strength_6m_pct": 7.9
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 325.11108,
+      "trailing_pe": 316.63303,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 351.12,
-      "change_pct": 4.23,
-      "week52_pct": 27.6,
-      "pct_vs_ma200": -13.18,
-      "drawdown_from_high_pct": -28.33,
-      "return_3m_pct": -13.11,
-      "return_6m_pct": -14.64,
-      "return_12m_pct": 4.76,
-      "relative_strength_6m_pct": -27.45
+      "last_close": 345.13,
+      "change_pct": -1.71,
+      "week52_pct": 24.4,
+      "pct_vs_ma200": -14.54,
+      "drawdown_from_high_pct": -29.55,
+      "return_3m_pct": -17.29,
+      "return_6m_pct": -16.17,
+      "return_12m_pct": 4.8,
+      "relative_strength_6m_pct": -27.95
     },
     {
       "symbol": "005930.KS",
@@ -217,15 +217,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 247500.0,
-      "change_pct": -7.82,
-      "week52_pct": 61.2,
-      "pct_vs_ma200": 22.62,
-      "drawdown_from_high_pct": -31.65,
-      "return_3m_pct": -11.82,
-      "return_6m_pct": 49.75,
-      "return_12m_pct": 259.55,
-      "relative_strength_6m_pct": 21.85
+      "last_close": 271000.0,
+      "change_pct": 9.49,
+      "week52_pct": 69.2,
+      "pct_vs_ma200": 33.7,
+      "drawdown_from_high_pct": -25.16,
+      "return_3m_pct": -1.52,
+      "return_6m_pct": 62.01,
+      "return_12m_pct": 292.56,
+      "relative_strength_6m_pct": 36.69
     },
     {
       "symbol": "000660.KS",
@@ -237,31 +237,31 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1500000.0,
-      "change_pct": -9.75,
-      "week52_pct": 47.0,
-      "pct_vs_ma200": 20.97,
-      "drawdown_from_high_pct": -48.61,
-      "return_3m_pct": -18.46,
-      "return_6m_pct": 71.58,
-      "return_12m_pct": 483.82,
-      "relative_strength_6m_pct": 43.68
+      "last_close": 1691000.0,
+      "change_pct": 12.73,
+      "week52_pct": 54.1,
+      "pct_vs_ma200": 35.73,
+      "drawdown_from_high_pct": -42.07,
+      "return_3m_pct": -3.08,
+      "return_6m_pct": 97.02,
+      "return_12m_pct": 544.43,
+      "relative_strength_6m_pct": 71.7
     }
   ],
   "discovery": [
     {
-      "symbol": "ETSY",
-      "name": "Etsy, Inc.",
-      "why": "당일 기사 3건 언급",
+      "symbol": "SKHY",
+      "name": "SK hynix Inc.",
+      "why": "당일 기사 4건 언급",
       "headlines": [
         {
-          "title": "Etsy 이사 말라 블로우, 2026년 8월 17일 보통주 23,868달러 매각"
+          "title": "Why Are Nasdaq, S&P 500 Futures Falling Premarket? NVDA, SKHY, SPCX, TSLA, MRNA, MSTR, PURR, WMT Stocks In Focus - Yahoo Finance"
         }
       ],
       "basic": {
-        "trailing_pe": 25.462025,
-        "week52_pct": 85.8,
-        "market_cap_usd": 7384758784
+        "trailing_pe": 10.141791,
+        "week52_pct": 54.1,
+        "market_cap_usd": 1157631311872
       }
     }
   ],
