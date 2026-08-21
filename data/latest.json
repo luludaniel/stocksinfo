@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-20T22:54:21+00:00",
-  "market_date": "2026-08-20",
+  "generated_at": "2026-08-21T22:50:02+00:00",
+  "market_date": "2026-08-21",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,8 +9,8 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 16,
-    "per_band_ready_in_days": 4
+    "days_collected": 17,
+    "per_band_ready_in_days": 3
   },
   "focus": [
     {
@@ -26,21 +26,21 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-6"
+          "message": "실적발표 D-5"
         }
       ],
       "news": [
         {
-          "title": "Tech stocks today: Anthropic's IPO plans come into focus, Nvidia earnings provide next test for AI trade",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-anthropics-ipo-plans-come-into-focus-nvidia-earnings-provide-next-test-for-ai-trade-132945569.html"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq post weekly losses as bond volatility remains in focus, bitcoin soars",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html"
         },
         {
-          "title": "Waymo is making its own AI chip for its robotaxi service",
-          "url": "https://finance.yahoo.com/video/waymo-making-own-ai-chip-194318039.html"
+          "title": "Tech stocks today: Nvidia earnings on the horizon, as Anthropic prepares IPO plans",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-nvidia-earnings-on-the-horizon-as-anthropic-prepares-ipo-plans-132945569.html"
         },
         {
-          "title": "The U.S. Just Hit $40 Trillion in Debt — 2 Years Ahead of Schedule. Here's What Investors Need to Know.",
-          "url": "https://www.fool.com/investing/2026/08/20/the-u-s-just-hit-usd40-trillion-in-debt-2-years-ahead-of-schedule-here-s-what-investors-need-to-know/"
+          "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
+          "url": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html"
         }
       ],
       "rank": 1
@@ -56,16 +56,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Waymo is making its own AI chip for its robotaxi service",
-          "url": "https://finance.yahoo.com/video/waymo-making-own-ai-chip-194318039.html"
+          "title": "Korea's crypto trading volume is surging. Why are these investors re-entering the market?",
+          "url": "https://finance.yahoo.com/video/koreas-crypto-trading-volume-surging-162711254.html"
         },
         {
-          "title": "How Much of Your Portfolio Should Actually Be in DRAM",
-          "url": "https://247wallst.com/investing/etf/2026/08/20/how-much-of-your-portfolio-should-actually-be-in-dram/"
+          "title": "Another Big Korean Tech Company Is Buying Back Shares",
+          "url": "https://www.investopedia.com/market-update-another-big-korean-tech-company-is-buying-back-shares-12065333"
         },
         {
-          "title": "The Biggest Risk Facing the Roundhill Memory ETF (DRAM) Right Now",
-          "url": "https://247wallst.com/investing/2026/08/20/the-biggest-risk-facing-the-roundhill-memory-etf-dram-right-now/"
+          "title": "Google is about to make a major change to every Pixel device",
+          "url": "https://www.thestreet.com/investing/google-shifts-pixel-device-production-out-of-china"
         }
       ],
       "rank": 2
@@ -81,16 +81,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Waymo is making its own AI chip for its robotaxi service",
-          "url": "https://finance.yahoo.com/video/waymo-making-own-ai-chip-194318039.html"
+          "title": "Anthropic's IPO could come sooner than you think — likely beating OpenAI to the punch",
+          "url": "https://finance.yahoo.com/video/anthropics-ipo-could-come-sooner-195110660.html"
         },
         {
-          "title": "History of TSMC & its stock: Company timeline, facts & milestones",
-          "url": "https://www.thestreet.com/investing/stocks/history-of-taiwant-semiconductor-manufacturing-company-timeline-facts"
+          "title": "Morgan Stanley resets Nvidia stock forecast ahead of earnings",
+          "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-reiterates-nvidia-stock-forecast-ahead-of-q2-fy27-earnings"
         },
         {
-          "title": "Apple’s New CEO Could Shake Up Its Spending Strategy to Win in AI",
-          "url": "https://www.barrons.com/articles/apple-ai-spending-john-ternus-55c1046f?siteid=yhoof2&yptr=yahoo"
+          "title": "Warren Buffett Successor Greg Abel Cut Berkshire's Bank of America Stake by $1.7 Billion. He Added $1.6 Billion of Delta Air Lines.",
+          "url": "https://www.fool.com/investing/2026/08/21/warren-buffett-successor-greg-abel-cut-berkshire-s-bank-of-america-stake-by-usd1-7-billion-he-added-usd1-6-billion-of-delta-air-lines/"
         }
       ],
       "rank": 3
@@ -106,16 +106,16 @@
       "signals": [],
       "news": [
         {
-          "title": "How Much of Your Portfolio Should Actually Be in DRAM",
-          "url": "https://247wallst.com/investing/etf/2026/08/20/how-much-of-your-portfolio-should-actually-be-in-dram/"
+          "title": "Stocks trade higher, lifted by crypto, commodities: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/stocks-trade-higher-lifted-by-crypto-commodities-alphacheck-135720189.html"
         },
         {
-          "title": "The Biggest Risk Facing the Roundhill Memory ETF (DRAM) Right Now",
-          "url": "https://247wallst.com/investing/2026/08/20/the-biggest-risk-facing-the-roundhill-memory-etf-dram-right-now/"
+          "title": "Is Micron a Commodity or an AI Powerhouse? The Debate Driving Its Low Valuation.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-valuation-commodity-ai-memory-1b905948?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "SK Hynix Climbs 4% on Record Buyback, Micron Ticks Up as Memory Defies the Tech Selloff",
-          "url": "https://247wallst.com/investing/2026/08/20/sk-hynix-climbs-4-on-record-buyback-micron-ticks-up-as-memory-defies-the-tech-selloff/"
+          "title": "Another Big Korean Tech Company Is Buying Back Shares",
+          "url": "https://www.investopedia.com/market-update-another-big-korean-tech-company-is-buying-back-shares-12065333"
         }
       ],
       "rank": 4
@@ -131,16 +131,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Prediction: Cybercab Adds Less Than 5% to Tesla's Revenue in Its First Full Year",
-          "url": "https://www.fool.com/investing/2026/08/20/prediction-cybercab-adds-less-than-5-to-tesla-s-revenue-in-its-first-full-year/"
+          "title": "Tesla Controls 59% of the U.S. EV Market -- Its Highest Share Since 2023",
+          "url": "https://www.fool.com/investing/2026/08/21/tesla-controls-59-of-the-us-ev-market-its-highest/"
         },
         {
-          "title": "Elon Musk points to one country as AI's biggest threat",
-          "url": "https://www.thestreet.com/crypto/markets/elon-musk-points-to-one-country-as-ais-biggest-threat"
+          "title": "Morgan Stanley resets Nvidia stock forecast ahead of earnings",
+          "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-reiterates-nvidia-stock-forecast-ahead-of-q2-fy27-earnings"
         },
         {
-          "title": "Einride targets 1,500 trucks by 2028 with Tesla and DAF deals",
-          "url": "https://finance.yahoo.com/technology/articles/einride-targets-1-500-trucks-204613883.html"
+          "title": "US Stock Indices End Week Lower On Pressure From Elevated Long-Duration Treasury Yields — PSKY, MSTR, WMT, TSLA, NVDA In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-week-lower-on-pressure-from-elevated-long-duration-treasury-yields-psky/cZY97YMRJVO"
         }
       ],
       "rank": 5
@@ -151,61 +151,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 33.20827,
+      "trailing_pe": 32.88208,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 216.85,
-      "change_pct": -0.33,
-      "week52_pct": 73.6,
-      "pct_vs_ma200": 11.16,
-      "drawdown_from_high_pct": -7.91,
-      "return_3m_pct": -2.85,
-      "return_6m_pct": 15.55,
-      "return_12m_pct": 23.63,
-      "relative_strength_6m_pct": 3.77
+      "last_close": 214.72,
+      "change_pct": -0.98,
+      "week52_pct": 70.6,
+      "pct_vs_ma200": 10.04,
+      "drawdown_from_high_pct": -8.81,
+      "return_3m_pct": -2.07,
+      "return_6m_pct": 13.26,
+      "return_12m_pct": 22.58,
+      "relative_strength_6m_pct": 2.19
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.74053,
+      "trailing_pe": 35.475918,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 311.3,
-      "change_pct": -1.75,
-      "week52_pct": 75.4,
-      "pct_vs_ma200": 10.85,
-      "drawdown_from_high_pct": -8.38,
-      "return_3m_pct": 3.08,
-      "return_6m_pct": 19.68,
-      "return_12m_pct": 35.52,
-      "relative_strength_6m_pct": 7.9
+      "last_close": 309.35,
+      "change_pct": -0.63,
+      "week52_pct": 73.7,
+      "pct_vs_ma200": 10.08,
+      "drawdown_from_high_pct": -8.96,
+      "return_3m_pct": 1.52,
+      "return_6m_pct": 17.13,
+      "return_12m_pct": 37.38,
+      "relative_strength_6m_pct": 6.06
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 316.63303,
+      "trailing_pe": 339.12146,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 345.13,
-      "change_pct": -1.71,
-      "week52_pct": 24.4,
-      "pct_vs_ma200": -14.54,
-      "drawdown_from_high_pct": -29.55,
-      "return_3m_pct": -17.29,
-      "return_6m_pct": -16.17,
-      "return_12m_pct": 4.8,
-      "relative_strength_6m_pct": -27.95
+      "last_close": 362.86,
+      "change_pct": 5.14,
+      "week52_pct": 33.7,
+      "pct_vs_ma200": -10.03,
+      "drawdown_from_high_pct": -25.93,
+      "return_3m_pct": -13.16,
+      "return_6m_pct": -11.89,
+      "return_12m_pct": 12.03,
+      "relative_strength_6m_pct": -22.96
     },
     {
       "symbol": "005930.KS",
@@ -217,15 +217,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 271000.0,
-      "change_pct": 9.49,
-      "week52_pct": 69.2,
-      "pct_vs_ma200": 33.7,
-      "drawdown_from_high_pct": -25.16,
-      "return_3m_pct": -1.52,
-      "return_6m_pct": 62.01,
-      "return_12m_pct": 292.56,
-      "relative_strength_6m_pct": 36.69
+      "last_close": 281500.0,
+      "change_pct": 3.87,
+      "week52_pct": 72.7,
+      "pct_vs_ma200": 38.26,
+      "drawdown_from_high_pct": -22.26,
+      "return_3m_pct": 2.11,
+      "return_6m_pct": 58.12,
+      "return_12m_pct": 314.29,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -237,40 +237,30 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1691000.0,
-      "change_pct": 12.73,
-      "week52_pct": 54.1,
-      "pct_vs_ma200": 35.73,
-      "drawdown_from_high_pct": -42.07,
-      "return_3m_pct": -3.08,
-      "return_6m_pct": 97.02,
-      "return_12m_pct": 544.43,
-      "relative_strength_6m_pct": 71.7
+      "last_close": 1730000.0,
+      "change_pct": 2.31,
+      "week52_pct": 55.6,
+      "pct_vs_ma200": 38.19,
+      "drawdown_from_high_pct": -40.73,
+      "return_3m_pct": -0.84,
+      "return_6m_pct": 95.21,
+      "return_12m_pct": 572.04,
+      "relative_strength_6m_pct": NaN
     }
   ],
-  "discovery": [
-    {
-      "symbol": "SKHY",
-      "name": "SK hynix Inc.",
-      "why": "당일 기사 4건 언급",
-      "headlines": [
-        {
-          "title": "Why Are Nasdaq, S&P 500 Futures Falling Premarket? NVDA, SKHY, SPCX, TSLA, MRNA, MSTR, PURR, WMT Stocks In Focus - Yahoo Finance"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 10.141791,
-        "week52_pct": 54.1,
-        "market_cap_usd": 1157631311872
-      }
-    }
-  ],
+  "discovery": [],
   "calendar": [
     {
       "date": "2026-08-26",
       "weekday": "수",
       "label": "NVIDIA Corporation 실적",
       "kind": "earnings"
+    },
+    {
+      "date": "2026-08-28",
+      "weekday": "금",
+      "label": "SK hynix 배당락",
+      "kind": "ex_dividend"
     }
   ]
 }
