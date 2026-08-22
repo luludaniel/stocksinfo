@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-21T22:50:02+00:00",
-  "market_date": "2026-08-21",
+  "generated_at": "2026-08-22T22:47:11+00:00",
+  "market_date": "2026-08-22",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,8 +9,8 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 17,
-    "per_band_ready_in_days": 3
+    "days_collected": 18,
+    "per_band_ready_in_days": 2
   },
   "focus": [
     {
@@ -26,21 +26,21 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-5"
+          "message": "실적발표 D-4"
         }
       ],
       "news": [
         {
-          "title": "Stock market today: Dow, S&P 500, Nasdaq post weekly losses as bond volatility remains in focus, bitcoin soars",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html"
+          "title": "Apple Announced Its Largest-Ever Stock Buyback Under Tim Cook's Leadership. Here's Why the Size of the Repurchase Program Matters for Shareholders.",
+          "url": "https://www.fool.com/investing/2026/08/22/apple-announced-its-largest-ever-stock-buyback-und/"
         },
         {
-          "title": "Tech stocks today: Nvidia earnings on the horizon, as Anthropic prepares IPO plans",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-nvidia-earnings-on-the-horizon-as-anthropic-prepares-ipo-plans-132945569.html"
+          "title": "Up 20% in 1 Day, is Hyperliquid Worth Buying Hand Over Fist Right Now?",
+          "url": "https://www.fool.com/investing/2026/08/22/up-20-in-1-day-is-hyperliquid-worth-buying-hand-ov/"
         },
         {
-          "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
-          "url": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html"
+          "title": "Institutional Investors Are Buying Hyperliquid Strategies. Should You?",
+          "url": "https://www.fool.com/investing/2026/08/22/institutional-investors-are-buying-hyperliquid-str/"
         }
       ],
       "rank": 1
@@ -56,22 +56,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Korea's crypto trading volume is surging. Why are these investors re-entering the market?",
-          "url": "https://finance.yahoo.com/video/koreas-crypto-trading-volume-surging-162711254.html"
+          "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html"
+        },
+        {
+          "title": "Walmart will let customers use Apple Pay after holding out for more than a decade. Why it finally caved",
+          "url": "https://www.fastcompany.com/91593708/walmart-adds-apple-pay-google-tap-payments-after-holding-out-why-it-caved"
         },
         {
           "title": "Another Big Korean Tech Company Is Buying Back Shares",
           "url": "https://www.investopedia.com/market-update-another-big-korean-tech-company-is-buying-back-shares-12065333"
-        },
-        {
-          "title": "Google is about to make a major change to every Pixel device",
-          "url": "https://www.thestreet.com/investing/google-shifts-pixel-device-production-out-of-china"
         }
       ],
       "rank": 2
     },
     {
-      "symbol": "AAPL",
+      "symbol": "TSLA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -81,16 +81,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Anthropic's IPO could come sooner than you think — likely beating OpenAI to the punch",
-          "url": "https://finance.yahoo.com/video/anthropics-ipo-could-come-sooner-195110660.html"
+          "title": "JPMorgan Says Tesla Is Confident of Scaling Cybercab Operations, Touts Future Models Based on Platform—FSD V15 a ‘Step-Change’ From Previous Versions",
+          "url": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-says-tesla-confident-scaling-213147223.html"
         },
         {
-          "title": "Morgan Stanley resets Nvidia stock forecast ahead of earnings",
-          "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-reiterates-nvidia-stock-forecast-ahead-of-q2-fy27-earnings"
+          "title": "Tesla (TSLA) Is Recalling Nearly 3 Million Vehicles In China",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-recalling-nearly-3-170809617.html"
         },
         {
-          "title": "Warren Buffett Successor Greg Abel Cut Berkshire's Bank of America Stake by $1.7 Billion. He Added $1.6 Billion of Delta Air Lines.",
-          "url": "https://www.fool.com/investing/2026/08/21/warren-buffett-successor-greg-abel-cut-berkshire-s-bank-of-america-stake-by-usd1-7-billion-he-added-usd1-6-billion-of-delta-air-lines/"
+          "title": "Tesla's Model Y L Is Coming to America. Will It Reignite Sales Growth?",
+          "url": "https://www.fool.com/investing/2026/08/22/teslas-model-y-l-is-coming-to-america-will-it-reig/"
         }
       ],
       "rank": 3
@@ -106,22 +106,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Stocks trade higher, lifted by crypto, commodities: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/stocks-trade-higher-lifted-by-crypto-commodities-alphacheck-135720189.html"
+          "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html"
         },
         {
-          "title": "Is Micron a Commodity or an AI Powerhouse? The Debate Driving Its Low Valuation.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-valuation-commodity-ai-memory-1b905948?siteid=yhoof2&yptr=yahoo"
+          "title": "A $28.7 Billion Reason to Buy SK hynix Stock Now",
+          "url": "https://www.barchart.com/story/news/3986370/a-28-7-billion-reason-to-buy-sk-hynix-stock-now"
         },
         {
-          "title": "Another Big Korean Tech Company Is Buying Back Shares",
-          "url": "https://www.investopedia.com/market-update-another-big-korean-tech-company-is-buying-back-shares-12065333"
+          "title": "Is SK hynix (NasdaqGS:SKHY) Undervalued After Its 40 Trillion Won Buyback Plan?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaqgs-skhy-undervalued-110906493.html"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "TSLA",
+      "symbol": "AAPL",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -131,16 +131,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Tesla Controls 59% of the U.S. EV Market -- Its Highest Share Since 2023",
-          "url": "https://www.fool.com/investing/2026/08/21/tesla-controls-59-of-the-us-ev-market-its-highest/"
+          "title": "Apple Announced Its Largest-Ever Stock Buyback Under Tim Cook's Leadership. Here's Why the Size of the Repurchase Program Matters for Shareholders.",
+          "url": "https://www.fool.com/investing/2026/08/22/apple-announced-its-largest-ever-stock-buyback-und/"
         },
         {
-          "title": "Morgan Stanley resets Nvidia stock forecast ahead of earnings",
-          "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-reiterates-nvidia-stock-forecast-ahead-of-q2-fy27-earnings"
+          "title": "Apple vs. Meta Platforms: Which \"Magnificent Seven\" Giant Has the Stronger Artificial Intelligence (AI) Growth Engine?",
+          "url": "https://www.fool.com/investing/2026/08/22/apple-vs-meta-platforms-better-ai-growth-engine/"
         },
         {
-          "title": "US Stock Indices End Week Lower On Pressure From Elevated Long-Duration Treasury Yields — PSKY, MSTR, WMT, TSLA, NVDA In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-week-lower-on-pressure-from-elevated-long-duration-treasury-yields-psky/cZY97YMRJVO"
+          "title": "Will Apple’s risk appetite change under John Ternus?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-risk-appetite-change-under-173456162.html"
         }
       ],
       "rank": 5
@@ -191,7 +191,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 339.12146,
+      "trailing_pe": 332.89905,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -225,7 +225,7 @@
       "return_3m_pct": 2.11,
       "return_6m_pct": 58.12,
       "return_12m_pct": 314.29,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 32.94
     },
     {
       "symbol": "000660.KS",
@@ -245,7 +245,7 @@
       "return_3m_pct": -0.84,
       "return_6m_pct": 95.21,
       "return_12m_pct": 572.04,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 70.03
     }
   ],
   "discovery": [],
