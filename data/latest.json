@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T22:47:11+00:00",
-  "market_date": "2026-08-22",
+  "generated_at": "2026-08-23T22:47:23+00:00",
+  "market_date": "2026-08-23",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,41 +9,66 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 18,
-    "per_band_ready_in_days": 2
+    "days_collected": 19,
+    "per_band_ready_in_days": 1
   },
   "focus": [
     {
       "symbol": "NVDA",
-      "score": 2.5,
+      "score": 4.5,
       "score_breakdown": {
         "severity": 1.0,
         "news": 1.5,
-        "event": 0.0
+        "event": 2.0
       },
       "signals": [
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-4"
+          "message": "실적발표 D-3"
         }
       ],
       "news": [
         {
-          "title": "Apple Announced Its Largest-Ever Stock Buyback Under Tim Cook's Leadership. Here's Why the Size of the Repurchase Program Matters for Shareholders.",
-          "url": "https://www.fool.com/investing/2026/08/22/apple-announced-its-largest-ever-stock-buyback-und/"
+          "title": "Nvidia's Q2 earnings to test resurgent AI trade",
+          "url": "https://finance.yahoo.com/news/nvidias-q2-earnings-to-test-resurgent-ai-trade-112502189.html"
         },
         {
-          "title": "Up 20% in 1 Day, is Hyperliquid Worth Buying Hand Over Fist Right Now?",
-          "url": "https://www.fool.com/investing/2026/08/22/up-20-in-1-day-is-hyperliquid-worth-buying-hand-ov/"
+          "title": "Nvidia earnings and Jackson Hole: What to watch this week",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-earnings-and-jackson-hole-what-to-watch-this-week-100000082.html"
         },
         {
-          "title": "Institutional Investors Are Buying Hyperliquid Strategies. Should You?",
-          "url": "https://www.fool.com/investing/2026/08/22/institutional-investors-are-buying-hyperliquid-str/"
+          "title": "Dow Jones Futures Fall With Tariffs In Focus; Nvidia, Warsh Ahead",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo"
         }
       ],
       "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Nvidia’s 15% Price Hike Reveals the Hidden Cost of the AI Boom",
+          "url": "https://247wallst.com/investing/2026/08/23/nvidias-15-price-hike-reveals-the-hidden-cost-of-the-ai-boom/"
+        },
+        {
+          "title": "Prediction: Nvidia Will Be a $6 Trillion Company Before 2026 Is Over and Its Run Kickstarts This Week",
+          "url": "https://www.fool.com/investing/2026/08/23/prediction-nvidia-will-be-a-6-trillion-company-bef/"
+        },
+        {
+          "title": "4 Low-Cost ETFs Every Investor Should Own",
+          "url": "https://247wallst.com/investing/2026/08/23/4-low-cost-etfs-every-investor-should-own/"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "005930.KS",
@@ -56,41 +81,16 @@
       "signals": [],
       "news": [
         {
+          "title": "Nvidia’s 15% Price Hike Reveals the Hidden Cost of the AI Boom",
+          "url": "https://247wallst.com/investing/2026/08/23/nvidias-15-price-hike-reveals-the-hidden-cost-of-the-ai-boom/"
+        },
+        {
+          "title": "Nvidia Reportedly Warns Top Customers of 15% Price Hikes on AI Servers",
+          "url": "https://beincrypto.com/nvidia-ai-server-price-hikes/"
+        },
+        {
           "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
           "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html"
-        },
-        {
-          "title": "Walmart will let customers use Apple Pay after holding out for more than a decade. Why it finally caved",
-          "url": "https://www.fastcompany.com/91593708/walmart-adds-apple-pay-google-tap-payments-after-holding-out-why-it-caved"
-        },
-        {
-          "title": "Another Big Korean Tech Company Is Buying Back Shares",
-          "url": "https://www.investopedia.com/market-update-another-big-korean-tech-company-is-buying-back-shares-12065333"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "JPMorgan Says Tesla Is Confident of Scaling Cybercab Operations, Touts Future Models Based on Platform—FSD V15 a ‘Step-Change’ From Previous Versions",
-          "url": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-says-tesla-confident-scaling-213147223.html"
-        },
-        {
-          "title": "Tesla (TSLA) Is Recalling Nearly 3 Million Vehicles In China",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-recalling-nearly-3-170809617.html"
-        },
-        {
-          "title": "Tesla's Model Y L Is Coming to America. Will It Reignite Sales Growth?",
-          "url": "https://www.fool.com/investing/2026/08/22/teslas-model-y-l-is-coming-to-america-will-it-reig/"
         }
       ],
       "rank": 3
@@ -106,22 +106,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html"
+          "title": "SK Hynix Is Buying Back 3.3% of Its Shares and Canceling Every One",
+          "url": "https://www.fool.com/investing/2026/08/23/sk-hynix-is-buying-back-3-3-of-its-shares-and-canceling-every-one/"
         },
         {
-          "title": "A $28.7 Billion Reason to Buy SK hynix Stock Now",
-          "url": "https://www.barchart.com/story/news/3986370/a-28-7-billion-reason-to-buy-sk-hynix-stock-now"
+          "title": "Nvidia’s 15% Price Hike Reveals the Hidden Cost of the AI Boom",
+          "url": "https://247wallst.com/investing/2026/08/23/nvidias-15-price-hike-reveals-the-hidden-cost-of-the-ai-boom/"
         },
         {
-          "title": "Is SK hynix (NasdaqGS:SKHY) Undervalued After Its 40 Trillion Won Buyback Plan?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaqgs-skhy-undervalued-110906493.html"
+          "title": "Nvidia Reportedly Warns Top Customers of 15% Price Hikes on AI Servers",
+          "url": "https://beincrypto.com/nvidia-ai-server-price-hikes/"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "AAPL",
+      "symbol": "TSLA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -131,16 +131,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Apple Announced Its Largest-Ever Stock Buyback Under Tim Cook's Leadership. Here's Why the Size of the Repurchase Program Matters for Shareholders.",
-          "url": "https://www.fool.com/investing/2026/08/22/apple-announced-its-largest-ever-stock-buyback-und/"
+          "title": "Tesla Maintained Its Majority of the U.S. EV Market in Q2, but That's Not All You Need to Know",
+          "url": "https://www.fool.com/investing/2026/08/23/tesla-maintained-its-majority-of-the-us-ev-market/"
         },
         {
-          "title": "Apple vs. Meta Platforms: Which \"Magnificent Seven\" Giant Has the Stronger Artificial Intelligence (AI) Growth Engine?",
-          "url": "https://www.fool.com/investing/2026/08/22/apple-vs-meta-platforms-better-ai-growth-engine/"
+          "title": "The $1.7 Trillion Job Apocalypse: Why Investors Can’t Ignore Humanoid Robots",
+          "url": "https://247wallst.com/investing/2026/08/23/the-1-7-trillion-job-apocalypse-why-investors-cant-ignore-humanoid-robots/"
         },
         {
-          "title": "Will Apple’s risk appetite change under John Ternus?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-risk-appetite-change-under-173456162.html"
+          "title": "500 Reasons to Buy Einride Stock Today",
+          "url": "https://www.barchart.com/story/news/3992216/500-reasons-to-buy-einride-stock-today"
         }
       ],
       "rank": 5
