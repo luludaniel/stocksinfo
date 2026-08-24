@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T22:47:23+00:00",
-  "market_date": "2026-08-23",
+  "generated_at": "2026-08-24T22:53:00+00:00",
+  "market_date": "2026-08-24",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,15 +9,15 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 19,
-    "per_band_ready_in_days": 1
+    "days_collected": 20,
+    "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "NVDA",
-      "score": 4.5,
+      "score": 5.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 2.0,
         "news": 1.5,
         "event": 2.0
       },
@@ -26,74 +26,30 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-3"
+          "message": "실적발표 D-2"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 31.9배 — 자체 밴드 하단 이탈 (평균 33.6배)"
         }
       ],
       "news": [
         {
-          "title": "Nvidia's Q2 earnings to test resurgent AI trade",
-          "url": "https://finance.yahoo.com/news/nvidias-q2-earnings-to-test-resurgent-ai-trade-112502189.html"
+          "title": "What's at stake for Paramount, the Ellisons in Warner Bros. takeover bid",
+          "url": "https://finance.yahoo.com/video/whats-stake-paramount-ellisons-warner-213000825.html"
         },
         {
-          "title": "Nvidia earnings and Jackson Hole: What to watch this week",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-earnings-and-jackson-hole-what-to-watch-this-week-100000082.html"
+          "title": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/article/nvidias-valuation-looks-surprisingly-cheap-heading-into-earnings-could-it-be-an-issue-for-the-stock-191738544.html"
         },
         {
-          "title": "Dow Jones Futures Fall With Tariffs In Focus; Nvidia, Warsh Ahead",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo"
+          "title": "Nvidia earnings may come down to guidance and Jensen Huang's confidence",
+          "url": "https://finance.yahoo.com/video/nvidia-earnings-may-come-down-140000999.html"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Nvidia’s 15% Price Hike Reveals the Hidden Cost of the AI Boom",
-          "url": "https://247wallst.com/investing/2026/08/23/nvidias-15-price-hike-reveals-the-hidden-cost-of-the-ai-boom/"
-        },
-        {
-          "title": "Prediction: Nvidia Will Be a $6 Trillion Company Before 2026 Is Over and Its Run Kickstarts This Week",
-          "url": "https://www.fool.com/investing/2026/08/23/prediction-nvidia-will-be-a-6-trillion-company-bef/"
-        },
-        {
-          "title": "4 Low-Cost ETFs Every Investor Should Own",
-          "url": "https://247wallst.com/investing/2026/08/23/4-low-cost-etfs-every-investor-should-own/"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Nvidia’s 15% Price Hike Reveals the Hidden Cost of the AI Boom",
-          "url": "https://247wallst.com/investing/2026/08/23/nvidias-15-price-hike-reveals-the-hidden-cost-of-the-ai-boom/"
-        },
-        {
-          "title": "Nvidia Reportedly Warns Top Customers of 15% Price Hikes on AI Servers",
-          "url": "https://beincrypto.com/nvidia-ai-server-price-hikes/"
-        },
-        {
-          "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html"
-        }
-      ],
-      "rank": 3
     },
     {
       "symbol": "000660.KS",
@@ -106,19 +62,19 @@
       "signals": [],
       "news": [
         {
-          "title": "SK Hynix Is Buying Back 3.3% of Its Shares and Canceling Every One",
-          "url": "https://www.fool.com/investing/2026/08/23/sk-hynix-is-buying-back-3-3-of-its-shares-and-canceling-every-one/"
+          "title": "Semiconductor stocks drag S&P 500, Nasdaq lower: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-drag-sp-500-nasdaq-lower-alphacheck-135725875.html"
         },
         {
-          "title": "Nvidia’s 15% Price Hike Reveals the Hidden Cost of the AI Boom",
-          "url": "https://247wallst.com/investing/2026/08/23/nvidias-15-price-hike-reveals-the-hidden-cost-of-the-ai-boom/"
+          "title": "The Fastest ETF in History Just Hit $25 Billion in Four Months. It Owns Memory Chips",
+          "url": "https://247wallst.com/investing/2026/08/24/the-fastest-etf-in-history-just-hit-25-billion-in-four-months-it-owns-memory-chips/"
         },
         {
-          "title": "Nvidia Reportedly Warns Top Customers of 15% Price Hikes on AI Servers",
-          "url": "https://beincrypto.com/nvidia-ai-server-price-hikes/"
+          "title": "SK Hynix (NasdaqGS:SKHY) Weighs Japan Memory Plant In Big Overseas Expansion",
+          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-nasdaqgs-skhy-weighs-220926859.html"
         }
       ],
-      "rank": 4
+      "rank": 2
     },
     {
       "symbol": "TSLA",
@@ -131,16 +87,66 @@
       "signals": [],
       "news": [
         {
-          "title": "Tesla Maintained Its Majority of the U.S. EV Market in Q2, but That's Not All You Need to Know",
-          "url": "https://www.fool.com/investing/2026/08/23/tesla-maintained-its-majority-of-the-us-ev-market/"
+          "title": "Tesla to launch Cybercabs in Austin starting Sept. 3",
+          "url": "https://finance.yahoo.com/video/tesla-launch-cybercabs-austin-starting-205004873.html"
         },
         {
-          "title": "The $1.7 Trillion Job Apocalypse: Why Investors Can’t Ignore Humanoid Robots",
-          "url": "https://247wallst.com/investing/2026/08/23/the-1-7-trillion-job-apocalypse-why-investors-cant-ignore-humanoid-robots/"
+          "title": "Tesla Cybercab to launch Sept. 3 as robotaxi bet ramps up",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-cybercab-to-launch-sept-3-as-robotaxi-bet-ramps-up-135557945.html"
         },
         {
-          "title": "500 Reasons to Buy Einride Stock Today",
-          "url": "https://www.barchart.com/story/news/3992216/500-reasons-to-buy-einride-stock-today"
+          "title": "Tesla and Other Electric Vehicle Companies Begin Massive China Recall",
+          "url": "https://www.fool.com/investing/2026/08/24/tesla-and-other-electric-vehicle-companies-begin-massive-china-recall/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "The Fastest ETF in History Just Hit $25 Billion in Four Months. It Owns Memory Chips",
+          "url": "https://247wallst.com/investing/2026/08/24/the-fastest-etf-in-history-just-hit-25-billion-in-four-months-it-owns-memory-chips/"
+        },
+        {
+          "title": "Samsung Just Authorized Its Largest Shareholder Return Ever. Every Major Memory Stock Fell Monday.",
+          "url": "https://www.fool.com/investing/2026/08/24/samsung-just-authorized-its-largest-shareholder-return-ever-every-major-memory-stock-fell-monday/"
+        },
+        {
+          "title": "Micron Stock Drops After Chinese Memory IPO Filing. Can It Fight Off the Competition?",
+          "url": "https://www.barrons.com/articles/micron-stock-price-china-ipo-f4061616?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "What's at stake for Paramount, the Ellisons in Warner Bros. takeover bid",
+          "url": "https://finance.yahoo.com/video/whats-stake-paramount-ellisons-warner-213000825.html"
+        },
+        {
+          "title": "Semiconductor stocks drag S&P 500, Nasdaq lower: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-drag-sp-500-nasdaq-lower-alphacheck-135725875.html"
+        },
+        {
+          "title": "Get Paid 12% A Year To Hold NFLX Stock You Already Own",
+          "url": "https://www.trefis.com/articles/612532/get-paid-12-a-year-to-hold-nflx-stock-you-already-own/2026-08-24"
         }
       ],
       "rank": 5
@@ -151,61 +157,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 32.88208,
+      "trailing_pe": 31.92649,
       "next_earnings_date": "2026-08-26",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 214.72,
-      "change_pct": -0.98,
-      "week52_pct": 70.6,
-      "pct_vs_ma200": 10.04,
-      "drawdown_from_high_pct": -8.81,
-      "return_3m_pct": -2.07,
-      "return_6m_pct": 13.26,
-      "return_12m_pct": 22.58,
-      "relative_strength_6m_pct": 2.19
+      "last_close": 208.48,
+      "change_pct": -2.91,
+      "week52_pct": 61.7,
+      "pct_vs_ma200": 6.82,
+      "drawdown_from_high_pct": -11.46,
+      "return_3m_pct": -3.07,
+      "return_6m_pct": 8.97,
+      "return_12m_pct": 19.3,
+      "relative_strength_6m_pct": -2.95
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 35.475918,
+      "trailing_pe": 35.589447,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 309.35,
-      "change_pct": -0.63,
-      "week52_pct": 73.7,
-      "pct_vs_ma200": 10.08,
-      "drawdown_from_high_pct": -8.96,
-      "return_3m_pct": 1.52,
-      "return_6m_pct": 17.13,
-      "return_12m_pct": 37.38,
-      "relative_strength_6m_pct": 6.06
+      "last_close": 310.34,
+      "change_pct": 0.32,
+      "week52_pct": 74.1,
+      "pct_vs_ma200": 10.35,
+      "drawdown_from_high_pct": -8.67,
+      "return_3m_pct": 0.58,
+      "return_6m_pct": 16.8,
+      "return_12m_pct": 38.5,
+      "relative_strength_6m_pct": 4.88
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 332.89905,
+      "trailing_pe": 320.1376,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 362.86,
-      "change_pct": 5.14,
-      "week52_pct": 33.7,
-      "pct_vs_ma200": -10.03,
-      "drawdown_from_high_pct": -25.93,
-      "return_3m_pct": -13.16,
-      "return_6m_pct": -11.89,
-      "return_12m_pct": 12.03,
-      "relative_strength_6m_pct": -22.96
+      "last_close": 348.95,
+      "change_pct": -3.83,
+      "week52_pct": 26.4,
+      "pct_vs_ma200": -13.38,
+      "drawdown_from_high_pct": -28.77,
+      "return_3m_pct": -18.09,
+      "return_6m_pct": -12.73,
+      "return_12m_pct": 9.01,
+      "relative_strength_6m_pct": -24.65
     },
     {
       "symbol": "005930.KS",
@@ -217,15 +223,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 281500.0,
-      "change_pct": 3.87,
-      "week52_pct": 72.7,
-      "pct_vs_ma200": 38.26,
-      "drawdown_from_high_pct": -22.26,
-      "return_3m_pct": 2.11,
-      "return_6m_pct": 58.12,
-      "return_12m_pct": 314.29,
-      "relative_strength_6m_pct": 32.94
+      "last_close": 257000.0,
+      "change_pct": -8.7,
+      "week52_pct": 64.4,
+      "pct_vs_ma200": 25.74,
+      "drawdown_from_high_pct": -29.03,
+      "return_3m_pct": -14.1,
+      "return_6m_pct": 42.28,
+      "return_12m_pct": 269.11,
+      "relative_strength_6m_pct": 17.1
     },
     {
       "symbol": "000660.KS",
@@ -237,15 +243,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1730000.0,
-      "change_pct": 2.31,
-      "week52_pct": 55.6,
-      "pct_vs_ma200": 38.19,
-      "drawdown_from_high_pct": -40.73,
-      "return_3m_pct": -0.84,
-      "return_6m_pct": 95.21,
-      "return_12m_pct": 572.04,
-      "relative_strength_6m_pct": 70.03
+      "last_close": 1671000.0,
+      "change_pct": -3.41,
+      "week52_pct": 53.3,
+      "pct_vs_ma200": 32.89,
+      "drawdown_from_high_pct": -42.75,
+      "return_3m_pct": -13.85,
+      "return_6m_pct": 90.27,
+      "return_12m_pct": 540.45,
+      "relative_strength_6m_pct": 65.09
     }
   ],
   "discovery": [],
