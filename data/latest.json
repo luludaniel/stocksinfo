@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-30T00:32:03+00:00",
-  "market_date": "2026-08-30",
+  "generated_at": "2026-08-31T00:45:34+00:00",
+  "market_date": "2026-08-31",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 25,
+    "days_collected": 26,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,7 +26,7 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 28.8배 — 자체 밴드 하단 이탈 (평균 33.0배)"
+          "message": "PER 27.5배 — 자체 밴드 하단 이탈 (평균 32.8배)"
         },
         {
           "symbol": "NVDA",
@@ -37,16 +37,16 @@
       ],
       "news": [
         {
-          "title": "Wall Street is turning Nvidia's AI chips into a new futures market: Chart of the Day",
-          "url": "https://finance.yahoo.com/markets/article/wall-street-is-turning-nvidias-ai-chips-into-a-new-futures-market-chart-of-the-day-115118331.html"
+          "title": "'All about acceleration': After Nvidia earnings, the tech trade is getting more segmented",
+          "url": "https://finance.yahoo.com/markets/article/all-about-acceleration-after-nvidia-earnings-the-tech-trade-is-getting-more-segmented-114905135.html"
         },
         {
-          "title": "Bitcoin Could Hit $300,000 by 2030, Says Coinbase CEO Brian Armstrong. Here's Why He's Right.",
-          "url": "https://www.fool.com/investing/2026/08/29/bitcoin-could-hit-300000-by-2030-says-coinbase-ceo/"
+          "title": "Apple's big handoff and a jobs report: What to watch this week",
+          "url": "https://finance.yahoo.com/markets/article/apples-big-handoff-and-a-jobs-report-what-to-watch-this-week-100000786.html"
         },
         {
-          "title": "John Ternus Becomes Apple's CEO on Sept. 1. Here's What History Says the First Year Does to the Stock.",
-          "url": "https://www.fool.com/investing/2026/08/29/john-ternus-becomes-apple-s-ceo-on-sept-1-here-s-what-history-says-the-first-year-does-to-the-stock/"
+          "title": "Dow Jones Futures Fall, Oil Prices Pop As U.S. Strikes Iran",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-microsoft-titans-mask-market-weakness/?src=A00220&yptr=yahoo"
         }
       ],
       "rank": 1
@@ -64,59 +64,27 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 36.1배 — 자체 밴드 상단 이탈 (평균 35.5배)"
+          "message": "PER 36.6배 — 자체 밴드 상단 이탈 (평균 35.6배)"
         }
       ],
       "news": [
         {
-          "title": "Everything you need to know about new Apple CEO John Ternus",
-          "url": "https://finance.yahoo.com/markets/stocks/article/everything-you-need-to-know-about-new-apple-ceo-john-ternus-000314834.html"
+          "title": "Apple's big handoff and a jobs report: What to watch this week",
+          "url": "https://finance.yahoo.com/markets/article/apples-big-handoff-and-a-jobs-report-what-to-watch-this-week-100000786.html"
         },
         {
-          "title": "John Ternus Becomes Apple's CEO on Sept. 1. Here's What History Says the First Year Does to the Stock.",
-          "url": "https://www.fool.com/investing/2026/08/29/john-ternus-becomes-apple-s-ceo-on-sept-1-here-s-what-history-says-the-first-year-does-to-the-stock/"
+          "title": "1 Top Warren Buffett Stock for Dividend Investors",
+          "url": "https://www.fool.com/investing/2026/08/30/1-top-warren-buffett-stock-for-dividend-investors/"
         },
         {
-          "title": "'I Don't Know John Ternus,' Jim Cramer Says — but He Trusts Tim Cook's Word on Apple's Next CEO",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dont-know-john-ternus-jim-154609628.html"
+          "title": "Ripple Is Now Brokering Wall Street Equities. Where Does XRP Fit?",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/08/30/ripple-is-now-brokering-wall-street-equities-where-does-xrp-fit/"
         }
       ],
       "rank": 2
     },
     {
       "symbol": "TSLA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 332.1배 — 자체 밴드 상단 이탈 (평균 315.6배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Tesla Stock in 2027: Why I Think TSLA Still Has Room to Run",
-          "url": "https://www.fool.com/investing/2026/08/29/tesla-stock-in-2027-why-i-think-tsla-still-has-roo/"
-        },
-        {
-          "title": "Optimus Just Entered Production at Fremont. Here's What Changes for Tesla Investors",
-          "url": "https://www.fool.com/investing/2026/08/29/optimus-just-entered-production-at-fremont-heres-w/"
-        },
-        {
-          "title": "Meta Continues to Trade Jobs for AI: Robots Are “Coming For Us All”",
-          "url": "https://247wallst.com/investing/2026/08/29/meta-continues-to-trade-jobs-for-ai-robots-are-coming-for-us-all/"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "005930.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -126,19 +94,19 @@
       "signals": [],
       "news": [
         {
-          "title": "How networking became the critical layer of AI",
-          "url": "https://finance.yahoo.com/technology/ai/articles/networking-became-critical-layer-ai-071654651.html"
+          "title": "Musk, Altman, Huang All Set to Speak at US-Hosted G20 Tech Meeting",
+          "url": "https://finance.yahoo.com/technology/articles/musk-altman-huang-set-speak-223126177.html"
         },
         {
-          "title": "CXMT H1 2026 earnings: revenue jumps 874% on AI memory demand",
-          "url": "https://qz.com/cxmt-first-half-earnings-revenue-ai-memory-shortage-082826"
+          "title": "The Biggest Risk Facing Tesla Stock Right Now",
+          "url": "https://www.fool.com/investing/2026/08/30/biggest-risk-tesla-stock-now-optimus-robotaxi/"
         },
         {
-          "title": "The Memory-Chip Battle Is on as China’s CXMT Posts Explosive Earnings Report",
-          "url": "https://www.barrons.com/articles/cxmt-earnings-memory-chip-war-micron-sk-hynix-samsung-0b7d94f7?siteid=yhoof2&yptr=yahoo"
+          "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+          "url": "https://finance.yahoo.com/energy/articles/musk-faster-path-more-gas-165425015.html"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "symbol": "000660.KS",
@@ -151,16 +119,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Memory Now Accounts for 50% of Global Semiconductor Revenue — But There’s a Catch",
-          "url": "https://247wallst.com/investing/2026/08/29/memory-now-accounts-for-50-of-global-semiconductor-revenue-but-theres-a-catch/"
+          "title": "South Korea may be getting too old to take advantage of its AI boom",
+          "url": "https://finance.yahoo.com/economy/articles/south-korea-may-getting-too-110000570.html"
         },
         {
-          "title": "Intel Sold Its NAND Memory Business for About $9 Billion. Micron Is Now Worth More Than Twice What Intel Is.",
-          "url": "https://www.fool.com/investing/2026/08/29/intel-sold-its-nand-memory-business-for-about-usd9-billion-micron-is-now-worth-more-than-twice-what-intel-is/"
+          "title": "SK Hynix (NasdaqGS:SKHY) Breaks Ground On $4 Billion Indiana HBM Facility",
+          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-nasdaqgs-skhy-breaks-021520696.html"
         },
         {
-          "title": "Jim Cramer Shared Why Micron Technology, Inc. (NASDAQ:MU)’s Shares Didn’t Rise On Shortage News",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-shared-why-micron-033253032.html"
+          "title": "SK Hynix CEO Warns Memory Shortage Will Persist Through 2030 as Chipmaker Builds $4 Billion Indiana Fab",
+          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-ceo-warns-memory-013049149.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "South Korea may be getting too old to take advantage of its AI boom",
+          "url": "https://finance.yahoo.com/economy/articles/south-korea-may-getting-too-110000570.html"
+        },
+        {
+          "title": "Korean day traders flee leveraged chip ETFs as regulatory curbs bite",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/korean-day-traders-flee-leveraged-011237120.html"
+        },
+        {
+          "title": "How networking became the critical layer of AI",
+          "url": "https://finance.yahoo.com/technology/ai/articles/networking-became-critical-layer-ai-071654651.html"
         }
       ],
       "rank": 5
@@ -171,7 +164,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.81457,
+      "trailing_pe": 27.468435,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -191,7 +184,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 36.083523,
+      "trailing_pe": 36.62085,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -211,7 +204,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 332.14288,
+      "trailing_pe": 322.91666,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -237,15 +230,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 257000.0,
-      "change_pct": -3.38,
-      "week52_pct": 64.4,
-      "pct_vs_ma200": 23.87,
-      "drawdown_from_high_pct": -29.03,
-      "return_3m_pct": -14.1,
-      "return_6m_pct": 28.91,
-      "return_12m_pct": 261.93,
-      "relative_strength_6m_pct": 15.19
+      "last_close": 251250.0,
+      "change_pct": -2.24,
+      "week52_pct": 62.5,
+      "pct_vs_ma200": 20.66,
+      "drawdown_from_high_pct": -30.61,
+      "return_3m_pct": -20.65,
+      "return_6m_pct": 23.86,
+      "return_12m_pct": 255.31,
+      "relative_strength_6m_pct": 14.12
     },
     {
       "symbol": "000660.KS",
@@ -257,15 +250,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1653000.0,
-      "change_pct": -4.43,
-      "week52_pct": 52.7,
-      "pct_vs_ma200": 29.21,
-      "drawdown_from_high_pct": -43.36,
-      "return_3m_pct": -27.77,
-      "return_6m_pct": 64.84,
-      "return_12m_pct": 497.22,
-      "relative_strength_6m_pct": 51.12
+      "last_close": 1617000.0,
+      "change_pct": -2.18,
+      "week52_pct": 51.3,
+      "pct_vs_ma200": 25.89,
+      "drawdown_from_high_pct": -44.59,
+      "return_3m_pct": -30.68,
+      "return_6m_pct": 59.2,
+      "return_12m_pct": 487.38,
+      "relative_strength_6m_pct": 49.46
     }
   ],
   "discovery": [],
