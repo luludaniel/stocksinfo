@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T00:45:34+00:00",
-  "market_date": "2026-08-31",
+  "generated_at": "2026-09-02T00:23:47+00:00",
+  "market_date": "2026-09-02",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 26,
+    "days_collected": 27,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,30 +26,62 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 27.5배 — 자체 밴드 하단 이탈 (평균 32.8배)"
+          "message": "PER 27.5배 — 자체 밴드 하단 이탈 (평균 32.6배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 상향 6.1%"
+          "message": "애널리스트 목표주가 8일간 상향 6.1%"
         }
       ],
       "news": [
         {
-          "title": "'All about acceleration': After Nvidia earnings, the tech trade is getting more segmented",
-          "url": "https://finance.yahoo.com/markets/article/all-about-acceleration-after-nvidia-earnings-the-tech-trade-is-getting-more-segmented-114905135.html"
+          "title": "Two deals, one Nvidia strategy: What's behind the chip giant's recent partnerships",
+          "url": "https://finance.yahoo.com/video/two-deals-one-nvidia-strategy-193213308.html"
         },
         {
-          "title": "Apple's big handoff and a jobs report: What to watch this week",
-          "url": "https://finance.yahoo.com/markets/article/apples-big-handoff-and-a-jobs-report-what-to-watch-this-week-100000786.html"
+          "title": "Stocks slip as 10-year Treasury yield hits highest level since January 2025: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/stocks-slip-as-10-year-treasury-yield-hits-highest-level-since-january-2025-alphacheck-134150677.html"
         },
         {
-          "title": "Dow Jones Futures Fall, Oil Prices Pop As U.S. Strikes Iran",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-microsoft-titans-mask-market-weakness/?src=A00220&yptr=yahoo"
+          "title": "Hut 8 stock is a winner in a new deal between Anthropic and Nvidia-backed Lambda",
+          "url": "https://finance.yahoo.com/markets/stocks/article/hut-8-stock-is-a-winner-in-a-new-deal-between-anthropic-and-nvidia-backed-lambda-122511171.html"
         }
       ],
       "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 332.8배 — 자체 밴드 상단 이탈 (평균 316.5배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Zuckerberg, Musk Press G20 Ministers on AI Data Center Power, Labor Needs",
+          "url": "https://finance.yahoo.com/technology/ai/articles/zuckerberg-musk-press-g20-ministers-233922801.html"
+        },
+        {
+          "title": "Roundtable 100 analysts put Nvidia at No. 76 in new tech power ranking",
+          "url": "https://www.thestreet.com/crypto/markets/roundtable-100-analysts-put-nvidia-at-no-76-in-new-tech-power-ranking"
+        },
+        {
+          "title": "Tesla stock investors stand to gain from U.S. power grid",
+          "url": "https://www.thestreet.com/investing/stocks/tesla-stock-investors-gain-from-executive-order-securing-us-power-grid"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "AAPL",
@@ -64,74 +96,24 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 36.6배 — 자체 밴드 상단 이탈 (평균 35.6배)"
+          "message": "PER 37.3배 — 자체 밴드 상단 이탈 (평균 35.6배)"
         }
       ],
       "news": [
         {
-          "title": "Apple's big handoff and a jobs report: What to watch this week",
-          "url": "https://finance.yahoo.com/markets/article/apples-big-handoff-and-a-jobs-report-what-to-watch-this-week-100000786.html"
+          "title": "Are you willing to pay $2,000 for an iPhone? These customers may.",
+          "url": "https://finance.yahoo.com/video/willing-pay-2-000-iphone-203311978.html"
         },
         {
-          "title": "1 Top Warren Buffett Stock for Dividend Investors",
-          "url": "https://www.fool.com/investing/2026/08/30/1-top-warren-buffett-stock-for-dividend-investors/"
+          "title": "John Ternus's first day as Apple CEO, JOLTS data, Dell earnings: What to Watch",
+          "url": "https://finance.yahoo.com/video/john-ternuss-first-day-apple-120000777.html"
         },
         {
-          "title": "Ripple Is Now Brokering Wall Street Equities. Where Does XRP Fit?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/08/30/ripple-is-now-brokering-wall-street-equities-where-does-xrp-fit/"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Musk, Altman, Huang All Set to Speak at US-Hosted G20 Tech Meeting",
-          "url": "https://finance.yahoo.com/technology/articles/musk-altman-huang-set-speak-223126177.html"
-        },
-        {
-          "title": "The Biggest Risk Facing Tesla Stock Right Now",
-          "url": "https://www.fool.com/investing/2026/08/30/biggest-risk-tesla-stock-now-optimus-robotaxi/"
-        },
-        {
-          "title": "Musk’s faster path to more gas turbines comes with pollution problem",
-          "url": "https://finance.yahoo.com/energy/articles/musk-faster-path-more-gas-165425015.html"
+          "title": "What Tim Cook told employees on his last day at Apple",
+          "url": "https://finance.yahoo.com/technology/article/what-tim-cook-told-employees-on-his-last-day-at-apple-171506698.html"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "South Korea may be getting too old to take advantage of its AI boom",
-          "url": "https://finance.yahoo.com/economy/articles/south-korea-may-getting-too-110000570.html"
-        },
-        {
-          "title": "SK Hynix (NasdaqGS:SKHY) Breaks Ground On $4 Billion Indiana HBM Facility",
-          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-nasdaqgs-skhy-breaks-021520696.html"
-        },
-        {
-          "title": "SK Hynix CEO Warns Memory Shortage Will Persist Through 2030 as Chipmaker Builds $4 Billion Indiana Fab",
-          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-ceo-warns-memory-013049149.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -144,16 +126,41 @@
       "signals": [],
       "news": [
         {
-          "title": "South Korea may be getting too old to take advantage of its AI boom",
-          "url": "https://finance.yahoo.com/economy/articles/south-korea-may-getting-too-110000570.html"
+          "title": "Are you willing to pay $2,000 for an iPhone? These customers may.",
+          "url": "https://finance.yahoo.com/video/willing-pay-2-000-iphone-203311978.html"
         },
         {
-          "title": "Korean day traders flee leveraged chip ETFs as regulatory curbs bite",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/korean-day-traders-flee-leveraged-011237120.html"
+          "title": "Micron’s Workers Are Threatening to Strike. What It Means for the Stock.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-worker-strike-c8a21d87?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "How networking became the critical layer of AI",
-          "url": "https://finance.yahoo.com/technology/ai/articles/networking-became-critical-layer-ai-071654651.html"
+          "title": "Micron's AI Memory Boom Just Ran Into a Labor Risk",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-ai-memory-boom-just-194130919.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Micron’s Workers Are Threatening to Strike. What It Means for the Stock.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-worker-strike-c8a21d87?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Micron's AI Memory Boom Just Ran Into a Labor Risk",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-ai-memory-boom-just-194130919.html"
+        },
+        {
+          "title": "SK hynix (KOSE:A000660) Approves A Buyback, Is The Pullback Making It Cheap?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-kose-a000660-approves-190829929.html"
         }
       ],
       "rank": 5
@@ -164,61 +171,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 27.468435,
+      "trailing_pe": 27.454546,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 217.55,
-      "change_pct": -4.57,
-      "week52_pct": 74.6,
-      "pct_vs_ma200": 11.18,
-      "drawdown_from_high_pct": -7.61,
-      "return_3m_pct": 3.16,
-      "return_6m_pct": 22.93,
-      "return_12m_pct": 19.96,
-      "relative_strength_6m_pct": 10.82
+      "last_close": 217.44,
+      "change_pct": -1.51,
+      "week52_pct": 74.4,
+      "pct_vs_ma200": 10.98,
+      "drawdown_from_high_pct": -7.66,
+      "return_3m_pct": -2.3,
+      "return_6m_pct": 20.91,
+      "return_12m_pct": 25.0,
+      "relative_strength_6m_pct": 10.01
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 36.62085,
+      "trailing_pe": 37.328358,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 319.7,
-      "change_pct": 1.63,
-      "week52_pct": 82.4,
-      "pct_vs_ma200": 13.31,
-      "drawdown_from_high_pct": -5.91,
-      "return_3m_pct": 2.54,
-      "return_6m_pct": 21.23,
-      "return_12m_pct": 39.22,
-      "relative_strength_6m_pct": 9.12
+      "last_close": 325.13,
+      "change_pct": 2.61,
+      "week52_pct": 87.1,
+      "pct_vs_ma200": 15.04,
+      "drawdown_from_high_pct": -4.31,
+      "return_3m_pct": 3.24,
+      "return_6m_pct": 23.49,
+      "return_12m_pct": 40.58,
+      "relative_strength_6m_pct": 12.59
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 322.91666,
+      "trailing_pe": 332.79437,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 348.75,
-      "change_pct": -1.71,
-      "week52_pct": 26.3,
-      "pct_vs_ma200": -13.01,
-      "drawdown_from_high_pct": -28.81,
-      "return_3m_pct": -19.97,
-      "return_6m_pct": -13.36,
-      "return_12m_pct": -0.24,
-      "relative_strength_6m_pct": -25.47
+      "last_close": 356.09,
+      "change_pct": -3.22,
+      "week52_pct": 30.2,
+      "pct_vs_ma200": -11.02,
+      "drawdown_from_high_pct": -27.31,
+      "return_3m_pct": -15.96,
+      "return_6m_pct": -9.26,
+      "return_12m_pct": 6.66,
+      "relative_strength_6m_pct": -20.16
     },
     {
       "symbol": "005930.KS",
@@ -230,15 +237,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 251250.0,
-      "change_pct": -2.24,
-      "week52_pct": 62.5,
-      "pct_vs_ma200": 20.66,
-      "drawdown_from_high_pct": -30.61,
-      "return_3m_pct": -20.65,
-      "return_6m_pct": 23.86,
-      "return_12m_pct": 255.31,
-      "relative_strength_6m_pct": 14.12
+      "last_close": 253000.0,
+      "change_pct": -3.07,
+      "week52_pct": 63.1,
+      "pct_vs_ma200": 20.55,
+      "drawdown_from_high_pct": -30.13,
+      "return_3m_pct": -29.74,
+      "return_6m_pct": 17.23,
+      "return_12m_pct": 265.96,
+      "relative_strength_6m_pct": 8.22
     },
     {
       "symbol": "000660.KS",
@@ -250,17 +257,69 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1617000.0,
-      "change_pct": -2.18,
-      "week52_pct": 51.3,
+      "last_close": 1631000.0,
+      "change_pct": -3.66,
+      "week52_pct": 51.9,
       "pct_vs_ma200": 25.89,
-      "drawdown_from_high_pct": -44.59,
-      "return_3m_pct": -30.68,
-      "return_6m_pct": 59.2,
-      "return_12m_pct": 487.38,
-      "relative_strength_6m_pct": 49.46
+      "drawdown_from_high_pct": -44.11,
+      "return_3m_pct": -30.87,
+      "return_6m_pct": 53.78,
+      "return_12m_pct": 522.88,
+      "relative_strength_6m_pct": 44.77
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "Zuckerberg, Musk Press G20 Ministers on AI Data Center Power, Labor Needs"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 21.118551,
+        "week52_pct": 74.4,
+        "market_cap_usd": 1054220746752
+      }
+    },
+    {
+      "symbol": "DELL",
+      "name": "Dell Technologies Inc.",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "Stock Market Today: Dow, S&P 500, Nasdaq Down as Bond Yields Spike; Dell, Micron, Marvell, Strategy, More Movers - Barron's"
+        },
+        {
+          "title": "John Ternus's first day as Apple CEO, JOLTS data, Dell earnings: What to Watch"
+        },
+        {
+          "title": "S&P 500, Dow, Nasdaq Futures Flat After Indices End Lower On US-Iran Stalemate — DELL, PANW, FRVO, AAPL, TTWO In Focus"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 33.89155,
+        "week52_pct": 81.9,
+        "market_cap_usd": 274610520064
+      }
+    },
+    {
+      "symbol": "FRVO",
+      "name": "Fervo Energy Company",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "S&P 500, Dow, Nasdaq Futures Flat After Indices End Lower On US-Iran Stalemate — DELL, PANW, FRVO, AAPL, TTWO In Focus"
+        }
+      ],
+      "basic": {
+        "trailing_pe": null,
+        "week52_pct": 16.1,
+        "market_cap_usd": 5821573120
+      }
+    }
+  ],
   "calendar": []
 }
