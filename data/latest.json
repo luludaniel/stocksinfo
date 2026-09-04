@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-03T00:28:55+00:00",
-  "market_date": "2026-09-03",
+  "generated_at": "2026-09-04T00:15:45+00:00",
+  "market_date": "2026-09-04",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 28,
+    "days_collected": 29,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,7 +26,7 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 28.4배 — 자체 밴드 하단 이탈 (평균 32.4배)"
+          "message": "PER 28.9배 — 자체 밴드 하단 이탈 (평균 32.3배)"
         },
         {
           "symbol": "NVDA",
@@ -37,16 +37,16 @@
       ],
       "news": [
         {
-          "title": "Broadcom's Q3 earnings beat just isn't 'enough' to keep investors happy",
-          "url": "https://finance.yahoo.com/video/broadcoms-q3-earnings-beat-just-204909744.html"
+          "title": "Tech stocks today: Tesla stock pops ahead of Cybercab event, Nvidia acquires Hugging Face",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-apple-ceo-steps-down-nvidia-mag-7-145623375.html"
         },
         {
-          "title": "Nvidia didn't like Wall Street's estimates. So it tried to reset them.",
-          "url": "https://finance.yahoo.com/technology/article/nvidia-didnt-like-wall-streets-estimates-so-it-tried-to-reset-them-122218541.html"
+          "title": "AI demand is 'exceptional,' but the supply chain is not: HPE CEO",
+          "url": "https://finance.yahoo.com/video/ai-demand-exceptional-supply-chain-201052714.html"
         },
         {
-          "title": "Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-snowflake-broadcom-hpe-earnings-tesla-cybercab-event/?src=A00220&yptr=yahoo"
+          "title": "How Nvidia's latest deal continues to target all points of the AI trade",
+          "url": "https://finance.yahoo.com/video/nvidias-latest-deal-continues-target-143717372.html"
         }
       ],
       "rank": 1
@@ -64,21 +64,21 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 37.3배 — 자체 밴드 상단 이탈 (평균 35.7배)"
+          "message": "PER 37.7배 — 자체 밴드 상단 이탈 (평균 35.8배)"
         }
       ],
       "news": [
         {
-          "title": "Apple rallies as John Ternus takes the helm — how to protect the stock for almost nothing: Alpha Options Playbook",
-          "url": "https://finance.yahoo.com/markets/options/article/apple-rallies-as-john-ternus-takes-the-helm--how-to-protect-the-stock-for-almost-nothing-alpha-options-playbook-100000403.html"
+          "title": "How Apple's John Ternus inherited a 'reckoning' with China",
+          "url": "https://finance.yahoo.com/video/apples-john-ternus-inherited-reckoning-120000967.html"
         },
         {
-          "title": "Apple's new CEO faces his first big test",
-          "url": "https://www.thestreet.com/technology/apple-ceo-john-ternus-phenomenal-launch"
+          "title": "Dan Ives Says M&A Is the ‘Missing Piece’ for Apple in AI Arms Race — New CEO John Ternus Could Finally Shake Up Tim Cook’s Playbook",
+          "url": "https://finance.yahoo.com/technology/ai/articles/dan-ives-says-m-missing-220219429.html"
         },
         {
-          "title": "US judge rejects bid to break up Google's ad business",
-          "url": "https://finance.yahoo.com/media-advertising/articles/us-judge-rejects-bid-break-161532322.html"
+          "title": "Tim Cook Grew Apple From a $350 Billion Company Into a Multi-Trillion-Dollar Giant Over Nearly 15 Years as CEO. Can John Ternus' Product-First Approach Extend That Compounding?",
+          "url": "https://www.fool.com/investing/2026/09/03/tim-cook-grew-apple-from-a-350-billion-company-int/"
         }
       ],
       "rank": 2
@@ -96,21 +96,21 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 333.7배 — 자체 밴드 상단 이탈 (평균 317.1배)"
+          "message": "PER 351.7배 — 자체 밴드 상단 이탈 (평균 318.3배)"
         }
       ],
       "news": [
         {
-          "title": "Tesla's Cybercab to take center stage at Austin event",
-          "url": "https://finance.yahoo.com/video/teslas-cybercab-center-stage-austin-200250161.html"
+          "title": "Tech stocks today: Tesla stock pops ahead of Cybercab event, Nvidia acquires Hugging Face",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-apple-ceo-steps-down-nvidia-mag-7-145623375.html"
         },
         {
-          "title": "Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-snowflake-broadcom-hpe-earnings-tesla-cybercab-event/?src=A00220&yptr=yahoo"
+          "title": "Tesla's Cybercab event is tonight. Here's what the industry — and Wall Street — expects",
+          "url": "https://finance.yahoo.com/markets/article/teslas-cybercab-event-is-tonight-heres-what-the-industry--and-wall-street--expects-110000729.html"
         },
         {
-          "title": "Elon Musk's 2025 Tesla pay could buy nearly 10% of all Bitcoin",
-          "url": "https://www.thestreet.com/crypto/markets/elon-musks-2025-tesla-pay-could-buy-nearly-10-of-all-bitcoin"
+          "title": "TSLA Stock Rallies Into Invite-Only Cybercab Event — Then Trades Flat After-Hours As The Wheel-Free Car Hits Austin Streets",
+          "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-rallies-into-invite-only-cybercab-night-then-trades-flat-after-hours-after-putting-wheel-free-cybercab-on-austin-streets/cZsugoYRJvx"
         }
       ],
       "rank": 3
@@ -126,16 +126,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Jensen Huang Says the $3.5 Billion MediaTek Deal Is Not Circular. The Decade Long Roadmap Is the Real Tell.",
-          "url": "https://247wallst.com/investing/2026/09/02/jensen-huang-says-the-3-5-billion-mediatek-deal-is-not-circular-the-decade-long-roadmap-is-the-real-tell/"
+          "title": "China Is Grabbing Memory Market Share. This Stock Could Be a Big Loser.",
+          "url": "https://www.barrons.com/articles/micron-stock-memory-chip-market-share-china-sk-hynix-493ec42b?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Is the Memory Supercycle Peak Near for Micron and SK Hynix?",
-          "url": "https://www.fool.com/investing/2026/09/02/is-the-memory-supercycle-peak-near-for-micron-and/"
+          "title": "Micron, SanDisk Lag Tech Rally as China Grabs Memory Market Share",
+          "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61613454/china-memory-market-share-micron-sandisk?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
         },
         {
-          "title": "How to Play SKHY Stock as SK hynix Looks to Build a New Plant in Japan",
-          "url": "https://www.barchart.com/story/news/4404951/how-to-play-skhy-stock-as-sk-hynix-looks-to-build-a-new-plant-in-japan"
+          "title": "Gary Black Warns Tesla Risks Falling Behind in the Self-Driving Race: ‘Unsupervised Autonomy Is Becoming Table Stakes’",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gary-black-warns-tesla-risks-183128245.html"
         }
       ],
       "rank": 4
@@ -151,16 +151,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Samsung Loses 4% as $95 Oil Hits Its AI-Memory Rally",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-loses-4-95-oil-220232652.html"
+          "title": "Roku’s $999 OLED could change how TV makers make money",
+          "url": "https://www.thestreet.com/investing/roku-999-oled-could-change-how-tv-makers-make-money"
         },
         {
-          "title": "Broadcom Q3 FY2026 earnings: Record revenue on AI chip demand",
-          "url": "https://qz.com/broadcom-record-revenue-ai-chips-quarterly-earnings-090226"
+          "title": "Micron, SanDisk Lag Tech Rally as China Grabs Memory Market Share",
+          "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61613454/china-memory-market-share-micron-sandisk?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
         },
         {
-          "title": "Sandisk Stock: Buy, Sell, or Hold?",
-          "url": "https://www.fool.com/investing/2026/09/02/sandisk-stock-buy-sell-or-hold/"
+          "title": "Micron, Samsung, SK Hynix Suffer Drop In DRAM Market Share As China’s CXMT Pulls Ahead",
+          "url": "https://stocktwits.com/news-articles/markets/equity/micron-samsung-sk-hynix-suffer-drop-in-dram-market-share-as-china-s-cxmt-pulls-ahead/cZsMpSiRJHy"
         }
       ],
       "rank": 5
@@ -171,7 +171,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.370419,
+      "trailing_pe": 28.91772,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -191,7 +191,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 37.308838,
+      "trailing_pe": 37.681973,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -211,7 +211,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 333.6542,
+      "trailing_pe": 351.74295,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -237,15 +237,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 253750.0,
-      "change_pct": 1.3,
-      "week52_pct": 63.3,
-      "pct_vs_ma200": 20.47,
-      "drawdown_from_high_pct": -29.92,
-      "return_3m_pct": -27.73,
-      "return_6m_pct": 30.47,
-      "return_12m_pct": 264.45,
-      "relative_strength_6m_pct": 24.52
+      "last_close": 250000.0,
+      "change_pct": -0.2,
+      "week52_pct": 62.0,
+      "pct_vs_ma200": 18.7,
+      "drawdown_from_high_pct": -30.96,
+      "return_3m_pct": -28.8,
+      "return_6m_pct": 28.55,
+      "return_12m_pct": 259.06,
+      "relative_strength_6m_pct": 23.45
     },
     {
       "symbol": "000660.KS",
@@ -257,15 +257,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1638000.0,
-      "change_pct": 1.55,
-      "week52_pct": 52.1,
-      "pct_vs_ma200": 25.94,
-      "drawdown_from_high_pct": -43.87,
-      "return_3m_pct": -28.71,
-      "return_6m_pct": 74.51,
-      "return_12m_pct": 543.91,
-      "relative_strength_6m_pct": 68.56
+      "last_close": 1596000.0,
+      "change_pct": -1.05,
+      "week52_pct": 50.6,
+      "pct_vs_ma200": 22.73,
+      "drawdown_from_high_pct": -45.31,
+      "return_3m_pct": -30.53,
+      "return_6m_pct": 70.03,
+      "return_12m_pct": 527.4,
+      "relative_strength_6m_pct": 64.93
     }
   ],
   "discovery": [],
