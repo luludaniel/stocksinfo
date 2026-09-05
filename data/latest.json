@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-04T00:15:45+00:00",
-  "market_date": "2026-09-04",
+  "generated_at": "2026-09-05T00:15:56+00:00",
+  "market_date": "2026-09-05",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 29,
+    "days_collected": 30,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,27 +26,27 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 28.9배 — 자체 밴드 하단 이탈 (평균 32.3배)"
+          "message": "PER 29.2배 — 자체 밴드 하단 이탈 (평균 32.2배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 상향 6.6%"
+          "message": "애널리스트 목표주가 7일간 상향 7.0%"
         }
       ],
       "news": [
         {
-          "title": "Tech stocks today: Tesla stock pops ahead of Cybercab event, Nvidia acquires Hugging Face",
+          "title": "Apple's John Ternus needs to be his own type of CEO and 'not Tim Cook 2'",
+          "url": "https://finance.yahoo.com/video/apples-john-ternus-needs-own-203847038.html"
+        },
+        {
+          "title": "Tech stocks today: Tesla's Cybercab event fails to impress, Feds launch investigation into the robotaxi",
           "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-apple-ceo-steps-down-nvidia-mag-7-145623375.html"
         },
         {
-          "title": "AI demand is 'exceptional,' but the supply chain is not: HPE CEO",
-          "url": "https://finance.yahoo.com/video/ai-demand-exceptional-supply-chain-201052714.html"
-        },
-        {
-          "title": "How Nvidia's latest deal continues to target all points of the AI trade",
-          "url": "https://finance.yahoo.com/video/nvidias-latest-deal-continues-target-143717372.html"
+          "title": "Prediction: IonQ Puts a Multiyear Revenue Number on the Board Tuesday",
+          "url": "https://www.fool.com/investing/2026/09/04/prediction-ionq-puts-a-multiyear-revenue-number-on-the-board-tuesday/"
         }
       ],
       "rank": 1
@@ -64,56 +64,24 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 37.7배 — 자체 밴드 상단 이탈 (평균 35.8배)"
+          "message": "PER 36.7배 — 자체 밴드 상단 이탈 (평균 35.8배)"
         }
       ],
       "news": [
         {
-          "title": "How Apple's John Ternus inherited a 'reckoning' with China",
-          "url": "https://finance.yahoo.com/video/apples-john-ternus-inherited-reckoning-120000967.html"
+          "title": "Apple's John Ternus needs to be his own type of CEO and 'not Tim Cook 2'",
+          "url": "https://finance.yahoo.com/video/apples-john-ternus-needs-own-203847038.html"
         },
         {
-          "title": "Dan Ives Says M&A Is the ‘Missing Piece’ for Apple in AI Arms Race — New CEO John Ternus Could Finally Shake Up Tim Cook’s Playbook",
-          "url": "https://finance.yahoo.com/technology/ai/articles/dan-ives-says-m-missing-220219429.html"
+          "title": "Self-Driving’s Next Task: Potholes",
+          "url": "https://www.barrons.com/articles/self-drivings-next-task-potholes-a696a3f5?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Tim Cook Grew Apple From a $350 Billion Company Into a Multi-Trillion-Dollar Giant Over Nearly 15 Years as CEO. Can John Ternus' Product-First Approach Extend That Compounding?",
-          "url": "https://www.fool.com/investing/2026/09/03/tim-cook-grew-apple-from-a-350-billion-company-int/"
+          "title": "Jim Cramer Believes Nvidia Corp. (NASDAQ:NVDA) Buying Back Half A Trillion Worth In Stock Would Be Great",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-believes-nvidia-corp-224659401.html"
         }
       ],
       "rank": 2
-    },
-    {
-      "symbol": "TSLA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 351.7배 — 자체 밴드 상단 이탈 (평균 318.3배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Tech stocks today: Tesla stock pops ahead of Cybercab event, Nvidia acquires Hugging Face",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-apple-ceo-steps-down-nvidia-mag-7-145623375.html"
-        },
-        {
-          "title": "Tesla's Cybercab event is tonight. Here's what the industry — and Wall Street — expects",
-          "url": "https://finance.yahoo.com/markets/article/teslas-cybercab-event-is-tonight-heres-what-the-industry--and-wall-street--expects-110000729.html"
-        },
-        {
-          "title": "TSLA Stock Rallies Into Invite-Only Cybercab Event — Then Trades Flat After-Hours As The Wheel-Free Car Hits Austin Streets",
-          "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-rallies-into-invite-only-cybercab-night-then-trades-flat-after-hours-after-putting-wheel-free-cybercab-on-austin-streets/cZsugoYRJvx"
-        }
-      ],
-      "rank": 3
     },
     {
       "symbol": "000660.KS",
@@ -126,19 +94,19 @@
       "signals": [],
       "news": [
         {
-          "title": "China Is Grabbing Memory Market Share. This Stock Could Be a Big Loser.",
-          "url": "https://www.barrons.com/articles/micron-stock-memory-chip-market-share-china-sk-hynix-493ec42b?siteid=yhoof2&yptr=yahoo"
+          "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Flash Buy Signals; Apple, Inflation Reports Ahead",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Micron, SanDisk Lag Tech Rally as China Grabs Memory Market Share",
-          "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61613454/china-memory-market-share-micron-sandisk?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
+          "title": "Anthropic Stock Isn’t Public Yet, but Fund Companies Already Have Leveraged ETF Plans",
+          "url": "https://www.barrons.com/articles/anthropic-stock-ipo-leveraged-etf-45838a05?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Gary Black Warns Tesla Risks Falling Behind in the Self-Driving Race: ‘Unsupervised Autonomy Is Becoming Table Stakes’",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/gary-black-warns-tesla-risks-183128245.html"
+          "title": "SK Hynix Surges 7% as Memory Bid Widens Beyond NAND; Seagate Rallies 5%",
+          "url": "https://247wallst.com/investing/2026/09/04/sk-hynix-surges-7-as-memory-bid-widens-beyond-nand-seagate-rallies-5/"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -151,16 +119,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Roku’s $999 OLED could change how TV makers make money",
-          "url": "https://www.thestreet.com/investing/roku-999-oled-could-change-how-tv-makers-make-money"
+          "title": "Apple Poised To Unveil Folding iPhone",
+          "url": "https://www.investors.com/news/technology/apple-stock-folding-iphone-set-for-debut/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Micron, SanDisk Lag Tech Rally as China Grabs Memory Market Share",
-          "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61613454/china-memory-market-share-micron-sandisk?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
+          "title": "Lone Star JV Spends $1.2B On 2M SF R&D Portfolio In Silicon Valley",
+          "url": "https://www.bisnow.com/news/san-francisco/industrial/lone-star-jv-acquires-2-2m-sf-of-r-d-space-in-silicon-valley"
         },
         {
-          "title": "Micron, Samsung, SK Hynix Suffer Drop In DRAM Market Share As China’s CXMT Pulls Ahead",
-          "url": "https://stocktwits.com/news-articles/markets/equity/micron-samsung-sk-hynix-suffer-drop-in-dram-market-share-as-china-s-cxmt-pulls-ahead/cZsMpSiRJHy"
+          "title": "Netlist (NLST) Is Down 8.6% After Appeals Court Upholds Invalidation Of Five Memory Patents – Has The Bull Case Changed?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/netlist-nlst-down-8-6-090709405.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "No steering wheel, no problem: Can Tesla speed by Cybercab probe?",
+          "url": "https://finance.yahoo.com/video/no-steering-wheel-no-problem-201602999.html"
+        },
+        {
+          "title": "Are Meta and Nvidia redefining value vs. growth stocks in the era of AI?",
+          "url": "https://finance.yahoo.com/video/are-meta-and-nvidia-redefining-value-vs-growth-stocks-in-the-era-of-ai-120000681.html"
+        },
+        {
+          "title": "Self-Driving’s Next Task: Potholes",
+          "url": "https://www.barrons.com/articles/self-drivings-next-task-potholes-a696a3f5?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -171,7 +164,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.91772,
+      "trailing_pe": 29.159492,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -191,7 +184,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 37.681973,
+      "trailing_pe": 36.65178,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -211,7 +204,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 351.74295,
+      "trailing_pe": 324.84402,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -237,15 +230,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 250000.0,
-      "change_pct": -0.2,
-      "week52_pct": 62.0,
-      "pct_vs_ma200": 18.7,
-      "drawdown_from_high_pct": -30.96,
-      "return_3m_pct": -28.8,
-      "return_6m_pct": 28.55,
-      "return_12m_pct": 259.06,
-      "relative_strength_6m_pct": 23.45
+      "last_close": 255500.0,
+      "change_pct": 2.2,
+      "week52_pct": 63.9,
+      "pct_vs_ma200": 20.88,
+      "drawdown_from_high_pct": -29.44,
+      "return_3m_pct": -22.25,
+      "return_6m_pct": 48.85,
+      "return_12m_pct": 266.44,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -257,15 +250,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1596000.0,
-      "change_pct": -1.05,
-      "week52_pct": 50.6,
-      "pct_vs_ma200": 22.73,
-      "drawdown_from_high_pct": -45.31,
-      "return_3m_pct": -30.53,
-      "return_6m_pct": 70.03,
-      "return_12m_pct": 527.4,
-      "relative_strength_6m_pct": 64.93
+      "last_close": 1647000.0,
+      "change_pct": 3.2,
+      "week52_pct": 52.4,
+      "pct_vs_ma200": 26.15,
+      "drawdown_from_high_pct": -43.56,
+      "return_3m_pct": -20.42,
+      "return_6m_pct": 94.07,
+      "return_12m_pct": 575.2,
+      "relative_strength_6m_pct": NaN
     }
   ],
   "discovery": [],
