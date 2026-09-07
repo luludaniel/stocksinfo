@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-06T00:06:14+00:00",
-  "market_date": "2026-09-06",
+  "generated_at": "2026-09-07T00:10:58+00:00",
+  "market_date": "2026-09-07",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 31,
+    "days_collected": 32,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "AAPL",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 36.6배 — 자체 밴드 상단 이탈 (평균 35.8배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Prediction: Amazon Will Join Nvidia, Apple, and Alphabet in the $4 Trillion Club Before 2029",
-          "url": "https://www.fool.com/investing/2026/09/05/prediction-amazon-will-join-nvidia-apple-and-alpha/"
-        },
-        {
-          "title": "Apple's First iPhone Under New CEO John Ternus Launches Sept. 9. Here's Whether It's Finally Time to Buy the Stock.",
-          "url": "https://www.fool.com/investing/2026/09/05/apple-first-iphone-new-ceo-john-ternus-buy-stock/"
-        },
-        {
-          "title": "Dow Jones Futures: U.S., Iran Exchange Attacks; Nvidia, Micron, Sandisk Flash Buy Signals",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "NVDA",
       "score": 2.5,
@@ -58,49 +26,24 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 29.2배 — 자체 밴드 하단 이탈 (평균 32.1배)"
+          "message": "PER 29.2배 — 자체 밴드 하단 이탈 (평균 32.0배)"
         }
       ],
       "news": [
         {
-          "title": "Bill Gates Says He Still Won't Invest in Crypto, Calls It a \"Pure Mania-Driven Asset.\" Here's Why He's Right.",
-          "url": "https://www.fool.com/investing/2026/09/05/bill-gates-says-he-still-wont-invest-in-crypto-cal/"
+          "title": "Why Nvidia wants Hugging Face to keep helping its rivals: Chart of the Day",
+          "url": "https://finance.yahoo.com/markets/article/why-nvidia-wants-hugging-face-to-keep-helping-its-rivals-chart-of-the-day-132655037.html"
         },
         {
-          "title": "Cerebras Has a $25.4 Billion Backlog, and One OpenAI Agreement Is Behind Much of It",
-          "url": "https://www.fool.com/investing/2026/09/05/cerebras-has-a-usd25-4-billion-backlog-and-one-openai-agreement-is-behind-much-of-it/"
+          "title": "Nvidia makes staggering $12.9 billion bet to protect AI empire",
+          "url": "https://www.thestreet.com/investing/nvidia-hugging-face-acquisition-deal-to-protect-ai-empire"
         },
         {
-          "title": "IonQ vs. Rigetti Computing: Which Pure-Play Quantum Pioneer Has the Stronger Technology Advantage?",
-          "url": "https://www.fool.com/investing/2026/09/05/ionq-vs-rigetti-computing-which-pure-play-quantum/"
+          "title": "Where Will Berkshire Hathaway Stock Be in 5 Years?",
+          "url": "https://www.fool.com/investing/2026/09/06/where-will-berkshire-hathaway-stock-be-in-5-years/"
         }
       ],
-      "rank": 2
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "South Korea exports surpass annual record as AI chip boom drives shipments",
-          "url": "https://finance.yahoo.com/technology/ai/articles/south-korea-exports-surpass-annual-090758052.html"
-        },
-        {
-          "title": "Apple Poised To Unveil Folding iPhone",
-          "url": "https://www.investors.com/news/technology/apple-stock-folding-iphone-set-for-debut/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Lone Star JV Spends $1.2B On 2M SF R&D Portfolio In Silicon Valley",
-          "url": "https://www.bisnow.com/news/san-francisco/industrial/lone-star-jv-acquires-2-2m-sf-of-r-d-space-in-silicon-valley"
-        }
-      ],
-      "rank": 3
+      "rank": 1
     },
     {
       "symbol": "000660.KS",
@@ -113,19 +56,19 @@
       "signals": [],
       "news": [
         {
+          "title": "Dow Jones Futures Fall With Iran, Apple, Inflation In Focus; Nvidia, Micron, Sandisk Flash Buy Signals",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "South Korea Just Bet $20 Billion on SK hynix Stock",
+          "url": "https://www.barchart.com/story/news/4468071/south-korea-just-bet-20-billion-on-sk-hynix-stock"
+        },
+        {
           "title": "SK Hynix (NasdaqGS:SKHY) ADRs Draw Heavy Korean Interest After Nasdaq Debut",
           "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaqgs-skhy-adrs-210732543.html"
-        },
-        {
-          "title": "Is SK Hynix (NasdaqGS:SKHY) Undervalued On Tariff Talks And AI Memory Demand?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaqgs-skhy-undervalued-190646491.html"
-        },
-        {
-          "title": "Dow Jones Futures: U.S., Iran Exchange Attacks; Nvidia, Micron, Sandisk Flash Buy Signals",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo"
         }
       ],
-      "rank": 4
+      "rank": 2
     },
     {
       "symbol": "TSLA",
@@ -138,16 +81,66 @@
       "signals": [],
       "news": [
         {
-          "title": "Elon Musk Says He's Happy About 'Half the Time' After Documentary Describes Him as 'The Most Miserable Man' — Mom Has This to Say",
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/elon-musk-says-hes-happy-223019646.html"
+          "title": "Goldman sees Cybercab giving Tesla a cost advantage in robotaxis",
+          "url": "https://finance.yahoo.com/technology/ai/articles/goldman-sees-cybercab-giving-tesla-214658906.html"
         },
         {
-          "title": "Elon Musk Says Cybercab Is Gold to Reflect 'Golden Era' of Mobility as Tesla Launches Robotaxi With Starlink",
-          "url": "https://finance.yahoo.com/technology/articles/elon-musk-says-cybercab-gold-213015412.html"
+          "title": "Should You Forget SpaceX (SPCX) Stock?",
+          "url": "https://www.fool.com/investing/2026/09/06/should-you-forget-spacex-spcx-stock/"
         },
         {
-          "title": "Prediction: Amazon Will Join Nvidia, Apple, and Alphabet in the $4 Trillion Club Before 2029",
-          "url": "https://www.fool.com/investing/2026/09/05/prediction-amazon-will-join-nvidia-apple-and-alpha/"
+          "title": "Cathie Wood's Ark Has Delivered Just a 13.8% Annualized Return Since 2014, Roughly Matching the S&P 500. Should You Trust Her Bold Predictions for 2030?",
+          "url": "https://www.fool.com/investing/2026/09/06/cathie-wood-ark-annual-return-sp-500-trust/"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Apple (AAPL) Sets iPhone Launch Event. The First Under New CEO John Ternus",
+          "url": "https://finance.yahoo.com/technology/articles/apple-aapl-sets-iphone-launch-221225248.html"
+        },
+        {
+          "title": "NVIDIA (NVDA)’s $20 Billion Groq Bet Goes Live This Year With New AI Racks",
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-20-billion-groq-190737433.html"
+        },
+        {
+          "title": "South Korea exports surpass annual record as AI chip boom drives shipments",
+          "url": "https://finance.yahoo.com/technology/ai/articles/south-korea-exports-surpass-annual-090758052.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Dow Jones Futures Fall With Iran, Apple, Inflation In Focus; Nvidia, Micron, Sandisk Flash Buy Signals",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Apple (AAPL) Raises Apple TV and Apple One Prices Again in the U.S.",
+          "url": "https://finance.yahoo.com/media-advertising/articles/apple-aapl-raises-apple-tv-224834727.html"
+        },
+        {
+          "title": "Nvidia (NVDA)’s First-Ever Year-Ahead Forecast Puts It on a Path to Pass Apple and Alphabet",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-first-ever-ahead-223147950.html"
         }
       ],
       "rank": 5
