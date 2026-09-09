@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T00:35:41+00:00",
-  "market_date": "2026-09-08",
+  "generated_at": "2026-09-09T00:25:56+00:00",
+  "market_date": "2026-09-09",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 33,
+    "days_collected": 34,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,74 +26,56 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 29.2배 — 자체 밴드 하단 이탈 (평균 31.9배)"
+          "message": "PER 28.6배 — 자체 밴드 하단 이탈 (평균 31.8배)"
         }
       ],
       "news": [
         {
-          "title": "Wall Street Investment Firm Bernstein Thinks Bitcoin Could Hit $300,000 by 2029. Is Bitcoin Now a Buy?",
-          "url": "https://www.fool.com/investing/2026/09/07/investment-firm-bernstein-thinks-bitcoin-could-hit/"
+          "title": "Bond yield worries persist as oil edges higher: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/bond-yield-worries-persist-as-oil-edges-higher-alphacheck-135158227.html"
         },
         {
-          "title": "Why UWM Holdings Stock Dived by 20% Last Month",
-          "url": "https://www.fool.com/investing/2026/09/07/why-uwm-holdings-stock-dived-by-20-last-month/"
+          "title": "What investors 'really' need to see from Oracle earnings this week",
+          "url": "https://finance.yahoo.com/video/investors-really-see-oracle-earnings-150710768.html"
         },
         {
-          "title": "The AI Memory Stock That Could Outshine the Obvious Picks",
-          "url": "https://www.fool.com/investing/2026/09/07/the-ai-memory-stock-that-could-outshine-the-obviou/"
+          "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo"
         }
       ],
       "rank": 1
     },
     {
-      "symbol": "000660.KS",
-      "score": 1.5,
+      "symbol": "TSLA",
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
-      "signals": [],
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 334.7배 — 자체 밴드 상단 이탈 (평균 319.3배)"
+        }
+      ],
       "news": [
         {
-          "title": "Apple's $54 Billion iPhone Engine Hits an AI Memory Squeeze",
-          "url": "https://finance.yahoo.com/technology/articles/apples-54-billion-iphone-engine-215612819.html"
+          "title": "Bond yield worries persist as oil edges higher: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/bond-yield-worries-persist-as-oil-edges-higher-alphacheck-135158227.html"
         },
         {
-          "title": "Micron's $50 Billion Guide Gets an 8.3% Signal From Seoul",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-50-billion-guide-gets-215138948.html"
+          "title": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Stocks Jump",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-leads-chip-stocks-rally-204945385.html"
         },
         {
-          "title": "Why Micron and SK Hynix Sit in the Most Valuable Spot in the Entire Compute Stack",
-          "url": "https://247wallst.com/investing/2026/09/07/why-micron-and-sk-hynix-sit-in-the-most-valuable-spot-in-the-entire-compute-stack/"
+          "title": "Tesla Cybercab Could Beat Waymo on Cost by Up to 30 Cents A Mile, Goldman Says",
+          "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61673636/tesla-cybercab-waymo-cost?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
         }
       ],
       "rank": 2
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Crypto Investors Rotate From Bitcoin Into Altcoins as Rate Risks Rise",
-          "url": "https://www.cryptoprowl.com/releases/crypto-investors-rotate-from-bitcoin-into-altcoins-as-rate-risks-rise-6956"
-        },
-        {
-          "title": "Goldman Sachs Delivers Stark Message on Tesla Stock",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-delivers-stark-message-191200543.html"
-        },
-        {
-          "title": "Cybercab Could Transform Tesla, But Regulatory Risks Loom",
-          "url": "https://finance.yahoo.com/technology/articles/cybercab-could-transform-tesla-regulatory-190959675.html"
-        }
-      ],
-      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -106,19 +88,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Apple's $54 Billion iPhone Engine Hits an AI Memory Squeeze",
-          "url": "https://finance.yahoo.com/technology/articles/apples-54-billion-iphone-engine-215612819.html"
+          "title": "Goldman Says the Worst May Be Over for Micron and SanDisk",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-says-worst-may-over-213151330.html"
         },
         {
-          "title": "Micron's $50 Billion Guide Gets an 8.3% Signal From Seoul",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-50-billion-guide-gets-215138948.html"
+          "title": "Bank of America Sees ASML Stock's Next Big AI Trigger",
+          "url": "https://finance.yahoo.com/technology/ai/articles/bank-america-sees-asml-stocks-205458524.html"
         },
         {
-          "title": "Apple’s new CEO faces a staggering $14 billion iPhone test",
-          "url": "https://www.thestreet.com/investing/apples-new-ceo-faces-a-staggering-14-billion-iphone-test"
+          "title": "An AI chip machine so pricey, three rivals had to say yes",
+          "url": "https://www.thestreet.com/technology/semiconductor-rivals-adopt-asml-equipment"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "symbol": "AAPL",
@@ -131,16 +113,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Palantir Stock Leads August Rally -- Nvidia, Salesforce and Super Micro Jump",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html"
+          "title": "How Apple stock usually reacts to big iPhone reveal events",
+          "url": "https://finance.yahoo.com/technology/article/how-apple-stock-usually-reacts-to-big-iphone-reveal-events-152915777.html"
         },
         {
-          "title": "Apple's $54 Billion iPhone Engine Hits an AI Memory Squeeze",
-          "url": "https://finance.yahoo.com/technology/articles/apples-54-billion-iphone-engine-215612819.html"
+          "title": "How Apple's stock is performing ahead of a pivotal product launch",
+          "url": "https://finance.yahoo.com/video/apples-stock-performing-ahead-pivotal-150701777.html"
         },
         {
-          "title": "Tim Cook Delivered a 2,720% Total Return Over 15 Years. Here's Whether John Ternus Can Do the Same for Apple Investors.",
-          "url": "https://www.fool.com/investing/2026/09/07/tim-cook-delivered-a-2720-total-return-over-15-yea/"
+          "title": "Apple’s First Foldable iPhone Could Be Huge—but Should You Be an Early Buyer?",
+          "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-first-foldable-iphone-could-223056702.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Goldman Says the Worst May Be Over for Micron and SanDisk",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-says-worst-may-over-213151330.html"
+        },
+        {
+          "title": "Micron and Sandisk Face a New China Threat -- 1 Has a Much Bigger Problem",
+          "url": "https://www.barchart.com/story/news/4493944/micron-and-sandisk-face-a-new-china-threat-1-has-a-much-bigger-problem"
         }
       ],
       "rank": 5
@@ -151,61 +158,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 29.159492,
+      "trailing_pe": 28.573418,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 230.36,
-      "change_pct": 0.84,
-      "week52_pct": 92.8,
-      "pct_vs_ma200": 17.22,
-      "drawdown_from_high_pct": -2.17,
-      "return_3m_pct": 12.32,
-      "return_6m_pct": 29.7,
-      "return_12m_pct": 34.37,
-      "relative_strength_6m_pct": 15.18
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 36.60984,
+      "trailing_pe": 36.18078,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 319.97,
-      "change_pct": -2.51,
-      "week52_pct": 82.6,
-      "pct_vs_ma200": 12.89,
-      "drawdown_from_high_pct": -5.83,
-      "return_3m_pct": 4.2,
-      "return_6m_pct": 24.5,
-      "return_12m_pct": 33.94,
-      "relative_strength_6m_pct": 9.98
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 321.8909,
+      "trailing_pe": 334.69092,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 354.08,
-      "change_pct": -5.92,
-      "week52_pct": 29.1,
-      "pct_vs_ma200": -11.38,
-      "drawdown_from_high_pct": -27.72,
-      "return_3m_pct": -9.44,
-      "return_6m_pct": -10.75,
-      "return_12m_pct": 4.59,
-      "relative_strength_6m_pct": -25.27
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "005930.KS",
@@ -217,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 271250.0,
-      "change_pct": 0.46,
-      "week52_pct": 69.2,
-      "pct_vs_ma200": 27.31,
-      "drawdown_from_high_pct": -25.09,
-      "return_3m_pct": -15.67,
-      "return_6m_pct": 44.59,
-      "return_12m_pct": 284.13,
-      "relative_strength_6m_pct": 18.36
+      "last_close": 268500.0,
+      "change_pct": -0.37,
+      "week52_pct": 68.3,
+      "pct_vs_ma200": 25.52,
+      "drawdown_from_high_pct": -25.85,
+      "return_3m_pct": -11.14,
+      "return_6m_pct": 55.25,
+      "return_12m_pct": 286.73,
+      "relative_strength_6m_pct": 30.05
     },
     {
       "symbol": "000660.KS",
@@ -237,18 +244,55 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1817000.0,
-      "change_pct": 1.91,
-      "week52_pct": 58.6,
-      "pct_vs_ma200": 37.92,
-      "drawdown_from_high_pct": -37.74,
-      "return_3m_pct": -17.95,
-      "return_6m_pct": 96.72,
-      "return_12m_pct": 603.27,
-      "relative_strength_6m_pct": 70.49
+      "last_close": 1811000.0,
+      "change_pct": 1.0,
+      "week52_pct": 58.4,
+      "pct_vs_ma200": 36.83,
+      "drawdown_from_high_pct": -37.94,
+      "return_3m_pct": -11.55,
+      "return_6m_pct": 116.71,
+      "return_12m_pct": 595.59,
+      "relative_strength_6m_pct": 91.51
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due"
+        },
+        {
+          "title": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Stocks Jump"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 129.0153,
+        "week52_pct": NaN,
+        "market_cap_usd": 825607913472
+      }
+    },
+    {
+      "symbol": "GS",
+      "name": "Goldman Sachs Group, Inc. (The)",
+      "why": "당일 기사 4건 언급",
+      "headlines": [
+        {
+          "title": "What investors 'really' need to see from Oracle earnings this week"
+        },
+        {
+          "title": "Why Delek Holdings Stock Triumphed on Tuesday"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 15.993366,
+        "week52_pct": NaN,
+        "market_cap_usd": 301807894528
+      }
+    }
+  ],
   "calendar": [
     {
       "date": "2026-09-10",
