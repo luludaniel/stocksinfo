@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T00:25:56+00:00",
-  "market_date": "2026-09-09",
+  "generated_at": "2026-09-10T00:25:13+00:00",
+  "market_date": "2026-09-10",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 34,
+    "days_collected": 35,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,21 +26,21 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 28.6배 — 자체 밴드 하단 이탈 (평균 31.8배)"
+          "message": "PER 28.3배 — 자체 밴드 하단 이탈 (평균 31.7배)"
         }
       ],
       "news": [
         {
-          "title": "Bond yield worries persist as oil edges higher: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/bond-yield-worries-persist-as-oil-edges-higher-alphacheck-135158227.html"
+          "title": "CoreWeave struggling to keep up with demand for Nvidia chips, CEO says",
+          "url": "https://finance.yahoo.com/markets/article/coreweave-struggling-to-keep-up-with-demand-for-nvidia-chips-ceo-says-145336930.html"
         },
         {
-          "title": "What investors 'really' need to see from Oracle earnings this week",
-          "url": "https://finance.yahoo.com/video/investors-really-see-oracle-earnings-150710768.html"
+          "title": "A foldable iPhone is nice, but Apple still needs to improve its AI user experience",
+          "url": "https://finance.yahoo.com/video/foldable-iphone-nice-apple-still-141232195.html"
         },
         {
-          "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo"
+          "title": "Why Signet Jewelers Stock Popped Today",
+          "url": "https://www.fool.com/investing/2026/09/09/why-signet-jewelers-stock-popped-today/"
         }
       ],
       "rank": 1
@@ -58,74 +58,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 334.7배 — 자체 밴드 상단 이탈 (평균 319.3배)"
+          "message": "PER 343.7배 — 자체 밴드 상단 이탈 (평균 320.0배)"
         }
       ],
       "news": [
         {
-          "title": "Bond yield worries persist as oil edges higher: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/bond-yield-worries-persist-as-oil-edges-higher-alphacheck-135158227.html"
+          "title": "Bond yields tick higher as oil tops $100: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/bond-yields-tick-higher-as-oil-tops-100-alphacheck-135740415.html"
         },
         {
-          "title": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Stocks Jump",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-leads-chip-stocks-rally-204945385.html"
+          "title": "Goldman Sachs sends stark message to Tesla investors",
+          "url": "https://www.thestreet.com/investing/stocks/goldman-sachs-tesla-stock-rating-cybercab"
         },
         {
-          "title": "Tesla Cybercab Could Beat Waymo on Cost by Up to 30 Cents A Mile, Goldman Says",
-          "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61673636/tesla-cybercab-waymo-cost?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
+          "title": "This billionaire is now worth more than Jeff Bezos",
+          "url": "https://www.usatoday.com/story/money/personal-finance/income/2026/09/09/michael-dell-passes-jeff-bezos-forbes-billionaire-rankings/91678135007/"
         }
       ],
       "rank": 2
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Goldman Says the Worst May Be Over for Micron and SanDisk",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-says-worst-may-over-213151330.html"
-        },
-        {
-          "title": "Bank of America Sees ASML Stock's Next Big AI Trigger",
-          "url": "https://finance.yahoo.com/technology/ai/articles/bank-america-sees-asml-stocks-205458524.html"
-        },
-        {
-          "title": "An AI chip machine so pricey, three rivals had to say yes",
-          "url": "https://www.thestreet.com/technology/semiconductor-rivals-adopt-asml-equipment"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "How Apple stock usually reacts to big iPhone reveal events",
-          "url": "https://finance.yahoo.com/technology/article/how-apple-stock-usually-reacts-to-big-iphone-reveal-events-152915777.html"
-        },
-        {
-          "title": "How Apple's stock is performing ahead of a pivotal product launch",
-          "url": "https://finance.yahoo.com/video/apples-stock-performing-ahead-pivotal-150701777.html"
-        },
-        {
-          "title": "Apple’s First Foldable iPhone Could Be Huge—but Should You Be an Early Buyer?",
-          "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-first-foldable-iphone-could-223056702.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -138,16 +88,66 @@
       "signals": [],
       "news": [
         {
-          "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo"
+          "title": "Analysis-Samsung, SK Hynix payouts test South Korea's reform drive as investors seek more",
+          "url": "https://ca.finance.yahoo.com/news/analysis-samsung-sk-hynix-payouts-233958610.html"
         },
         {
-          "title": "Goldman Says the Worst May Be Over for Micron and SanDisk",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-says-worst-may-over-213151330.html"
+          "title": "As Anthropic's IPO Looms, This Small Financial Powerhouse Just Got Its First Underwriting Job",
+          "url": "https://www.fool.com/investing/2026/09/09/as-anthropics-ipo-looms-this-small-financial-power/"
         },
         {
-          "title": "Micron and Sandisk Face a New China Threat -- 1 Has a Much Bigger Problem",
-          "url": "https://www.barchart.com/story/news/4493944/micron-and-sandisk-face-a-new-china-threat-1-has-a-much-bigger-problem"
+          "title": "Micron, Sandisk and the Next Leg Higher in Memory Stocks",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-sandisk-next-leg-higher-194200329.html"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "How it feels to handle Apple's foldable iPhone Duo",
+          "url": "https://finance.yahoo.com/video/how-it-feels-to-handle-apples-foldable-iphone-duo-202001509.html"
+        },
+        {
+          "title": "Analysis-Samsung, SK Hynix payouts test South Korea's reform drive as investors seek more",
+          "url": "https://ca.finance.yahoo.com/news/analysis-samsung-sk-hynix-payouts-233958610.html"
+        },
+        {
+          "title": "Apple Enters Foldable Smartphone Market With IPhone Duo Launch",
+          "url": "https://finance.yahoo.com/technology/articles/apple-enters-foldable-smartphone-market-202438577.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "How John Ternus understood the assignment in the Apple launch event opener",
+          "url": "https://finance.yahoo.com/video/john-ternus-understood-assignment-apple-213000340.html"
+        },
+        {
+          "title": "Foldable iPhone Duo's software helps it 'shine' against competitors",
+          "url": "https://finance.yahoo.com/video/foldable-iphone-duos-software-helps-193148292.html"
+        },
+        {
+          "title": "Apple reveals the foldable iPhone Duo",
+          "url": "https://finance.yahoo.com/video/apple-reveals-foldable-iphone-duo-183645363.html"
         }
       ],
       "rank": 5
@@ -158,7 +158,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.573418,
+      "trailing_pe": 28.312658,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -178,7 +178,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 36.18078,
+      "trailing_pe": 36.12142,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -198,7 +198,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 334.69092,
+      "trailing_pe": 343.74765,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -224,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 268500.0,
-      "change_pct": -0.37,
-      "week52_pct": 68.3,
-      "pct_vs_ma200": 25.52,
-      "drawdown_from_high_pct": -25.85,
-      "return_3m_pct": -11.14,
-      "return_6m_pct": 55.25,
-      "return_12m_pct": 286.73,
-      "relative_strength_6m_pct": 30.05
+      "last_close": 270000.0,
+      "change_pct": 0.19,
+      "week52_pct": 68.8,
+      "pct_vs_ma200": 25.72,
+      "drawdown_from_high_pct": -25.44,
+      "return_3m_pct": -9.6,
+      "return_6m_pct": 44.15,
+      "return_12m_pct": 287.24,
+      "relative_strength_6m_pct": 9.52
     },
     {
       "symbol": "000660.KS",
@@ -244,52 +244,27 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1811000.0,
-      "change_pct": 1.0,
-      "week52_pct": 58.4,
-      "pct_vs_ma200": 36.83,
-      "drawdown_from_high_pct": -37.94,
-      "return_3m_pct": -11.55,
-      "return_6m_pct": 116.71,
-      "return_12m_pct": 595.59,
-      "relative_strength_6m_pct": 91.51
+      "last_close": 1888000.0,
+      "change_pct": 1.72,
+      "week52_pct": 61.3,
+      "pct_vs_ma200": 41.93,
+      "drawdown_from_high_pct": -35.31,
+      "return_3m_pct": -10.12,
+      "return_6m_pct": 101.36,
+      "return_12m_pct": 629.35,
+      "relative_strength_6m_pct": 66.73
     }
   ],
   "discovery": [
     {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
       "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due"
-        },
-        {
-          "title": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Stocks Jump"
-        }
-      ],
+      "headlines": [],
       "basic": {
-        "trailing_pe": 129.0153,
+        "trailing_pe": 23.247456,
         "week52_pct": NaN,
-        "market_cap_usd": 825607913472
-      }
-    },
-    {
-      "symbol": "GS",
-      "name": "Goldman Sachs Group, Inc. (The)",
-      "why": "당일 기사 4건 언급",
-      "headlines": [
-        {
-          "title": "What investors 'really' need to see from Oracle earnings this week"
-        },
-        {
-          "title": "Why Delek Holdings Stock Triumphed on Tuesday"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 15.993366,
-        "week52_pct": NaN,
-        "market_cap_usd": 301807894528
+        "market_cap_usd": 1160756461568
       }
     }
   ],
