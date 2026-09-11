@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10T00:25:13+00:00",
-  "market_date": "2026-09-10",
+  "generated_at": "2026-09-11T00:20:23+00:00",
+  "market_date": "2026-09-11",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 35,
+    "days_collected": 36,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "NVDA",
-      "score": 3.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 1.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 28.3배 — 자체 밴드 하단 이탈 (평균 31.7배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "CoreWeave struggling to keep up with demand for Nvidia chips, CEO says",
-          "url": "https://finance.yahoo.com/markets/article/coreweave-struggling-to-keep-up-with-demand-for-nvidia-chips-ceo-says-145336930.html"
-        },
-        {
-          "title": "A foldable iPhone is nice, but Apple still needs to improve its AI user experience",
-          "url": "https://finance.yahoo.com/video/foldable-iphone-nice-apple-still-141232195.html"
-        },
-        {
-          "title": "Why Signet Jewelers Stock Popped Today",
-          "url": "https://www.fool.com/investing/2026/09/09/why-signet-jewelers-stock-popped-today/"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "TSLA",
       "score": 2.5,
@@ -58,24 +26,88 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 343.7배 — 자체 밴드 상단 이탈 (평균 320.0배)"
+          "message": "PER 339.8배 — 자체 밴드 상단 이탈 (평균 320.6배)"
         }
       ],
       "news": [
         {
-          "title": "Bond yields tick higher as oil tops $100: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/bond-yields-tick-higher-as-oil-tops-100-alphacheck-135740415.html"
+          "title": "Tesla (TSLA) Falls More Steeply Than Broader Market: What Investors Need to Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-falls-more-steeply-214505362.html"
         },
         {
-          "title": "Goldman Sachs sends stark message to Tesla investors",
-          "url": "https://www.thestreet.com/investing/stocks/goldman-sachs-tesla-stock-rating-cybercab"
+          "title": "Uber Stock Pops After CEO Buys Shares Worth $10 Million",
+          "url": "https://www.barrons.com/articles/uber-stock-ceo-dara-khosrowshahi-d6d79288?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "This billionaire is now worth more than Jeff Bezos",
-          "url": "https://www.usatoday.com/story/money/personal-finance/income/2026/09/09/michael-dell-passes-jeff-bezos-forbes-billionaire-rankings/91678135007/"
+          "title": "SpaceX Sues Texas AG, Grimes County Over Terafab Project Information",
+          "url": "https://www.bisnow.com/news/houston/construction-development/spacex-sues-texas-ag-grimes-county-terafab-project-information"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 37.4배 — 자체 밴드 상단 이탈 (평균 35.9배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Why hardware will attract buyers to Apple's new lineup over AI features",
+          "url": "https://finance.yahoo.com/video/why-hardware-attract-buyers-apples-192906871.html"
+        },
+        {
+          "title": "Apple's iPhone leasing program: How it works, what to consider as prices increase",
+          "url": "https://finance.yahoo.com/personal-finance/banking/article/apples-iphone-leasing-program-how-it-works-what-to-consider-as-prices-increase-143105471.html"
+        },
+        {
+          "title": "Apple iPhone Duo has 2 problems: Small hands and next-gen expectations",
+          "url": "https://finance.yahoo.com/markets/stocks/article/apple-iphone-duo-has-2-problems-small-hands-and-next-gen-expectations-111102429.html"
         }
       ],
       "rank": 2
+    },
+    {
+      "symbol": "NVDA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 28.2배 — 자체 밴드 하단 이탈 (평균 31.6배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "SpaceX stock rises with data center overhaul, budding UK defense deal in focus",
+          "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-rises-with-data-center-overhaul-budding-uk-defense-deal-in-focus-160039841.html"
+        },
+        {
+          "title": "Treasury yields rise as investors raise bets on Fed rate hike: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/treasury-yields-rise-as-investors-raise-bets-on-fed-rate-hike-alphacheck-135652896.html"
+        },
+        {
+          "title": "Dow Jones Futures: S&P 500 Breaks Support As Oil Prices, Yields Surge; Oracle Jumps Late With CPI Inflation Due",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-oil-prices-treasury-yields-cpi-inflation-oracle-earnings/?src=A00220&yptr=yahoo"
+        }
+      ],
+      "rank": 3
     },
     {
       "symbol": "000660.KS",
@@ -88,19 +120,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Analysis-Samsung, SK Hynix payouts test South Korea's reform drive as investors seek more",
-          "url": "https://ca.finance.yahoo.com/news/analysis-samsung-sk-hynix-payouts-233958610.html"
+          "title": "trade[XYZ] Launches HIP-4 Event Markets",
+          "url": "https://www.bankless.com/read/news/trade-xyz-launches-hip-4-event-markets"
         },
         {
-          "title": "As Anthropic's IPO Looms, This Small Financial Powerhouse Just Got Its First Underwriting Job",
-          "url": "https://www.fool.com/investing/2026/09/09/as-anthropics-ipo-looms-this-small-financial-power/"
+          "title": "OpenAI Deepens Samsung Partnership to Build Next-Gen AI Chips — ‘One of the Areas Where We’ve Made the Most Progress’",
+          "url": "https://finance.yahoo.com/technology/ai/articles/openai-deepens-samsung-partnership-build-153010885.html"
         },
         {
-          "title": "Micron, Sandisk and the Next Leg Higher in Memory Stocks",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-sandisk-next-leg-higher-194200329.html"
+          "title": "Micron Is 1.6 Points From Taking the No. 2 Spot in DRAM",
+          "url": "https://www.fool.com/investing/2026/09/10/micron-is-1-6-points-from-taking-the-no-2-spot-in-dram/"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -113,41 +145,16 @@
       "signals": [],
       "news": [
         {
-          "title": "How it feels to handle Apple's foldable iPhone Duo",
-          "url": "https://finance.yahoo.com/video/how-it-feels-to-handle-apples-foldable-iphone-duo-202001509.html"
+          "title": "Why hardware will attract buyers to Apple's new lineup over AI features",
+          "url": "https://finance.yahoo.com/video/why-hardware-attract-buyers-apples-192906871.html"
         },
         {
-          "title": "Analysis-Samsung, SK Hynix payouts test South Korea's reform drive as investors seek more",
-          "url": "https://ca.finance.yahoo.com/news/analysis-samsung-sk-hynix-payouts-233958610.html"
+          "title": "Qualcomm Stock Looks Cheap, But Is The Discount Deserved?",
+          "url": "https://www.trefis.com/articles/614901/qualcomm-stock-looks-cheap-but-is-the-discount-deserved/2026-09-10"
         },
         {
-          "title": "Apple Enters Foldable Smartphone Market With IPhone Duo Launch",
-          "url": "https://finance.yahoo.com/technology/articles/apple-enters-foldable-smartphone-market-202438577.html"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "How John Ternus understood the assignment in the Apple launch event opener",
-          "url": "https://finance.yahoo.com/video/john-ternus-understood-assignment-apple-213000340.html"
-        },
-        {
-          "title": "Foldable iPhone Duo's software helps it 'shine' against competitors",
-          "url": "https://finance.yahoo.com/video/foldable-iphone-duos-software-helps-193148292.html"
-        },
-        {
-          "title": "Apple reveals the foldable iPhone Duo",
-          "url": "https://finance.yahoo.com/video/apple-reveals-foldable-iphone-duo-183645363.html"
+          "title": "Apple Jumps as $1,999 Foldable Forces Samsung Onto Defense",
+          "url": "https://finance.yahoo.com/technology/articles/apple-jumps-1-999-foldable-194435052.html"
         }
       ],
       "rank": 5
@@ -158,7 +165,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.312658,
+      "trailing_pe": 28.248383,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -178,7 +185,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 36.12142,
+      "trailing_pe": 37.40779,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -198,7 +205,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 343.74765,
+      "trailing_pe": 339.7757,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -224,15 +231,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 270000.0,
-      "change_pct": 0.19,
-      "week52_pct": 68.8,
-      "pct_vs_ma200": 25.72,
-      "drawdown_from_high_pct": -25.44,
-      "return_3m_pct": -9.6,
-      "return_6m_pct": 44.15,
-      "return_12m_pct": 287.24,
-      "relative_strength_6m_pct": 9.52
+      "last_close": 269000.0,
+      "change_pct": -0.19,
+      "week52_pct": 68.5,
+      "pct_vs_ma200": 25.26,
+      "drawdown_from_high_pct": -25.71,
+      "return_3m_pct": -9.93,
+      "return_6m_pct": 43.62,
+      "return_12m_pct": 285.8,
+      "relative_strength_6m_pct": 9.35
     },
     {
       "symbol": "000660.KS",
@@ -244,36 +251,17 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1888000.0,
-      "change_pct": 1.72,
-      "week52_pct": 61.3,
-      "pct_vs_ma200": 41.93,
-      "drawdown_from_high_pct": -35.31,
-      "return_3m_pct": -10.12,
-      "return_6m_pct": 101.36,
-      "return_12m_pct": 629.35,
-      "relative_strength_6m_pct": 66.73
+      "last_close": 1776000.0,
+      "change_pct": -4.16,
+      "week52_pct": 57.1,
+      "pct_vs_ma200": 32.93,
+      "drawdown_from_high_pct": -39.14,
+      "return_3m_pct": -17.38,
+      "return_6m_pct": 86.04,
+      "return_12m_pct": 563.4,
+      "relative_strength_6m_pct": 51.77
     }
   ],
-  "discovery": [
-    {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "why": "당일 기사 2건 언급",
-      "headlines": [],
-      "basic": {
-        "trailing_pe": 23.247456,
-        "week52_pct": NaN,
-        "market_cap_usd": 1160756461568
-      }
-    }
-  ],
-  "calendar": [
-    {
-      "date": "2026-09-10",
-      "weekday": "목",
-      "label": "NVIDIA Corporation 배당락",
-      "kind": "ex_dividend"
-    }
-  ]
+  "discovery": [],
+  "calendar": []
 }
