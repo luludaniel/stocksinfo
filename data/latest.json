@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T00:20:23+00:00",
-  "market_date": "2026-09-11",
+  "generated_at": "2026-09-12T00:27:04+00:00",
+  "market_date": "2026-09-12",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,10 +9,42 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 36,
+    "days_collected": 37,
     "per_band_ready_in_days": 0
   },
   "focus": [
+    {
+      "symbol": "NVDA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 27.6배 — 자체 밴드 하단 이탈 (평균 31.5배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "SpaceX signs $1.1 billion-per month computing deal",
+          "url": "https://finance.yahoo.com/video/spacex-signs-1-1-billion-195052486.html"
+        },
+        {
+          "title": "Nvidia CEO Jensen Huang just doubled down on his big 2030 prediction",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-ceo-jensen-huang-just-doubled-down-on-his-big-2030-prediction-115945089.html"
+        },
+        {
+          "title": "Veteran analyst resets Palantir price target for rest of 2026",
+          "url": "https://www.thestreet.com/investing/palantir-da-davidson-raises-price-target"
+        }
+      ],
+      "rank": 1
+    },
     {
       "symbol": "TSLA",
       "score": 2.5,
@@ -26,24 +58,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 339.8배 — 자체 밴드 상단 이탈 (평균 320.6배)"
+          "message": "PER 335.3배 — 자체 밴드 상단 이탈 (평균 321.0배)"
         }
       ],
       "news": [
         {
-          "title": "Tesla (TSLA) Falls More Steeply Than Broader Market: What Investors Need to Know",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-falls-more-steeply-214505362.html"
+          "title": "Inside Tesla’s Cybertruck and robotaxi experience",
+          "url": "https://finance.yahoo.com/video/inside-tesla-cybertruck-robotaxi-experience-202100555.html"
         },
         {
-          "title": "Uber Stock Pops After CEO Buys Shares Worth $10 Million",
-          "url": "https://www.barrons.com/articles/uber-stock-ceo-dara-khosrowshahi-d6d79288?siteid=yhoof2&yptr=yahoo"
+          "title": "3 Unpopular Stocks with Open Questions",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/3-unpopular-stocks-open-questions-000305474.html"
         },
         {
-          "title": "SpaceX Sues Texas AG, Grimes County Over Terafab Project Information",
-          "url": "https://www.bisnow.com/news/houston/construction-development/spacex-sues-texas-ag-grimes-county-terafab-project-information"
+          "title": "Tesla Gains as Semi Opens a $17 Billion Software Door",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-gains-semi-opens-17-211218178.html"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "symbol": "AAPL",
@@ -58,53 +90,21 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 37.4배 — 자체 밴드 상단 이탈 (평균 35.9배)"
+          "message": "PER 38.1배 — 자체 밴드 상단 이탈 (평균 36.0배)"
         }
       ],
       "news": [
         {
-          "title": "Why hardware will attract buyers to Apple's new lineup over AI features",
-          "url": "https://finance.yahoo.com/video/why-hardware-attract-buyers-apples-192906871.html"
+          "title": "What a Republican 'wipeout' in the midterm elections means for investors",
+          "url": "https://finance.yahoo.com/video/republican-wipeout-midterm-elections-means-120000609.html"
         },
         {
-          "title": "Apple's iPhone leasing program: How it works, what to consider as prices increase",
-          "url": "https://finance.yahoo.com/personal-finance/banking/article/apples-iphone-leasing-program-how-it-works-what-to-consider-as-prices-increase-143105471.html"
+          "title": "Apple, Microsoft, and Nvidia Top the List of Largest Companies by Market Cap. Here's the One I'm Buying Now.",
+          "url": "https://www.fool.com/investing/2026/09/11/apple-microsoft-and-nvidia-top-the-list-of-largest/"
         },
         {
-          "title": "Apple iPhone Duo has 2 problems: Small hands and next-gen expectations",
-          "url": "https://finance.yahoo.com/markets/stocks/article/apple-iphone-duo-has-2-problems-small-hands-and-next-gen-expectations-111102429.html"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "NVDA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 28.2배 — 자체 밴드 하단 이탈 (평균 31.6배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "SpaceX stock rises with data center overhaul, budding UK defense deal in focus",
-          "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-rises-with-data-center-overhaul-budding-uk-defense-deal-in-focus-160039841.html"
-        },
-        {
-          "title": "Treasury yields rise as investors raise bets on Fed rate hike: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/treasury-yields-rise-as-investors-raise-bets-on-fed-rate-hike-alphacheck-135652896.html"
-        },
-        {
-          "title": "Dow Jones Futures: S&P 500 Breaks Support As Oil Prices, Yields Surge; Oracle Jumps Late With CPI Inflation Due",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-oil-prices-treasury-yields-cpi-inflation-oracle-earnings/?src=A00220&yptr=yahoo"
+          "title": "Dow Jones Futures: $100 Oil, Surging Yields Pressure Stocks With Fed Rate Hike Seen. Apple, Moderna Are New Buys.",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-100-oil-surging-yields-pressure-stocks-with-fed-rate-hike-seen-apple-leads-new-buys/?src=A00220&yptr=yahoo"
         }
       ],
       "rank": 3
@@ -120,16 +120,16 @@
       "signals": [],
       "news": [
         {
-          "title": "trade[XYZ] Launches HIP-4 Event Markets",
-          "url": "https://www.bankless.com/read/news/trade-xyz-launches-hip-4-event-markets"
+          "title": "Micron Takes Unexpected Step as Tensions Rise",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-takes-unexpected-step-tensions-211102373.html"
         },
         {
-          "title": "OpenAI Deepens Samsung Partnership to Build Next-Gen AI Chips — ‘One of the Areas Where We’ve Made the Most Progress’",
-          "url": "https://finance.yahoo.com/technology/ai/articles/openai-deepens-samsung-partnership-build-153010885.html"
+          "title": "Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout",
+          "url": "https://beincrypto.com/former-openai-researcher-leopold-aschenbrenner-ai-bet/"
         },
         {
-          "title": "Micron Is 1.6 Points From Taking the No. 2 Spot in DRAM",
-          "url": "https://www.fool.com/investing/2026/09/10/micron-is-1-6-points-from-taking-the-no-2-spot-in-dram/"
+          "title": "Why Micron Stock Is on Pace for a Weekly Decline",
+          "url": "https://www.barrons.com/articles/micron-stock-oracle-ai-242830db?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 4
@@ -145,16 +145,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Why hardware will attract buyers to Apple's new lineup over AI features",
-          "url": "https://finance.yahoo.com/video/why-hardware-attract-buyers-apples-192906871.html"
+          "title": "Apple’s New Foldable Phone Poised for Strong Sales",
+          "url": "https://www.kiplinger.com/business/apple-new-iphone-duo-foldable-is-poised-for-strong-sales"
         },
         {
-          "title": "Qualcomm Stock Looks Cheap, But Is The Discount Deserved?",
-          "url": "https://www.trefis.com/articles/614901/qualcomm-stock-looks-cheap-but-is-the-discount-deserved/2026-09-10"
+          "title": "Micron Takes Unexpected Step as Tensions Rise",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-takes-unexpected-step-tensions-211102373.html"
         },
         {
-          "title": "Apple Jumps as $1,999 Foldable Forces Samsung Onto Defense",
-          "url": "https://finance.yahoo.com/technology/articles/apple-jumps-1-999-foldable-194435052.html"
+          "title": "Samsung Drops 3.5% While OpenAI Chip Work Still Lacks a Contract",
+          "url": "https://finance.yahoo.com/technology/ai/articles/samsung-drops-3-5-while-200210926.html"
         }
       ],
       "rank": 5
@@ -165,7 +165,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.248383,
+      "trailing_pe": 27.631645,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -185,7 +185,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 37.40779,
+      "trailing_pe": 38.104355,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -205,7 +205,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 339.7757,
+      "trailing_pe": 335.26605,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -231,15 +231,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 269000.0,
-      "change_pct": -0.19,
-      "week52_pct": 68.5,
-      "pct_vs_ma200": 25.26,
-      "drawdown_from_high_pct": -25.71,
-      "return_3m_pct": -9.93,
-      "return_6m_pct": 43.62,
-      "return_12m_pct": 285.8,
-      "relative_strength_6m_pct": 9.35
+      "last_close": 259500.0,
+      "change_pct": -3.53,
+      "week52_pct": 65.3,
+      "pct_vs_ma200": 20.38,
+      "drawdown_from_high_pct": -28.33,
+      "return_3m_pct": -19.45,
+      "return_6m_pct": 37.01,
+      "return_12m_pct": 277.52,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -251,15 +251,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1776000.0,
-      "change_pct": -4.16,
-      "week52_pct": 57.1,
-      "pct_vs_ma200": 32.93,
-      "drawdown_from_high_pct": -39.14,
-      "return_3m_pct": -17.38,
-      "return_6m_pct": 86.04,
-      "return_12m_pct": 563.4,
-      "relative_strength_6m_pct": 51.77
+      "last_close": 1812000.0,
+      "change_pct": -2.21,
+      "week52_pct": 58.5,
+      "pct_vs_ma200": 35.6,
+      "drawdown_from_high_pct": -37.91,
+      "return_3m_pct": -15.7,
+      "return_6m_pct": 89.81,
+      "return_12m_pct": 576.85,
+      "relative_strength_6m_pct": NaN
     }
   ],
   "discovery": [],
