@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T00:27:04+00:00",
-  "market_date": "2026-09-12",
+  "generated_at": "2026-09-13T00:07:44+00:00",
+  "market_date": "2026-09-13",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 37,
+    "days_collected": 38,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,56 +26,24 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 27.6배 — 자체 밴드 하단 이탈 (평균 31.5배)"
+          "message": "PER 27.6배 — 자체 밴드 하단 이탈 (평균 31.4배)"
         }
       ],
       "news": [
         {
-          "title": "SpaceX signs $1.1 billion-per month computing deal",
-          "url": "https://finance.yahoo.com/video/spacex-signs-1-1-billion-195052486.html"
+          "title": "$10,000 in Tesla When It Joined the S&P 500 Would Be About $15,700 Today. An Index Fund Would Have Done Better.",
+          "url": "https://www.fool.com/investing/2026/09/12/usd10-000-in-tesla-when-it-joined-the-s-and-p-500-would-be-about-usd15-700-today-an-index-fund-would-have-done-better/"
         },
         {
-          "title": "Nvidia CEO Jensen Huang just doubled down on his big 2030 prediction",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-ceo-jensen-huang-just-doubled-down-on-his-big-2030-prediction-115945089.html"
+          "title": "Not Nvidia. Not Micron. This Dirt Cheap “Magnificent Seven” Stock Could Be the Biggest Winner of the Trillion-Dollar AI Race – Here’s the Case.",
+          "url": "https://www.fool.com/investing/2026/09/12/not-nvidia-not-micron-this-dirt-cheap-magnificent-seven-stock-could-be-the-biggest-winner-of-the-trillion-dollar-ai-race-here-s-the-case/"
         },
         {
-          "title": "Veteran analyst resets Palantir price target for rest of 2026",
-          "url": "https://www.thestreet.com/investing/palantir-da-davidson-raises-price-target"
+          "title": "Is NuScale Power a Millionaire Maker?",
+          "url": "https://www.fool.com/investing/2026/09/12/is-nuscale-power-a-millionaire-maker/"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "TSLA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 335.3배 — 자체 밴드 상단 이탈 (평균 321.0배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Inside Tesla’s Cybertruck and robotaxi experience",
-          "url": "https://finance.yahoo.com/video/inside-tesla-cybertruck-robotaxi-experience-202100555.html"
-        },
-        {
-          "title": "3 Unpopular Stocks with Open Questions",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-unpopular-stocks-open-questions-000305474.html"
-        },
-        {
-          "title": "Tesla Gains as Semi Opens a $17 Billion Software Door",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-gains-semi-opens-17-211218178.html"
-        }
-      ],
-      "rank": 2
     },
     {
       "symbol": "AAPL",
@@ -90,24 +58,24 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.1배 — 자체 밴드 상단 이탈 (평균 36.0배)"
+          "message": "PER 38.1배 — 자체 밴드 상단 이탈 (평균 36.1배)"
         }
       ],
       "news": [
         {
-          "title": "What a Republican 'wipeout' in the midterm elections means for investors",
-          "url": "https://finance.yahoo.com/video/republican-wipeout-midterm-elections-means-120000609.html"
+          "title": "Apple's AI vision is tailored for the moment of AI panic",
+          "url": "https://finance.yahoo.com/technology/article/apples-ai-vision-is-tailored-for-the-moment-of-ai-panic-100000576.html"
         },
         {
-          "title": "Apple, Microsoft, and Nvidia Top the List of Largest Companies by Market Cap. Here's the One I'm Buying Now.",
-          "url": "https://www.fool.com/investing/2026/09/11/apple-microsoft-and-nvidia-top-the-list-of-largest/"
+          "title": "Broadcom vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/09/12/broadcom-vs-micron-technology-which-technology-stock-is-a-better-buy-in-2026/"
         },
         {
-          "title": "Dow Jones Futures: $100 Oil, Surging Yields Pressure Stocks With Fed Rate Hike Seen. Apple, Moderna Are New Buys.",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-100-oil-surging-yields-pressure-stocks-with-fed-rate-hike-seen-apple-leads-new-buys/?src=A00220&yptr=yahoo"
+          "title": "Jim Cramer Flips the Script: Why Older Investors Should Ditch Growth Stocks for 30-Year Treasuries",
+          "url": "https://247wallst.com/investing/2026/09/12/jim-cramer-flips-the-script-why-older-investors-should-ditch-growth-stocks-for-30-year-treasuries/"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "symbol": "000660.KS",
@@ -120,19 +88,19 @@
       "signals": [],
       "news": [
         {
+          "title": "Cramer Asked Who Was Buying Gigantic Bloom Energy Calls. A Pelosi Filing Named Two of the Same Stocks Weeks Earlier.",
+          "url": "https://247wallst.com/investing/2026/09/12/cramer-asked-who-was-buying-gigantic-bloom-energy-calls-a-pelosi-filing-named-two-of-the-same-stocks-weeks-earlier/"
+        },
+        {
           "title": "Micron Takes Unexpected Step as Tensions Rise",
           "url": "https://finance.yahoo.com/markets/stocks/articles/micron-takes-unexpected-step-tensions-211102373.html"
         },
         {
           "title": "Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout",
           "url": "https://beincrypto.com/former-openai-researcher-leopold-aschenbrenner-ai-bet/"
-        },
-        {
-          "title": "Why Micron Stock Is on Pace for a Weekly Decline",
-          "url": "https://www.barrons.com/articles/micron-stock-oracle-ai-242830db?siteid=yhoof2&yptr=yahoo"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -145,16 +113,41 @@
       "signals": [],
       "news": [
         {
+          "title": "Broadcom vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/09/12/broadcom-vs-micron-technology-which-technology-stock-is-a-better-buy-in-2026/"
+        },
+        {
           "title": "Apple’s New Foldable Phone Poised for Strong Sales",
           "url": "https://www.kiplinger.com/business/apple-new-iphone-duo-foldable-is-poised-for-strong-sales"
         },
         {
           "title": "Micron Takes Unexpected Step as Tensions Rise",
           "url": "https://finance.yahoo.com/markets/stocks/articles/micron-takes-unexpected-step-tensions-211102373.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Longevity Entrepreneur Peter Diamandis Says He’s Not Trying to Live Longer Because He’s Afraid of Dying — He’s Just Not Done Being ‘Curious’",
+          "url": "https://finance.yahoo.com/healthcare/articles/longevity-entrepreneur-peter-diamandis-says-230019533.html"
         },
         {
-          "title": "Samsung Drops 3.5% While OpenAI Chip Work Still Lacks a Contract",
-          "url": "https://finance.yahoo.com/technology/ai/articles/samsung-drops-3-5-while-200210926.html"
+          "title": "$10,000 in Tesla When It Joined the S&P 500 Would Be About $15,700 Today. An Index Fund Would Have Done Better.",
+          "url": "https://www.fool.com/investing/2026/09/12/usd10-000-in-tesla-when-it-joined-the-s-and-p-500-would-be-about-usd15-700-today-an-index-fund-would-have-done-better/"
+        },
+        {
+          "title": "Ted Lieu Cites Poll, Says 'Blue Tsunami' Could Be Coming as Democrats Hold 11-Point Lead Over Republicans in 2026 House Election Poll",
+          "url": "https://www.yahoo.com/news/politics/articles/ted-lieu-cites-poll-says-203020851.html"
         }
       ],
       "rank": 5
@@ -171,55 +164,55 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 218.29,
+      "change_pct": -0.03,
+      "week52_pct": 76.0,
+      "pct_vs_ma200": 10.75,
+      "drawdown_from_high_pct": -7.19,
+      "return_3m_pct": 6.67,
+      "return_6m_pct": 19.47,
+      "return_12m_pct": 23.4,
+      "relative_strength_6m_pct": 4.72
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.104355,
+      "trailing_pe": 38.148106,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 332.27,
+      "change_pct": 1.75,
+      "week52_pct": 93.2,
+      "pct_vs_ma200": 16.78,
+      "drawdown_from_high_pct": -2.21,
+      "return_3m_pct": 12.49,
+      "return_6m_pct": 30.15,
+      "return_12m_pct": 47.05,
+      "relative_strength_6m_pct": 15.4
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 335.26605,
+      "trailing_pe": 332.21817,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 365.44,
+      "change_pct": 0.52,
+      "week52_pct": 35.0,
+      "pct_vs_ma200": -8.39,
+      "drawdown_from_high_pct": -25.4,
+      "return_3m_pct": -8.45,
+      "return_6m_pct": -7.49,
+      "return_12m_pct": 5.07,
+      "relative_strength_6m_pct": -22.24
     },
     {
       "symbol": "005930.KS",
@@ -239,7 +232,7 @@
       "return_3m_pct": -19.45,
       "return_6m_pct": 37.01,
       "return_12m_pct": 277.52,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 13.84
     },
     {
       "symbol": "000660.KS",
@@ -259,7 +252,7 @@
       "return_3m_pct": -15.7,
       "return_6m_pct": 89.81,
       "return_12m_pct": 576.85,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 66.64
     }
   ],
   "discovery": [],
