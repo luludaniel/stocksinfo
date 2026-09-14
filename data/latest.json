@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T00:07:44+00:00",
-  "market_date": "2026-09-13",
+  "generated_at": "2026-09-14T00:20:01+00:00",
+  "market_date": "2026-09-14",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 38,
+    "days_collected": 39,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,21 +26,21 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 27.6배 — 자체 밴드 하단 이탈 (평균 31.4배)"
+          "message": "PER 27.6배 — 자체 밴드 하단 이탈 (평균 31.3배)"
         }
       ],
       "news": [
         {
-          "title": "$10,000 in Tesla When It Joined the S&P 500 Would Be About $15,700 Today. An Index Fund Would Have Done Better.",
-          "url": "https://www.fool.com/investing/2026/09/12/usd10-000-in-tesla-when-it-joined-the-s-and-p-500-would-be-about-usd15-700-today-an-index-fund-would-have-done-better/"
+          "title": "Netflix Stock Will Be Worth More by 2028: My Case for Buying NFLX Now",
+          "url": "https://www.fool.com/investing/2026/09/13/netflix-stock-will-be-worth-more-by-2028-my-case-f/"
         },
         {
-          "title": "Not Nvidia. Not Micron. This Dirt Cheap “Magnificent Seven” Stock Could Be the Biggest Winner of the Trillion-Dollar AI Race – Here’s the Case.",
-          "url": "https://www.fool.com/investing/2026/09/12/not-nvidia-not-micron-this-dirt-cheap-magnificent-seven-stock-could-be-the-biggest-winner-of-the-trillion-dollar-ai-race-here-s-the-case/"
+          "title": "Prediction: ServiceNow's AI Business Triples Before 2029",
+          "url": "https://www.fool.com/investing/2026/09/13/prediction-servicenow-s-ai-business-triples-before-2029/"
         },
         {
-          "title": "Is NuScale Power a Millionaire Maker?",
-          "url": "https://www.fool.com/investing/2026/09/12/is-nuscale-power-a-millionaire-maker/"
+          "title": "2 Monster Stocks to Buy and Hold for at Least the Next 5 Years",
+          "url": "https://www.fool.com/investing/2026/09/13/2-monster-stocks-to-buy-and-hold-for-at-least-the/"
         }
       ],
       "rank": 1
@@ -63,16 +63,16 @@
       ],
       "news": [
         {
-          "title": "Apple's AI vision is tailored for the moment of AI panic",
-          "url": "https://finance.yahoo.com/technology/article/apples-ai-vision-is-tailored-for-the-moment-of-ai-panic-100000576.html"
+          "title": "Apple's iPhone Duo event should put the bears to rest",
+          "url": "https://finance.yahoo.com/markets/article/apples-iphone-duo-event-should-put-the-bears-to-rest-123000593.html"
         },
         {
-          "title": "Broadcom vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/12/broadcom-vs-micron-technology-which-technology-stock-is-a-better-buy-in-2026/"
+          "title": "Dow Jones Futures Fall, Techs Tumble As Anthropic Leads Call For AI Slowdown; Fed Meeting Ahead",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-meeting-anthropic-amodei-openai-altman-spacex-musk-ai-model-slowdown/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Jim Cramer Flips the Script: Why Older Investors Should Ditch Growth Stocks for 30-Year Treasuries",
-          "url": "https://247wallst.com/investing/2026/09/12/jim-cramer-flips-the-script-why-older-investors-should-ditch-growth-stocks-for-30-year-treasuries/"
+          "title": "SpaceX vs. Apple: Wall Street Sees Strong Upside for One of These Stocks and Remains Neutral On the Other",
+          "url": "https://www.fool.com/investing/2026/09/13/spacex-vs-apple-wall-street-sees-strong-upside-for/"
         }
       ],
       "rank": 2
@@ -88,44 +88,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Cramer Asked Who Was Buying Gigantic Bloom Energy Calls. A Pelosi Filing Named Two of the Same Stocks Weeks Earlier.",
-          "url": "https://247wallst.com/investing/2026/09/12/cramer-asked-who-was-buying-gigantic-bloom-energy-calls-a-pelosi-filing-named-two-of-the-same-stocks-weeks-earlier/"
+          "title": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-said-choose-nasdaq-much-180359465.html"
         },
         {
-          "title": "Micron Takes Unexpected Step as Tensions Rise",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-takes-unexpected-step-tensions-211102373.html"
+          "title": "Prediction: This Memory Stock Could Surge 233% Over the Next 3 Years (Hint: It's not Micron or Sandisk)",
+          "url": "https://www.fool.com/investing/2026/09/13/prediction-this-memory-stock-could-surge-233-over/"
         },
         {
-          "title": "Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout",
-          "url": "https://beincrypto.com/former-openai-researcher-leopold-aschenbrenner-ai-bet/"
+          "title": "Prediction: 2 AI Semiconductor Stocks That Will Join Micron and Broadcom in the $1 Trillion Club by 2028",
+          "url": "https://www.fool.com/investing/2026/09/13/predict-ai-semiconductor-stocks-micron-broadcom/"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Broadcom vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/12/broadcom-vs-micron-technology-which-technology-stock-is-a-better-buy-in-2026/"
-        },
-        {
-          "title": "Apple’s New Foldable Phone Poised for Strong Sales",
-          "url": "https://www.kiplinger.com/business/apple-new-iphone-duo-foldable-is-poised-for-strong-sales"
-        },
-        {
-          "title": "Micron Takes Unexpected Step as Tensions Rise",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-takes-unexpected-step-tensions-211102373.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "TSLA",
@@ -138,16 +113,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Longevity Entrepreneur Peter Diamandis Says He’s Not Trying to Live Longer Because He’s Afraid of Dying — He’s Just Not Done Being ‘Curious’",
-          "url": "https://finance.yahoo.com/healthcare/articles/longevity-entrepreneur-peter-diamandis-says-230019533.html"
+          "title": "Cathie Wood Sees an Economic Boom Wall Street Isn’t Pricing In",
+          "url": "https://247wallst.com/investing/2026/09/13/cathie-wood-sees-an-economic-boom-wall-street-isnt-pricing-in/"
         },
         {
-          "title": "$10,000 in Tesla When It Joined the S&P 500 Would Be About $15,700 Today. An Index Fund Would Have Done Better.",
-          "url": "https://www.fool.com/investing/2026/09/12/usd10-000-in-tesla-when-it-joined-the-s-and-p-500-would-be-about-usd15-700-today-an-index-fund-would-have-done-better/"
+          "title": "New Tesla Roadster Uses SpaceX Tech. Will It Impact the Stock Price?",
+          "url": "https://beincrypto.com/tesla-roadster-reveal-tsla-stock/"
         },
         {
-          "title": "Ted Lieu Cites Poll, Says 'Blue Tsunami' Could Be Coming as Democrats Hold 11-Point Lead Over Republicans in 2026 House Election Poll",
-          "url": "https://www.yahoo.com/news/politics/articles/ted-lieu-cites-poll-says-203020851.html"
+          "title": "The Tesla Network Is Dead: JPMorgan’s Bombshell Note Reveals Nearly All Robotaxi Billions Flow to TSLA, Not You",
+          "url": "https://247wallst.com/investing/2026/09/13/the-tesla-network-is-dead-jpmorgans-bombshell-note-reveals-nearly-all-robotaxi-billions-flow-to-tsla-not-you/"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Can New iPhone Duo Power Apple's Stock Higher?",
+          "url": "https://www.fool.com/investing/2026/09/13/can-new-iphone-duo-power-apples-stock-higher/"
+        },
+        {
+          "title": "South Korea expands espionage law to protect chip technology",
+          "url": "https://www.yahoo.com/news/world/articles/south-korea-expands-espionage-law-060257291.html"
+        },
+        {
+          "title": "Broadcom vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/09/12/broadcom-vs-micron-technology-which-technology-stock-is-a-better-buy-in-2026/"
         }
       ],
       "rank": 5
