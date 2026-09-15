@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-14T00:20:01+00:00",
-  "market_date": "2026-09-14",
+  "generated_at": "2026-09-15T00:46:14+00:00",
+  "market_date": "2026-09-15",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 39,
+    "days_collected": 40,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "NVDA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 27.6배 — 자체 밴드 하단 이탈 (평균 31.3배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Netflix Stock Will Be Worth More by 2028: My Case for Buying NFLX Now",
-          "url": "https://www.fool.com/investing/2026/09/13/netflix-stock-will-be-worth-more-by-2028-my-case-f/"
-        },
-        {
-          "title": "Prediction: ServiceNow's AI Business Triples Before 2029",
-          "url": "https://www.fool.com/investing/2026/09/13/prediction-servicenow-s-ai-business-triples-before-2029/"
-        },
-        {
-          "title": "2 Monster Stocks to Buy and Hold for at Least the Next 5 Years",
-          "url": "https://www.fool.com/investing/2026/09/13/2-monster-stocks-to-buy-and-hold-for-at-least-the/"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "AAPL",
       "score": 2.5,
@@ -58,21 +26,53 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.1배 — 자체 밴드 상단 이탈 (평균 36.1배)"
+          "message": "PER 38.2배 — 자체 밴드 상단 이탈 (평균 36.2배)"
         }
       ],
       "news": [
         {
-          "title": "Apple's iPhone Duo event should put the bears to rest",
-          "url": "https://finance.yahoo.com/markets/article/apples-iphone-duo-event-should-put-the-bears-to-rest-123000593.html"
+          "title": "PayPal takes No. 1 in tech power ranking",
+          "url": "https://www.thestreet.com/crypto/markets/paypal-takes-no-1-in-tech-power-ranking"
         },
         {
-          "title": "Dow Jones Futures Fall, Techs Tumble As Anthropic Leads Call For AI Slowdown; Fed Meeting Ahead",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-meeting-anthropic-amodei-openai-altman-spacex-musk-ai-model-slowdown/?src=A00220&yptr=yahoo"
+          "title": "Maryland Seeks To Reinstate Digital Ad Tax",
+          "url": "https://www.mediapost.com/publications/article/417948/maryland-seeks-to-reinstate-digital-ad-tax.html"
         },
         {
-          "title": "SpaceX vs. Apple: Wall Street Sees Strong Upside for One of These Stocks and Remains Neutral On the Other",
-          "url": "https://www.fool.com/investing/2026/09/13/spacex-vs-apple-wall-street-sees-strong-upside-for/"
+          "title": "OpenAI Left Exposed After Apple's Surprise Legal Break",
+          "url": "https://finance.yahoo.com/technology/ai/articles/openai-left-exposed-apples-surprise-205620397.html"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "NVDA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 26.7배 — 자체 밴드 하단 이탈 (평균 31.2배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Tech pulls back on AI concerns, cybersecurity takes a step up",
+          "url": "https://finance.yahoo.com/video/tech-pulls-back-ai-concerns-143900977.html"
+        },
+        {
+          "title": "Chip stocks fall as oil prices gain, Treasury yields stay elevated: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-oil-prices-gain-treasury-yields-stay-elevated-alphacheck-134519544.html"
+        },
+        {
+          "title": "SpaceX Spent $15.8 Billion on AI in a Quarter. Here's What Happens to the Stock if Orbital Data Centers Don't Work.",
+          "url": "https://www.fool.com/investing/2026/09/14/spacex-spent-158-billion-on-ai-in-a-quarter-heres/"
         }
       ],
       "rank": 2
@@ -88,16 +88,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-said-choose-nasdaq-much-180359465.html"
+          "title": "AI stocks get drilled because of Anthropic CEO Dario Amodei's 3,800-word warning",
+          "url": "https://finance.yahoo.com/markets/stocks/article/ai-stocks-get-drilled-because-of-anthropic-ceo-dario-amodeis-3800-word-warning-093637548.html"
         },
         {
-          "title": "Prediction: This Memory Stock Could Surge 233% Over the Next 3 Years (Hint: It's not Micron or Sandisk)",
-          "url": "https://www.fool.com/investing/2026/09/13/prediction-this-memory-stock-could-surge-233-over/"
+          "title": "Why Western Digital (WDC) Stock Is Trading Lower Today",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-western-digital-wdc-stock-002730490.html"
         },
         {
-          "title": "Prediction: 2 AI Semiconductor Stocks That Will Join Micron and Broadcom in the $1 Trillion Club by 2028",
-          "url": "https://www.fool.com/investing/2026/09/13/predict-ai-semiconductor-stocks-micron-broadcom/"
+          "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 3
@@ -113,16 +113,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Cathie Wood Sees an Economic Boom Wall Street Isn’t Pricing In",
-          "url": "https://247wallst.com/investing/2026/09/13/cathie-wood-sees-an-economic-boom-wall-street-isnt-pricing-in/"
+          "title": "Elon Musk: I've been 'sounding the alarm' on AI for a while",
+          "url": "https://finance.yahoo.com/markets/stocks/article/elon-musk-ive-been-sounding-the-alarm-on-ai-for-a-while-141818917.html"
         },
         {
-          "title": "New Tesla Roadster Uses SpaceX Tech. Will It Impact the Stock Price?",
-          "url": "https://beincrypto.com/tesla-roadster-reveal-tsla-stock/"
+          "title": "Analyst calls robotaxi fears completely ridiculous",
+          "url": "https://www.thestreet.com/crypto/markets/analyst-calls-robotaxi-fears-completely-ridiculous"
         },
         {
-          "title": "The Tesla Network Is Dead: JPMorgan’s Bombshell Note Reveals Nearly All Robotaxi Billions Flow to TSLA, Not You",
-          "url": "https://247wallst.com/investing/2026/09/13/the-tesla-network-is-dead-jpmorgans-bombshell-note-reveals-nearly-all-robotaxi-billions-flow-to-tsla-not-you/"
+          "title": "Musk offers radical fix to welfare state bankruptcy",
+          "url": "https://www.thestreet.com/crypto/markets/musk-offers-radical-fix-to-welfare-state-bankruptcy"
         }
       ],
       "rank": 4
@@ -138,16 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Can New iPhone Duo Power Apple's Stock Higher?",
-          "url": "https://www.fool.com/investing/2026/09/13/can-new-iphone-duo-power-apples-stock-higher/"
+          "title": "Samsung’s $700 Galaxy bet comes with an awkward question",
+          "url": "https://www.thestreet.com/investing/samsung-galaxy-s26-fe-700-dollar-price"
         },
         {
-          "title": "South Korea expands espionage law to protect chip technology",
-          "url": "https://www.yahoo.com/news/world/articles/south-korea-expands-espionage-law-060257291.html"
+          "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Broadcom vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/12/broadcom-vs-micron-technology-which-technology-stock-is-a-better-buy-in-2026/"
+          "title": "Samsung Stock Falls as $18.7 Billion Power Proposal Highlights AI Infrastructure Costs",
+          "url": "https://finance.yahoo.com/technology/ai/articles/samsung-stock-falls-18-7-190452708.html"
         }
       ],
       "rank": 5
@@ -158,61 +158,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 27.631645,
+      "trailing_pe": 26.703798,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 218.29,
-      "change_pct": -0.03,
-      "week52_pct": 76.0,
-      "pct_vs_ma200": 10.75,
-      "drawdown_from_high_pct": -7.19,
-      "return_3m_pct": 6.67,
-      "return_6m_pct": 19.47,
-      "return_12m_pct": 23.4,
-      "relative_strength_6m_pct": 4.72
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.148106,
+      "trailing_pe": 38.2411,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 332.27,
-      "change_pct": 1.75,
-      "week52_pct": 93.2,
-      "pct_vs_ma200": 16.78,
-      "drawdown_from_high_pct": -2.21,
-      "return_3m_pct": 12.49,
-      "return_6m_pct": 30.15,
-      "return_12m_pct": 47.05,
-      "relative_strength_6m_pct": 15.4
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 332.21817,
+      "trailing_pe": 326.33636,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 365.44,
-      "change_pct": 0.52,
-      "week52_pct": 35.0,
-      "pct_vs_ma200": -8.39,
-      "drawdown_from_high_pct": -25.4,
-      "return_3m_pct": -8.45,
-      "return_6m_pct": -7.49,
-      "return_12m_pct": 5.07,
-      "relative_strength_6m_pct": -22.24
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "005930.KS",
@@ -224,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 259500.0,
-      "change_pct": -3.53,
-      "week52_pct": 65.3,
-      "pct_vs_ma200": 20.38,
-      "drawdown_from_high_pct": -28.33,
-      "return_3m_pct": -19.45,
-      "return_6m_pct": 37.01,
-      "return_12m_pct": 277.52,
-      "relative_strength_6m_pct": 13.84
+      "last_close": 251000.0,
+      "change_pct": 0.8,
+      "week52_pct": 62.2,
+      "pct_vs_ma200": 15.62,
+      "drawdown_from_high_pct": -30.68,
+      "return_3m_pct": -26.74,
+      "return_6m_pct": 37.22,
+      "return_12m_pct": 275.96,
+      "relative_strength_6m_pct": 17.45
     },
     {
       "symbol": "000660.KS",
@@ -244,15 +244,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1812000.0,
-      "change_pct": -2.21,
-      "week52_pct": 58.5,
-      "pct_vs_ma200": 35.6,
-      "drawdown_from_high_pct": -37.91,
-      "return_3m_pct": -15.7,
-      "return_6m_pct": 89.81,
-      "return_12m_pct": 576.85,
-      "relative_strength_6m_pct": 66.64
+      "last_close": 1716500.0,
+      "change_pct": 1.15,
+      "week52_pct": 54.8,
+      "pct_vs_ma200": 27.37,
+      "drawdown_from_high_pct": -41.18,
+      "return_3m_pct": -27.92,
+      "return_6m_pct": 88.7,
+      "return_12m_pct": 572.48,
+      "relative_strength_6m_pct": 68.93
     }
   ],
   "discovery": [],
