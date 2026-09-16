@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T00:46:14+00:00",
-  "market_date": "2026-09-15",
+  "generated_at": "2026-09-16T00:38:45+00:00",
+  "market_date": "2026-09-16",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 40,
+    "days_collected": 41,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "AAPL",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 38.2배 — 자체 밴드 상단 이탈 (평균 36.2배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "PayPal takes No. 1 in tech power ranking",
-          "url": "https://www.thestreet.com/crypto/markets/paypal-takes-no-1-in-tech-power-ranking"
-        },
-        {
-          "title": "Maryland Seeks To Reinstate Digital Ad Tax",
-          "url": "https://www.mediapost.com/publications/article/417948/maryland-seeks-to-reinstate-digital-ad-tax.html"
-        },
-        {
-          "title": "OpenAI Left Exposed After Apple's Surprise Legal Break",
-          "url": "https://finance.yahoo.com/technology/ai/articles/openai-left-exposed-apples-surprise-205620397.html"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "NVDA",
       "score": 2.5,
@@ -58,27 +26,59 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 26.7배 — 자체 밴드 하단 이탈 (평균 31.2배)"
+          "message": "PER 26.8배 — 자체 밴드 하단 이탈 (평균 31.1배)"
         }
       ],
       "news": [
         {
-          "title": "Tech pulls back on AI concerns, cybersecurity takes a step up",
-          "url": "https://finance.yahoo.com/video/tech-pulls-back-ai-concerns-143900977.html"
+          "title": "Tech stocks today: CEOs call for pacing AI, as Nvidia CEO says extinction fears are made up",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-ceos-call-for-pacing-ai-as-nvidia-ceo-says-extinction-fears-are-made-up-140134624.html"
         },
         {
-          "title": "Chip stocks fall as oil prices gain, Treasury yields stay elevated: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-oil-prices-gain-treasury-yields-stay-elevated-alphacheck-134519544.html"
+          "title": "10-year Treasury hits 2007 high as oil stays above $100: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/10-year-treasury-hits-2007-high-as-oil-stays-above-100-alphacheck-140049622.html"
         },
         {
-          "title": "SpaceX Spent $15.8 Billion on AI in a Quarter. Here's What Happens to the Stock if Orbital Data Centers Don't Work.",
-          "url": "https://www.fool.com/investing/2026/09/14/spacex-spent-158-billion-on-ai-in-a-quarter-heres/"
+          "title": "Nvidia Just Reshuffled Its $99 Billion Portfolio, and 1 Stock Moved Up the Ranks",
+          "url": "https://www.fool.com/investing/2026/09/15/nvidia-just-reshuffled-its-99-billion-portfolio-an/"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 38.0배 — 자체 밴드 상단 이탈 (평균 36.2배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "TSMC’s 2nm Era Is Accelerating With MediaTek. Nvidia and Alphabet Already Have Money on the Table",
+          "url": "https://finance.yahoo.com/technology/articles/tsmc-2nm-era-accelerating-mediatek-214827953.html"
+        },
+        {
+          "title": "Dow Jones Tech Titan Apple, Nvidia Chipmaker TSMC, AMD, Bloom Energy In Or Near Buy Zones",
+          "url": "https://www.investors.com/stock-lists/stocks-near-a-buy-zone/dow-jones-apple-stock-aapl-nvidia-chipmaker-tsm-amd-bloom/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Samsung turns Tim Cook into its latest marketing weapon",
+          "url": "https://www.thestreet.com/investing/samsung-tim-cook-latest-marketing-weapon-galaxy-z-fold-8"
         }
       ],
       "rank": 2
     },
     {
-      "symbol": "000660.KS",
+      "symbol": "005930.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -88,16 +88,16 @@
       "signals": [],
       "news": [
         {
-          "title": "AI stocks get drilled because of Anthropic CEO Dario Amodei's 3,800-word warning",
-          "url": "https://finance.yahoo.com/markets/stocks/article/ai-stocks-get-drilled-because-of-anthropic-ceo-dario-amodeis-3800-word-warning-093637548.html"
+          "title": "Samsung turns Tim Cook into its latest marketing weapon",
+          "url": "https://www.thestreet.com/investing/samsung-tim-cook-latest-marketing-weapon-galaxy-z-fold-8"
         },
         {
-          "title": "Why Western Digital (WDC) Stock Is Trading Lower Today",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-western-digital-wdc-stock-002730490.html"
+          "title": "What Stops the AI Memory Boom? It Might Have Nothing to Do With Chips.",
+          "url": "https://247wallst.com/investing/2026/09/15/what-stops-the-ai-memory-boom-it-might-have-nothing-to-do-with-chips/"
         },
         {
-          "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
+          "title": "ASML Eyes 110+ EUV Tools in 2028 as AI Chip Demand Accelerates",
+          "url": "https://finance.yahoo.com/technology/ai/articles/asml-eyes-110-euv-tools-143406050.html"
         }
       ],
       "rank": 3
@@ -113,22 +113,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Elon Musk: I've been 'sounding the alarm' on AI for a while",
-          "url": "https://finance.yahoo.com/markets/stocks/article/elon-musk-ive-been-sounding-the-alarm-on-ai-for-a-while-141818917.html"
+          "title": "Musk hints (again) at possible SpaceX, Tesla merger",
+          "url": "https://finance.yahoo.com/markets/stocks/article/musk-hints-again-at-possible-spacex-tesla-merger-135029754.html"
         },
         {
-          "title": "Analyst calls robotaxi fears completely ridiculous",
-          "url": "https://www.thestreet.com/crypto/markets/analyst-calls-robotaxi-fears-completely-ridiculous"
+          "title": "Where Tesla's Robotaxi Rollout Stands Today and What Investors Should Know",
+          "url": "https://www.fool.com/investing/2026/09/15/where-teslas-robotaxi-rollout-stands-today-and-wha/"
         },
         {
-          "title": "Musk offers radical fix to welfare state bankruptcy",
-          "url": "https://www.thestreet.com/crypto/markets/musk-offers-radical-fix-to-welfare-state-bankruptcy"
+          "title": "S&P 500, Nasdaq, Dow End Lower As Investors Price In Rate Hike Ahead Of Fed Meeting — AMZN, META, MU, TSLA, PLTR In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-end-lower-as-investors-price-in-rate-hike-ahead-of-fed-meeting-amzn-meta-mu-tsla-pltr-in-focus/cZtn8vQRBcx"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "005930.KS",
+      "symbol": "000660.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -138,16 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Samsung’s $700 Galaxy bet comes with an awkward question",
-          "url": "https://www.thestreet.com/investing/samsung-galaxy-s26-fe-700-dollar-price"
+          "title": "It’s All About the GPUs — 70% of Nvidia’s AI Supercomputer Cost Goes to Vera Rubin Chips",
+          "url": "https://247wallst.com/investing/2026/09/15/its-all-about-the-gpus-70-of-nvidias-ai-supercomputer-cost-goes-to-vera-rubin-chips/"
         },
         {
-          "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
+          "title": "What Stops the AI Memory Boom? It Might Have Nothing to Do With Chips.",
+          "url": "https://247wallst.com/investing/2026/09/15/what-stops-the-ai-memory-boom-it-might-have-nothing-to-do-with-chips/"
         },
         {
-          "title": "Samsung Stock Falls as $18.7 Billion Power Proposal Highlights AI Infrastructure Costs",
-          "url": "https://finance.yahoo.com/technology/ai/articles/samsung-stock-falls-18-7-190452708.html"
+          "title": "ASML Eyes 110+ EUV Tools in 2028 as AI Chip Demand Accelerates",
+          "url": "https://finance.yahoo.com/technology/ai/articles/asml-eyes-110-euv-tools-143406050.html"
         }
       ],
       "rank": 5
@@ -158,7 +158,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 26.703798,
+      "trailing_pe": 26.82301,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -178,7 +178,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.2411,
+      "trailing_pe": 37.95418,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -198,7 +198,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 326.33636,
+      "trailing_pe": 330.16663,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -224,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 251000.0,
-      "change_pct": 0.8,
-      "week52_pct": 62.2,
-      "pct_vs_ma200": 15.62,
-      "drawdown_from_high_pct": -30.68,
-      "return_3m_pct": -26.74,
-      "return_6m_pct": 37.22,
-      "return_12m_pct": 275.96,
-      "relative_strength_6m_pct": 17.45
+      "last_close": 249000.0,
+      "change_pct": 0.2,
+      "week52_pct": 61.5,
+      "pct_vs_ma200": 14.3,
+      "drawdown_from_high_pct": -31.23,
+      "return_3m_pct": -28.06,
+      "return_6m_pct": 32.37,
+      "return_12m_pct": 264.87,
+      "relative_strength_6m_pct": 11.39
     },
     {
       "symbol": "000660.KS",
@@ -244,17 +244,78 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1716500.0,
-      "change_pct": 1.15,
-      "week52_pct": 54.8,
-      "pct_vs_ma200": 27.37,
-      "drawdown_from_high_pct": -41.18,
-      "return_3m_pct": -27.92,
-      "return_6m_pct": 88.7,
-      "return_12m_pct": 572.48,
-      "relative_strength_6m_pct": 68.93
+      "last_close": 1710500.0,
+      "change_pct": 1.21,
+      "week52_pct": 54.5,
+      "pct_vs_ma200": 26.38,
+      "drawdown_from_high_pct": -41.39,
+      "return_3m_pct": -32.14,
+      "return_6m_pct": 75.68,
+      "return_12m_pct": 558.56,
+      "relative_strength_6m_pct": 54.7
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semiconductor Manufactur",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "TSMC’s 2nm Era Is Accelerating With MediaTek. Nvidia and Alphabet Already Have Money on the Table"
+        },
+        {
+          "title": "Dow Jones Tech Titan Apple, Nvidia Chipmaker TSMC, AMD, Bloom Energy In Or Near Buy Zones"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 30.648148,
+        "week52_pct": NaN,
+        "market_cap_usd": 2145903575040
+      }
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Musk hints (again) at possible SpaceX, Tesla merger"
+        },
+        {
+          "title": "S&P 500, Nasdaq, Dow End Lower As Investors Price In Rate Hike Ahead Of Fed Meeting — AMZN, META, MU, TSLA, PLTR In Focus"
+        },
+        {
+          "title": "SpaceX or Tesla: Which Elon Musk Stock Should Investors Buy?"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 20.957975,
+        "week52_pct": NaN,
+        "market_cap_usd": 1047625072640
+      }
+    },
+    {
+      "symbol": "BE",
+      "name": "Bloom Energy Corporation",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "Stocks slide to begin week as 10-year yield briefly touches 5%, oil rises: Live updates - CNBC"
+        },
+        {
+          "title": "Should You Buy Micron Stock Before Its Sept. 30 Report?"
+        },
+        {
+          "title": "TSMC’s 2nm Era Is Accelerating With MediaTek. Nvidia and Alphabet Already Have Money on the Table"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 336.8182,
+        "week52_pct": NaN,
+        "market_cap_usd": 76385673216
+      }
+    }
+  ],
   "calendar": []
 }
