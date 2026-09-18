@@ -1,50 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T00:45:35+00:00",
-  "market_date": "2026-09-17",
+  "generated_at": "2026-09-18T00:36:00+00:00",
+  "market_date": "2026-09-18",
   "trigger": "schedule",
   "status": {
-    "ok": true,
+    "ok": false,
     "failed_symbols": [],
-    "collector_errors": []
+    "collector_errors": [
+      "Google News - KR 증시: <unknown>:4:259: mismatched tag",
+      "Google News - US Markets: <unknown>:4:238: mismatched tag"
+    ]
   },
   "history_status": {
-    "days_collected": 42,
+    "days_collected": 43,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "NVDA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 26.8배 — 자체 밴드 하단 이탈 (평균 31.0배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Frontier AI developers must be 'liable for the things their products do': Autodesk CEO",
-          "url": "https://finance.yahoo.com/video/frontier-ai-developers-must-liable-150955074.html"
-        },
-        {
-          "title": "Why IREN (IREN) Is Down 6.1% After Nvidia Strikes US$5.5 Billion AI Cloud Deal With Miner",
-          "url": "https://finance.yahoo.com/technology/ai/articles/why-iren-iren-down-6-001814288.html"
-        },
-        {
-          "title": "These 2 Words From Fed Chair Kevin Warsh Sunk the Dow, S&P 500, and Nasdaq, and Put Wall Street on Notice",
-          "url": "https://www.fool.com/investing/2026/09/16/these-2-words-from-fed-chair-kevin-warsh-sunk-dow-sp500-nasdaq-put-wall-street-on-notice/"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "AAPL",
       "score": 2.5,
@@ -58,24 +29,88 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.0배 — 자체 밴드 상단 이탈 (평균 36.2배)"
+          "message": "PER 38.7배 — 자체 밴드 상단 이탈 (평균 36.3배)"
         }
       ],
       "news": [
         {
-          "title": "Snap targets enterprises with Salesforce, Nvidia AI tools for augmented-reality glasses",
-          "url": "https://finance.yahoo.com/technology/ai/articles/snap-targets-enterprises-salesforce-nvidia-234512914.html"
+          "title": "Who's really going to buy Snap's Specs",
+          "url": "https://finance.yahoo.com/video/whos-really-going-buy-snaps-152200932.html"
         },
         {
-          "title": "S&P 500, Nasdaq, Dow Futures Inch Higher As Investors Digest First Rate Hike Since 2023 — INTC, GOOGL, AAPL, SKHY, UAL In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-futures-inch-higher-as-investors-digest-first-rate-hike-since-2023-intc-googl-aapl-skhy-ual-in-focus/cZtYUJsRBPu"
+          "title": "Top strategist thinks the Federal Reserve interest rate hike won't fix this huge earnings risk",
+          "url": "https://finance.yahoo.com/markets/article/top-strategist-thinks-the-federal-reserve-interest-rate-hike-wont-fix-this-huge-earnings-risk-121619669.html"
         },
         {
-          "title": "This Analyst Sees INTC Stock Hitting $200 In Two Years — That’s A 106% Upside",
-          "url": "https://stocktwits.com/news-articles/markets/equity/this-analyst-sees-intc-stock-hitting-200-in-two-years-that-s-a-106-upside/cZtYtKFRBPp"
+          "title": "Warren Buffett Has More Than 50% of His Portfolio in These 3 Stocks. Which One Is the Best Buy Today?",
+          "url": "https://www.fool.com/investing/2026/09/17/warren-buffett-has-more-than-50-of-his-portfolio-i/"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 342.2배 — 자체 밴드 상단 이탈 (평균 322.6배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "The Under-the-Radar Stock Big Money Is Quietly Buying Up",
+          "url": "https://www.fool.com/investing/2026/09/17/the-under-the-radar-stock-big-money-is-quietly-buy/"
+        },
+        {
+          "title": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”",
+          "url": "https://finance.yahoo.com/technology/ai/articles/crusoe-raises-3-9b-build-232552504.html"
+        },
+        {
+          "title": "Tesla Posted Negative $1.1 Billion in Free Cash Flow Last Quarter as Elon Musk Ramps Up Spending on Robotaxis and Optimus. Here's Why the Company's $43.5 Billion Cash Cushion Still Matters.",
+          "url": "https://www.fool.com/investing/2026/09/17/tesla-posted-negative-11-billion-in-free-cash-flow/"
         }
       ],
       "rank": 2
+    },
+    {
+      "symbol": "NVDA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 27.0배 — 자체 밴드 하단 이탈 (평균 30.9배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "AI industry is just following Jensen Huang's lead, Salesforce CEO explains",
+          "url": "https://finance.yahoo.com/video/ai-industry-just-following-jensen-153000978.html"
+        },
+        {
+          "title": "Lucid stock jumps on 25,000 robotaxi deal with Europe's Bolt",
+          "url": "https://finance.yahoo.com/markets/stocks/article/lucid-stock-jumps-on-25000-robotaxi-deal-with-europes-bolt-132433027.html"
+        },
+        {
+          "title": "Why GE Vernova Stock Bumped Higher Today",
+          "url": "https://www.fool.com/investing/2026/09/17/why-ge-vernova-stock-bumped-higher-today/"
+        }
+      ],
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -88,19 +123,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Samsung Electronics (KOSE:A005930) Moved, What Is Drawing Attention Today?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-moved-231421780.html"
+          "title": "Top strategist thinks the Federal Reserve interest rate hike won't fix this huge earnings risk",
+          "url": "https://finance.yahoo.com/markets/article/top-strategist-thinks-the-federal-reserve-interest-rate-hike-wont-fix-this-huge-earnings-risk-121619669.html"
         },
         {
-          "title": "Should You Buy Qualcomm Stock For The Cash As Apple Leaves?",
-          "url": "https://www.trefis.com/articles/615530/should-you-buy-qualcomm-stock-for-the-cash-as-apple-leaves/2026-09-16"
+          "title": "The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/memory-shortage-not-over-more-180200318.html"
         },
         {
-          "title": "September Effect: 2 Memory Stocks to Buy on a Potential Market Dip",
-          "url": "https://www.fool.com/investing/2026/09/16/september-effect-memory-stocks-buy-market-dip/"
+          "title": "If Memory Chip Prices Fall, Here’s What Happens to the Korea Semiconductor ETF KCHP",
+          "url": "https://247wallst.com/investing/etf/2026/09/17/what-to-watch-kchp/"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -113,41 +148,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Tech stocks today: OpenAI raising funds at $1.2 trillion valuation,  SK Hynix and Intel moves",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-openai-raising-funds-at-12-trillion-valuation-sk-hynix-and-intel-moves-140134624.html"
+          "title": "Tech stocks today: OpenAI reveals six more instances of 'concerning model behavior'",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-openai-reveals-six-more-instances-of-concerning-model-behavior-140134624.html"
         },
         {
-          "title": "S&P 500, Nasdaq, Dow Futures Inch Higher As Investors Digest First Rate Hike Since 2023 — INTC, GOOGL, AAPL, SKHY, UAL In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-futures-inch-higher-as-investors-digest-first-rate-hike-since-2023-intc-googl-aapl-skhy-ual-in-focus/cZtYUJsRBPu"
+          "title": "Why Intel Stock Jumped 7.6% Today",
+          "url": "https://www.fool.com/investing/2026/09/17/why-intel-stock-jumped-76-today/"
         },
         {
-          "title": "Why Intel (INTC) Stock Is Trading Up Today",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-intc-stock-trading-222852258.html"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "SpaceX stock pops ahead of Starship launch",
-          "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-pops-ahead-of-starship-launch-180435710.html"
-        },
-        {
-          "title": "Tesla must prove Cybercab is legal to sell, NHTSA says",
-          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-must-prove-cybercab-is-legal-to-sell-nhtsa-says-153610647.html"
-        },
-        {
-          "title": "Nvidia CEO Jensen Huang Says Elon Musk’s Terafab May Look Audacious, But ‘If Anybody Could Do It, He Can’",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-jensen-huang-says-233027419.html"
+          "title": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/"
         }
       ],
       "rank": 5
@@ -158,7 +168,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 26.80451,
+      "trailing_pe": 27.012316,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -178,7 +188,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.033184,
+      "trailing_pe": 38.69116,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -198,7 +208,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 334.65417,
+      "trailing_pe": 342.24298,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -224,15 +234,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 254500.0,
-      "change_pct": 0.39,
-      "week52_pct": 63.3,
-      "pct_vs_ma200": 16.38,
-      "drawdown_from_high_pct": -29.72,
-      "return_3m_pct": -29.72,
-      "return_6m_pct": 31.67,
-      "return_12m_pct": 269.19,
-      "relative_strength_6m_pct": 10.21
+      "last_close": 259750.0,
+      "change_pct": 2.87,
+      "week52_pct": 65.1,
+      "pct_vs_ma200": 18.35,
+      "drawdown_from_high_pct": -28.27,
+      "return_3m_pct": -26.54,
+      "return_6m_pct": 24.98,
+      "return_12m_pct": 275.19,
+      "relative_strength_6m_pct": 3.32
     },
     {
       "symbol": "000660.KS",
@@ -244,17 +254,54 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1745000.0,
-      "change_pct": -0.8,
-      "week52_pct": 55.8,
-      "pct_vs_ma200": 28.32,
-      "drawdown_from_high_pct": -40.21,
-      "return_3m_pct": -35.0,
-      "return_6m_pct": 79.97,
-      "return_12m_pct": 566.72,
-      "relative_strength_6m_pct": 58.51
+      "last_close": 1823000.0,
+      "change_pct": 4.47,
+      "week52_pct": 58.6,
+      "pct_vs_ma200": 33.42,
+      "drawdown_from_high_pct": -37.53,
+      "return_3m_pct": -34.03,
+      "return_6m_pct": 72.7,
+      "return_12m_pct": 588.65,
+      "relative_strength_6m_pct": 51.04
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Why Intel Stock Jumped 7.6% Today"
+        },
+        {
+          "title": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks"
+        },
+        {
+          "title": "Intel Soars 9% On A Memory Deal That Doesn’t Exist Yet"
+        }
+      ],
+      "basic": {
+        "trailing_pe": null,
+        "week52_pct": NaN,
+        "market_cap_usd": 575128272896
+      }
+    },
+    {
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "Why Lucid Group Stock Raced Ahead on Thursday"
+        }
+      ],
+      "basic": {
+        "trailing_pe": null,
+        "week52_pct": NaN,
+        "market_cap_usd": 1686620416
+      }
+    }
+  ],
   "calendar": []
 }
