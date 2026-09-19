@@ -1,26 +1,23 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-18T00:36:00+00:00",
-  "market_date": "2026-09-18",
+  "generated_at": "2026-09-19T00:28:55+00:00",
+  "market_date": "2026-09-19",
   "trigger": "schedule",
   "status": {
-    "ok": false,
+    "ok": true,
     "failed_symbols": [],
-    "collector_errors": [
-      "Google News - KR 증시: <unknown>:4:259: mismatched tag",
-      "Google News - US Markets: <unknown>:4:238: mismatched tag"
-    ]
+    "collector_errors": []
   },
   "history_status": {
-    "days_collected": 43,
+    "days_collected": 44,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "AAPL",
-      "score": 2.5,
+      "score": 3.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 2.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -28,22 +25,28 @@
         {
           "symbol": "AAPL",
           "severity": "yellow",
+          "type": "volume_spike",
+          "message": "거래량 20일 평균 대비 2.09배"
+        },
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.7배 — 자체 밴드 상단 이탈 (평균 36.3배)"
+          "message": "PER 38.5배 — 자체 밴드 상단 이탈 (평균 36.4배)"
         }
       ],
       "news": [
         {
-          "title": "Who's really going to buy Snap's Specs",
-          "url": "https://finance.yahoo.com/video/whos-really-going-buy-snaps-152200932.html"
+          "title": "John Ternus has the 'Apple DNA' that will push company to the 'next level'",
+          "url": "https://finance.yahoo.com/video/john-ternus-apple-dna-push-220000814.html"
         },
         {
-          "title": "Top strategist thinks the Federal Reserve interest rate hike won't fix this huge earnings risk",
-          "url": "https://finance.yahoo.com/markets/article/top-strategist-thinks-the-federal-reserve-interest-rate-hike-wont-fix-this-huge-earnings-risk-121619669.html"
+          "title": "Apple will essentially sell 'every single' iPhone Duo it makes: CFRA",
+          "url": "https://finance.yahoo.com/video/apple-essentially-sell-every-single-200934859.html"
         },
         {
-          "title": "Warren Buffett Has More Than 50% of His Portfolio in These 3 Stocks. Which One Is the Best Buy Today?",
-          "url": "https://www.fool.com/investing/2026/09/17/warren-buffett-has-more-than-50-of-his-portfolio-i/"
+          "title": "Trump takes aim at Warsh after Fed hike",
+          "url": "https://finance.yahoo.com/video/trump-takes-aim-warsh-fed-163036956.html"
         }
       ],
       "rank": 1
@@ -61,56 +64,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 342.2배 — 자체 밴드 상단 이탈 (평균 322.6배)"
+          "message": "PER 343.7배 — 자체 밴드 상단 이탈 (평균 323.1배)"
         }
       ],
       "news": [
         {
-          "title": "The Under-the-Radar Stock Big Money Is Quietly Buying Up",
-          "url": "https://www.fool.com/investing/2026/09/17/the-under-the-radar-stock-big-money-is-quietly-buy/"
+          "title": "The SEC is bringing tokenized stocks to markets: 7 key details you need to know",
+          "url": "https://finance.yahoo.com/video/sec-bringing-tokenized-stocks-markets-180000283.html"
         },
         {
-          "title": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”",
-          "url": "https://finance.yahoo.com/technology/ai/articles/crusoe-raises-3-9b-build-232552504.html"
+          "title": "Dow Drops To Record Worst Week In Six Months Amid Elevated Yields, Oil — NVDA, TSLA, SPCX, ONON In Focus",
+          "url": "https://stocktwits.com/news-articles/markets/equity/dow-drops-to-record-worst-week-in-six-months-amid-elevated-yields-oil-nvda-tsla-spcx-onon-in-focus/cZtHOYsRBEK"
         },
         {
-          "title": "Tesla Posted Negative $1.1 Billion in Free Cash Flow Last Quarter as Elon Musk Ramps Up Spending on Robotaxis and Optimus. Here's Why the Company's $43.5 Billion Cash Cushion Still Matters.",
-          "url": "https://www.fool.com/investing/2026/09/17/tesla-posted-negative-11-billion-in-free-cash-flow/"
+          "title": "Tesla, Inc. (TSLA) Eyes Europe’s Electric Truck Boom With Semi Expansion",
+          "url": "https://finance.yahoo.com/technology/articles/tesla-inc-tsla-eyes-europe-224919901.html"
         }
       ],
       "rank": 2
-    },
-    {
-      "symbol": "NVDA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 27.0배 — 자체 밴드 하단 이탈 (평균 30.9배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "AI industry is just following Jensen Huang's lead, Salesforce CEO explains",
-          "url": "https://finance.yahoo.com/video/ai-industry-just-following-jensen-153000978.html"
-        },
-        {
-          "title": "Lucid stock jumps on 25,000 robotaxi deal with Europe's Bolt",
-          "url": "https://finance.yahoo.com/markets/stocks/article/lucid-stock-jumps-on-25000-robotaxi-deal-with-europes-bolt-132433027.html"
-        },
-        {
-          "title": "Why GE Vernova Stock Bumped Higher Today",
-          "url": "https://www.fool.com/investing/2026/09/17/why-ge-vernova-stock-bumped-higher-today/"
-        }
-      ],
-      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -123,19 +94,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Top strategist thinks the Federal Reserve interest rate hike won't fix this huge earnings risk",
-          "url": "https://finance.yahoo.com/markets/article/top-strategist-thinks-the-federal-reserve-interest-rate-hike-wont-fix-this-huge-earnings-risk-121619669.html"
+          "title": "Micron Faces Growing China Threat. It’s a Bigger Problem for Memory-Chip Rivals.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-chips-china-573a7f1d?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/memory-shortage-not-over-more-180200318.html"
+          "title": "KCHP’s 0.65% Fee Is Steep, but Only If You Already Own EWY",
+          "url": "https://247wallst.com/investing/etf/2026/09/18/portfolio-fit-kchp/"
         },
         {
-          "title": "If Memory Chip Prices Fall, Here’s What Happens to the Korea Semiconductor ETF KCHP",
-          "url": "https://247wallst.com/investing/etf/2026/09/17/what-to-watch-kchp/"
+          "title": "Micron's Largest Production Base Faces Strike Threats as Bonus Falls 'Short of Expectations,' Workers Demand Bigger Cut of AI-Driven Profits: Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-largest-production-faces-strike-052010224.html"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "symbol": "000660.KS",
@@ -148,16 +119,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Tech stocks today: OpenAI reveals six more instances of 'concerning model behavior'",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-openai-reveals-six-more-instances-of-concerning-model-behavior-140134624.html"
+          "title": "Intel vs. SK Hynix: Which Chip Stock Is Worth Chasing After This Week's Surge?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-vs-sk-hynix-chip-191000596.html"
         },
         {
-          "title": "Why Intel Stock Jumped 7.6% Today",
-          "url": "https://www.fool.com/investing/2026/09/17/why-intel-stock-jumped-76-today/"
+          "title": "Micron Faces Growing China Threat. It’s a Bigger Problem for Memory-Chip Rivals.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-chips-china-573a7f1d?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/"
+          "title": "AI Memory Costs Continue to Explode — And It’s About to Get a Lot Worse",
+          "url": "https://247wallst.com/investing/2026/09/18/ai-memory-costs-continue-to-explode-and-its-about-to-get-a-lot-worse/"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "S&P 500 wavers after best one-day rally in six weeks: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/sp-500-wavers-after-best-one-day-rally-in-six-weeks-alphacheck-141322068.html"
+        },
+        {
+          "title": "Why Salesforce CEO Marc Benioff thinks AI chip king Nvidia is 'exquisite'",
+          "url": "https://finance.yahoo.com/markets/stocks/article/why-salesforce-ceo-marc-benioff-thinks-ai-chip-king-nvidia-is-exquisite-094642002.html"
+        },
+        {
+          "title": "Why Netskope Stock Crushed it This Week",
+          "url": "https://www.fool.com/investing/2026/09/18/why-netskope-stock-crushed-it-this-week/"
         }
       ],
       "rank": 5
@@ -168,7 +164,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 27.012316,
+      "trailing_pe": 28.064394,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -188,7 +184,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.69116,
+      "trailing_pe": 38.502865,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -208,7 +204,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 342.24298,
+      "trailing_pe": 343.65094,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -234,15 +230,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 259750.0,
-      "change_pct": 2.87,
-      "week52_pct": 65.1,
-      "pct_vs_ma200": 18.35,
-      "drawdown_from_high_pct": -28.27,
-      "return_3m_pct": -26.54,
-      "return_6m_pct": 24.98,
-      "return_12m_pct": 275.19,
-      "relative_strength_6m_pct": 3.32
+      "last_close": 261000.0,
+      "change_pct": 3.37,
+      "week52_pct": 65.5,
+      "pct_vs_ma200": 18.92,
+      "drawdown_from_high_pct": -27.92,
+      "return_3m_pct": -26.19,
+      "return_6m_pct": 25.58,
+      "return_12m_pct": 277.0,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -254,52 +250,37 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1823000.0,
-      "change_pct": 4.47,
-      "week52_pct": 58.6,
-      "pct_vs_ma200": 33.42,
-      "drawdown_from_high_pct": -37.53,
-      "return_3m_pct": -34.03,
-      "return_6m_pct": 72.7,
-      "return_12m_pct": 588.65,
-      "relative_strength_6m_pct": 51.04
+      "last_close": 1857000.0,
+      "change_pct": 6.42,
+      "week52_pct": 59.9,
+      "pct_vs_ma200": 35.89,
+      "drawdown_from_high_pct": -36.37,
+      "return_3m_pct": -32.8,
+      "return_6m_pct": 75.92,
+      "return_12m_pct": 601.5,
+      "relative_strength_6m_pct": NaN
     }
   ],
   "discovery": [
     {
-      "symbol": "INTC",
-      "name": "Intel Corporation",
+      "symbol": "BE",
+      "name": "Bloom Energy Corporation",
       "why": "당일 기사 3건 언급",
       "headlines": [
         {
-          "title": "Why Intel Stock Jumped 7.6% Today"
+          "title": "Bloom Energy CAO, 61.6만 달러 규모 주식 매도"
         },
         {
-          "title": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks"
+          "title": "S&P 500 wavers after best one-day rally in six weeks: AlphaCheck"
         },
         {
-          "title": "Intel Soars 9% On A Memory Deal That Doesn’t Exist Yet"
+          "title": "Why Salesforce CEO Marc Benioff thinks AI chip king Nvidia is 'exquisite'"
         }
       ],
       "basic": {
-        "trailing_pe": null,
+        "trailing_pe": 349.51318,
         "week52_pct": NaN,
-        "market_cap_usd": 575128272896
-      }
-    },
-    {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "Why Lucid Group Stock Raced Ahead on Thursday"
-        }
-      ],
-      "basic": {
-        "trailing_pe": null,
-        "week52_pct": NaN,
-        "market_cap_usd": 1686620416
+        "market_cap_usd": 78235303936
       }
     }
   ],
