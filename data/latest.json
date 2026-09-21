@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-19T00:28:55+00:00",
-  "market_date": "2026-09-19",
+  "generated_at": "2026-09-21T00:23:46+00:00",
+  "market_date": "2026-09-21",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 44,
+    "days_collected": 45,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,59 +26,52 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "volume_spike",
-          "message": "거래량 20일 평균 대비 2.09배"
+          "message": "거래량 20일 평균 대비 2.1배"
         },
         {
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.5배 — 자체 밴드 상단 이탈 (평균 36.4배)"
+          "message": "PER 38.6배 — 자체 밴드 상단 이탈 (평균 36.4배)"
         }
       ],
       "news": [
         {
-          "title": "John Ternus has the 'Apple DNA' that will push company to the 'next level'",
-          "url": "https://finance.yahoo.com/video/john-ternus-apple-dna-push-220000814.html"
+          "title": "Apple (AAPL)’s New CEO Bets Big on a $1,999 Foldable iPhone",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-ceo-bets-big-233948726.html"
         },
         {
-          "title": "Apple will essentially sell 'every single' iPhone Duo it makes: CFRA",
-          "url": "https://finance.yahoo.com/video/apple-essentially-sell-every-single-200934859.html"
+          "title": "Your iPhone gives Apple an advantage you may not be comfortable with.",
+          "url": "https://www.thestreet.com/technology/apples-new-ceo-reveals-how-ai-will-change-your-life"
         },
         {
-          "title": "Trump takes aim at Warsh after Fed hike",
-          "url": "https://finance.yahoo.com/video/trump-takes-aim-warsh-fed-163036956.html"
+          "title": "10 Years Later: 5 Low-Risk Stocks for the Next Year",
+          "url": "https://www.fool.com/investing/2026/09/20/10-years-later-5-low-risk-stocks-for-the-next-year/"
         }
       ],
       "rank": 1
     },
     {
-      "symbol": "TSLA",
-      "score": 2.5,
+      "symbol": "NVDA",
+      "score": 1.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 0,
         "news": 1.5,
         "event": 0.0
       },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 343.7배 — 자체 밴드 상단 이탈 (평균 323.1배)"
-        }
-      ],
+      "signals": [],
       "news": [
         {
-          "title": "The SEC is bringing tokenized stocks to markets: 7 key details you need to know",
-          "url": "https://finance.yahoo.com/video/sec-bringing-tokenized-stocks-markets-180000283.html"
+          "title": "Should You Buy Goldman Sachs Stock After Its 26% Run-Up From Its 52-Week Low?",
+          "url": "https://www.fool.com/investing/2026/09/20/should-you-buy-goldman-sachs-stock-after-a-28-run/"
         },
         {
-          "title": "Dow Drops To Record Worst Week In Six Months Amid Elevated Yields, Oil — NVDA, TSLA, SPCX, ONON In Focus",
-          "url": "https://stocktwits.com/news-articles/markets/equity/dow-drops-to-record-worst-week-in-six-months-amid-elevated-yields-oil-nvda-tsla-spcx-onon-in-focus/cZtHOYsRBEK"
+          "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
+          "url": "https://www.fool.com/investing/2026/09/20/prediction-nvidias-70-revenue-forecast-will-drive/"
         },
         {
-          "title": "Tesla, Inc. (TSLA) Eyes Europe’s Electric Truck Boom With Semi Expansion",
-          "url": "https://finance.yahoo.com/technology/articles/tesla-inc-tsla-eyes-europe-224919901.html"
+          "title": "Palantir Nearly Doubled Its Revenue. Its Stock Stood Still. Is It Time to Buy the Stock?",
+          "url": "https://www.fool.com/investing/2026/09/20/palantir-nearly-doubled-its-revenue-its-stock-stood-still-is-it-time-to-buy-the-stock/"
         }
       ],
       "rank": 2
@@ -94,16 +87,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Micron Faces Growing China Threat. It’s a Bigger Problem for Memory-Chip Rivals.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-chips-china-573a7f1d?siteid=yhoof2&yptr=yahoo"
+          "title": "ASML (ASML) and Chip Giants like TSMC Plot a Bigger Canvas for Building AI Chips",
+          "url": "https://finance.yahoo.com/technology/ai/articles/asml-asml-chip-giants-tsmc-214129428.html"
         },
         {
-          "title": "KCHP’s 0.65% Fee Is Steep, but Only If You Already Own EWY",
-          "url": "https://247wallst.com/investing/etf/2026/09/18/portfolio-fit-kchp/"
+          "title": "China's CXMT says new memory-chip platform enters mass production",
+          "url": "https://finance.yahoo.com/technology/articles/chinas-cxmt-says-memory-chip-035403310.html"
         },
         {
-          "title": "Micron's Largest Production Base Faces Strike Threats as Bonus Falls 'Short of Expectations,' Workers Demand Bigger Cut of AI-Driven Profits: Report",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-largest-production-faces-strike-052010224.html"
+          "title": "Is Micron's 9% Dip a Warning Sign or Buying Opportunity?",
+          "url": "https://www.fool.com/investing/2026/09/19/is-microns-9-dip-a-warning-sign-or-buying-opportun/"
         }
       ],
       "rank": 3
@@ -119,22 +112,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Intel vs. SK Hynix: Which Chip Stock Is Worth Chasing After This Week's Surge?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-vs-sk-hynix-chip-191000596.html"
+          "title": "SK Hynix (SKHY) Intel Ohio Talks Put Its Cheap Looking Valuation Back In Focus",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-skhy-intel-ohio-231321870.html"
         },
         {
-          "title": "Micron Faces Growing China Threat. It’s a Bigger Problem for Memory-Chip Rivals.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-chips-china-573a7f1d?siteid=yhoof2&yptr=yahoo"
+          "title": "ASML (ASML) and Chip Giants like TSMC Plot a Bigger Canvas for Building AI Chips",
+          "url": "https://finance.yahoo.com/technology/ai/articles/asml-asml-chip-giants-tsmc-214129428.html"
         },
         {
-          "title": "AI Memory Costs Continue to Explode — And It’s About to Get a Lot Worse",
-          "url": "https://247wallst.com/investing/2026/09/18/ai-memory-costs-continue-to-explode-and-its-about-to-get-a-lot-worse/"
+          "title": "Better Artificial Intelligence Stock: Advanced Micro Devices vs. SK Hynix",
+          "url": "https://www.fool.com/coverage/better-buy/2026/09/20/better-artificial-intelligence-stock-advanced-micro-devices-vs-sk-hynix/"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "NVDA",
+      "symbol": "TSLA",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -144,16 +137,16 @@
       "signals": [],
       "news": [
         {
-          "title": "S&P 500 wavers after best one-day rally in six weeks: AlphaCheck",
-          "url": "https://finance.yahoo.com/markets/article/sp-500-wavers-after-best-one-day-rally-in-six-weeks-alphacheck-141322068.html"
+          "title": "3 notable business takes that flew under the radar this week",
+          "url": "https://finance.yahoo.com/markets/article/3-notable-business-takes-that-flew-under-the-radar-this-week-120000112.html"
         },
         {
-          "title": "Why Salesforce CEO Marc Benioff thinks AI chip king Nvidia is 'exquisite'",
-          "url": "https://finance.yahoo.com/markets/stocks/article/why-salesforce-ceo-marc-benioff-thinks-ai-chip-king-nvidia-is-exquisite-094642002.html"
+          "title": "Tesla (TSLA)’s Autopilot Software Wins Over a Sixth European Country",
+          "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-autopilot-software-wins-214328537.html"
         },
         {
-          "title": "Why Netskope Stock Crushed it This Week",
-          "url": "https://www.fool.com/investing/2026/09/18/why-netskope-stock-crushed-it-this-week/"
+          "title": "Dear Tesla Stock Fans, Mark Your Calendars for September 30",
+          "url": "https://www.barchart.com/story/news/4701207/dear-tesla-stock-fans-mark-your-calendars-for-september-30"
         }
       ],
       "rank": 5
@@ -164,61 +157,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.064394,
+      "trailing_pe": 28.099874,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 222.27,
+      "change_pct": 1.34,
+      "week52_pct": 81.6,
+      "pct_vs_ma200": 12.25,
+      "drawdown_from_high_pct": -5.5,
+      "return_3m_pct": 5.61,
+      "return_6m_pct": 24.76,
+      "return_12m_pct": 30.84,
+      "relative_strength_6m_pct": 8.96
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.502865,
+      "trailing_pe": 38.591274,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 336.13,
+      "change_pct": -0.26,
+      "week52_pct": 96.4,
+      "pct_vs_ma200": 17.55,
+      "drawdown_from_high_pct": -1.08,
+      "return_3m_pct": 12.89,
+      "return_6m_pct": 35.25,
+      "return_12m_pct": 41.17,
+      "relative_strength_6m_pct": 19.45
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 343.65094,
+      "trailing_pe": 334.19263,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 364.27,
+      "change_pct": -0.53,
+      "week52_pct": 34.4,
+      "pct_vs_ma200": -8.32,
+      "drawdown_from_high_pct": -25.64,
+      "return_3m_pct": -9.04,
+      "return_6m_pct": -4.22,
+      "return_12m_pct": -14.46,
+      "relative_strength_6m_pct": -20.02
     },
     {
       "symbol": "005930.KS",
@@ -230,15 +223,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 261000.0,
-      "change_pct": 3.37,
-      "week52_pct": 65.5,
-      "pct_vs_ma200": 18.92,
-      "drawdown_from_high_pct": -27.92,
-      "return_3m_pct": -26.19,
-      "return_6m_pct": 25.58,
-      "return_12m_pct": 277.0,
-      "relative_strength_6m_pct": NaN
+      "last_close": 267250.0,
+      "change_pct": 2.39,
+      "week52_pct": 67.6,
+      "pct_vs_ma200": 21.31,
+      "drawdown_from_high_pct": -26.19,
+      "return_3m_pct": -24.32,
+      "return_6m_pct": 33.71,
+      "return_12m_pct": 289.36,
+      "relative_strength_6m_pct": 12.78
     },
     {
       "symbol": "000660.KS",
@@ -250,39 +243,17 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1857000.0,
-      "change_pct": 6.42,
-      "week52_pct": 59.9,
-      "pct_vs_ma200": 35.89,
-      "drawdown_from_high_pct": -36.37,
-      "return_3m_pct": -32.8,
-      "return_6m_pct": 75.92,
-      "return_12m_pct": 601.5,
-      "relative_strength_6m_pct": NaN
+      "last_close": 1876000.0,
+      "change_pct": 1.02,
+      "week52_pct": 60.5,
+      "pct_vs_ma200": 36.6,
+      "drawdown_from_high_pct": -35.72,
+      "return_3m_pct": -35.72,
+      "return_6m_pct": 85.26,
+      "return_12m_pct": 587.95,
+      "relative_strength_6m_pct": 64.33
     }
   ],
-  "discovery": [
-    {
-      "symbol": "BE",
-      "name": "Bloom Energy Corporation",
-      "why": "당일 기사 3건 언급",
-      "headlines": [
-        {
-          "title": "Bloom Energy CAO, 61.6만 달러 규모 주식 매도"
-        },
-        {
-          "title": "S&P 500 wavers after best one-day rally in six weeks: AlphaCheck"
-        },
-        {
-          "title": "Why Salesforce CEO Marc Benioff thinks AI chip king Nvidia is 'exquisite'"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 349.51318,
-        "week52_pct": NaN,
-        "market_cap_usd": 78235303936
-      }
-    }
-  ],
+  "discovery": [],
   "calendar": []
 }
