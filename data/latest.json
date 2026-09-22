@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-21T00:23:46+00:00",
-  "market_date": "2026-09-21",
+  "generated_at": "2026-09-22T00:59:32+00:00",
+  "market_date": "2026-09-22",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,15 +9,15 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 45,
+    "days_collected": 46,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "AAPL",
-      "score": 3.5,
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 2.0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -25,31 +25,57 @@
         {
           "symbol": "AAPL",
           "severity": "yellow",
-          "type": "volume_spike",
-          "message": "거래량 20일 평균 대비 2.1배"
-        },
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.6배 — 자체 밴드 상단 이탈 (평균 36.4배)"
+          "message": "PER 38.9배 — 자체 밴드 상단 이탈 (평균 36.5배)"
         }
       ],
       "news": [
         {
-          "title": "Apple (AAPL)’s New CEO Bets Big on a $1,999 Foldable iPhone",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-ceo-bets-big-233948726.html"
+          "title": "Meta stock jumps as Wells Fargo raises price target",
+          "url": "https://finance.yahoo.com/video/meta-stock-jumps-wells-fargo-195200224.html"
         },
         {
-          "title": "Your iPhone gives Apple an advantage you may not be comfortable with.",
-          "url": "https://www.thestreet.com/technology/apples-new-ceo-reveals-how-ai-will-change-your-life"
+          "title": "Apple’s new iPhone Duo: Will consumers bite?",
+          "url": "https://finance.yahoo.com/video/apple-iphone-duo-consumers-bite-174100022.html"
         },
         {
-          "title": "10 Years Later: 5 Low-Risk Stocks for the Next Year",
-          "url": "https://www.fool.com/investing/2026/09/20/10-years-later-5-low-risk-stocks-for-the-next-year/"
+          "title": "Apple (AAPL) Eyes India Payments With Apple Pay Debut Next Month",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-eyes-india-payments-002925640.html"
         }
       ],
       "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 344.3배 — 자체 밴드 상단 이탈 (평균 323.8배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Maye Musk: Elon really wants to live on Mars in the coming decades",
+          "url": "https://finance.yahoo.com/markets/article/maye-musk-elon-really-wants-to-live-on-mars-in-the-coming-decades-193421298.html"
+        },
+        {
+          "title": "Elon Musk wants to live on Mars: Maye Musk on her son's ambitions",
+          "url": "https://finance.yahoo.com/video/elon-musk-wants-live-mars-170000413.html"
+        },
+        {
+          "title": "Robotaxis crash less. So why isn't your insurance cheaper?",
+          "url": "https://www.thestreet.com/crypto/personal-finance/robotaxis-crash-less-so-why-isnt-your-insurance-cheaper"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "NVDA",
@@ -62,19 +88,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Should You Buy Goldman Sachs Stock After Its 26% Run-Up From Its 52-Week Low?",
-          "url": "https://www.fool.com/investing/2026/09/20/should-you-buy-goldman-sachs-stock-after-a-28-run/"
+          "title": "Could Nvidia's prospects in China shift following the Trump and Xi's meeting?",
+          "url": "https://finance.yahoo.com/video/could-nvidias-prospects-china-shift-183517435.html"
         },
         {
-          "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
-          "url": "https://www.fool.com/investing/2026/09/20/prediction-nvidias-70-revenue-forecast-will-drive/"
+          "title": "Bitcoin prices, Logan & Jake Paul, Jensen Huang talks human survival: 3 crazy market movers",
+          "url": "https://finance.yahoo.com/video/bitcoin-prices-logan-jake-paul-144153828.html"
         },
         {
-          "title": "Palantir Nearly Doubled Its Revenue. Its Stock Stood Still. Is It Time to Buy the Stock?",
-          "url": "https://www.fool.com/investing/2026/09/20/palantir-nearly-doubled-its-revenue-its-stock-stood-still-is-it-time-to-buy-the-stock/"
+          "title": "3 Lessons I Learned From Watching Warren Buffett for 30 Years",
+          "url": "https://www.fool.com/investing/2026/09/21/3-lessons-i-learned-from-watching-warren-buffett-for-30-years/"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -87,19 +113,19 @@
       "signals": [],
       "news": [
         {
-          "title": "ASML (ASML) and Chip Giants like TSMC Plot a Bigger Canvas for Building AI Chips",
-          "url": "https://finance.yahoo.com/technology/ai/articles/asml-asml-chip-giants-tsmc-214129428.html"
+          "title": "Tech, Media & Telecom Roundup: Market Talk",
+          "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-6af76ecb?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "China's CXMT says new memory-chip platform enters mass production",
-          "url": "https://finance.yahoo.com/technology/articles/chinas-cxmt-says-memory-chip-035403310.html"
+          "title": "HBM Sold Out Through 2027. Micron’s Customers Are Begging. Can Anything Go Wrong?",
+          "url": "https://247wallst.com/investing/2026/09/21/hbm-sold-out-through-2027-microns-customers-are-begging-can-anything-go-wrong/"
         },
         {
-          "title": "Is Micron's 9% Dip a Warning Sign or Buying Opportunity?",
-          "url": "https://www.fool.com/investing/2026/09/19/is-microns-9-dip-a-warning-sign-or-buying-opportun/"
+          "title": "Kairos Power gets up to $100M from Samsung group to build nuclear reactor for Google",
+          "url": "https://finance.yahoo.com/energy/articles/kairos-power-gets-100m-samsung-182305108.html"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -112,41 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "SK Hynix (SKHY) Intel Ohio Talks Put Its Cheap Looking Valuation Back In Focus",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-skhy-intel-ohio-231321870.html"
+          "title": "AMD stock soars to new record as semiconductors bounce: Chart of the Day",
+          "url": "https://finance.yahoo.com/markets/article/amd-stock-soars-to-new-record-as-semiconductors-bounce-chart-of-the-day-161627271.html"
         },
         {
-          "title": "ASML (ASML) and Chip Giants like TSMC Plot a Bigger Canvas for Building AI Chips",
-          "url": "https://finance.yahoo.com/technology/ai/articles/asml-asml-chip-giants-tsmc-214129428.html"
+          "title": "Tech, Media & Telecom Roundup: Market Talk",
+          "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-6af76ecb?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Better Artificial Intelligence Stock: Advanced Micro Devices vs. SK Hynix",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/20/better-artificial-intelligence-stock-advanced-micro-devices-vs-sk-hynix/"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "3 notable business takes that flew under the radar this week",
-          "url": "https://finance.yahoo.com/markets/article/3-notable-business-takes-that-flew-under-the-radar-this-week-120000112.html"
-        },
-        {
-          "title": "Tesla (TSLA)’s Autopilot Software Wins Over a Sixth European Country",
-          "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-autopilot-software-wins-214328537.html"
-        },
-        {
-          "title": "Dear Tesla Stock Fans, Mark Your Calendars for September 30",
-          "url": "https://www.barchart.com/story/news/4701207/dear-tesla-stock-fans-mark-your-calendars-for-september-30"
+          "title": "Intel Stock Soars as AI Spending Fears Fade",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-soars-ai-spending-190205655.html"
         }
       ],
       "rank": 5
@@ -157,61 +158,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.099874,
+      "trailing_pe": 28.745892,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 222.27,
-      "change_pct": 1.34,
-      "week52_pct": 81.6,
-      "pct_vs_ma200": 12.25,
-      "drawdown_from_high_pct": -5.5,
-      "return_3m_pct": 5.61,
-      "return_6m_pct": 24.76,
-      "return_12m_pct": 30.84,
-      "relative_strength_6m_pct": 8.96
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.591274,
+      "trailing_pe": 38.918484,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 336.13,
-      "change_pct": -0.26,
-      "week52_pct": 96.4,
-      "pct_vs_ma200": 17.55,
-      "drawdown_from_high_pct": -1.08,
-      "return_3m_pct": 12.89,
-      "return_6m_pct": 35.25,
-      "return_12m_pct": 41.17,
-      "relative_strength_6m_pct": 19.45
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 334.19263,
+      "trailing_pe": 344.3119,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 364.27,
-      "change_pct": -0.53,
-      "week52_pct": 34.4,
-      "pct_vs_ma200": -8.32,
-      "drawdown_from_high_pct": -25.64,
-      "return_3m_pct": -9.04,
-      "return_6m_pct": -4.22,
-      "return_12m_pct": -14.46,
-      "relative_strength_6m_pct": -20.02
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "005930.KS",
@@ -223,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 267250.0,
-      "change_pct": 2.39,
-      "week52_pct": 67.6,
-      "pct_vs_ma200": 21.31,
-      "drawdown_from_high_pct": -26.19,
-      "return_3m_pct": -24.32,
-      "return_6m_pct": 33.71,
-      "return_12m_pct": 289.36,
-      "relative_strength_6m_pct": 12.78
+      "last_close": 282000.0,
+      "change_pct": 2.92,
+      "week52_pct": 72.5,
+      "pct_vs_ma200": 27.47,
+      "drawdown_from_high_pct": -22.12,
+      "return_3m_pct": -8.93,
+      "return_6m_pct": 41.87,
+      "return_12m_pct": 307.33,
+      "relative_strength_6m_pct": 17.5
     },
     {
       "symbol": "000660.KS",
@@ -243,15 +244,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1876000.0,
-      "change_pct": 1.02,
-      "week52_pct": 60.5,
-      "pct_vs_ma200": 36.6,
-      "drawdown_from_high_pct": -35.72,
-      "return_3m_pct": -35.72,
-      "return_6m_pct": 85.26,
-      "return_12m_pct": 587.95,
-      "relative_strength_6m_pct": 64.33
+      "last_close": 1935000.0,
+      "change_pct": 3.59,
+      "week52_pct": 62.6,
+      "pct_vs_ma200": 40.19,
+      "drawdown_from_high_pct": -33.7,
+      "return_3m_pct": -24.25,
+      "return_6m_pct": 92.23,
+      "return_12m_pct": 600.62,
+      "relative_strength_6m_pct": 67.86
     }
   ],
   "discovery": [],
