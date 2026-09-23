@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22T00:59:32+00:00",
-  "market_date": "2026-09-22",
+  "generated_at": "2026-09-23T00:49:12+00:00",
+  "market_date": "2026-09-23",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 46,
+    "days_collected": 47,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "AAPL",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 38.9배 — 자체 밴드 상단 이탈 (평균 36.5배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Meta stock jumps as Wells Fargo raises price target",
-          "url": "https://finance.yahoo.com/video/meta-stock-jumps-wells-fargo-195200224.html"
-        },
-        {
-          "title": "Apple’s new iPhone Duo: Will consumers bite?",
-          "url": "https://finance.yahoo.com/video/apple-iphone-duo-consumers-bite-174100022.html"
-        },
-        {
-          "title": "Apple (AAPL) Eyes India Payments With Apple Pay Debut Next Month",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-eyes-india-payments-002925640.html"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "TSLA",
       "score": 2.5,
@@ -58,49 +26,56 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 344.3배 — 자체 밴드 상단 이탈 (평균 323.8배)"
+          "message": "PER 347.6배 — 자체 밴드 상단 이탈 (평균 324.3배)"
         }
       ],
       "news": [
+        {
+          "title": "Is Tesla's evaluation based on pure faith or on hoping for the best?",
+          "url": "https://finance.yahoo.com/video/teslas-evaluation-based-pure-faith-181659153.html"
+        },
+        {
+          "title": "Tesla, Waymo, and Zoox are driving a nightmarish year for these 2 stocks",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-waymo-and-zoox-are-driving-a-nightmarish-year-for-these-2-stocks-142300670.html"
+        },
         {
           "title": "Maye Musk: Elon really wants to live on Mars in the coming decades",
           "url": "https://finance.yahoo.com/markets/article/maye-musk-elon-really-wants-to-live-on-mars-in-the-coming-decades-193421298.html"
-        },
-        {
-          "title": "Elon Musk wants to live on Mars: Maye Musk on her son's ambitions",
-          "url": "https://finance.yahoo.com/video/elon-musk-wants-live-mars-170000413.html"
-        },
-        {
-          "title": "Robotaxis crash less. So why isn't your insurance cheaper?",
-          "url": "https://www.thestreet.com/crypto/personal-finance/robotaxis-crash-less-so-why-isnt-your-insurance-cheaper"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
-      "symbol": "NVDA",
-      "score": 1.5,
+      "symbol": "AAPL",
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
-      "signals": [],
-      "news": [
+      "signals": [
         {
-          "title": "Could Nvidia's prospects in China shift following the Trump and Xi's meeting?",
-          "url": "https://finance.yahoo.com/video/could-nvidias-prospects-china-shift-183517435.html"
-        },
-        {
-          "title": "Bitcoin prices, Logan & Jake Paul, Jensen Huang talks human survival: 3 crazy market movers",
-          "url": "https://finance.yahoo.com/video/bitcoin-prices-logan-jake-paul-144153828.html"
-        },
-        {
-          "title": "3 Lessons I Learned From Watching Warren Buffett for 30 Years",
-          "url": "https://www.fool.com/investing/2026/09/21/3-lessons-i-learned-from-watching-warren-buffett-for-30-years/"
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 39.0배 — 자체 밴드 상단 이탈 (평균 36.5배)"
         }
       ],
-      "rank": 3
+      "news": [
+        {
+          "title": "Meta’s new AI agent just got me $250 in flight credits",
+          "url": "https://finance.yahoo.com/video/meta-ai-agent-just-got-214556275.html"
+        },
+        {
+          "title": "Why Muse just added billions to Meta's market cap",
+          "url": "https://finance.yahoo.com/markets/stocks/article/why-muse-just-added-billions-to-metas-market-cap-094853229.html"
+        },
+        {
+          "title": "The Magnificent 7 are back: Meta’s AI bet leads the charge",
+          "url": "https://finance.yahoo.com/video/magnificent-7-back-meta-ai-140300865.html"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "005930.KS",
@@ -113,19 +88,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Tech, Media & Telecom Roundup: Market Talk",
-          "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-6af76ecb?siteid=yhoof2&yptr=yahoo"
+          "title": "Micron's Memory Boom Is Facing a New Test",
+          "url": "https://finance.yahoo.com/technology/articles/microns-memory-boom-facing-test-222431132.html"
         },
         {
-          "title": "HBM Sold Out Through 2027. Micron’s Customers Are Begging. Can Anything Go Wrong?",
-          "url": "https://247wallst.com/investing/2026/09/21/hbm-sold-out-through-2027-microns-customers-are-begging-can-anything-go-wrong/"
+          "title": "Sandisk Stock Is Up 644% This Year. Why the Stock Isn’t Done Rising.",
+          "url": "https://www.barrons.com/articles/sandisk-stock-ai-memory-chips-45cf5c6e?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Kairos Power gets up to $100M from Samsung group to build nuclear reactor for Google",
-          "url": "https://finance.yahoo.com/energy/articles/kairos-power-gets-100m-samsung-182305108.html"
+          "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is Rising Anyway.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-strike-memory-chip-plant-6550a149?siteid=yhoof2&yptr=yahoo"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "symbol": "000660.KS",
@@ -138,16 +113,41 @@
       "signals": [],
       "news": [
         {
-          "title": "AMD stock soars to new record as semiconductors bounce: Chart of the Day",
-          "url": "https://finance.yahoo.com/markets/article/amd-stock-soars-to-new-record-as-semiconductors-bounce-chart-of-the-day-161627271.html"
+          "title": "Micron's Memory Boom Is Facing a New Test",
+          "url": "https://finance.yahoo.com/technology/articles/microns-memory-boom-facing-test-222431132.html"
         },
         {
-          "title": "Tech, Media & Telecom Roundup: Market Talk",
-          "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-6af76ecb?siteid=yhoof2&yptr=yahoo"
+          "title": "Sandisk Stock Is Up 644% This Year. Why the Stock Isn’t Done Rising.",
+          "url": "https://www.barrons.com/articles/sandisk-stock-ai-memory-chips-45cf5c6e?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Intel Stock Soars as AI Spending Fears Fade",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-soars-ai-spending-190205655.html"
+          "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is Rising Anyway.",
+          "url": "https://www.barrons.com/articles/micron-stock-price-strike-memory-chip-plant-6550a149?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Should investors play AI bottlenecks over social media stocks?",
+          "url": "https://finance.yahoo.com/video/investors-play-ai-bottlenecks-over-173922161.html"
+        },
+        {
+          "title": "Alibaba rolls out what it's touting as China's most powerful AI chip",
+          "url": "https://finance.yahoo.com/video/alibaba-rolls-touting-chinas-most-132329685.html"
+        },
+        {
+          "title": "Why This Top Automaker's Gamble on V-8 Engines During a Hybrid Boom Actually Makes Sense",
+          "url": "https://www.fool.com/investing/2026/09/22/why-this-top-automakers-gamble-on-v-8-engines-duri/"
         }
       ],
       "rank": 5
@@ -158,7 +158,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.745892,
+      "trailing_pe": 28.934261,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -178,7 +178,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.918484,
+      "trailing_pe": 39.00689,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -198,7 +198,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 344.3119,
+      "trailing_pe": 347.61465,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -224,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 282000.0,
-      "change_pct": 2.92,
-      "week52_pct": 72.5,
-      "pct_vs_ma200": 27.47,
-      "drawdown_from_high_pct": -22.12,
-      "return_3m_pct": -8.93,
-      "return_6m_pct": 41.87,
-      "return_12m_pct": 307.33,
-      "relative_strength_6m_pct": 17.5
+      "last_close": 284500.0,
+      "change_pct": 2.89,
+      "week52_pct": 73.3,
+      "pct_vs_ma200": 28.08,
+      "drawdown_from_high_pct": -21.43,
+      "return_3m_pct": -16.35,
+      "return_6m_pct": 53.2,
+      "return_12m_pct": 302.9,
+      "relative_strength_6m_pct": 29.95
     },
     {
       "symbol": "000660.KS",
@@ -244,15 +244,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1935000.0,
-      "change_pct": 3.59,
-      "week52_pct": 62.6,
-      "pct_vs_ma200": 40.19,
-      "drawdown_from_high_pct": -33.7,
-      "return_3m_pct": -24.25,
-      "return_6m_pct": 92.23,
-      "return_12m_pct": 600.62,
-      "relative_strength_6m_pct": 67.86
+      "last_close": 1877000.0,
+      "change_pct": 2.01,
+      "week52_pct": 60.2,
+      "pct_vs_ma200": 35.37,
+      "drawdown_from_high_pct": -35.68,
+      "return_3m_pct": -28.37,
+      "return_6m_pct": 101.26,
+      "return_12m_pct": 553.66,
+      "relative_strength_6m_pct": 78.01
     }
   ],
   "discovery": [],
