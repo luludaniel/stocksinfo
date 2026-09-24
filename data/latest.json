@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-23T00:49:12+00:00",
-  "market_date": "2026-09-23",
+  "generated_at": "2026-09-24T00:41:49+00:00",
+  "market_date": "2026-09-24",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 47,
+    "days_collected": 48,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "TSLA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 347.6배 — 자체 밴드 상단 이탈 (평균 324.3배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Is Tesla's evaluation based on pure faith or on hoping for the best?",
-          "url": "https://finance.yahoo.com/video/teslas-evaluation-based-pure-faith-181659153.html"
-        },
-        {
-          "title": "Tesla, Waymo, and Zoox are driving a nightmarish year for these 2 stocks",
-          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-waymo-and-zoox-are-driving-a-nightmarish-year-for-these-2-stocks-142300670.html"
-        },
-        {
-          "title": "Maye Musk: Elon really wants to live on Mars in the coming decades",
-          "url": "https://finance.yahoo.com/markets/article/maye-musk-elon-really-wants-to-live-on-mars-in-the-coming-decades-193421298.html"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "AAPL",
       "score": 2.5,
@@ -58,24 +26,81 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.0배 — 자체 밴드 상단 이탈 (평균 36.5배)"
+          "message": "PER 38.6배 — 자체 밴드 상단 이탈 (평균 36.6배)"
         }
       ],
       "news": [
         {
-          "title": "Meta’s new AI agent just got me $250 in flight credits",
-          "url": "https://finance.yahoo.com/video/meta-ai-agent-just-got-214556275.html"
+          "title": "How Qualcomm is targeting agentic AI with its 2 new smartphone chips",
+          "url": "https://finance.yahoo.com/video/qualcomm-targeting-agentic-ai-2-195058732.html"
         },
         {
-          "title": "Why Muse just added billions to Meta's market cap",
-          "url": "https://finance.yahoo.com/markets/stocks/article/why-muse-just-added-billions-to-metas-market-cap-094853229.html"
+          "title": "AI magic sends markets higher, plus one-on-one with IBM vice chair",
+          "url": "https://finance.yahoo.com/video/ai-magic-sends-markets-higher-143210140.html"
         },
         {
-          "title": "The Magnificent 7 are back: Meta’s AI bet leads the charge",
-          "url": "https://finance.yahoo.com/video/magnificent-7-back-meta-ai-140300865.html"
+          "title": "The AI panic, tech concentration, and Nvidia windfalls",
+          "url": "https://finance.yahoo.com/video/ai-panic-tech-concentration-nvidia-100000476.html"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 345.6배 — 자체 밴드 상단 이탈 (평균 324.8배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Is Tesla (TSLA) Quietly Shifting From Automaker To Physical AI Platform With FSD Subscriptions?",
+          "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-quietly-shifting-automaker-231422962.html"
+        },
+        {
+          "title": "Tesla makes $122M on Bitcoin without buying a single coin",
+          "url": "https://www.thestreet.com/crypto/markets/tesla-gains-122m-on-bitcoin-without-buying-a-single-coin"
+        },
+        {
+          "title": "Could SpaceX Stock Make You a Millionaire by 2036?",
+          "url": "https://www.fool.com/investing/2026/09/23/could-spacex-stock-make-you-a-millionaire-by-2036/"
         }
       ],
       "rank": 2
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "How Qualcomm is targeting agentic AI with its 2 new smartphone chips",
+          "url": "https://finance.yahoo.com/video/qualcomm-targeting-agentic-ai-2-195058732.html"
+        },
+        {
+          "title": "Nasdaq climbs higher, McDonald's investor day updates",
+          "url": "https://finance.yahoo.com/video/nasdaq-climbs-higher-mcdonalds-investor-day-updates-141449878.html"
+        },
+        {
+          "title": "The AI panic, tech concentration, and Nvidia windfalls",
+          "url": "https://finance.yahoo.com/video/ai-panic-tech-concentration-nvidia-100000476.html"
+        }
+      ],
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -88,19 +113,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Micron's Memory Boom Is Facing a New Test",
-          "url": "https://finance.yahoo.com/technology/articles/microns-memory-boom-facing-test-222431132.html"
+          "title": "Samsung Jumps 3.3% Despite China's New DRAM Production Milestone",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-jumps-3-3-despite-181513922.html"
         },
         {
-          "title": "Sandisk Stock Is Up 644% This Year. Why the Stock Isn’t Done Rising.",
-          "url": "https://www.barrons.com/articles/sandisk-stock-ai-memory-chips-45cf5c6e?siteid=yhoof2&yptr=yahoo"
+          "title": "Goldman says KOSPI is ready for a \"tactical breakout\"",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/goldman-says-kospi-ready-tactical-135628900.html"
         },
         {
-          "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is Rising Anyway.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-strike-memory-chip-plant-6550a149?siteid=yhoof2&yptr=yahoo"
+          "title": "Micron Technology Shares Edge Lower Ahead of Fiscal Q4 Earnings",
+          "url": "https://investorshub.advfn.com/market-news/article/36785/micron-technology-shares-edge-lower-ahead-of-fiscal-q4-earnings"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -113,41 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Micron's Memory Boom Is Facing a New Test",
-          "url": "https://finance.yahoo.com/technology/articles/microns-memory-boom-facing-test-222431132.html"
+          "title": "Chip Stocks Drop After Six-Day Climb For SOX Index",
+          "url": "https://www.investors.com/news/technology/chip-stocks-drop-after-six-day-climb-for-sox-index/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Sandisk Stock Is Up 644% This Year. Why the Stock Isn’t Done Rising.",
-          "url": "https://www.barrons.com/articles/sandisk-stock-ai-memory-chips-45cf5c6e?siteid=yhoof2&yptr=yahoo"
+          "title": "SK Hynix Falls 3% Despite Wolfe Research Lifting Its Target to $250; SanDisk Drops 3%, Micron Slides 2%",
+          "url": "https://247wallst.com/investing/2026/09/23/sk-hynix-falls-3-despite-wolfe-research-lifting-its-target-to-250-sandisk-drops-3-micron-slides-2/"
         },
         {
-          "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is Rising Anyway.",
-          "url": "https://www.barrons.com/articles/micron-stock-price-strike-memory-chip-plant-6550a149?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Should investors play AI bottlenecks over social media stocks?",
-          "url": "https://finance.yahoo.com/video/investors-play-ai-bottlenecks-over-173922161.html"
-        },
-        {
-          "title": "Alibaba rolls out what it's touting as China's most powerful AI chip",
-          "url": "https://finance.yahoo.com/video/alibaba-rolls-touting-chinas-most-132329685.html"
-        },
-        {
-          "title": "Why This Top Automaker's Gamble on V-8 Engines During a Hybrid Boom Actually Makes Sense",
-          "url": "https://www.fool.com/investing/2026/09/22/why-this-top-automakers-gamble-on-v-8-engines-duri/"
+          "title": "Samsung Jumps 3.3% Despite China's New DRAM Production Milestone",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-jumps-3-3-despite-181513922.html"
         }
       ],
       "rank": 5
@@ -158,7 +158,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.934261,
+      "trailing_pe": 28.473484,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -178,7 +178,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.00689,
+      "trailing_pe": 38.604813,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
@@ -198,7 +198,7 @@
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 347.61465,
+      "trailing_pe": 345.56363,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
@@ -224,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 284500.0,
-      "change_pct": 2.89,
-      "week52_pct": 73.3,
-      "pct_vs_ma200": 28.08,
-      "drawdown_from_high_pct": -21.43,
-      "return_3m_pct": -16.35,
-      "return_6m_pct": 53.2,
-      "return_12m_pct": 302.9,
-      "relative_strength_6m_pct": 29.95
+      "last_close": 285500.0,
+      "change_pct": 3.25,
+      "week52_pct": 73.6,
+      "pct_vs_ma200": 28.53,
+      "drawdown_from_high_pct": -21.15,
+      "return_3m_pct": -16.06,
+      "return_6m_pct": 53.73,
+      "return_12m_pct": 304.31,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -244,15 +244,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1877000.0,
-      "change_pct": 2.01,
-      "week52_pct": 60.2,
-      "pct_vs_ma200": 35.37,
-      "drawdown_from_high_pct": -35.68,
-      "return_3m_pct": -28.37,
-      "return_6m_pct": 101.26,
-      "return_12m_pct": 553.66,
-      "relative_strength_6m_pct": 78.01
+      "last_close": 1862000.0,
+      "change_pct": 1.2,
+      "week52_pct": 59.6,
+      "pct_vs_ma200": 34.3,
+      "drawdown_from_high_pct": -36.2,
+      "return_3m_pct": -28.94,
+      "return_6m_pct": 99.65,
+      "return_12m_pct": 548.43,
+      "relative_strength_6m_pct": NaN
     }
   ],
   "discovery": [],
