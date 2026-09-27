@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T00:41:49+00:00",
-  "market_date": "2026-09-24",
+  "generated_at": "2026-09-27T00:45:33+00:00",
+  "market_date": "2026-09-27",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,15 +9,15 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 48,
+    "days_collected": 49,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "AAPL",
-      "score": 2.5,
+      "score": 3.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 2.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -25,22 +25,28 @@
         {
           "symbol": "AAPL",
           "severity": "yellow",
+          "type": "week52_high",
+          "message": "52주 신고가 경신"
+        },
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 38.6배 — 자체 밴드 상단 이탈 (평균 36.6배)"
+          "message": "PER 39.1배 — 자체 밴드 상단 이탈 (평균 36.6배)"
         }
       ],
       "news": [
         {
-          "title": "How Qualcomm is targeting agentic AI with its 2 new smartphone chips",
-          "url": "https://finance.yahoo.com/video/qualcomm-targeting-agentic-ai-2-195058732.html"
+          "title": "The 3 \"Magnificent Seven\" Stocks That I'm Buying Now",
+          "url": "https://www.fool.com/investing/2026/09/26/the-3-magnificent-seven-stocks-that-im-buying-now/"
         },
         {
-          "title": "AI magic sends markets higher, plus one-on-one with IBM vice chair",
-          "url": "https://finance.yahoo.com/video/ai-magic-sends-markets-higher-143210140.html"
+          "title": "Intuit vs. Oracle: Which Technology Stock Is a Better Buy in 2026?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/09/26/intuit-vs-oracle-which-technology-stock-is-a-better-buy-in-2026/"
         },
         {
-          "title": "The AI panic, tech concentration, and Nvidia windfalls",
-          "url": "https://finance.yahoo.com/video/ai-panic-tech-concentration-nvidia-100000476.html"
+          "title": "Guess Which Group of Stocks Is Back at an All-Time High?",
+          "url": "https://www.fool.com/investing/2026/09/26/this-group-of-stocks-is-back-at-an-all-time-high/"
         }
       ],
       "rank": 1
@@ -58,21 +64,21 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 345.6배 — 자체 밴드 상단 이탈 (평균 324.8배)"
+          "message": "PER 344.5배 — 자체 밴드 상단 이탈 (평균 325.2배)"
         }
       ],
       "news": [
         {
-          "title": "Is Tesla (TSLA) Quietly Shifting From Automaker To Physical AI Platform With FSD Subscriptions?",
-          "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-quietly-shifting-automaker-231422962.html"
+          "title": "Ross Gerber Asks Why Tesla Isn't Advertising With Gas at $6.50 a Gallon in LA. 'It's Just Infuriating to Me How Poorly Run Tesla Is'",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ross-gerber-asks-why-tesla-200015696.html"
         },
         {
-          "title": "Tesla makes $122M on Bitcoin without buying a single coin",
-          "url": "https://www.thestreet.com/crypto/markets/tesla-gains-122m-on-bitcoin-without-buying-a-single-coin"
+          "title": "Dow Jones Futures: Growth Shrugs Off Surging Yields, But Trump Rejects Iran Deal; Micron, SpaceX, Tesla Eye Buy Points",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-growth-stocks-shrug-off-surging-yields-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Could SpaceX Stock Make You a Millionaire by 2036?",
-          "url": "https://www.fool.com/investing/2026/09/23/could-spacex-stock-make-you-a-millionaire-by-2036/"
+          "title": "Could SpaceX Stock Help You Retire a Millionaire?",
+          "url": "https://www.fool.com/investing/2026/09/26/could-spacex-stock-help-you-retire-a-millionaire/"
         }
       ],
       "rank": 2
@@ -88,44 +94,19 @@
       "signals": [],
       "news": [
         {
-          "title": "How Qualcomm is targeting agentic AI with its 2 new smartphone chips",
-          "url": "https://finance.yahoo.com/video/qualcomm-targeting-agentic-ai-2-195058732.html"
+          "title": "Will Netflix Stock Trade for $135 or $70 by September 2027? Here's the Most Likely Scenario.",
+          "url": "https://www.fool.com/investing/2026/09/26/will-netflix-stock-trade-for-135-or-70-by-septembe/"
         },
         {
-          "title": "Nasdaq climbs higher, McDonald's investor day updates",
-          "url": "https://finance.yahoo.com/video/nasdaq-climbs-higher-mcdonalds-investor-day-updates-141449878.html"
+          "title": "This Little-Known Cryptocurrency Is Up 217% for the Year. But Is It a Buy?",
+          "url": "https://www.fool.com/investing/2026/09/26/this-little-known-cryptocurrency-is-up-217/"
         },
         {
-          "title": "The AI panic, tech concentration, and Nvidia windfalls",
-          "url": "https://finance.yahoo.com/video/ai-panic-tech-concentration-nvidia-100000476.html"
+          "title": "I'd Put $10,000 Into These 3 Vanguard Funds and Not Touch It for 20 Years",
+          "url": "https://www.fool.com/investing/2026/09/26/i-d-put-usd10-000-into-these-3-vanguard-funds-and-not-touch-it-for-20-years/"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Samsung Jumps 3.3% Despite China's New DRAM Production Milestone",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-jumps-3-3-despite-181513922.html"
-        },
-        {
-          "title": "Goldman says KOSPI is ready for a \"tactical breakout\"",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/goldman-says-kospi-ready-tactical-135628900.html"
-        },
-        {
-          "title": "Micron Technology Shares Edge Lower Ahead of Fiscal Q4 Earnings",
-          "url": "https://investorshub.advfn.com/market-news/article/36785/micron-technology-shares-edge-lower-ahead-of-fiscal-q4-earnings"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -138,16 +119,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Chip Stocks Drop After Six-Day Climb For SOX Index",
-          "url": "https://www.investors.com/news/technology/chip-stocks-drop-after-six-day-climb-for-sox-index/?src=A00220&yptr=yahoo"
+          "title": "Dow Jones Futures: Growth Shrugs Off Surging Yields, But Trump Rejects Iran Deal; Micron, SpaceX, Tesla Eye Buy Points",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-growth-stocks-shrug-off-surging-yields-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "SK Hynix Falls 3% Despite Wolfe Research Lifting Its Target to $250; SanDisk Drops 3%, Micron Slides 2%",
-          "url": "https://247wallst.com/investing/2026/09/23/sk-hynix-falls-3-despite-wolfe-research-lifting-its-target-to-250-sandisk-drops-3-micron-slides-2/"
+          "title": "SK Hynix (KOSE:A000660) Forms AI Focused Venture Capital Arm",
+          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-forms-010902805.html"
         },
         {
-          "title": "Samsung Jumps 3.3% Despite China's New DRAM Production Milestone",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-jumps-3-3-despite-181513922.html"
+          "title": "SK Hynix (SKHY) Weighs a U.S. NAND Plant. Would Lower China Risk Justify the Cost?",
+          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-skhy-weighs-u-003823844.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "ASML vs. Qualcomm: Which AI Semiconductor Stock Is a Better Buy in 2026?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/09/26/asml-vs-qualcomm-ai-semiconductor-stock-better-buy-2026/"
+        },
+        {
+          "title": "Korea’s trade surplus hits a record $23B. Here’s what’s driving it",
+          "url": "https://finance.yahoo.com/economy/articles/korea-trade-surplus-hits-record-233058850.html"
+        },
+        {
+          "title": "SK Hynix’s Solidigm Weighs IPO That Could Raise $15 Billion, Report Says",
+          "url": "https://www.barrons.com/articles/sk-hynix-solidigm-ipo-stock-eaf639af?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -158,61 +164,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.473484,
+      "trailing_pe": 28.489874,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 225.07,
+      "change_pct": 0.22,
+      "week52_pct": 85.6,
+      "pct_vs_ma200": 13.03,
+      "drawdown_from_high_pct": -4.31,
+      "return_3m_pct": 17.03,
+      "return_6m_pct": 31.74,
+      "return_12m_pct": 27.48,
+      "relative_strength_6m_pct": 12.19
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.604813,
+      "trailing_pe": 39.068733,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 341.07,
+      "change_pct": 1.53,
+      "week52_pct": 100.0,
+      "pct_vs_ma200": 18.68,
+      "drawdown_from_high_pct": 0.0,
+      "return_3m_pct": 20.29,
+      "return_6m_pct": 35.11,
+      "return_12m_pct": 35.68,
+      "relative_strength_6m_pct": 15.56
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 345.56363,
+      "trailing_pe": 344.54626,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 372.11,
+      "change_pct": -1.54,
+      "week52_pct": 38.5,
+      "pct_vs_ma200": -5.94,
+      "drawdown_from_high_pct": -24.04,
+      "return_3m_pct": -2.0,
+      "return_6m_pct": 0.0,
+      "return_12m_pct": -15.96,
+      "relative_strength_6m_pct": -19.55
     },
     {
       "symbol": "005930.KS",
@@ -232,7 +238,7 @@
       "return_3m_pct": -16.06,
       "return_6m_pct": 53.73,
       "return_12m_pct": 304.31,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 22.74
     },
     {
       "symbol": "000660.KS",
@@ -252,7 +258,7 @@
       "return_3m_pct": -28.94,
       "return_6m_pct": 99.65,
       "return_12m_pct": 548.43,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 68.66
     }
   ],
   "discovery": [],
