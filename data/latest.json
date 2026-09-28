@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T00:45:33+00:00",
-  "market_date": "2026-09-27",
+  "generated_at": "2026-09-28T01:00:47+00:00",
+  "market_date": "2026-09-28",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 49,
+    "days_collected": 50,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -32,21 +32,21 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.1배 — 자체 밴드 상단 이탈 (평균 36.6배)"
+          "message": "PER 39.1배 — 자체 밴드 상단 이탈 (평균 36.7배)"
         }
       ],
       "news": [
         {
-          "title": "The 3 \"Magnificent Seven\" Stocks That I'm Buying Now",
-          "url": "https://www.fool.com/investing/2026/09/26/the-3-magnificent-seven-stocks-that-im-buying-now/"
+          "title": "Apple (AAPL)’s Premium iPhone Strategy Faces a Test Beyond Early Adopters",
+          "url": "https://finance.yahoo.com/technology/articles/apple-aapl-premium-iphone-strategy-003254588.html"
         },
         {
-          "title": "Intuit vs. Oracle: Which Technology Stock Is a Better Buy in 2026?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/26/intuit-vs-oracle-which-technology-stock-is-a-better-buy-in-2026/"
+          "title": "Apple (AAPL) Opens the Ternus Era with a Foldable iPhone. Can Premium Devices Lift Revenue?",
+          "url": "https://finance.yahoo.com/technology/articles/apple-aapl-opens-ternus-era-234433247.html"
         },
         {
-          "title": "Guess Which Group of Stocks Is Back at an All-Time High?",
-          "url": "https://www.fool.com/investing/2026/09/26/this-group-of-stocks-is-back-at-an-all-time-high/"
+          "title": "Australia is Cracking Down on Social Media. Could Apple Benefit from the Shift?",
+          "url": "https://finance.yahoo.com/technology/articles/australia-cracking-down-social-media-233330727.html"
         }
       ],
       "rank": 1
@@ -64,74 +64,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 344.5배 — 자체 밴드 상단 이탈 (평균 325.2배)"
+          "message": "PER 344.5배 — 자체 밴드 상단 이탈 (평균 325.6배)"
         }
       ],
       "news": [
         {
-          "title": "Ross Gerber Asks Why Tesla Isn't Advertising With Gas at $6.50 a Gallon in LA. 'It's Just Infuriating to Me How Poorly Run Tesla Is'",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ross-gerber-asks-why-tesla-200015696.html"
+          "title": "Dow Jones Futures Fall, Oil Prices Rise Amid Trump Iran Comments; Micron, SpaceX, Tesla Eye Buy Points",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-comments-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Dow Jones Futures: Growth Shrugs Off Surging Yields, But Trump Rejects Iran Deal; Micron, SpaceX, Tesla Eye Buy Points",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-growth-stocks-shrug-off-surging-yields-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
+          "title": "SpaceX vs. Tesla: Which Will Be the Largest Company at the End of 2027?",
+          "url": "https://www.fool.com/investing/2026/09/27/spacex-vs-tesla-which-will-be-the-largest-company/"
         },
         {
-          "title": "Could SpaceX Stock Help You Retire a Millionaire?",
-          "url": "https://www.fool.com/investing/2026/09/26/could-spacex-stock-help-you-retire-a-millionaire/"
+          "title": "Ford Motor vs. Tesla: What Revenue Trends Reveal About These Automotive Titans",
+          "url": "https://www.fool.com/coverage/charts/2026/09/27/ford-motor-vs-tesla-what-revenue-trends-reveal-about-these-automotive-titans/"
         }
       ],
       "rank": 2
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Will Netflix Stock Trade for $135 or $70 by September 2027? Here's the Most Likely Scenario.",
-          "url": "https://www.fool.com/investing/2026/09/26/will-netflix-stock-trade-for-135-or-70-by-septembe/"
-        },
-        {
-          "title": "This Little-Known Cryptocurrency Is Up 217% for the Year. But Is It a Buy?",
-          "url": "https://www.fool.com/investing/2026/09/26/this-little-known-cryptocurrency-is-up-217/"
-        },
-        {
-          "title": "I'd Put $10,000 Into These 3 Vanguard Funds and Not Touch It for 20 Years",
-          "url": "https://www.fool.com/investing/2026/09/26/i-d-put-usd10-000-into-these-3-vanguard-funds-and-not-touch-it-for-20-years/"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Dow Jones Futures: Growth Shrugs Off Surging Yields, But Trump Rejects Iran Deal; Micron, SpaceX, Tesla Eye Buy Points",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-growth-stocks-shrug-off-surging-yields-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "SK Hynix (KOSE:A000660) Forms AI Focused Venture Capital Arm",
-          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-forms-010902805.html"
-        },
-        {
-          "title": "SK Hynix (SKHY) Weighs a U.S. NAND Plant. Would Lower China Risk Justify the Cost?",
-          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-skhy-weighs-u-003823844.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -154,6 +104,56 @@
         {
           "title": "SK Hynix’s Solidigm Weighs IPO That Could Raise $15 Billion, Report Says",
           "url": "https://www.barrons.com/articles/sk-hynix-solidigm-ipo-stock-eaf639af?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Dow Jones Futures Fall, Oil Prices Rise Amid Trump Iran Comments; Micron, SpaceX, Tesla Eye Buy Points",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-comments-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "SK Hynix (KOSE:A000660) Forms AI Focused Venture Capital Arm",
+          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-forms-010902805.html"
+        },
+        {
+          "title": "SK Hynix (SKHY) Weighs a U.S. NAND Plant. Would Lower China Risk Justify the Cost?",
+          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-skhy-weighs-u-003823844.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "This Space Stock Could Make You Rich (Hint: It's Not SpaceX)",
+          "url": "https://www.fool.com/investing/2026/09/27/this-space-stock-could-make-you-rich-hint-its-not/"
+        },
+        {
+          "title": "Elon Musk Just Gave Nvidia Investors More Good News. Is the Stock a Buy?",
+          "url": "https://www.fool.com/investing/2026/09/27/elon-musk-just-gave-nvidia-investors-more-good-new/"
+        },
+        {
+          "title": "Nebius Is Raising the Price of Its AI Compute on Oct. 1. Here's What That Says About the Shortage.",
+          "url": "https://www.fool.com/investing/2026/09/27/nebius-is-raising-the-price-of-its-ai-compute-on-oct-1-here-s-what-that-says-about-the-shortage/"
         }
       ],
       "rank": 5
@@ -230,15 +230,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 285500.0,
-      "change_pct": 3.25,
-      "week52_pct": 73.6,
-      "pct_vs_ma200": 28.53,
-      "drawdown_from_high_pct": -21.15,
-      "return_3m_pct": -16.06,
-      "return_6m_pct": 53.73,
-      "return_12m_pct": 304.31,
-      "relative_strength_6m_pct": 22.74
+      "last_close": 278500.0,
+      "change_pct": -2.45,
+      "week52_pct": 71.1,
+      "pct_vs_ma200": 24.87,
+      "drawdown_from_high_pct": -23.09,
+      "return_3m_pct": -22.23,
+      "return_6m_pct": 47.28,
+      "return_12m_pct": 288.42,
+      "relative_strength_6m_pct": 21.12
     },
     {
       "symbol": "000660.KS",
@@ -250,15 +250,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1862000.0,
-      "change_pct": 1.2,
-      "week52_pct": 59.6,
-      "pct_vs_ma200": 34.3,
-      "drawdown_from_high_pct": -36.2,
-      "return_3m_pct": -28.94,
-      "return_6m_pct": 99.65,
-      "return_12m_pct": 548.43,
-      "relative_strength_6m_pct": 68.66
+      "last_close": 1810000.0,
+      "change_pct": -2.79,
+      "week52_pct": 57.6,
+      "pct_vs_ma200": 29.95,
+      "drawdown_from_high_pct": -37.98,
+      "return_3m_pct": -37.94,
+      "return_6m_pct": 83.64,
+      "return_12m_pct": 497.15,
+      "relative_strength_6m_pct": 57.48
     }
   ],
   "discovery": [],
