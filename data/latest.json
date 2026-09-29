@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T01:00:47+00:00",
-  "market_date": "2026-09-28",
+  "generated_at": "2026-09-29T02:09:51+00:00",
+  "market_date": "2026-09-29",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,25 +9,19 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 50,
+    "days_collected": 51,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "AAPL",
-      "score": 3.5,
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 2.0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
       "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "week52_high",
-          "message": "52주 신고가 경신"
-        },
         {
           "symbol": "AAPL",
           "severity": "yellow",
@@ -37,16 +31,16 @@
       ],
       "news": [
         {
-          "title": "Apple (AAPL)’s Premium iPhone Strategy Faces a Test Beyond Early Adopters",
-          "url": "https://finance.yahoo.com/technology/articles/apple-aapl-premium-iphone-strategy-003254588.html"
+          "title": "What Nvidia's $150 billion stock buyback means for shareholders and potential investors",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/what-nvidias-150-billion-stock-buyback-means-for-shareholders-and-potential-investors-211828747.html"
         },
         {
-          "title": "Apple (AAPL) Opens the Ternus Era with a Foldable iPhone. Can Premium Devices Lift Revenue?",
-          "url": "https://finance.yahoo.com/technology/articles/apple-aapl-opens-ternus-era-234433247.html"
+          "title": "Nvidia & Meta deliver big updates, while Trump reconsiders Biden's fuel mandates",
+          "url": "https://finance.yahoo.com/video/nvidia-meta-deliver-big-updates-151329273.html"
         },
         {
-          "title": "Australia is Cracking Down on Social Media. Could Apple Benefit from the Shift?",
-          "url": "https://finance.yahoo.com/technology/articles/australia-cracking-down-social-media-233330727.html"
+          "title": "Jim Cramer Got His Wish With This Mega AI Stock’s Latest Announcement",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-got-wish-mega-020123983.html"
         }
       ],
       "rank": 1
@@ -64,24 +58,49 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 344.5배 — 자체 밴드 상단 이탈 (평균 325.6배)"
+          "message": "PER 343.7배 — 자체 밴드 상단 이탈 (평균 325.9배)"
         }
       ],
       "news": [
         {
-          "title": "Dow Jones Futures Fall, Oil Prices Rise Amid Trump Iran Comments; Micron, SpaceX, Tesla Eye Buy Points",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-comments-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
+          "title": "The minivan renaissance: Why SUV sales are falling behind",
+          "url": "https://finance.yahoo.com/video/minivan-renaissance-why-suv-sales-175042823.html"
         },
         {
-          "title": "SpaceX vs. Tesla: Which Will Be the Largest Company at the End of 2027?",
-          "url": "https://www.fool.com/investing/2026/09/27/spacex-vs-tesla-which-will-be-the-largest-company/"
+          "title": "Stocks slip as bond yields rise, but Nvidia stock is rising: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/stocks-slip-as-bond-yields-rise-but-nvidia-stock-is-rising-alphacheck-134506513.html"
         },
         {
-          "title": "Ford Motor vs. Tesla: What Revenue Trends Reveal About These Automotive Titans",
-          "url": "https://www.fool.com/coverage/charts/2026/09/27/ford-motor-vs-tesla-what-revenue-trends-reveal-about-these-automotive-titans/"
+          "title": "Elon Musk's Tesla and SpaceX have a huge week on tap",
+          "url": "https://finance.yahoo.com/markets/stocks/article/elon-musks-tesla-and-spacex-have-a-huge-week-on-tap-120535367.html"
         }
       ],
       "rank": 2
+    },
+    {
+      "symbol": "NVDA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "What Nvidia's $150 billion stock buyback means for shareholders and potential investors",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/what-nvidias-150-billion-stock-buyback-means-for-shareholders-and-potential-investors-211828747.html"
+        },
+        {
+          "title": "Nvidia announces jaw-dropping $150 billion stock buyback, largest single authorization in history",
+          "url": "https://finance.yahoo.com/technology/article/nvidia-announces-jaw-dropping-150-billion-stock-buyback-largest-single-authorization-in-history-121342628.html"
+        },
+        {
+          "title": "'So much cash': Nvidia stock jumps after largest share buyback ever",
+          "url": "https://finance.yahoo.com/markets/article/so-much-cash-nvidia-stock-jumps-after-largest-share-buyback-ever-134349202.html"
+        }
+      ],
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -94,19 +113,19 @@
       "signals": [],
       "news": [
         {
-          "title": "ASML vs. Qualcomm: Which AI Semiconductor Stock Is a Better Buy in 2026?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/26/asml-vs-qualcomm-ai-semiconductor-stock-better-buy-2026/"
+          "title": "Top 3 Canadian AI Stocks With P S Under 17",
+          "url": "https://finance.yahoo.com/technology/ai/articles/top-3-canadian-ai-stocks-011109270.html"
         },
         {
-          "title": "Korea’s trade surplus hits a record $23B. Here’s what’s driving it",
-          "url": "https://finance.yahoo.com/economy/articles/korea-trade-surplus-hits-record-233058850.html"
+          "title": "Samsung, affiliates to invest $1 billion in AI infrastructure firm Helix",
+          "url": "https://finance.yahoo.com/technology/ai/articles/samsung-affiliates-invest-1-billion-005118034.html"
         },
         {
-          "title": "SK Hynix’s Solidigm Weighs IPO That Could Raise $15 Billion, Report Says",
-          "url": "https://www.barrons.com/articles/sk-hynix-solidigm-ipo-stock-eaf639af?siteid=yhoof2&yptr=yahoo"
+          "title": "Why Qualcomm (QCOM) Stock Is Down Today",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-qualcomm-qcom-stock-down-235036316.html"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -119,41 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Dow Jones Futures Fall, Oil Prices Rise Amid Trump Iran Comments; Micron, SpaceX, Tesla Eye Buy Points",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-comments-micron-spacex-tesla-economic-data/?src=A00220&yptr=yahoo"
+          "title": "Chip stocks fall as AI breach fuels safety concerns, but Nvidia bucks the trend: Chart of the Day",
+          "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-ai-breach-fuels-safety-concerns-but-nvidia-bucks-the-trend-chart-of-the-day-151753993.html"
         },
         {
-          "title": "SK Hynix (KOSE:A000660) Forms AI Focused Venture Capital Arm",
-          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-forms-010902805.html"
+          "title": "AMD, Intel, Western Digital, Vishay Intertechnology, and Penguin Solutions Stocks Trade Down, What You Need To Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-intel-western-digital-vishay-225436808.html"
         },
         {
-          "title": "SK Hynix (SKHY) Weighs a U.S. NAND Plant. Would Lower China Risk Justify the Cost?",
-          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-skhy-weighs-u-003823844.html"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "This Space Stock Could Make You Rich (Hint: It's Not SpaceX)",
-          "url": "https://www.fool.com/investing/2026/09/27/this-space-stock-could-make-you-rich-hint-its-not/"
-        },
-        {
-          "title": "Elon Musk Just Gave Nvidia Investors More Good News. Is the Stock a Buy?",
-          "url": "https://www.fool.com/investing/2026/09/27/elon-musk-just-gave-nvidia-investors-more-good-new/"
-        },
-        {
-          "title": "Nebius Is Raising the Price of Its AI Compute on Oct. 1. Here's What That Says About the Shortage.",
-          "url": "https://www.fool.com/investing/2026/09/27/nebius-is-raising-the-price-of-its-ai-compute-on-oct-1-here-s-what-that-says-about-the-shortage/"
+          "title": "Skyworks Solutions and Himax Stocks Trade Down, What You Need To Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/skyworks-solutions-himax-stocks-trade-224636508.html"
         }
       ],
       "rank": 5
@@ -164,61 +158,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.489874,
+      "trailing_pe": 28.500624,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 225.07,
-      "change_pct": 0.22,
-      "week52_pct": 85.6,
-      "pct_vs_ma200": 13.03,
-      "drawdown_from_high_pct": -4.31,
-      "return_3m_pct": 17.03,
-      "return_6m_pct": 31.74,
-      "return_12m_pct": 27.48,
-      "relative_strength_6m_pct": 12.19
+      "last_close": 228.86,
+      "change_pct": 1.68,
+      "week52_pct": 91.0,
+      "pct_vs_ma200": 14.8,
+      "drawdown_from_high_pct": -2.7,
+      "return_3m_pct": 17.51,
+      "return_6m_pct": 36.93,
+      "return_12m_pct": 29.11,
+      "relative_strength_6m_pct": 16.29
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.068733,
+      "trailing_pe": 39.076214,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 341.07,
-      "change_pct": 1.53,
-      "week52_pct": 100.0,
-      "pct_vs_ma200": 18.68,
-      "drawdown_from_high_pct": 0.0,
-      "return_3m_pct": 20.29,
-      "return_6m_pct": 35.11,
-      "return_12m_pct": 35.68,
-      "relative_strength_6m_pct": 15.56
+      "last_close": 338.4,
+      "change_pct": -0.78,
+      "week52_pct": 97.2,
+      "pct_vs_ma200": 17.62,
+      "drawdown_from_high_pct": -0.78,
+      "return_3m_pct": 20.21,
+      "return_6m_pct": 36.26,
+      "return_12m_pct": 32.23,
+      "relative_strength_6m_pct": 15.62
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 344.54626,
+      "trailing_pe": 343.70193,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 372.11,
-      "change_pct": -1.54,
-      "week52_pct": 38.5,
-      "pct_vs_ma200": -5.94,
-      "drawdown_from_high_pct": -24.04,
-      "return_3m_pct": -2.0,
-      "return_6m_pct": 0.0,
-      "return_12m_pct": -15.96,
-      "relative_strength_6m_pct": -19.55
+      "last_close": 357.45,
+      "change_pct": -3.94,
+      "week52_pct": 30.9,
+      "pct_vs_ma200": -9.55,
+      "drawdown_from_high_pct": -27.03,
+      "return_3m_pct": -13.21,
+      "return_6m_pct": -1.21,
+      "return_12m_pct": -15.57,
+      "relative_strength_6m_pct": -21.85
     },
     {
       "symbol": "005930.KS",
@@ -230,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 278500.0,
-      "change_pct": -2.45,
-      "week52_pct": 71.1,
-      "pct_vs_ma200": 24.87,
-      "drawdown_from_high_pct": -23.09,
-      "return_3m_pct": -22.23,
-      "return_6m_pct": 47.28,
-      "return_12m_pct": 288.42,
-      "relative_strength_6m_pct": 21.12
+      "last_close": 275000.0,
+      "change_pct": 1.85,
+      "week52_pct": 69.7,
+      "pct_vs_ma200": 22.85,
+      "drawdown_from_high_pct": -24.05,
+      "return_3m_pct": -18.91,
+      "return_6m_pct": 45.96,
+      "return_12m_pct": 279.36,
+      "relative_strength_6m_pct": 23.93
     },
     {
       "symbol": "000660.KS",
@@ -250,15 +244,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1810000.0,
-      "change_pct": -2.79,
-      "week52_pct": 57.6,
-      "pct_vs_ma200": 29.95,
-      "drawdown_from_high_pct": -37.98,
-      "return_3m_pct": -37.94,
-      "return_6m_pct": 83.64,
-      "return_12m_pct": 497.15,
-      "relative_strength_6m_pct": 57.48
+      "last_close": 1778000.0,
+      "change_pct": 0.57,
+      "week52_pct": 56.0,
+      "pct_vs_ma200": 27.12,
+      "drawdown_from_high_pct": -39.08,
+      "return_3m_pct": -33.47,
+      "return_6m_pct": 78.76,
+      "return_12m_pct": 480.86,
+      "relative_strength_6m_pct": 56.73
     }
   ],
   "discovery": [],
