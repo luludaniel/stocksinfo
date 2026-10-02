@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T01:24:37+00:00",
-  "market_date": "2026-10-01",
+  "generated_at": "2026-10-02T01:45:38+00:00",
+  "market_date": "2026-10-02",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,203 +9,70 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 53,
+    "days_collected": 54,
     "per_band_ready_in_days": 0
   },
-  "focus": [
-    {
-      "symbol": "AAPL",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 38.1배 — 자체 밴드 상단 이탈 (평균 36.8배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Apple's new CEO John Ternus plans on making some changes",
-          "url": "https://finance.yahoo.com/video/apples-ceo-john-ternus-plans-135700100.html"
-        },
-        {
-          "title": "OpenAI is releasing newer models faster. Is that a good thing?",
-          "url": "https://finance.yahoo.com/video/openai-releasing-newer-models-faster-133003219.html"
-        },
-        {
-          "title": "Apple Predicted To Sell 6 Million iPhone Duo Handsets This Year",
-          "url": "https://www.investors.com/news/technology/apple-stock-aapl-iphone-duo-2026-sales-forecast/?src=A00220&yptr=yahoo"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Micron Reports Another Dazzling Quarter. The Bears Remain Unconvinced.",
-          "url": "https://www.barrons.com/articles/micron-earnings-stock-price-6c25895f?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "KKR (KKR) Portfolio Company Drew $1 Billion For AI Infrastructure",
-          "url": "https://finance.yahoo.com/technology/ai/articles/kkr-kkr-portfolio-company-drew-131020294.html"
-        },
-        {
-          "title": "Broadcom vs. Qualcomm: Which Technology Stock Is a Better Buy in 2026?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/30/broadcom-vs-qualcomm-which-technology-stock-is-a-better-buy-in-2026/"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "NVDA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Breaking down Jensen Huang's biggest moves of Q3 2026",
-          "url": "https://finance.yahoo.com/video/breaking-down-jensen-huangs-biggest-141014414.html"
-        },
-        {
-          "title": "Forget Waiting Three Months for SPY’s Dividend. Invesco’s High-Dividend Fund Pays Every Month",
-          "url": "https://247wallst.com/investing/etf/2026/09/30/forget-waiting-three-months-for-spys-dividend-invescos-high-dividend-fund-pays-every-month/"
-        },
-        {
-          "title": "Tech CEOs Privately Questioned Amodei for Sounding AI Alarm Bells",
-          "url": "https://www.wsj.com/tech/ai/tech-ceos-privately-questioned-amodei-for-sounding-ai-alarm-bells-aaa47df3?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Micron tops Q4 estimates on top and bottom lines, offers strong Q1 outlook",
-          "url": "https://finance.yahoo.com/technology/article/micron-tops-q4-estimates-on-top-and-bottom-lines-offers-strong-q1-outlook-153230577.html"
-        },
-        {
-          "title": "Dow Jones Futures: Micron Earnings Crush Views, S&P 500 At Critical Level As Treasury Yields Rise",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-micron-rises-earnings-treasury-yields/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Micron Reports Another Dazzling Quarter. The Bears Remain Unconvinced.",
-          "url": "https://www.barrons.com/articles/micron-earnings-stock-price-6c25895f?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "TSLA",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Elon Musk's Tesla Postpones Roadster Reveal Event to October 15, Cites Severe Weather Conditions",
-          "url": "https://autos.yahoo.com/ev-and-future-tech/articles/elon-musks-tesla-postpones-roadster-233017063.html"
-        },
-        {
-          "title": "S&P 500 dips, Nasdaq higher after data shows moderate inflation rise",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-slip-ahead-113432814.html"
-        },
-        {
-          "title": "SpaceX Just Got a Little Closer to a Tesla Merger",
-          "url": "https://www.barrons.com/articles/spacex-tesla-stock-merger-bb985d61?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 5
-    }
-  ],
+  "focus": [],
   "positions": [
     {
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.872314,
+      "trailing_pe": 29.222784,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 230.86,
+      "change_pct": 1.09,
+      "week52_pct": 93.8,
+      "pct_vs_ma200": 15.38,
+      "drawdown_from_high_pct": -1.85,
+      "return_3m_pct": 18.63,
+      "return_6m_pct": 31.66,
+      "return_12m_pct": 24.03,
+      "relative_strength_6m_pct": 15.07
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.14662,
+      "trailing_pe": 37.837345,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 330.32,
+      "change_pct": -0.81,
+      "week52_pct": 88.9,
+      "pct_vs_ma200": 14.5,
+      "drawdown_from_high_pct": -3.15,
+      "return_3m_pct": 7.12,
+      "return_6m_pct": 29.45,
+      "return_12m_pct": 30.2,
+      "relative_strength_6m_pct": 12.86
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 325.51376,
+      "trailing_pe": 334.06604,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 354.11,
+      "change_pct": -0.2,
+      "week52_pct": 29.1,
+      "pct_vs_ma200": -10.06,
+      "drawdown_from_high_pct": -27.71,
+      "return_3m_pct": -10.0,
+      "return_6m_pct": -7.12,
+      "return_12m_pct": -20.37,
+      "relative_strength_6m_pct": -23.71
     },
     {
       "symbol": "005930.KS",
@@ -217,15 +84,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 269000.0,
-      "change_pct": 0.19,
-      "week52_pct": 67.3,
-      "pct_vs_ma200": 19.3,
-      "drawdown_from_high_pct": -25.71,
-      "return_3m_pct": -19.46,
-      "return_6m_pct": 49.84,
-      "return_12m_pct": 256.05,
-      "relative_strength_6m_pct": 24.54
+      "last_close": 275250.0,
+      "change_pct": -0.27,
+      "week52_pct": 69.5,
+      "pct_vs_ma200": 21.6,
+      "drawdown_from_high_pct": -23.99,
+      "return_3m_pct": -12.48,
+      "return_6m_pct": 56.3,
+      "return_12m_pct": 251.01,
+      "relative_strength_6m_pct": 24.17
     },
     {
       "symbol": "000660.KS",
@@ -237,15 +104,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1784000.0,
-      "change_pct": 0.45,
-      "week52_pct": 56.1,
-      "pct_vs_ma200": 26.44,
-      "drawdown_from_high_pct": -38.87,
-      "return_3m_pct": -32.66,
-      "return_6m_pct": 91.28,
-      "return_12m_pct": 440.56,
-      "relative_strength_6m_pct": 65.98
+      "last_close": 1841000.0,
+      "change_pct": 0.44,
+      "week52_pct": 58.3,
+      "pct_vs_ma200": 29.86,
+      "drawdown_from_high_pct": -36.92,
+      "return_3m_pct": -28.07,
+      "return_6m_pct": 110.96,
+      "return_12m_pct": 430.58,
+      "relative_strength_6m_pct": 78.83
     }
   ],
   "discovery": [
@@ -255,13 +122,13 @@
       "why": "당일 기사 5건 언급",
       "headlines": [
         {
-          "title": "Elon Musk's Tesla Postpones Roadster Reveal Event to October 15, Cites Severe Weather Conditions"
+          "title": "S&P 500 closes higher to start October as Treasury yields retreat from multiyear highs: Live updates - cnbc.com"
         }
       ],
       "basic": {
-        "trailing_pe": 24.097511,
-        "week52_pct": NaN,
-        "market_cap_usd": 1202927960064
+        "trailing_pe": 14.326241,
+        "week52_pct": 88.8,
+        "market_cap_usd": 1239384719360
       }
     }
   ],
