@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T01:45:38+00:00",
-  "market_date": "2026-10-02",
+  "generated_at": "2026-10-03T01:17:31+00:00",
+  "market_date": "2026-10-03",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,70 +9,109 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 54,
+    "days_collected": 55,
     "per_band_ready_in_days": 0
   },
-  "focus": [],
+  "focus": [
+    {
+      "symbol": "AAPL",
+      "score": 1.0,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 0.0,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 38.3배 — 자체 밴드 상단 이탈 (평균 36.8배)"
+        }
+      ],
+      "news": [],
+      "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.0,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 0.0,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 349.6배 — 자체 밴드 상단 이탈 (평균 326.6배)"
+        }
+      ],
+      "news": [],
+      "rank": 2
+    }
+  ],
   "positions": [
     {
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 29.222784,
+      "trailing_pe": 29.53914,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 230.86,
-      "change_pct": 1.09,
-      "week52_pct": 93.8,
-      "pct_vs_ma200": 15.38,
-      "drawdown_from_high_pct": -1.85,
-      "return_3m_pct": 18.63,
-      "return_6m_pct": 31.66,
-      "return_12m_pct": 24.03,
-      "relative_strength_6m_pct": 15.07
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 37.837345,
+      "trailing_pe": 38.2672,
       "next_earnings_date": "2026-10-29",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 330.32,
-      "change_pct": -0.81,
-      "week52_pct": 88.9,
-      "pct_vs_ma200": 14.5,
-      "drawdown_from_high_pct": -3.15,
-      "return_3m_pct": 7.12,
-      "return_6m_pct": 29.45,
-      "return_12m_pct": 30.2,
-      "relative_strength_6m_pct": 12.86
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 334.06604,
+      "trailing_pe": 349.61322,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 354.11,
-      "change_pct": -0.2,
-      "week52_pct": 29.1,
-      "pct_vs_ma200": -10.06,
-      "drawdown_from_high_pct": -27.71,
-      "return_3m_pct": -10.0,
-      "return_6m_pct": -7.12,
-      "return_12m_pct": -20.37,
-      "relative_strength_6m_pct": -23.71
+      "last_close": NaN,
+      "change_pct": NaN,
+      "week52_pct": NaN,
+      "pct_vs_ma200": NaN,
+      "drawdown_from_high_pct": NaN,
+      "return_3m_pct": NaN,
+      "return_6m_pct": NaN,
+      "return_12m_pct": NaN,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "005930.KS",
@@ -84,15 +123,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 275250.0,
-      "change_pct": -0.27,
-      "week52_pct": 69.5,
-      "pct_vs_ma200": 21.6,
-      "drawdown_from_high_pct": -23.99,
-      "return_3m_pct": -12.48,
-      "return_6m_pct": 56.3,
-      "return_12m_pct": 251.01,
-      "relative_strength_6m_pct": 24.17
+      "last_close": 276000.0,
+      "change_pct": 0.0,
+      "week52_pct": 69.8,
+      "pct_vs_ma200": 21.93,
+      "drawdown_from_high_pct": -23.78,
+      "return_3m_pct": -12.24,
+      "return_6m_pct": 56.72,
+      "return_12m_pct": 251.97,
+      "relative_strength_6m_pct": NaN
     },
     {
       "symbol": "000660.KS",
@@ -112,23 +151,26 @@
       "return_3m_pct": -28.07,
       "return_6m_pct": 110.96,
       "return_12m_pct": 430.58,
-      "relative_strength_6m_pct": 78.83
+      "relative_strength_6m_pct": NaN
     }
   ],
   "discovery": [
     {
-      "symbol": "MU",
-      "name": "Micron Technology, Inc.",
-      "why": "당일 기사 5건 언급",
+      "symbol": "XMTR",
+      "name": "Xometry, Inc.",
+      "why": "당일 기사 2건 언급",
       "headlines": [
         {
-          "title": "S&P 500 closes higher to start October as Treasury yields retreat from multiyear highs: Live updates - cnbc.com"
+          "title": "Xometry CTO 라가반 바이디아나탄, 192,725달러 상당 주식 매도"
+        },
+        {
+          "title": "Xometry CEO 산지브 사니, XMTR 주식 1,112주 114,851달러에 매각"
         }
       ],
       "basic": {
-        "trailing_pe": 14.326241,
-        "week52_pct": 88.8,
-        "market_cap_usd": 1239384719360
+        "trailing_pe": null,
+        "week52_pct": NaN,
+        "market_cap_usd": 5877385728
       }
     }
   ],
