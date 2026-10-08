@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-07T01:43:04+00:00",
-  "market_date": "2026-10-07",
+  "generated_at": "2026-10-08T02:10:58+00:00",
+  "market_date": "2026-10-08",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,29 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 59,
+    "days_collected": 60,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "NVDA",
-      "score": 1.0,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 0.0,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "week52_high",
-          "message": "52주 신고가 경신"
-        }
-      ],
-      "news": [],
-      "rank": 1
-    },
     {
       "symbol": "TSLA",
       "score": 1.0,
@@ -45,7 +26,26 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 352.5배 — 자체 밴드 상단 이탈 (평균 328.0배)"
+          "message": "PER 349.8배 — 자체 밴드 상단 이탈 (평균 328.4배)"
+        }
+      ],
+      "news": [],
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.0,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 0.0,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 38.6배 — 자체 밴드 상단 이탈 (평균 36.9배)"
         }
       ],
       "news": [],
@@ -57,61 +57,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 30.207071,
+      "trailing_pe": 30.021492,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 239.24,
-      "change_pct": 0.14,
-      "week52_pct": 100.0,
-      "pct_vs_ma200": 19.01,
-      "drawdown_from_high_pct": 0.0,
-      "return_3m_pct": 17.34,
-      "return_6m_pct": 34.64,
-      "return_12m_pct": 27.82,
-      "relative_strength_6m_pct": 16.47
+      "last_close": 237.47,
+      "change_pct": -0.74,
+      "week52_pct": 97.6,
+      "pct_vs_ma200": 17.94,
+      "drawdown_from_high_pct": -0.74,
+      "return_3m_pct": 17.24,
+      "return_6m_pct": 30.72,
+      "return_12m_pct": 28.3,
+      "relative_strength_6m_pct": 15.7
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.17277,
-      "next_earnings_date": "2026-10-29",
+      "trailing_pe": 38.608944,
+      "next_earnings_date": "2026-11-02",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 333.63,
-      "change_pct": 0.22,
-      "week52_pct": 92.3,
-      "pct_vs_ma200": 15.28,
-      "drawdown_from_high_pct": -2.18,
-      "return_3m_pct": 6.55,
-      "return_6m_pct": 31.84,
-      "return_12m_pct": 29.78,
-      "relative_strength_6m_pct": 13.67
+      "last_close": 336.67,
+      "change_pct": 0.91,
+      "week52_pct": 95.4,
+      "pct_vs_ma200": 16.2,
+      "drawdown_from_high_pct": -1.29,
+      "return_3m_pct": 6.56,
+      "return_6m_pct": 30.27,
+      "return_12m_pct": 31.64,
+      "relative_strength_6m_pct": 15.25
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 352.48148,
+      "trailing_pe": 349.82407,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 380.68,
-      "change_pct": 0.51,
-      "week52_pct": 43.0,
-      "pct_vs_ma200": -2.94,
-      "drawdown_from_high_pct": -22.29,
-      "return_3m_pct": -3.4,
-      "return_6m_pct": 9.82,
-      "return_12m_pct": -11.43,
-      "relative_strength_6m_pct": -8.35
+      "last_close": 377.81,
+      "change_pct": -0.75,
+      "week52_pct": 41.5,
+      "pct_vs_ma200": -3.54,
+      "drawdown_from_high_pct": -22.88,
+      "return_3m_pct": -7.07,
+      "return_6m_pct": 10.07,
+      "return_12m_pct": -16.64,
+      "relative_strength_6m_pct": -4.95
     },
     {
       "symbol": "005930.KS",
@@ -123,15 +123,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 273500.0,
-      "change_pct": 0.55,
-      "week52_pct": 68.3,
-      "pct_vs_ma200": 19.95,
-      "drawdown_from_high_pct": -24.47,
-      "return_3m_pct": -11.63,
-      "return_6m_pct": 44.37,
-      "return_12m_pct": 244.87,
-      "relative_strength_6m_pct": 18.27
+      "last_close": 268750.0,
+      "change_pct": 0.09,
+      "week52_pct": 66.6,
+      "pct_vs_ma200": 17.47,
+      "drawdown_from_high_pct": -25.78,
+      "return_3m_pct": -15.49,
+      "return_6m_pct": 50.81,
+      "return_12m_pct": 225.9,
+      "relative_strength_6m_pct": 21.12
     },
     {
       "symbol": "000660.KS",
@@ -143,15 +143,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1752000.0,
-      "change_pct": -1.18,
-      "week52_pct": 54.8,
-      "pct_vs_ma200": 22.55,
-      "drawdown_from_high_pct": -39.97,
-      "return_3m_pct": -27.74,
-      "return_6m_pct": 95.39,
-      "return_12m_pct": 394.28,
-      "relative_strength_6m_pct": 69.29
+      "last_close": 1754500.0,
+      "change_pct": 1.83,
+      "week52_pct": 54.9,
+      "pct_vs_ma200": 22.24,
+      "drawdown_from_high_pct": -39.88,
+      "return_3m_pct": -25.1,
+      "return_6m_pct": 111.47,
+      "return_12m_pct": 401.33,
+      "relative_strength_6m_pct": 81.78
     }
   ],
   "discovery": [],
