@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10T01:51:23+00:00",
-  "market_date": "2026-10-10",
+  "generated_at": "2026-10-11T01:07:10+00:00",
+  "market_date": "2026-10-11",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 62,
+    "days_collected": 63,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,7 +26,7 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.1배 — 자체 밴드 상단 이탈 (평균 37.0배)"
+          "message": "PER 38.6배 — 자체 밴드 상단 이탈 (평균 37.0배)"
         }
       ],
       "news": [],
@@ -45,7 +45,7 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 354.4배 — 자체 밴드 상단 이탈 (평균 329.1배)"
+          "message": "PER 354.4배 — 자체 밴드 상단 이탈 (평균 329.5배)"
         }
       ],
       "news": [],
@@ -77,7 +77,7 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.053368,
+      "trailing_pe": 38.605507,
       "next_earnings_date": "2026-11-02",
       "shares": null,
       "avg_price": null,
@@ -154,6 +154,18 @@
       "relative_strength_6m_pct": 76.02
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "RUN",
+      "name": "Sunrun Inc.",
+      "why": "당일 기사 3건 언급",
+      "headlines": [],
+      "basic": {
+        "trailing_pe": 5.162162,
+        "week52_pct": 0.4,
+        "market_cap_usd": 1822516480
+      }
+    }
+  ],
   "calendar": []
 }
