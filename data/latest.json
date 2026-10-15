@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-14T01:19:18+00:00",
-  "market_date": "2026-10-14",
+  "generated_at": "2026-10-15T00:43:06+00:00",
+  "market_date": "2026-10-15",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,12 +9,31 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 66,
+    "days_collected": 67,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
-      "symbol": "TSLA",
+      "symbol": "005930.KS",
+      "score": 3.0,
+      "score_breakdown": {
+        "severity": 3.0,
+        "news": 0.0,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "005930.KS",
+          "severity": "red",
+          "type": "ma200_cross",
+          "message": "200일선 하향 이탈 (13.6개월 만)"
+        }
+      ],
+      "news": [],
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
       "score": 2.0,
       "score_breakdown": {
         "severity": 2.0,
@@ -23,42 +42,23 @@
       },
       "signals": [
         {
-          "symbol": "TSLA",
+          "symbol": "AAPL",
           "severity": "yellow",
-          "type": "earnings_soon",
-          "message": "실적발표 D-7"
+          "type": "week52_high",
+          "message": "52주 신고가 경신"
         },
         {
-          "symbol": "TSLA",
+          "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 347.4배 — 자체 밴드 상단 이탈 (평균 330.5배)"
-        }
-      ],
-      "news": [],
-      "rank": 1
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.0,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 0.0,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "000660.KS",
-          "severity": "yellow",
-          "type": "ma200_cross",
-          "message": "200일선 상향 돌파"
+          "message": "PER 39.3배 — 자체 밴드 상단 이탈 (평균 37.1배)"
         }
       ],
       "news": [],
       "rank": 2
     },
     {
-      "symbol": "AAPL",
+      "symbol": "TSLA",
       "score": 1.0,
       "score_breakdown": {
         "severity": 1.0,
@@ -67,10 +67,10 @@
       },
       "signals": [
         {
-          "symbol": "AAPL",
+          "symbol": "TSLA",
           "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 39.1배 — 자체 밴드 상단 이탈 (평균 37.1배)"
+          "type": "earnings_soon",
+          "message": "실적발표 D-6"
         }
       ],
       "news": [],
@@ -82,61 +82,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 28.890015,
+      "trailing_pe": 27.977245,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 221.3,
+      "change_pct": -3.16,
+      "week52_pct": 75.9,
+      "pct_vs_ma200": 9.35,
+      "drawdown_from_high_pct": -7.5,
+      "return_3m_pct": 6.82,
+      "return_6m_pct": 11.53,
+      "return_12m_pct": 17.79,
+      "relative_strength_6m_pct": 1.62
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.136467,
+      "trailing_pe": 39.330273,
       "next_earnings_date": "2026-11-02",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 342.96,
+      "change_pct": 0.5,
+      "week52_pct": 100.0,
+      "pct_vs_ma200": 17.68,
+      "drawdown_from_high_pct": 0.0,
+      "return_3m_pct": 3.0,
+      "return_6m_pct": 28.95,
+      "return_12m_pct": 38.99,
+      "relative_strength_6m_pct": 19.04
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 347.43518,
+      "trailing_pe": 339.96295,
       "next_earnings_date": "2026-10-21",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 367.16,
+      "change_pct": -2.15,
+      "week52_pct": 35.9,
+      "pct_vs_ma200": -5.61,
+      "drawdown_from_high_pct": -25.05,
+      "return_3m_pct": -6.11,
+      "return_6m_pct": -6.32,
+      "return_12m_pct": -15.77,
+      "relative_strength_6m_pct": -16.23
     },
     {
       "symbol": "005930.KS",
@@ -148,15 +148,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 237750.0,
-      "change_pct": 2.48,
-      "week52_pct": 55.6,
-      "pct_vs_ma200": 3.03,
-      "drawdown_from_high_pct": -34.34,
-      "return_3m_pct": -14.48,
-      "return_6m_pct": 21.13,
-      "return_12m_pct": 179.6,
-      "relative_strength_6m_pct": 8.69
+      "last_close": 216000.0,
+      "change_pct": -6.9,
+      "week52_pct": 47.6,
+      "pct_vs_ma200": -6.62,
+      "drawdown_from_high_pct": -40.35,
+      "return_3m_pct": -24.21,
+      "return_6m_pct": 2.73,
+      "return_12m_pct": 162.56,
+      "relative_strength_6m_pct": 6.58
     },
     {
       "symbol": "000660.KS",
@@ -168,15 +168,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1471000.0,
-      "change_pct": 1.94,
-      "week52_pct": 44.0,
-      "pct_vs_ma200": 1.51,
-      "drawdown_from_high_pct": -49.6,
-      "return_3m_pct": -32.69,
-      "return_6m_pct": 60.65,
-      "return_12m_pct": 313.84,
-      "relative_strength_6m_pct": 48.21
+      "last_close": 1291000.0,
+      "change_pct": -9.02,
+      "week52_pct": 36.7,
+      "pct_vs_ma200": -11.13,
+      "drawdown_from_high_pct": -55.76,
+      "return_3m_pct": -40.77,
+      "return_6m_pct": 25.02,
+      "return_12m_pct": 284.79,
+      "relative_strength_6m_pct": 28.87
     }
   ],
   "discovery": [],
