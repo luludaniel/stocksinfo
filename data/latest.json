@@ -1,35 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-17T00:40:55+00:00",
-  "market_date": "2026-10-17",
+  "generated_at": "2026-10-18T00:08:46+00:00",
+  "market_date": "2026-10-18",
   "trigger": "schedule",
   "status": {
-    "ok": false,
+    "ok": true,
     "failed_symbols": [],
-    "collector_errors": [
-      "Google News - KR 증시: <unknown>:2:252: not well-formed (invalid token)",
-      "Google News - US Markets: <unknown>:2:252: not well-formed (invalid token)"
-    ]
+    "collector_errors": []
   },
   "history_status": {
-    "days_collected": 69,
+    "days_collected": 70,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "TSLA",
-      "score": 1.0,
+      "score": 3.0,
       "score_breakdown": {
         "severity": 1.0,
         "news": 0.0,
-        "event": 0.0
+        "event": 2.0
       },
       "signals": [
         {
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-4"
+          "message": "실적발표 D-3"
         }
       ],
       "news": [],
@@ -37,13 +34,19 @@
     },
     {
       "symbol": "AAPL",
-      "score": 1.0,
+      "score": 2.0,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 2.0,
         "news": 0.0,
         "event": 0.0
       },
       "signals": [
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "week52_high",
+          "message": "52주 신고가 경신"
+        },
         {
           "symbol": "AAPL",
           "severity": "yellow",
@@ -85,15 +88,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 214.13,
+      "change_pct": -1.43,
+      "week52_pct": 66.3,
+      "pct_vs_ma200": 5.66,
+      "drawdown_from_high_pct": -10.5,
+      "return_3m_pct": 5.46,
+      "return_6m_pct": 6.42,
+      "return_12m_pct": 19.36,
+      "relative_strength_6m_pct": -1.06
     },
     {
       "symbol": "AAPL",
@@ -105,15 +108,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 343.46,
+      "change_pct": 0.43,
+      "week52_pct": 100.0,
+      "pct_vs_ma200": 17.57,
+      "drawdown_from_high_pct": 0.0,
+      "return_3m_pct": 5.26,
+      "return_6m_pct": 27.33,
+      "return_12m_pct": 38.26,
+      "relative_strength_6m_pct": 19.85
     },
     {
       "symbol": "TSLA",
@@ -125,15 +128,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 354.72,
+      "change_pct": -2.13,
+      "week52_pct": 29.4,
+      "pct_vs_ma200": -8.58,
+      "drawdown_from_high_pct": -27.59,
+      "return_3m_pct": -4.02,
+      "return_6m_pct": -11.46,
+      "return_12m_pct": -18.48,
+      "relative_strength_6m_pct": -18.94
     },
     {
       "symbol": "005930.KS",
@@ -153,7 +156,7 @@
       "return_3m_pct": -15.32,
       "return_6m_pct": 5.75,
       "return_12m_pct": 158.0,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 7.65
     },
     {
       "symbol": "000660.KS",
@@ -173,7 +176,7 @@
       "return_3m_pct": -31.04,
       "return_6m_pct": 27.5,
       "return_12m_pct": 265.54,
-      "relative_strength_6m_pct": NaN
+      "relative_strength_6m_pct": 29.4
     }
   ],
   "discovery": [],
