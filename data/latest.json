@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T00:08:46+00:00",
-  "market_date": "2026-10-18",
+  "generated_at": "2026-10-19T00:21:04+00:00",
+  "market_date": "2026-10-19",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 70,
+    "days_collected": 71,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,7 +26,7 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-3"
+          "message": "실적발표 D-2"
         }
       ],
       "news": [],
@@ -51,7 +51,7 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.4배 — 자체 밴드 상단 이탈 (평균 37.2배)"
+          "message": "PER 39.4배 — 자체 밴드 상단 이탈 (평균 37.3배)"
         }
       ],
       "news": [],
@@ -148,15 +148,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 215500.0,
-      "change_pct": 2.62,
-      "week52_pct": 47.4,
-      "pct_vs_ma200": -7.04,
-      "drawdown_from_high_pct": -40.49,
-      "return_3m_pct": -15.32,
-      "return_6m_pct": 5.75,
-      "return_12m_pct": 158.0,
-      "relative_strength_6m_pct": 7.65
+      "last_close": 209000.0,
+      "change_pct": -3.02,
+      "week52_pct": 44.7,
+      "pct_vs_ma200": -10.04,
+      "drawdown_from_high_pct": -42.28,
+      "return_3m_pct": -20.53,
+      "return_6m_pct": 1.57,
+      "return_12m_pct": 151.11,
+      "relative_strength_6m_pct": 7.5
     },
     {
       "symbol": "000660.KS",
@@ -168,15 +168,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1272000.0,
-      "change_pct": 0.79,
-      "week52_pct": 36.0,
-      "pct_vs_ma200": -12.65,
-      "drawdown_from_high_pct": -56.41,
-      "return_3m_pct": -31.04,
-      "return_6m_pct": 27.5,
-      "return_12m_pct": 265.54,
-      "relative_strength_6m_pct": 29.4
+      "last_close": 1215000.0,
+      "change_pct": -4.48,
+      "week52_pct": 33.4,
+      "pct_vs_ma200": -16.75,
+      "drawdown_from_high_pct": -58.37,
+      "return_3m_pct": -36.47,
+      "return_6m_pct": 18.35,
+      "return_12m_pct": 250.67,
+      "relative_strength_6m_pct": 24.28
     }
   ],
   "discovery": [],
