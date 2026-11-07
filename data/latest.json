@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T01:09:07+00:00",
-  "market_date": "2026-10-20",
+  "generated_at": "2026-11-07T02:09:43+00:00",
+  "market_date": "2026-11-07",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,73 +9,16 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 72,
+    "days_collected": 73,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
-      "symbol": "TSLA",
-      "score": 3.0,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 0.0,
-        "event": 2.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "earnings_soon",
-          "message": "실적발표 D-1"
-        }
-      ],
-      "news": [],
-      "rank": 1
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.0,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 0.0,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 39.3배 — 자체 밴드 상단 이탈 (평균 37.3배)"
-        }
-      ],
-      "news": [],
-      "rank": 2
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.0,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 0.0,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "000660.KS",
-          "severity": "yellow",
-          "type": "earnings_soon",
-          "message": "실적발표 D-7"
-        }
-      ],
-      "news": [],
-      "rank": 3
-    },
-    {
       "symbol": "NVDA",
-      "score": 1.0,
+      "score": 2.5,
       "score_breakdown": {
         "severity": 1.0,
-        "news": 0.0,
+        "news": 1.5,
         "event": 0.0
       },
       "signals": [
@@ -83,11 +26,138 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 27.4배 — 자체 밴드 하단 이탈 (평균 30.0배)"
+          "message": "PER 23.6배 — 자체 밴드 하단 이탈 (평균 29.9배)"
         }
       ],
-      "news": [],
+      "news": [
+        {
+          "title": "Chip rally may be time for investors to 'harvest cash and wait'",
+          "url": "https://finance.yahoo.com/video/chip-rally-may-be-time-for-investors-to-harvest-cash-and-wait-221657650.html"
+        },
+        {
+          "title": "The US adds in the latest  jobs report, markets try to bounce back from an awful sell-off",
+          "url": "https://finance.yahoo.com/video/the-us-adds-in-the-latest-jobs-report-markets-try-to-bounce-back-from-an-awful-sell-off-190148849.html"
+        },
+        {
+          "title": "What the AI stock crash cost your 401(k) for every $1,000 invested",
+          "url": "https://finance.yahoo.com/markets/article/what-the-ai-stock-crash-cost-your-401k-for-every-1000-invested-172821837.html"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "000660.KS",
+          "severity": "yellow",
+          "type": "volume_spike",
+          "message": "거래량 20일 평균 대비 2.07배"
+        }
+      ],
+      "news": [
+        {
+          "title": "IPOs Struggle in Tech Selloff. Berkshire Has a Winner.",
+          "url": "https://www.barrons.com/articles/ipo-stocks-berkshire-spacex-cerebras-bending-spoons-a91d4b25?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html"
+        },
+        {
+          "title": "Why Micron’s Stock Valuation Now Looks Ridiculous",
+          "url": "https://www.barrons.com/articles/micron-stock-price-cheap-072ab5c1?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "TSLA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 393.6배 — 자체 밴드 상단 이탈 (평균 331.7배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Musk bids farewell to Cybertruck as Tesla bets on robots and self-driving",
+          "url": "https://finance.yahoo.com/markets/stocks/article/musk-bids-farewell-to-cybertruck-as-tesla-bets-on-robots-and-self-driving-162259557.html"
+        },
+        {
+          "title": "Why Elon Musk is killing the Tesla Cybertruck",
+          "url": "https://finance.yahoo.com/video/why-elon-musk-killing-tesla-153000856.html"
+        },
+        {
+          "title": "Chip stocks lead tech rebound as SpaceX, Tesla jump: AlphaCheck",
+          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Lassonde Industries Inc (LSDAF) (Q3 2026) Earnings Call Highlights: Margin Pressure and ...",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/lassonde-industries-inc-lsdaf-q3-011455547.html"
+        },
+        {
+          "title": "Uber’s Robo Push",
+          "url": "https://www.barrons.com/articles/ubers-robo-push-18461554?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Dow Jones Futures: Market Needs Repair But Sandisk, Micron Look Broken; Apple, Amazon, Microsoft Strong",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-broken-apple-amazon-microsoft-strong-berkshire-earnings/?src=A00220&yptr=yahoo"
+        }
+      ],
       "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Samsung Wallet launches new stablecoin accounts for Galaxy devices",
+          "url": "https://finance.yahoo.com/video/samsung-wallet-launches-stablecoin-accounts-200000638.html"
+        },
+        {
+          "title": "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html"
+        },
+        {
+          "title": "5 questions with Barclays head of US cards",
+          "url": "https://www.bankingdive.com/news/5-questions-with-barclays-head-of-us-cards/874017/"
+        }
+      ],
+      "rank": 5
     }
   ],
   "positions": [
@@ -95,116 +165,129 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 27.445007,
+      "trailing_pe": 23.59545,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 186.64,
+      "change_pct": 2.78,
+      "week52_pct": 29.3,
+      "pct_vs_ma200": -8.68,
+      "drawdown_from_high_pct": -21.99,
+      "return_3m_pct": -14.11,
+      "return_6m_pct": -13.07,
+      "return_12m_pct": -4.16,
+      "relative_strength_6m_pct": -12.77
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.32798,
-      "next_earnings_date": "2026-11-02",
+      "trailing_pe": 38.125835,
+      "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 342.37,
+      "change_pct": -0.52,
+      "week52_pct": 93.1,
+      "pct_vs_ma200": 14.68,
+      "drawdown_from_high_pct": -2.04,
+      "return_3m_pct": 11.07,
+      "return_6m_pct": 16.93,
+      "return_12m_pct": 27.21,
+      "relative_strength_6m_pct": 17.23
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 340.7963,
-      "next_earnings_date": "2026-10-21",
+      "trailing_pe": 393.64835,
+      "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": NaN,
-      "change_pct": NaN,
-      "week52_pct": NaN,
-      "pct_vs_ma200": NaN,
-      "drawdown_from_high_pct": NaN,
-      "return_3m_pct": NaN,
-      "return_6m_pct": NaN,
-      "return_12m_pct": NaN,
-      "relative_strength_6m_pct": NaN
+      "last_close": 358.22,
+      "change_pct": 4.23,
+      "week52_pct": 31.3,
+      "pct_vs_ma200": -6.68,
+      "drawdown_from_high_pct": -26.88,
+      "return_3m_pct": 8.26,
+      "return_6m_pct": -16.37,
+      "return_12m_pct": -22.47,
+      "relative_strength_6m_pct": -16.07
     },
     {
       "symbol": "005930.KS",
       "name": "SamsungElec",
       "profile": "watching",
       "trailing_pe": null,
-      "next_earnings_date": "2026-10-28",
+      "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 212250.0,
-      "change_pct": -2.64,
-      "week52_pct": 45.1,
-      "pct_vs_ma200": -8.87,
-      "drawdown_from_high_pct": -41.38,
-      "return_3m_pct": -24.06,
-      "return_6m_pct": 5.71,
-      "return_12m_pct": 148.79,
-      "relative_strength_6m_pct": 10.67
+      "last_close": 188700.0,
+      "change_pct": -6.35,
+      "week52_pct": 36.5,
+      "pct_vs_ma200": -19.83,
+      "drawdown_from_high_pct": -46.98,
+      "return_3m_pct": -20.01,
+      "return_6m_pct": -12.84,
+      "return_12m_pct": 89.72,
+      "relative_strength_6m_pct": 10.48
     },
     {
       "symbol": "000660.KS",
       "name": "SK hynix",
       "profile": "watching",
       "trailing_pe": null,
-      "next_earnings_date": "2026-10-27",
+      "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1205000.0,
-      "change_pct": -5.64,
-      "week52_pct": 32.1,
-      "pct_vs_ma200": -17.64,
-      "drawdown_from_high_pct": -58.71,
-      "return_3m_pct": -42.11,
-      "return_6m_pct": 15.91,
-      "return_12m_pct": 235.71,
-      "relative_strength_6m_pct": 20.87
+      "last_close": 1132000.0,
+      "change_pct": -10.44,
+      "week52_pct": 25.6,
+      "pct_vs_ma200": -24.89,
+      "drawdown_from_high_pct": -61.21,
+      "return_3m_pct": -28.2,
+      "return_6m_pct": -11.94,
+      "return_12m_pct": 112.21,
+      "relative_strength_6m_pct": 11.38
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "PCOR",
+      "name": "Procore Technologies, Inc.",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Procore 이사 Elisa Steele, PCOR 주식 23만586달러어치 매도"
+        },
+        {
+          "title": "Procore Technologies 최고법률책임자, 주식 19만 3,950달러어치 매도"
+        }
+      ],
+      "basic": {
+        "trailing_pe": null,
+        "week52_pct": NaN,
+        "market_cap_usd": 11446796288
+      }
+    }
+  ],
   "calendar": [
     {
-      "date": "2026-10-21",
-      "weekday": "수",
-      "label": "Tesla, Inc. 실적",
-      "kind": "earnings"
-    },
-    {
-      "date": "2026-10-27",
-      "weekday": "화",
-      "label": "SK hynix 실적",
-      "kind": "earnings"
+      "date": "2026-11-12",
+      "weekday": "목",
+      "label": "Apple Inc. 배당락",
+      "kind": "ex_dividend"
     }
   ]
 }
