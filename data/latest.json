@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-08T01:41:03+00:00",
-  "market_date": "2026-11-08",
+  "generated_at": "2026-11-09T01:49:46+00:00",
+  "market_date": "2026-11-09",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,42 +9,10 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 74,
+    "days_collected": 75,
     "per_band_ready_in_days": 0
   },
   "focus": [
-    {
-      "symbol": "TSLA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 393.6배 — 자체 밴드 상단 이탈 (평균 332.5배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Elon Musk Is Winding Down Cybertruck Production to Build Cybercabs. The Model S and Model X Already Gave Up Their Factory Space to Robots.",
-          "url": "https://www.fool.com/investing/2026/11/07/elon-musk-is-winding-down-cybertruck-production-to-build-cybercabs-the-model-s-and-model-x-already-gave-up-their-factory-space-to-robots/"
-        },
-        {
-          "title": "Every Humanoid Robot Needs Rare-Earth Magnets. Here's the American Stock Positioned to Sell Them -- and It's Down 62%.",
-          "url": "https://www.fool.com/investing/2026/11/07/every-humanoid-robot-needs-rare-earth-magnets-here/"
-        },
-        {
-          "title": "Musk Says His Terafab Chip Plant Could Cost $1 Trillion",
-          "url": "https://247wallst.com/investing/2026/11/07/musk-says-his-terafab-chip-plant-could-cost-1-trillion/"
-        }
-      ],
-      "rank": 1
-    },
     {
       "symbol": "NVDA",
       "score": 2.5,
@@ -63,22 +31,22 @@
       ],
       "news": [
         {
-          "title": "Alphabet's $15 Billion Investment in Malaysia Data Centers Shows That Midterm Results Won't Stop the AI Boom",
-          "url": "https://www.fool.com/investing/2026/11/07/alphabets-15-billion-investment-in-malaysia-data-c/"
+          "title": "Nvidia's board launches investigation into CEO Jensen Huang's affair with an alleged Chinese spy",
+          "url": "https://finance.yahoo.com/markets/article/nvidias-jensen-huang-admits-to-affair-after-allegations-of-romance-with-chinese-spy-report-205122263.html"
         },
         {
-          "title": "AMD Stock Just Fell Below the Price I Said I'd Pay for It.",
-          "url": "https://www.fool.com/investing/2026/11/07/amd-stock-just-fell-below-the-price-i-said-i-d-pay-for-it/"
+          "title": "Dow Jones Futures Rise, Techs Fall As Nvidia Probes CEO Jensen Huang Spying Case",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-probes-ceo-jensen-huang-espionage/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Warren Buffett and Greg Abel Just Sent Shockwaves Through Wall Street With This $377 Billion Warning",
-          "url": "https://www.fool.com/investing/2026/11/07/warren-buffett-greg-abel-just-sent-shockwaves-through-wall-street-with-377-billion-warning/"
+          "title": "Wall St futures mixed amid AI spending concerns; inflation data awaited",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-mixed-amid-012009920.html"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
-      "symbol": "000660.KS",
+      "symbol": "TSLA",
       "score": 2.5,
       "score_breakdown": {
         "severity": 1.0,
@@ -87,27 +55,27 @@
       },
       "signals": [
         {
-          "symbol": "000660.KS",
+          "symbol": "TSLA",
           "severity": "yellow",
-          "type": "volume_spike",
-          "message": "거래량 20일 평균 대비 2.07배"
+          "type": "valuation_band",
+          "message": "PER 393.6배 — 자체 밴드 상단 이탈 (평균 333.3배)"
         }
       ],
       "news": [
         {
-          "title": "Micron and Sandisk Lead the Memory Market. 1 Stock Has Far Greater Upside.",
-          "url": "https://www.fool.com/investing/2026/11/07/micron-and-sandisk-lead-the-memory-market-1-stock/"
+          "title": "Here's What a $1,000 Investment in Tesla Stock Could Be Worth in 5 Years",
+          "url": "https://www.fool.com/investing/2026/11/08/heres-what-a-1000-investment-in-tesla-stock-could/"
         },
         {
-          "title": "TSMC Jumped 6% on a Report It Could Make Memory Chips for Nvidia",
-          "url": "https://247wallst.com/investing/2026/11/07/tsmc-jumped-6-on-a-report-it-could-make-memory-chips-for-nvidia/"
+          "title": "Tesla Bulls Could Get Burned? Gary Black Sees Trouble With SpaceX All-Stock Merger: Warns 24% Premium 'Can Quickly Go Negative'",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-bulls-could-burned-gary-223005762.html"
         },
         {
-          "title": "Is SK hynix (KOSE:A000660) Trading At A Discount After Record Earnings?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-kose-a000660-trading-051643127.html"
+          "title": "Mark Cuban Says Elon Musk Is Amazing and the ‘Best Entrepreneur of Our Lifetime,’ But He’s a Salesman — ‘He’s Gotta Sell What He’s Got to Sell’",
+          "url": "https://finance.yahoo.com/small-business/articles/mark-cuban-says-elon-musk-213006371.html"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "symbol": "005930.KS",
@@ -120,16 +88,41 @@
       "signals": [],
       "news": [
         {
-          "title": "TSMC Jumped 6% on a Report It Could Make Memory Chips for Nvidia",
-          "url": "https://247wallst.com/investing/2026/11/07/tsmc-jumped-6-on-a-report-it-could-make-memory-chips-for-nvidia/"
+          "title": "Korean Stocks Are a Sunday Night ‘Must Watch’ After Their Black Friday",
+          "url": "https://www.barrons.com/articles/korean-stocks-kospi-black-friday-trading-d9362ce5?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Samsung Wallet launches new stablecoin accounts for Galaxy devices",
-          "url": "https://finance.yahoo.com/video/samsung-wallet-launches-stablecoin-accounts-200000638.html"
+          "title": "SK hynix Is Down 57% From Its High With Half of 2027 and 2028 Capacity Already Contracted",
+          "url": "https://www.tikr.com/blog/sk-hynix-is-down-57-from-its-high-with-half-of-2027-and-2028-capacity-already-contracted?ref=yahoofinance&tlnk=yf-261108-mfpcvpjx"
         },
         {
-          "title": "5 questions with Barclays head of US cards",
-          "url": "https://www.bankingdive.com/news/5-questions-with-barclays-head-of-us-cards/874017/"
+          "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Korean Stocks Are a Sunday Night ‘Must Watch’ After Their Black Friday",
+          "url": "https://www.barrons.com/articles/korean-stocks-kospi-black-friday-trading-d9362ce5?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "SK hynix Is Down 57% From Its High With Half of 2027 and 2028 Capacity Already Contracted",
+          "url": "https://www.tikr.com/blog/sk-hynix-is-down-57-from-its-high-with-half-of-2027-and-2028-capacity-already-contracted?ref=yahoofinance&tlnk=yf-261108-mfpcvpjx"
+        },
+        {
+          "title": "Sandisk Lost 51% in a Month. Bernstein Sees 259% Upside From Here",
+          "url": "https://www.tikr.com/blog/sandisk-lost-51-in-a-month-bernstein-sees-259-upside-from-here?ref=yahoofinance&tlnk=yf-261108-x7rrjp34"
         }
       ],
       "rank": 4
@@ -145,16 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "5 Worst Dow Stocks To Buy According to Analysts",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/5-worst-dow-stocks-buy-232028142.html"
+          "title": "Dow Jones Futures Rise, Techs Fall As Nvidia Probes CEO Jensen Huang Spying Case",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-probes-ceo-jensen-huang-espionage/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Dow Jones Futures: Market Needs Repair But Apple, Amazon, Microsoft Strong; Berkshire Doubles Stock Buyback",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-broken-apple-amazon-microsoft-strong-berkshire-earnings/?src=A00220&yptr=yahoo"
+          "title": "5 Stocks I am Retiring On",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/5-stocks-am-retiring-004943035.html"
         },
         {
-          "title": "Republican Senator Who Won Reelection Is Selling Magnificent Seven Stocks: Here Are the Trades",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/republican-senator-won-reelection-selling-193025792.html"
+          "title": "Apple Won’t “Play in Traffic” on AI. It’s Up 28% in a Year: Too Late to Buy?",
+          "url": "https://www.tikr.com/blog/apple-wont-play-in-traffic-on-ai-its-up-28-in-a-year-too-late-to-buy?ref=yahoofinance&tlnk=yf-261108-522mf3wh"
         }
       ],
       "rank": 5
@@ -231,15 +224,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 188700.0,
-      "change_pct": -6.35,
-      "week52_pct": 36.5,
-      "pct_vs_ma200": -19.83,
-      "drawdown_from_high_pct": -46.98,
-      "return_3m_pct": -20.01,
-      "return_6m_pct": -12.84,
-      "return_12m_pct": 89.72,
-      "relative_strength_6m_pct": 10.48
+      "last_close": 190200.0,
+      "change_pct": 0.79,
+      "week52_pct": 37.1,
+      "pct_vs_ma200": -19.28,
+      "drawdown_from_high_pct": -46.56,
+      "return_3m_pct": -21.34,
+      "return_6m_pct": -16.68,
+      "return_12m_pct": 96.04,
+      "relative_strength_6m_pct": 10.57
     },
     {
       "symbol": "000660.KS",
@@ -251,15 +244,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1132000.0,
-      "change_pct": -10.44,
-      "week52_pct": 25.6,
-      "pct_vs_ma200": -24.89,
-      "drawdown_from_high_pct": -61.21,
-      "return_3m_pct": -28.2,
-      "return_6m_pct": -11.94,
-      "return_12m_pct": 112.21,
-      "relative_strength_6m_pct": 11.38
+      "last_close": 1145000.0,
+      "change_pct": 1.15,
+      "week52_pct": 26.1,
+      "pct_vs_ma200": -24.13,
+      "drawdown_from_high_pct": -60.77,
+      "return_3m_pct": -31.34,
+      "return_6m_pct": -20.84,
+      "return_12m_pct": 120.42,
+      "relative_strength_6m_pct": 6.41
     }
   ],
   "discovery": [],
