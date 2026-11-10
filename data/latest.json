@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T01:49:46+00:00",
-  "market_date": "2026-11-09",
+  "generated_at": "2026-11-10T04:14:41+00:00",
+  "market_date": "2026-11-10",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,15 +9,15 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 75,
+    "days_collected": 76,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "NVDA",
-      "score": 2.5,
+      "score": 4.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 3.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -25,25 +25,69 @@
         {
           "symbol": "NVDA",
           "severity": "yellow",
+          "type": "volume_spike",
+          "message": "거래량 20일 평균 대비 3.9배"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "earnings_soon",
+          "message": "실적발표 D-7"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 23.6배 — 자체 밴드 하단 이탈 (평균 29.8배)"
+          "message": "PER 23.6배 — 자체 밴드 하단 이탈 (평균 29.7배)"
         }
       ],
       "news": [
         {
-          "title": "Nvidia's board launches investigation into CEO Jensen Huang's affair with an alleged Chinese spy",
-          "url": "https://finance.yahoo.com/markets/article/nvidias-jensen-huang-admits-to-affair-after-allegations-of-romance-with-chinese-spy-report-205122263.html"
+          "title": "Nvidia scandal could help China long-term, and risks in the AI trade",
+          "url": "https://finance.yahoo.com/video/nvidia-scandal-could-help-china-long-term-and-risks-in-the-ai-trade-221407013.html"
         },
         {
-          "title": "Dow Jones Futures Rise, Techs Fall As Nvidia Probes CEO Jensen Huang Spying Case",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-probes-ceo-jensen-huang-espionage/?src=A00220&yptr=yahoo"
+          "title": "AI infrastructure spending is still accelerating—but can it last?",
+          "url": "https://finance.yahoo.com/video/ai-infrastructure-spending-is-still-acceleratingbut-can-it-last-221359947.html"
         },
         {
-          "title": "Wall St futures mixed amid AI spending concerns; inflation data awaited",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-mixed-amid-012009920.html"
+          "title": "Why the Jensen Huang scandal is a 'net loss for China'",
+          "url": "https://finance.yahoo.com/video/why-the-jensen-huang-scandal-is-a-net-loss-for-china-221329322.html"
         }
       ],
       "rank": 1
+    },
+    {
+      "symbol": "AAPL",
+      "score": 3.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 1.0
+      },
+      "signals": [
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "week52_high",
+          "message": "52주 신고가 경신"
+        }
+      ],
+      "news": [
+        {
+          "title": "AI stocks have 2 major headwinds driving recent volatility",
+          "url": "https://finance.yahoo.com/markets/article/ai-stocks-have-2-major-headwinds-driving-recent-volatility-160346646.html"
+        },
+        {
+          "title": "One nugget overlooked during the AI sell-off: token costs",
+          "url": "https://finance.yahoo.com/video/one-nugget-overlooked-during-the-ai-sell-off-token-costs-151611529.html"
+        },
+        {
+          "title": "Tech leads Asian stock rally as traders track Wall St rebound",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/tech-leads-asian-stock-rally-023930562.html"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "TSLA",
@@ -58,24 +102,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 393.6배 — 자체 밴드 상단 이탈 (평균 333.3배)"
+          "message": "PER 393.8배 — 자체 밴드 상단 이탈 (평균 334.1배)"
         }
       ],
       "news": [
         {
-          "title": "Here's What a $1,000 Investment in Tesla Stock Could Be Worth in 5 Years",
-          "url": "https://www.fool.com/investing/2026/11/08/heres-what-a-1000-investment-in-tesla-stock-could/"
+          "title": "Elon Musk's Cybertruck pivot highlights the founder-CEO advantage",
+          "url": "https://finance.yahoo.com/video/elon-musks-cybertruck-pivot-highlights-the-founder-ceo-advantage-194117350.html"
         },
         {
-          "title": "Tesla Bulls Could Get Burned? Gary Black Sees Trouble With SpaceX All-Stock Merger: Warns 24% Premium 'Can Quickly Go Negative'",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-bulls-could-burned-gary-223005762.html"
+          "title": "Nvidia $5T CEO scandal, AI legislation headaches, and Tesla returns deposits for Cybertrucks",
+          "url": "https://finance.yahoo.com/video/nvidia-5t-ceo-scandal-ai-legislation-headaches-and-tesla-returns-deposits-for-cybertrucks-184342686.html"
         },
         {
-          "title": "Mark Cuban Says Elon Musk Is Amazing and the ‘Best Entrepreneur of Our Lifetime,’ But He’s a Salesman — ‘He’s Gotta Sell What He’s Got to Sell’",
-          "url": "https://finance.yahoo.com/small-business/articles/mark-cuban-says-elon-musk-213006371.html"
+          "title": "Musk says Tesla on the hook for Cybertruck deposits after cancellation",
+          "url": "https://finance.yahoo.com/markets/stocks/article/musk-says-tesla-on-the-hook-for-cybertruck-deposits-after-cancellation-162604829.html"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "symbol": "005930.KS",
@@ -88,19 +132,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Korean Stocks Are a Sunday Night ‘Must Watch’ After Their Black Friday",
-          "url": "https://www.barrons.com/articles/korean-stocks-kospi-black-friday-trading-d9362ce5?siteid=yhoof2&yptr=yahoo"
+          "title": "Asian stocks rise after technology shares advance on Wall Street",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rise-technology-shares-034421581.html"
         },
         {
-          "title": "SK hynix Is Down 57% From Its High With Half of 2027 and 2028 Capacity Already Contracted",
-          "url": "https://www.tikr.com/blog/sk-hynix-is-down-57-from-its-high-with-half-of-2027-and-2028-capacity-already-contracted?ref=yahoofinance&tlnk=yf-261108-mfpcvpjx"
+          "title": "Warby Parker’s (WRBY) Prospects Are Looking Brighter — Here’s Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/warby-parker-wrby-prospects-looking-033428066.html"
         },
         {
-          "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html"
+          "title": "A New Generation of Traders Is Trapped in Asia’s Market Meltdown",
+          "url": "https://www.wsj.com/finance/stocks/a-new-generation-of-traders-is-trapped-in-asias-market-meltdown-636d5da4?siteid=yhoof2&yptr=yahoo"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -113,41 +157,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Korean Stocks Are a Sunday Night ‘Must Watch’ After Their Black Friday",
-          "url": "https://www.barrons.com/articles/korean-stocks-kospi-black-friday-trading-d9362ce5?siteid=yhoof2&yptr=yahoo"
+          "title": "Asian stocks rise after technology shares advance on Wall Street",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rise-technology-shares-034421581.html"
         },
         {
-          "title": "SK hynix Is Down 57% From Its High With Half of 2027 and 2028 Capacity Already Contracted",
-          "url": "https://www.tikr.com/blog/sk-hynix-is-down-57-from-its-high-with-half-of-2027-and-2028-capacity-already-contracted?ref=yahoofinance&tlnk=yf-261108-mfpcvpjx"
+          "title": "A New Generation of Traders Is Trapped in Asia’s Market Meltdown",
+          "url": "https://www.wsj.com/finance/stocks/a-new-generation-of-traders-is-trapped-in-asias-market-meltdown-636d5da4?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Sandisk Lost 51% in a Month. Bernstein Sees 259% Upside From Here",
-          "url": "https://www.tikr.com/blog/sandisk-lost-51-in-a-month-bernstein-sees-259-upside-from-here?ref=yahoofinance&tlnk=yf-261108-x7rrjp34"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Dow Jones Futures Rise, Techs Fall As Nvidia Probes CEO Jensen Huang Spying Case",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-probes-ceo-jensen-huang-espionage/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "5 Stocks I am Retiring On",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/5-stocks-am-retiring-004943035.html"
-        },
-        {
-          "title": "Apple Won’t “Play in Traffic” on AI. It’s Up 28% in a Year: Too Late to Buy?",
-          "url": "https://www.tikr.com/blog/apple-wont-play-in-traffic-on-ai-its-up-28-in-a-year-too-late-to-buy?ref=yahoofinance&tlnk=yf-261108-522mf3wh"
+          "title": "Micron's 26 SCAs: Can Take-or-Pay Deals Boost Earnings Stability?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-26-scas-pay-deals-120800703.html"
         }
       ],
       "rank": 5
@@ -158,61 +177,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 23.59545,
+      "trailing_pe": 23.602377,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 186.64,
-      "change_pct": 2.78,
-      "week52_pct": 29.3,
-      "pct_vs_ma200": -8.68,
-      "drawdown_from_high_pct": -21.99,
-      "return_3m_pct": -14.11,
-      "return_6m_pct": -13.07,
-      "return_12m_pct": -4.16,
-      "relative_strength_6m_pct": -12.77
+      "last_close": 178.67,
+      "change_pct": -4.27,
+      "week52_pct": 18.6,
+      "pct_vs_ma200": -12.57,
+      "drawdown_from_high_pct": -25.32,
+      "return_3m_pct": -17.76,
+      "return_6m_pct": -18.39,
+      "return_12m_pct": -4.78,
+      "relative_strength_6m_pct": -20.24
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.125835,
+      "trailing_pe": 38.11848,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 342.37,
-      "change_pct": -0.52,
-      "week52_pct": 93.1,
-      "pct_vs_ma200": 14.68,
-      "drawdown_from_high_pct": -2.04,
-      "return_3m_pct": 11.07,
-      "return_6m_pct": 16.93,
-      "return_12m_pct": 27.21,
-      "relative_strength_6m_pct": 17.23
+      "last_close": 350.69,
+      "change_pct": 2.43,
+      "week52_pct": 100.0,
+      "pct_vs_ma200": 17.27,
+      "drawdown_from_high_pct": 0.0,
+      "return_3m_pct": 15.01,
+      "return_6m_pct": 19.92,
+      "return_12m_pct": 30.48,
+      "relative_strength_6m_pct": 18.07
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 393.64835,
+      "trailing_pe": 393.8021,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 358.22,
-      "change_pct": 4.23,
-      "week52_pct": 31.3,
-      "pct_vs_ma200": -6.68,
-      "drawdown_from_high_pct": -26.88,
-      "return_3m_pct": 8.26,
-      "return_6m_pct": -16.37,
-      "return_12m_pct": -22.47,
-      "relative_strength_6m_pct": -16.07
+      "last_close": 378.05,
+      "change_pct": 5.54,
+      "week52_pct": 41.6,
+      "pct_vs_ma200": -1.42,
+      "drawdown_from_high_pct": -22.83,
+      "return_3m_pct": 13.59,
+      "return_6m_pct": -15.04,
+      "return_12m_pct": -15.22,
+      "relative_strength_6m_pct": -16.89
     },
     {
       "symbol": "005930.KS",
@@ -224,15 +243,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 190200.0,
-      "change_pct": 0.79,
-      "week52_pct": 37.1,
-      "pct_vs_ma200": -19.28,
-      "drawdown_from_high_pct": -46.56,
-      "return_3m_pct": -21.34,
-      "return_6m_pct": -16.68,
-      "return_12m_pct": 96.04,
-      "relative_strength_6m_pct": 10.57
+      "last_close": 198400.0,
+      "change_pct": 4.48,
+      "week52_pct": 40.2,
+      "pct_vs_ma200": -15.91,
+      "drawdown_from_high_pct": -44.26,
+      "return_3m_pct": -12.43,
+      "return_6m_pct": -24.04,
+      "return_12m_pct": 102.45,
+      "relative_strength_6m_pct": 5.43
     },
     {
       "symbol": "000660.KS",
@@ -244,15 +263,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1145000.0,
-      "change_pct": 1.15,
-      "week52_pct": 26.1,
-      "pct_vs_ma200": -24.13,
-      "drawdown_from_high_pct": -60.77,
-      "return_3m_pct": -31.34,
-      "return_6m_pct": -20.84,
-      "return_12m_pct": 120.42,
-      "relative_strength_6m_pct": 6.41
+      "last_close": 1201000.0,
+      "change_pct": 5.72,
+      "week52_pct": 28.5,
+      "pct_vs_ma200": -20.54,
+      "drawdown_from_high_pct": -58.85,
+      "return_3m_pct": -19.65,
+      "return_6m_pct": -24.96,
+      "return_12m_pct": 115.87,
+      "relative_strength_6m_pct": 4.51
     }
   ],
   "discovery": [],
@@ -262,6 +281,12 @@
       "weekday": "목",
       "label": "Apple Inc. 배당락",
       "kind": "ex_dividend"
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": "화",
+      "label": "NVIDIA Corporation 실적",
+      "kind": "earnings"
     }
   ]
 }
