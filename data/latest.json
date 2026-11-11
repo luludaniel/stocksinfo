@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T04:14:41+00:00",
-  "market_date": "2026-11-10",
+  "generated_at": "2026-11-11T02:04:13+00:00",
+  "market_date": "2026-11-11",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 76,
+    "days_collected": 77,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -26,65 +26,58 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "volume_spike",
-          "message": "거래량 20일 평균 대비 3.9배"
+          "message": "거래량 20일 평균 대비 3.11배"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-7"
+          "message": "실적발표 D-6"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 23.6배 — 자체 밴드 하단 이탈 (평균 29.7배)"
+          "message": "PER 21.4배 — 자체 밴드 하단 이탈 (평균 29.6배)"
         }
       ],
       "news": [
         {
-          "title": "Nvidia scandal could help China long-term, and risks in the AI trade",
-          "url": "https://finance.yahoo.com/video/nvidia-scandal-could-help-china-long-term-and-risks-in-the-ai-trade-221407013.html"
+          "title": "OpenAI's Q3 results and Nvidia's scandal impact on the AI ecosystem",
+          "url": "https://finance.yahoo.com/video/openais-q3-results-and-nvidias-scandal-impact-on-the-ai-ecosystem-222332740.html"
         },
         {
-          "title": "AI infrastructure spending is still accelerating—but can it last?",
-          "url": "https://finance.yahoo.com/video/ai-infrastructure-spending-is-still-acceleratingbut-can-it-last-221359947.html"
+          "title": "Chip stocks' slide nears $5 trillion as Nvidia hits most extreme selling level since 2019",
+          "url": "https://finance.yahoo.com/markets/article/chip-stocks-slide-nears-5-trillion-as-nvidia-hits-most-extreme-selling-level-since-2019-191532559.html"
         },
         {
-          "title": "Why the Jensen Huang scandal is a 'net loss for China'",
-          "url": "https://finance.yahoo.com/video/why-the-jensen-huang-scandal-is-a-net-loss-for-china-221329322.html"
+          "title": "Nvidia in the hot seat, Anthropic to test the IPO market, hotter-than-expected US inflation",
+          "url": "https://finance.yahoo.com/video/nvidia-in-the-hot-seat-anthropic-to-test-the-ipo-market-hotter-than-expected-us-inflation-184626512.html"
         }
       ],
       "rank": 1
     },
     {
       "symbol": "AAPL",
-      "score": 3.5,
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 0,
         "news": 1.5,
         "event": 1.0
       },
-      "signals": [
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "week52_high",
-          "message": "52주 신고가 경신"
-        }
-      ],
+      "signals": [],
       "news": [
         {
-          "title": "AI stocks have 2 major headwinds driving recent volatility",
-          "url": "https://finance.yahoo.com/markets/article/ai-stocks-have-2-major-headwinds-driving-recent-volatility-160346646.html"
+          "title": "New iOS exploit could let apps steal crypto keys",
+          "url": "https://finance.yahoo.com/video/ios-exploit-could-let-apps-190000953.html"
         },
         {
-          "title": "One nugget overlooked during the AI sell-off: token costs",
-          "url": "https://finance.yahoo.com/video/one-nugget-overlooked-during-the-ai-sell-off-token-costs-151611529.html"
+          "title": "No chair and 30-year tenures: Will Nvidia's board go soft on Jensen?",
+          "url": "https://finance.yahoo.com/video/no-chair-and-30-year-tenures-will-nvidias-board-go-soft-on-jensen-150036535.html"
         },
         {
-          "title": "Tech leads Asian stock rally as traders track Wall St rebound",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/tech-leads-asian-stock-rally-023930562.html"
+          "title": "Nvidia's trillion-dollar bind: Can it afford to lose Jensen Huang?",
+          "url": "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/"
         }
       ],
       "rank": 2
@@ -102,21 +95,21 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 393.8배 — 자체 밴드 상단 이탈 (평균 334.1배)"
+          "message": "PER 417.3배 — 자체 밴드 상단 이탈 (평균 335.2배)"
         }
       ],
       "news": [
         {
-          "title": "Elon Musk's Cybertruck pivot highlights the founder-CEO advantage",
-          "url": "https://finance.yahoo.com/video/elon-musks-cybertruck-pivot-highlights-the-founder-ceo-advantage-194117350.html"
+          "title": "What Are Rivian Stock Bulls Not Worried About?",
+          "url": "https://www.trefis.com/stock/rivn/articles/623951/what-are-rivian-stock-bulls-not-worried-about/2026-11-10"
         },
         {
-          "title": "Nvidia $5T CEO scandal, AI legislation headaches, and Tesla returns deposits for Cybertrucks",
-          "url": "https://finance.yahoo.com/video/nvidia-5t-ceo-scandal-ai-legislation-headaches-and-tesla-returns-deposits-for-cybertrucks-184342686.html"
+          "title": "Bullish’s New President Backs Issuer-First Model for Tokenized Stocks",
+          "url": "https://www.cryptoprowl.com/releases/bullishs-new-president-backs-issuer-first-model-for-tokenized-stocks-7830"
         },
         {
-          "title": "Musk says Tesla on the hook for Cybertruck deposits after cancellation",
-          "url": "https://finance.yahoo.com/markets/stocks/article/musk-says-tesla-on-the-hook-for-cybertruck-deposits-after-cancellation-162604829.html"
+          "title": "Ethereum ended CoreWeave's mining days. Earnings test its AI bet",
+          "url": "https://www.thestreet.com/crypto/markets/coreweave-stock-could-swing-15-on-q3-earnings-options-imply"
         }
       ],
       "rank": 3
@@ -132,16 +125,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Asian stocks rise after technology shares advance on Wall Street",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rise-technology-shares-034421581.html"
+          "title": "Samsung Electronics Stocks Climb 4.74% as Chip Rebound Pushes Shares Near 200,000 Won",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-climb-4-172957531.html"
         },
         {
-          "title": "Warby Parker’s (WRBY) Prospects Are Looking Brighter — Here’s Why",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/warby-parker-wrby-prospects-looking-033428066.html"
+          "title": "SK hynix Stocks Jump 6.69% as Seoul Chip Rally Lifts KOSPI 4.39%",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-jump-6-172948295.html"
         },
         {
-          "title": "A New Generation of Traders Is Trapped in Asia’s Market Meltdown",
-          "url": "https://www.wsj.com/finance/stocks/a-new-generation-of-traders-is-trapped-in-asias-market-meltdown-636d5da4?siteid=yhoof2&yptr=yahoo"
+          "title": "Amazon reveals major Black Friday change for 2026 shoppers",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-reveals-major-black-friday-152051353.html"
         }
       ],
       "rank": 4
@@ -157,16 +150,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Asian stocks rise after technology shares advance on Wall Street",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rise-technology-shares-034421581.html"
+          "title": "Micron’s Valuation Is “Insane” (in a Good Way). Here’s the Upside Scenario",
+          "url": "https://www.tikr.com/blog/microns-valuation-is-insane-in-a-good-way-heres-the-upside-scenario?ref=yahoofinance&tlnk=yf-261110-wjvjpp3q"
         },
         {
-          "title": "A New Generation of Traders Is Trapped in Asia’s Market Meltdown",
-          "url": "https://www.wsj.com/finance/stocks/a-new-generation-of-traders-is-trapped-in-asias-market-meltdown-636d5da4?siteid=yhoof2&yptr=yahoo"
+          "title": "SK hynix Stocks Jump 6.69% as Seoul Chip Rally Lifts KOSPI 4.39%",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-jump-6-172948295.html"
         },
         {
-          "title": "Micron's 26 SCAs: Can Take-or-Pay Deals Boost Earnings Stability?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/microns-26-scas-pay-deals-120800703.html"
+          "title": "SK hynix (NasdaqGS:SKHY) Stock Looks Cheap Following A 20% Slide",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaqgs-skhy-stock-150955085.html"
         }
       ],
       "rank": 5
@@ -177,61 +170,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 23.602377,
+      "trailing_pe": 21.351454,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 178.67,
-      "change_pct": -4.27,
-      "week52_pct": 18.6,
-      "pct_vs_ma200": -12.57,
-      "drawdown_from_high_pct": -25.32,
-      "return_3m_pct": -17.76,
-      "return_6m_pct": -18.39,
-      "return_12m_pct": -4.78,
-      "relative_strength_6m_pct": -20.24
+      "last_close": 168.89,
+      "change_pct": -5.47,
+      "week52_pct": 5.5,
+      "pct_vs_ma200": -17.32,
+      "drawdown_from_high_pct": -29.41,
+      "return_3m_pct": -24.55,
+      "return_6m_pct": -23.33,
+      "return_12m_pct": -10.02,
+      "relative_strength_6m_pct": -24.95
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.11848,
+      "trailing_pe": 38.80958,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 350.69,
-      "change_pct": 2.43,
-      "week52_pct": 100.0,
-      "pct_vs_ma200": 17.27,
-      "drawdown_from_high_pct": 0.0,
-      "return_3m_pct": 15.01,
-      "return_6m_pct": 19.92,
-      "return_12m_pct": 30.48,
-      "relative_strength_6m_pct": 18.07
+      "last_close": 348.51,
+      "change_pct": -0.62,
+      "week52_pct": 97.9,
+      "pct_vs_ma200": 16.36,
+      "drawdown_from_high_pct": -0.62,
+      "return_3m_pct": 15.31,
+      "return_6m_pct": 18.32,
+      "return_12m_pct": 30.29,
+      "relative_strength_6m_pct": 16.7
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 393.8021,
+      "trailing_pe": 417.34064,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 378.05,
-      "change_pct": 5.54,
-      "week52_pct": 41.6,
-      "pct_vs_ma200": -1.42,
-      "drawdown_from_high_pct": -22.83,
-      "return_3m_pct": 13.59,
-      "return_6m_pct": -15.04,
-      "return_12m_pct": -15.22,
-      "relative_strength_6m_pct": -16.89
+      "last_close": 379.78,
+      "change_pct": 0.46,
+      "week52_pct": 42.5,
+      "pct_vs_ma200": -0.9,
+      "drawdown_from_high_pct": -22.47,
+      "return_3m_pct": 15.96,
+      "return_6m_pct": -12.38,
+      "return_12m_pct": -11.58,
+      "relative_strength_6m_pct": -14.0
     },
     {
       "symbol": "005930.KS",
@@ -243,15 +236,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 198400.0,
-      "change_pct": 4.48,
-      "week52_pct": 40.2,
-      "pct_vs_ma200": -15.91,
-      "drawdown_from_high_pct": -44.26,
-      "return_3m_pct": -12.43,
+      "last_close": 202500.0,
+      "change_pct": 1.81,
+      "week52_pct": 41.8,
+      "pct_vs_ma200": -14.29,
+      "drawdown_from_high_pct": -43.11,
+      "return_3m_pct": -10.82,
       "return_6m_pct": -24.04,
-      "return_12m_pct": 102.45,
-      "relative_strength_6m_pct": 5.43
+      "return_12m_pct": 99.49,
+      "relative_strength_6m_pct": 4.97
     },
     {
       "symbol": "000660.KS",
@@ -263,15 +256,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1201000.0,
-      "change_pct": 5.72,
-      "week52_pct": 28.5,
-      "pct_vs_ma200": -20.54,
-      "drawdown_from_high_pct": -58.85,
-      "return_3m_pct": -19.65,
-      "return_6m_pct": -24.96,
-      "return_12m_pct": 115.87,
-      "relative_strength_6m_pct": 4.51
+      "last_close": 1251000.0,
+      "change_pct": 3.22,
+      "week52_pct": 30.6,
+      "pct_vs_ma200": -17.37,
+      "drawdown_from_high_pct": -57.13,
+      "return_3m_pct": -12.01,
+      "return_6m_pct": -24.34,
+      "return_12m_pct": 120.9,
+      "relative_strength_6m_pct": 4.67
     }
   ],
   "discovery": [],
