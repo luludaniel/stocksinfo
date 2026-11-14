@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T02:45:50+00:00",
-  "market_date": "2026-11-13",
+  "generated_at": "2026-11-14T02:35:26+00:00",
+  "market_date": "2026-11-14",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,12 +9,62 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 79,
+    "days_collected": 80,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "NVDA",
+      "score": 9.5,
+      "score_breakdown": {
+        "severity": 6.0,
+        "news": 1.5,
+        "event": 2.0
+      },
+      "signals": [
+        {
+          "symbol": "NVDA",
+          "severity": "red",
+          "type": "week52_low",
+          "message": "52주 신저가 경신"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "earnings_soon",
+          "message": "실적발표 D-3"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 20.6배 — 자체 밴드 하단 이탈 (평균 29.3배)"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "target_price_change",
+          "message": "애널리스트 목표주가 7일간 하향 13.4%"
+        }
+      ],
+      "news": [
+        {
+          "title": "Nvidia's competitors pounce, and what GPU rental prices say about the AI race",
+          "url": "https://finance.yahoo.com/video/nvidias-competitors-pounce-and-what-gpu-rental-prices-say-about-the-ai-race-221551379.html"
+        },
+        {
+          "title": "How the Nvidia scandal impacts US–China relations: Department of Defense CTO",
+          "url": "https://finance.yahoo.com/video/how-the-nvidia-scandal-impacts-uschina-relations-department-of-defense-cto-220649347.html"
+        },
+        {
+          "title": "Cerebras stock surges on Microsoft deal: What it means for Nvidia",
+          "url": "https://finance.yahoo.com/video/cerebras-stock-surges-on-microsoft-deal-what-it-means-for-nvidia-213123807.html"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "AAPL",
       "score": 4.5,
       "score_breakdown": {
         "severity": 3.0,
@@ -23,68 +73,36 @@
       },
       "signals": [
         {
-          "symbol": "NVDA",
+          "symbol": "AAPL",
           "severity": "yellow",
-          "type": "volume_spike",
-          "message": "거래량 20일 평균 대비 4.49배"
+          "type": "week52_high",
+          "message": "52주 신고가 경신"
         },
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "earnings_soon",
-          "message": "실적발표 D-4"
-        },
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 21.0배 — 자체 밴드 하단 이탈 (평균 29.4배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Nvidia market cap plunges $490 billion following former CEO Huang's affair scandals",
-          "url": "https://finance.yahoo.com/technology/article/nvidia-market-cap-plunges-490-billion-following-former-ceo-huangs-affair-scandals-224412004.html"
-        },
-        {
-          "title": "How Nvidia's stock decline might impact your 401(k) and portfolio",
-          "url": "https://finance.yahoo.com/video/how-nvidias-stock-decline-might-impact-your-401k-and-portfolio-221925275.html"
-        },
-        {
-          "title": "Alleged spy at center of Nvidia CEO affair reportedly being probed over Super Micro smuggling effort",
-          "url": "https://finance.yahoo.com/technology/article/alleged-spy-at-center-of-nvidia-ceo-affair-reportedly-being-probed-over-super-micro-smuggling-effort-214712179.html"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "AAPL",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
         {
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.5배 — 자체 밴드 상단 이탈 (평균 37.4배)"
+          "message": "PER 39.7배 — 자체 밴드 상단 이탈 (평균 37.4배)"
+        },
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
+          "type": "target_price_change",
+          "message": "애널리스트 목표주가 7일간 상향 3.6%"
         }
       ],
       "news": [
         {
-          "title": "Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary?",
-          "url": "https://finance.yahoo.com/video/jensen-huang-vs-steve-jobs-can-nvidia-also-thrive-without-its-visionary-144638496.html"
+          "title": "What to make of Jensen Huang's resignation: AI Investing Panel",
+          "url": "https://finance.yahoo.com/video/what-to-make-of-jensen-huangs-resignation-ai-investing-panel-144935369.html"
         },
         {
-          "title": "Tony Robbins: How to make yourself irreplaceable in the AI era",
-          "url": "https://finance.yahoo.com/video/tony-robbins-yourself-irreplaceable-ai-120000200.html"
+          "title": "Is Apple Stock a Buy Right Now?",
+          "url": "https://www.fool.com/investing/2026/11/13/is-apple-stock-a-buy-right-now/"
         },
         {
-          "title": "Tony Robbins: 4 rules the world's greatest investors follow",
-          "url": "https://finance.yahoo.com/video/tony-robbins-4-rules-the-worlds-greatest-investors-follow-155143166.html"
+          "title": "Nvidia's competitors pounce, and what GPU rental prices say about the AI race",
+          "url": "https://finance.yahoo.com/video/nvidias-competitors-pounce-and-what-gpu-rental-prices-say-about-the-ai-race-221551379.html"
         }
       ],
       "rank": 2
@@ -102,21 +120,21 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 436.8배 — 자체 밴드 상단 이탈 (평균 337.7배)"
+          "message": "PER 428.8배 — 자체 밴드 상단 이탈 (평균 338.8배)"
         }
       ],
       "news": [
         {
-          "title": "SpaceX, Telsa merger talks begin to take shape",
-          "url": "https://finance.yahoo.com/video/spacex-telsa-merger-talks-begin-to-take-shape-212004858.html"
+          "title": "Tesla-SpaceX merger announcement as early as December: Bloomberg",
+          "url": "https://finance.yahoo.com/video/tesla-spacex-merger-announcement-as-early-as-december-bloomberg-161323318.html"
         },
         {
-          "title": "Dow Jones Futures Rise After Market Weathers Nvidia CEO Huang's Exit, Surging Yields; SpaceX-Tesla Merger Deal Close",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-ceo-huang-exit-surging-yields-spacex-tesla-merger-deal/?src=A00220&yptr=yahoo"
+          "title": "Zero To Sixty: Tesla Winds Down Cybertruck, Pulls Model Y Variant While Rivian, Lucid Chase Volumes",
+          "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-tesla-winds-down-cybertruck-pulls-model-y-variant-while-rivian-lucid-chase-volumes-in-ev-updates-this-week/cNb2AojR9QP"
         },
         {
-          "title": "Musk gives Cybertruck a reprieve, but many will still get refunds",
-          "url": "https://www.thestreet.com/retail/tesla-cybertruck-refunds-musk-production-extension"
+          "title": "Nvidia Suffers Biggest Weekly Market Cap  Decline on Record",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026/card/nvidia-braces-for-biggest-weekly-market-cap-decline-on-record-JcfwFNhoTtGpQenCU5Ft?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 3
@@ -132,16 +150,16 @@
       "signals": [],
       "news": [
         {
-          "title": "5 Best Growth Stocks for the Next 5 Years",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/5-best-growth-stocks-next-231119066.html"
+          "title": "What Rosenblatt Securities Thinks the Market Misses on SK Hynix (SKHY)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-securities-thinks-market-misses-213235021.html"
         },
         {
-          "title": "Micron, Other Memory Chip Stocks Fall on Nvidia Shakeup. Why They’re at Risk.",
-          "url": "https://www.barrons.com/articles/micron-memory-chip-stocks-nvidia-shakeup-adf6b711?siteid=yhoof2&yptr=yahoo"
+          "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-3-183209379.html"
         },
         {
-          "title": "Samsung Stocks Rise as Foreign Buyers Step In Despite NVIDIA Turmoil",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-rise-foreign-buyers-194545026.html"
+          "title": "Samsung Electronics Stocks Move Lower as Nvidia CEO Exit Tests AI Memory Rally",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-move-lower-183110049.html"
         }
       ],
       "rank": 4
@@ -157,16 +175,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Why Is MOD Stock Soaring 28% Overnight Today?",
-          "url": "https://stocktwits.com/news-articles/markets/equity/why-is-mod-stock-soaring-28-overnight-today/cNbbZmRR9OB"
+          "title": "Modine Manufacturing (MOD) In Reported Talks Over Data Center Cooling Business",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/modine-manufacturing-mod-reported-talks-011851223.html"
         },
         {
-          "title": "LiveOne Inc (LVO) (Q2 2027) Earnings Call Highlights: Record EBITDA, Major B2B Partnerships and ...",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/liveone-inc-lvo-q2-2027-010439618.html"
+          "title": "Samsung Eyeing Deal To Buy Data Center Supplier Modine; Stock Soars 35%",
+          "url": "https://www.investors.com/news/samsung-modine-manufacturing-ai-data-center/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Samsung in talks to buy data center cooling firm Modine, Bloomberg reports",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-talks-buy-data-center-005809830.html"
+          "title": "MOD Stock Jumps 30% as Samsung Reportedly Explores Acquisition of Modine",
+          "url": "https://www.barchart.com/story/news/8827949/mod-stock-jumps-30-as-samsung-reportedly-explores-acquisition-of-modine"
         }
       ],
       "rank": 5
@@ -177,61 +195,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 21.010115,
+      "trailing_pe": 20.587864,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 166.19,
-      "change_pct": -4.34,
-      "week52_pct": 1.9,
-      "pct_vs_ma200": -18.56,
-      "drawdown_from_high_pct": -30.53,
-      "return_3m_pct": -26.11,
-      "return_6m_pct": -29.34,
-      "return_12m_pct": -13.76,
-      "relative_strength_6m_pct": -30.56
+      "last_close": 162.85,
+      "change_pct": -2.01,
+      "week52_pct": 0.0,
+      "pct_vs_ma200": -20.14,
+      "drawdown_from_high_pct": -31.93,
+      "return_3m_pct": -27.54,
+      "return_6m_pct": -27.56,
+      "return_12m_pct": -15.77,
+      "relative_strength_6m_pct": -29.63
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.518932,
+      "trailing_pe": 39.67372,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 354.88,
-      "change_pct": -0.14,
-      "week52_pct": 99.6,
-      "pct_vs_ma200": 18.18,
-      "drawdown_from_high_pct": -0.14,
-      "return_3m_pct": 16.09,
-      "return_6m_pct": 19.2,
-      "return_12m_pct": 29.38,
-      "relative_strength_6m_pct": 17.98
+      "last_close": 356.27,
+      "change_pct": 0.39,
+      "week52_pct": 100.0,
+      "pct_vs_ma200": 18.45,
+      "drawdown_from_high_pct": 0.0,
+      "return_3m_pct": 16.67,
+      "return_6m_pct": 18.86,
+      "return_12m_pct": 30.73,
+      "relative_strength_6m_pct": 16.79
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 436.75824,
+      "trailing_pe": 428.81317,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 397.45,
-      "change_pct": 1.69,
-      "week52_pct": 51.7,
-      "pct_vs_ma200": 3.81,
-      "drawdown_from_high_pct": -18.87,
-      "return_3m_pct": 16.12,
-      "return_6m_pct": -10.34,
-      "return_12m_pct": -9.59,
-      "relative_strength_6m_pct": -11.56
+      "last_close": 390.22,
+      "change_pct": -1.82,
+      "week52_pct": 48.0,
+      "pct_vs_ma200": 1.96,
+      "drawdown_from_high_pct": -20.34,
+      "return_3m_pct": 15.01,
+      "return_6m_pct": -7.58,
+      "return_12m_pct": -9.38,
+      "relative_strength_6m_pct": -9.65
     },
     {
       "symbol": "005930.KS",
@@ -243,15 +261,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 211000.0,
-      "change_pct": 1.44,
-      "week52_pct": 45.0,
-      "pct_vs_ma200": -10.93,
-      "drawdown_from_high_pct": -40.72,
-      "return_3m_pct": -10.37,
-      "return_6m_pct": -24.73,
-      "return_12m_pct": 94.77,
-      "relative_strength_6m_pct": 6.04
+      "last_close": 206000.0,
+      "change_pct": -0.96,
+      "week52_pct": 43.1,
+      "pct_vs_ma200": -13.04,
+      "drawdown_from_high_pct": -42.12,
+      "return_3m_pct": -12.5,
+      "return_6m_pct": -26.51,
+      "return_12m_pct": 90.15,
+      "relative_strength_6m_pct": 5.86
     },
     {
       "symbol": "000660.KS",
@@ -263,15 +281,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1264000.0,
-      "change_pct": 0.8,
-      "week52_pct": 31.1,
-      "pct_vs_ma200": -16.79,
-      "drawdown_from_high_pct": -56.69,
-      "return_3m_pct": -11.28,
-      "return_6m_pct": -32.74,
-      "return_12m_pct": 104.47,
-      "relative_strength_6m_pct": -1.97
+      "last_close": 1216000.0,
+      "change_pct": -3.03,
+      "week52_pct": 29.1,
+      "pct_vs_ma200": -19.94,
+      "drawdown_from_high_pct": -58.33,
+      "return_3m_pct": -14.65,
+      "return_6m_pct": -35.29,
+      "return_12m_pct": 96.71,
+      "relative_strength_6m_pct": -2.92
     }
   ],
   "discovery": [],
