@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T02:35:26+00:00",
-  "market_date": "2026-11-14",
+  "generated_at": "2026-11-15T02:02:16+00:00",
+  "market_date": "2026-11-15",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 80,
+    "days_collected": 81,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -32,42 +32,42 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "earnings_soon",
-          "message": "실적발표 D-3"
+          "message": "실적발표 D-2"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 20.6배 — 자체 밴드 하단 이탈 (평균 29.3배)"
+          "message": "PER 20.6배 — 자체 밴드 하단 이탈 (평균 29.1배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 13.4%"
+          "message": "애널리스트 목표주가 7일간 하향 14.9%"
         }
       ],
       "news": [
         {
-          "title": "Nvidia's competitors pounce, and what GPU rental prices say about the AI race",
-          "url": "https://finance.yahoo.com/video/nvidias-competitors-pounce-and-what-gpu-rental-prices-say-about-the-ai-race-221551379.html"
+          "title": "Why the biggest risk for investors in 2027 isn't Nvidia — it's inflation",
+          "url": "https://finance.yahoo.com/economy/article/why-the-biggest-risk-for-investors-in-2027-isnt-nvidia--its-inflation-160241059.html"
         },
         {
-          "title": "How the Nvidia scandal impacts US–China relations: Department of Defense CTO",
-          "url": "https://finance.yahoo.com/video/how-the-nvidia-scandal-impacts-uschina-relations-department-of-defense-cto-220649347.html"
+          "title": "Nvidia and Jensen Huang fallout: Here's everything we know after a momentous week",
+          "url": "https://finance.yahoo.com/technology/article/nvidia-and-jensen-huang-fallout-heres-everything-we-know-after-a-momentous-week-110000323.html"
         },
         {
-          "title": "Cerebras stock surges on Microsoft deal: What it means for Nvidia",
-          "url": "https://finance.yahoo.com/video/cerebras-stock-surges-on-microsoft-deal-what-it-means-for-nvidia-213123807.html"
+          "title": "The Semiconductor ETF Has Lost a Quarter of Its Value Since June. Buy It Now and Hold It Through 2030.",
+          "url": "https://www.fool.com/investing/2026/11/14/the-semiconductor-etf-has-lost-a-quarter-of-its-value-since-june-buy-it-now-and-hold-it-through-2030/"
         }
       ],
       "rank": 1
     },
     {
       "symbol": "AAPL",
-      "score": 4.5,
+      "score": 3.5,
       "score_breakdown": {
-        "severity": 3.0,
+        "severity": 2.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -82,27 +82,21 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.7배 — 자체 밴드 상단 이탈 (평균 37.4배)"
-        },
-        {
-          "symbol": "AAPL",
-          "severity": "yellow",
-          "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 상향 3.6%"
+          "message": "PER 39.7배 — 자체 밴드 상단 이탈 (평균 37.5배)"
         }
       ],
       "news": [
         {
-          "title": "What to make of Jensen Huang's resignation: AI Investing Panel",
-          "url": "https://finance.yahoo.com/video/what-to-make-of-jensen-huangs-resignation-ai-investing-panel-144935369.html"
+          "title": "Warren Buffett’s Berkshire Just Hit a Record High as Nvidia Sank. A 67-Year-Old Who Bought 1,000 Shares in 2016 Can Sell $106,000 of It This Year and Pay 0% on the Gain",
+          "url": "https://247wallst.com/investing/2026/11/14/warren-buffetts-berkshire-just-hit-a-record-high-as-nvidia-sank-a-67-year-old-who-bought-1000-shares-in-2016-can-sell-106000-of-it-this-year-and-pay-0-on-the-gain/"
         },
         {
-          "title": "Is Apple Stock a Buy Right Now?",
-          "url": "https://www.fool.com/investing/2026/11/13/is-apple-stock-a-buy-right-now/"
+          "title": "Mom Drives A Honda, Flies Economy. When She Asks Her Son To Be Trustee, He Finds Nearly $30M In Assets. He Says, ‘There Were Zero Signs’",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mom-drives-honda-flies-economy-200046195.html"
         },
         {
-          "title": "Nvidia's competitors pounce, and what GPU rental prices say about the AI race",
-          "url": "https://finance.yahoo.com/video/nvidias-competitors-pounce-and-what-gpu-rental-prices-say-about-the-ai-race-221551379.html"
+          "title": "Apple's Market Value Grew From $350 Billion to $4 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus",
+          "url": "https://www.fool.com/investing/2026/11/14/apples-market-value-grew-from-350-billion-to-4-trillion-during-tim-cooks-15-years-as-ceo-heres-what-that-growth-curve-means-for-apples-next-chapter-under-john-ternus/"
         }
       ],
       "rank": 2
@@ -120,49 +114,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 428.8배 — 자체 밴드 상단 이탈 (평균 338.8배)"
+          "message": "PER 428.8배 — 자체 밴드 상단 이탈 (평균 339.9배)"
         }
       ],
       "news": [
         {
-          "title": "Tesla-SpaceX merger announcement as early as December: Bloomberg",
-          "url": "https://finance.yahoo.com/video/tesla-spacex-merger-announcement-as-early-as-december-bloomberg-161323318.html"
+          "title": "Elon Musk's Tesla and SpaceX Lost More Than $420 Billion in Combined Market Value in Two Days After Democrats Swept the Midterms, With Investors Fearing New Congressional Probes. Here's Why That Political Risk Matters for Shareholders",
+          "url": "https://www.fool.com/investing/2026/11/14/elon-musks-tesla-and-spacex-lost-more-than-420-billion-in-combined-market-value-in-two-days-after-democrats-swept-the-midterms-with-investors-fearing-new-congressional-probes-heres-why-that-political-risk-matters-for-shareholders/"
         },
         {
-          "title": "Zero To Sixty: Tesla Winds Down Cybertruck, Pulls Model Y Variant While Rivian, Lucid Chase Volumes",
-          "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-tesla-winds-down-cybertruck-pulls-model-y-variant-while-rivian-lucid-chase-volumes-in-ev-updates-this-week/cNb2AojR9QP"
+          "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+          "url": "https://finance.yahoo.com/technology/articles/elon-musk-other-tech-execs-214122588.html"
         },
         {
-          "title": "Nvidia Suffers Biggest Weekly Market Cap  Decline on Record",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026/card/nvidia-braces-for-biggest-weekly-market-cap-decline-on-record-JcfwFNhoTtGpQenCU5Ft?siteid=yhoof2&yptr=yahoo"
+          "title": "Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee",
+          "url": "https://finance.yahoo.com/technology/articles/tesla-opens-cybercab-pre-orders-200444578.html"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "What Rosenblatt Securities Thinks the Market Misses on SK Hynix (SKHY)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-securities-thinks-market-misses-213235021.html"
-        },
-        {
-          "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-3-183209379.html"
-        },
-        {
-          "title": "Samsung Electronics Stocks Move Lower as Nvidia CEO Exit Tests AI Memory Rally",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-move-lower-183110049.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -175,16 +144,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Modine Manufacturing (MOD) In Reported Talks Over Data Center Cooling Business",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/modine-manufacturing-mod-reported-talks-011851223.html"
+          "title": "Samsung’s $34 Billion HBM Bet Raises Memory Glut Risks",
+          "url": "https://247wallst.com/investing/2026/11/14/samsungs-34-billion-hbm-bet-raises-memory-glut-risks/"
         },
         {
-          "title": "Samsung Eyeing Deal To Buy Data Center Supplier Modine; Stock Soars 35%",
-          "url": "https://www.investors.com/news/samsung-modine-manufacturing-ai-data-center/?src=A00220&yptr=yahoo"
+          "title": "Samsung Electronics (KOSE:A005930) Expands Samsung Pay, Is The Stock Still Undervalued?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-expands-121510717.html"
         },
         {
-          "title": "MOD Stock Jumps 30% as Samsung Reportedly Explores Acquisition of Modine",
-          "url": "https://www.barchart.com/story/news/8827949/mod-stock-jumps-30-as-samsung-reportedly-explores-acquisition-of-modine"
+          "title": "Modine Manufacturing (MOD) is Soaring by Double Digits — This Development May Explain Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/modine-manufacturing-mod-soaring-double-050520038.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Samsung’s $34 Billion HBM Bet Raises Memory Glut Risks",
+          "url": "https://247wallst.com/investing/2026/11/14/samsungs-34-billion-hbm-bet-raises-memory-glut-risks/"
+        },
+        {
+          "title": "What Rosenblatt Securities Thinks the Market Misses on SK Hynix (SKHY)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-securities-thinks-market-misses-213235021.html"
+        },
+        {
+          "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-3-183209379.html"
         }
       ],
       "rank": 5
