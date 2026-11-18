@@ -1,27 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T04:41:17+00:00",
-  "market_date": "2026-11-17",
+  "generated_at": "2026-11-18T03:46:51+00:00",
+  "market_date": "2026-11-18",
   "trigger": "schedule",
   "status": {
-    "ok": false,
+    "ok": true,
     "failed_symbols": [],
-    "collector_errors": [
-      "Google News - US Markets: <unknown>:2:252: not well-formed (invalid token)"
-    ]
+    "collector_errors": []
   },
   "history_status": {
-    "days_collected": 83,
+    "days_collected": 84,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "NVDA",
-      "score": 9.5,
+      "score": 6.5,
       "score_breakdown": {
-        "severity": 6.0,
+        "severity": 5.0,
         "news": 1.5,
-        "event": 2.0
+        "event": 0.0
       },
       "signals": [
         {
@@ -33,72 +31,60 @@
         {
           "symbol": "NVDA",
           "severity": "yellow",
-          "type": "earnings_soon",
-          "message": "실적발표 D-0"
-        },
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 20.6배 — 자체 밴드 하단 이탈 (평균 28.9배)"
+          "message": "PER 19.7배 — 자체 밴드 하단 이탈 (평균 28.8배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 18.1%"
+          "message": "애널리스트 목표주가 7일간 하향 18.6%"
         }
       ],
       "news": [
         {
-          "title": "Nvidia is not considering rehiring Jensen Huang, and Amazon's data center gets bought",
-          "url": "https://finance.yahoo.com/video/nvidia-is-not-considering-rehiring-jensen-huang-and-amazons-data-center-gets-bought-221405344.html"
+          "title": "Nvidia's Q3 numbers were pretty good. Its earnings call optics were another story.",
+          "url": "https://finance.yahoo.com/video/nvidias-q3-numbers-were-pretty-good-its-earnings-call-optics-were-another-story-234451647.html"
         },
         {
-          "title": "Nvidia stock valuation looks 'draconian,' even without Jensen Huang: Analyst",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-valuation-looks-draconian-even-without-jensen-huang-analyst-220000337.html"
+          "title": "Nvidia earnings special coverage: \"The street wants to believe in Nvidia after Jensen\"",
+          "url": "https://finance.yahoo.com/video/nvidia-earnings-special-coverage-the-street-wants-to-believe-in-nvidia-after-jensen-233044562.html"
         },
         {
-          "title": "The cost of ousting a founder: Is the 'bank of Nvidia' at risk?",
-          "url": "https://finance.yahoo.com/video/the-cost-of-ousting-a-founder-is-the-bank-of-nvidia-at-risk-214610525.html"
+          "title": "Nvidia with a positive Q3 despite SEC probing Nvidia amid Huang Scandal",
+          "url": "https://finance.yahoo.com/video/nvidia-with-a-positive-q3-despite-sec-probing-nvidia-amid-huang-scandal-223224298.html"
         }
       ],
       "rank": 1
     },
     {
       "symbol": "TSLA",
-      "score": 5.5,
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 4.0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
       "signals": [
         {
           "symbol": "TSLA",
-          "severity": "red",
-          "type": "ma200_cross",
-          "message": "200일선 하향 이탈 (0.1개월 만)"
-        },
-        {
-          "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 426.7배 — 자체 밴드 상단 이탈 (평균 342.0배)"
+          "message": "PER 417.7배 — 자체 밴드 상단 이탈 (평균 342.9배)"
         }
       ],
       "news": [
         {
-          "title": "Tesla's Cybercab sales to the public are 'early validation' of robotaxi push, JPMorgan says",
-          "url": "https://finance.yahoo.com/markets/stocks/article/teslas-cybercab-sales-to-the-public-are-early-validation-of-robotaxi-push-jpmorgan-says-192145629.html"
+          "title": "What far cheaper AI compute in space could mean for Elon Musk",
+          "url": "https://finance.yahoo.com/video/what-far-cheaper-ai-compute-in-space-could-mean-for-elon-musk-162707073.html"
         },
         {
-          "title": "Tesla to sell Cybercabs to 'select' customers: What to know",
-          "url": "https://finance.yahoo.com/video/tesla-to-sell-cybercabs-to-select-customers-what-to-know-150928006.html"
+          "title": "“Of Course,” Musk Says When Told Tesla’s $1.6 Trillion Already Prices In Moderate Cybercab Success.",
+          "url": "https://www.tikr.com/blog/of-course-musk-says-when-told-teslas-1-6-trillion-already-prices-in-moderate-cybercab-success?ref=yahoofinance&tlnk=yf-261117-g8r23qw9"
         },
         {
-          "title": "Stephen King Tells Elon Musk ‘You Sound Like Trump’ After Billionaire Warns Democrats Will ‘Execute Their Plan to End Democracy in America’",
-          "url": "https://finance.yahoo.com/media-advertising/articles/stephen-king-tells-elon-musk-033006336.html"
+          "title": "Coinbase Exec Says AI IPOs Pulling Money From Bitcoin Is ‘A Reasonable Argument’ As Anthropic Debut Nears",
+          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/coinbase-exec-says-ai-ip-os-pulling-money-from-bitcoin-is-a-reasonable-argument-as-anthropic-debut-nears/cNbXV7cR9hl"
         }
       ],
       "rank": 2
@@ -116,49 +102,24 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.7배 — 자체 밴드 상단 이탈 (평균 37.5배)"
+          "message": "PER 39.3배 — 자체 밴드 상단 이탈 (평균 37.5배)"
         }
       ],
       "news": [
         {
-          "title": "What's dragging down the S&P 500? Apple in focus",
-          "url": "https://finance.yahoo.com/video/whats-dragging-down-the-sp-500-apple-in-focus-214949304.html"
+          "title": "Apple outage today: iCloud and App Store down after a week of big outages",
+          "url": "https://finance.yahoo.com/markets/article/why-apple-is-down-in-a-week-of-outages-from-microsoft-to-chase-193424335.html"
         },
         {
-          "title": "Eli Lilly is trouncing Nvidia — and the weight-loss drug trade is beating AI again",
-          "url": "https://finance.yahoo.com/markets/article/eli-lilly-is-trouncing-nvidia--and-the-weight-loss-drug-trade-is-beating-ai-again-170530198.html"
+          "title": "Broadcom vs. Micron Technology: Which Tech Stock Is the Better Buy for 2027?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/11/17/broadcom-vs-micron-technology-which-tech-stock-is-the-better-buy-for-2027/"
         },
         {
-          "title": "Gene Munster Says Nvidia Could Be the Next Apple if Investors ‘Sleep Well at Night’",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/gene-munster-says-nvidia-could-032355214.html"
+          "title": "A Retiree With $400,000 in His 401(k) Tries to Move Money Before Stocks Fall Further. Apple’s Widespread Outage Raises the Stakes of a Missed Trade",
+          "url": "https://247wallst.com/personal-finance/2026/11/17/a-retiree-with-400000-in-his-401k-tries-to-move-money-before-stocks-fall-further-apples-widespread-outage-raises-the-stakes-of-a-missed-trade/"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Asian shares decline following stocks tumbled on Wall Street",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-decline-following-stocks-040148315.html"
-        },
-        {
-          "title": "Samsung Stocks Fall 4.47% as Nvidia Turmoil and DRAM Lawsuit Hit Seoul",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-fall-4-47-185426586.html"
-        },
-        {
-          "title": "Micron Stocks Sink Nearly 7% After Judge Lets DRAM Supply Lawsuit Proceed",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-sink-nearly-7-182012075.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "000660.KS",
@@ -171,16 +132,41 @@
       "signals": [],
       "news": [
         {
-          "title": "AMD, MU, SKHY, AVGO: Chip Stocks Ease Overnight After Selloff On New US Chip Restrictions Targeting China",
-          "url": "https://stocktwits.com/news-articles/markets/equity/amd-mu-skhy-avgo-chip-stocks-ease-overnight-after-selloff-on-new-us-chip-restrictions-targeting-china/cNba10cR9gA"
+          "title": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
+          "url": "https://finance.yahoo.com/technology/articles/asia-tech-shares-turn-mixed-032547363.html"
         },
         {
-          "title": "Asian shares decline following stocks tumbled on Wall Street",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-decline-following-stocks-040148315.html"
+          "title": "Micron Technology (MU) Keeps DRAM Price Fixing Lawsuit Alive After Judge Rejection",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-keeps-dram-001843894.html"
         },
         {
-          "title": "Stocks to Watch Recap: Robinhood, Nvidia, SpaceX, L3Harris",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026/card/stocks-to-watch-nvidia-intel-spacex-QOpa7fFDgsDwemeMk9Sf?siteid=yhoof2&yptr=yahoo"
+          "title": "What Is SK hynix (NasdaqGS:SKHY) Really Aiming For With Its $1 Billion Chip Push?",
+          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-nasdaqgs-skhy-really-220914267.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
+          "url": "https://finance.yahoo.com/technology/articles/asia-tech-shares-turn-mixed-032547363.html"
+        },
+        {
+          "title": "Micron Technology (MU) Keeps DRAM Price Fixing Lawsuit Alive After Judge Rejection",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-keeps-dram-001843894.html"
+        },
+        {
+          "title": "Is SK Hynix the Better Artificial Intelligence (AI) Memory Stock Compared With Micron?",
+          "url": "https://www.fool.com/investing/2026/11/17/is-sk-hynix-the-better-artificial-intelligence-ai-memory-stock-compared-with-micron/"
         }
       ],
       "rank": 5
@@ -191,61 +177,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 20.598946,
+      "trailing_pe": 19.728428,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 156.14,
-      "change_pct": -4.12,
+      "last_close": 155.46,
+      "change_pct": -0.44,
       "week52_pct": 0.0,
-      "pct_vs_ma200": -23.37,
-      "drawdown_from_high_pct": -34.73,
-      "return_3m_pct": -28.86,
-      "return_6m_pct": -29.61,
-      "return_12m_pct": -16.24,
-      "relative_strength_6m_pct": -29.79
+      "pct_vs_ma200": -23.64,
+      "drawdown_from_high_pct": -35.02,
+      "return_3m_pct": -28.46,
+      "return_6m_pct": -29.37,
+      "return_12m_pct": -18.06,
+      "relative_strength_6m_pct": -29.19
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.68279,
+      "trailing_pe": 39.27567,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 352.78,
-      "change_pct": -0.98,
-      "week52_pct": 96.8,
-      "pct_vs_ma200": 17.11,
-      "drawdown_from_high_pct": -0.98,
-      "return_3m_pct": 13.88,
-      "return_6m_pct": 18.64,
-      "return_12m_pct": 29.7,
-      "relative_strength_6m_pct": 18.46
+      "last_close": 351.91,
+      "change_pct": -0.25,
+      "week52_pct": 96.1,
+      "pct_vs_ma200": 16.66,
+      "drawdown_from_high_pct": -1.22,
+      "return_3m_pct": 11.16,
+      "return_6m_pct": 17.9,
+      "return_12m_pct": 29.63,
+      "relative_strength_6m_pct": 18.08
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 426.67416,
+      "trailing_pe": 417.70328,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 379.74,
-      "change_pct": -2.69,
-      "week52_pct": 42.5,
-      "pct_vs_ma200": -0.72,
-      "drawdown_from_high_pct": -22.48,
-      "return_3m_pct": 12.73,
-      "return_6m_pct": -7.38,
-      "return_12m_pct": -5.53,
-      "relative_strength_6m_pct": -7.56
+      "last_close": 380.11,
+      "change_pct": 0.1,
+      "week52_pct": 42.7,
+      "pct_vs_ma200": -0.56,
+      "drawdown_from_high_pct": -22.41,
+      "return_3m_pct": 8.26,
+      "return_6m_pct": -5.94,
+      "return_12m_pct": -5.99,
+      "relative_strength_6m_pct": -5.76
     },
     {
       "symbol": "005930.KS",
@@ -257,15 +243,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 190800.0,
-      "change_pct": -3.05,
-      "week52_pct": 37.3,
-      "pct_vs_ma200": -19.62,
-      "drawdown_from_high_pct": -46.39,
-      "return_3m_pct": -27.57,
-      "return_6m_pct": -31.58,
-      "return_12m_pct": 94.5,
-      "relative_strength_6m_pct": 4.75
+      "last_close": 190300.0,
+      "change_pct": 0.0,
+      "week52_pct": 37.1,
+      "pct_vs_ma200": -19.9,
+      "drawdown_from_high_pct": -46.53,
+      "return_3m_pct": -29.47,
+      "return_6m_pct": -34.52,
+      "return_12m_pct": 96.73,
+      "relative_strength_6m_pct": 3.03
     },
     {
       "symbol": "000660.KS",
@@ -277,24 +263,17 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1112000.0,
-      "change_pct": -0.71,
-      "week52_pct": 24.8,
-      "pct_vs_ma200": -26.97,
-      "drawdown_from_high_pct": -61.9,
-      "return_3m_pct": -30.18,
-      "return_6m_pct": -43.7,
-      "return_12m_pct": 92.62,
-      "relative_strength_6m_pct": -7.37
+      "last_close": 1127000.0,
+      "change_pct": 2.64,
+      "week52_pct": 25.4,
+      "pct_vs_ma200": -26.07,
+      "drawdown_from_high_pct": -61.38,
+      "return_3m_pct": -31.47,
+      "return_6m_pct": -42.77,
+      "return_12m_pct": 90.61,
+      "relative_strength_6m_pct": -5.22
     }
   ],
   "discovery": [],
-  "calendar": [
-    {
-      "date": "2026-11-17",
-      "weekday": "화",
-      "label": "NVIDIA Corporation 실적",
-      "kind": "earnings"
-    }
-  ]
+  "calendar": []
 }
