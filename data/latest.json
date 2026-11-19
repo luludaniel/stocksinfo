@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T03:46:51+00:00",
-  "market_date": "2026-11-18",
+  "generated_at": "2026-11-19T03:44:35+00:00",
+  "market_date": "2026-11-19",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 84,
+    "days_collected": 85,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -32,36 +32,36 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 19.7배 — 자체 밴드 하단 이탈 (평균 28.8배)"
+          "message": "PER 19.7배 — 자체 밴드 하단 이탈 (평균 28.7배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 18.6%"
+          "message": "애널리스트 목표주가 7일간 하향 20.7%"
         }
       ],
       "news": [
         {
-          "title": "Nvidia's Q3 numbers were pretty good. Its earnings call optics were another story.",
-          "url": "https://finance.yahoo.com/video/nvidias-q3-numbers-were-pretty-good-its-earnings-call-optics-were-another-story-234451647.html"
+          "title": "The data center bottlenecks that Mavria aims to solve",
+          "url": "https://finance.yahoo.com/video/the-data-center-bottlenecks-that-mavria-aims-to-solve-221600157.html"
         },
         {
-          "title": "Nvidia earnings special coverage: \"The street wants to believe in Nvidia after Jensen\"",
-          "url": "https://finance.yahoo.com/video/nvidia-earnings-special-coverage-the-street-wants-to-believe-in-nvidia-after-jensen-233044562.html"
+          "title": "Memory supply constraints will be even 'tighter' in 2027: Micron CTO",
+          "url": "https://finance.yahoo.com/video/memory-supply-constraints-will-be-even-tighter-in-2027-micron-cto-215815321.html"
         },
         {
-          "title": "Nvidia with a positive Q3 despite SEC probing Nvidia amid Huang Scandal",
-          "url": "https://finance.yahoo.com/video/nvidia-with-a-positive-q3-despite-sec-probing-nvidia-amid-huang-scandal-223224298.html"
+          "title": "Nvidia interim CEO Colette Kress has taken over one of the most consequential companies on the planet; those who know her say she's up to the task",
+          "url": "https://finance.yahoo.com/technology/article/nvidia-interim-ceo-colette-kress-has-taken-over-one-of-the-most-consequential-companies-on-the-planet-those-who-know-her-say-shes-up-to-the-task-210312776.html"
         }
       ],
       "rank": 1
     },
     {
       "symbol": "TSLA",
-      "score": 2.5,
+      "score": 3.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 2.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -69,22 +69,28 @@
         {
           "symbol": "TSLA",
           "severity": "yellow",
+          "type": "ma200_cross",
+          "message": "200일선 상향 돌파 (0.1개월 만)"
+        },
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 417.7배 — 자체 밴드 상단 이탈 (평균 342.9배)"
+          "message": "PER 421.7배 — 자체 밴드 상단 이탈 (평균 343.9배)"
         }
       ],
       "news": [
         {
-          "title": "What far cheaper AI compute in space could mean for Elon Musk",
-          "url": "https://finance.yahoo.com/video/what-far-cheaper-ai-compute-in-space-could-mean-for-elon-musk-162707073.html"
+          "title": "Skydance's David Ellison calls Elon Musk 'the greatest entrepreneur of our time'",
+          "url": "https://finance.yahoo.com/media-advertising/article/skydances-david-ellison-calls-elon-musk-the-greatest-entrepreneur-of-our-time-205405607.html"
         },
         {
-          "title": "“Of Course,” Musk Says When Told Tesla’s $1.6 Trillion Already Prices In Moderate Cybercab Success.",
-          "url": "https://www.tikr.com/blog/of-course-musk-says-when-told-teslas-1-6-trillion-already-prices-in-moderate-cybercab-success?ref=yahoofinance&tlnk=yf-261117-g8r23qw9"
+          "title": "Tesla And SpaceX ‘Better Together’? Musk Leans Yes — But Says Performance Must Drive His TSLA Pay",
+          "url": "https://stocktwits.com/news-articles/markets/equity/tesla-spacex-better-together-musk-performance-tsla-pay/cNbLsa5R9iJ"
         },
         {
-          "title": "Coinbase Exec Says AI IPOs Pulling Money From Bitcoin Is ‘A Reasonable Argument’ As Anthropic Debut Nears",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/coinbase-exec-says-ai-ip-os-pulling-money-from-bitcoin-is-a-reasonable-argument-as-anthropic-debut-nears/cNbXV7cR9hl"
+          "title": "Elon Musk Says Nvidia Made a ‘Mistake’ by Parting Ways With  Jensen Huang: Calls Ex-CEO ‘Michael Jordan Perhaps at His Peak Level’",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-says-nvidia-made-014213735.html"
         }
       ],
       "rank": 2
@@ -102,21 +108,21 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.3배 — 자체 밴드 상단 이탈 (평균 37.5배)"
+          "message": "PER 39.2배 — 자체 밴드 상단 이탈 (평균 37.6배)"
         }
       ],
       "news": [
         {
-          "title": "Apple outage today: iCloud and App Store down after a week of big outages",
-          "url": "https://finance.yahoo.com/markets/article/why-apple-is-down-in-a-week-of-outages-from-microsoft-to-chase-193424335.html"
+          "title": "Major tech outages raise new cybersecurity concerns",
+          "url": "https://finance.yahoo.com/video/major-tech-outages-raise-new-cybersecurity-concerns-144024816.html"
         },
         {
-          "title": "Broadcom vs. Micron Technology: Which Tech Stock Is the Better Buy for 2027?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/11/17/broadcom-vs-micron-technology-which-tech-stock-is-the-better-buy-for-2027/"
+          "title": "Corning CEO on working with Steve Jobs to make screens for the first iPhone",
+          "url": "https://finance.yahoo.com/video/corning-ceo-working-steve-jobs-010013740.html"
         },
         {
-          "title": "A Retiree With $400,000 in His 401(k) Tries to Move Money Before Stocks Fall Further. Apple’s Widespread Outage Raises the Stakes of a Missed Trade",
-          "url": "https://247wallst.com/personal-finance/2026/11/17/a-retiree-with-400000-in-his-401k-tries-to-move-money-before-stocks-fall-further-apples-widespread-outage-raises-the-stakes-of-a-missed-trade/"
+          "title": "Alphabet vs. Apple: Which Warren Buffett Stock Is the Better Buy?",
+          "url": "https://www.fool.com/investing/2026/11/18/alphabet-vs-apple-which-warren-buffett-stock-is-the-better-buy/"
         }
       ],
       "rank": 3
@@ -132,16 +138,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
-          "url": "https://finance.yahoo.com/technology/articles/asia-tech-shares-turn-mixed-032547363.html"
+          "title": "Coatue Builds $1.8 Billion Salesforce Stake, Its Biggest New Bet, as the Stock Sinks 17%",
+          "url": "https://247wallst.com/investing/2026/11/18/coatue-builds-1-8-billion-salesforce-stake-its-biggest-new-bet-as-the-stock-sinks-17/"
         },
         {
-          "title": "Micron Technology (MU) Keeps DRAM Price Fixing Lawsuit Alive After Judge Rejection",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-keeps-dram-001843894.html"
+          "title": "SK hynix Stocks Climb 4.19% as Nvidia's $130 Billion Guide Revives Memory Trade",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-climb-4-194643106.html"
         },
         {
-          "title": "What Is SK hynix (NasdaqGS:SKHY) Really Aiming For With Its $1 Billion Chip Push?",
-          "url": "https://finance.yahoo.com/technology/articles/sk-hynix-nasdaqgs-skhy-really-220914267.html"
+          "title": "Samsung Stocks Rise 2.31% in Seoul as Nvidia Beat Lifts Korean Chipmakers",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-rise-2-31-194552498.html"
         }
       ],
       "rank": 4
@@ -157,16 +163,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
-          "url": "https://finance.yahoo.com/technology/articles/asia-tech-shares-turn-mixed-032547363.html"
+          "title": "Smart Glasses Launch Could Change The Case For Warby Parker Stock",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/smart-glasses-launch-could-change-022225929.html"
         },
         {
-          "title": "Micron Technology (MU) Keeps DRAM Price Fixing Lawsuit Alive After Judge Rejection",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-keeps-dram-001843894.html"
+          "title": "Anthropic IPO Going ‘Awry’ Risks ‘Entire Financial System,’ Says Elizabeth Warren: ‘Trump Regulators Are Asleep at the Switch’",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-going-awry-risks-021945043.html"
         },
         {
-          "title": "Is SK Hynix the Better Artificial Intelligence (AI) Memory Stock Compared With Micron?",
-          "url": "https://www.fool.com/investing/2026/11/17/is-sk-hynix-the-better-artificial-intelligence-ai-memory-stock-compared-with-micron/"
+          "title": "This Company Cools AI Data Centers. Why Its Stock Is Running Hot.",
+          "url": "https://www.barrons.com/articles/modexus-solutions-stock-ai-data-centers-70d13dd8?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -177,61 +183,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 19.728428,
+      "trailing_pe": 19.656252,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 155.46,
-      "change_pct": -0.44,
+      "last_close": 150.96,
+      "change_pct": -2.89,
       "week52_pct": 0.0,
-      "pct_vs_ma200": -23.64,
-      "drawdown_from_high_pct": -35.02,
-      "return_3m_pct": -28.46,
-      "return_6m_pct": -29.37,
-      "return_12m_pct": -18.06,
-      "relative_strength_6m_pct": -29.19
+      "pct_vs_ma200": -25.8,
+      "drawdown_from_high_pct": -36.9,
+      "return_3m_pct": -30.31,
+      "return_6m_pct": -32.29,
+      "return_12m_pct": -18.91,
+      "relative_strength_6m_pct": -30.82
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.27567,
+      "trailing_pe": 39.204674,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 351.91,
-      "change_pct": -0.25,
-      "week52_pct": 96.1,
-      "pct_vs_ma200": 16.66,
-      "drawdown_from_high_pct": -1.22,
-      "return_3m_pct": 11.16,
-      "return_6m_pct": 17.9,
-      "return_12m_pct": 29.63,
-      "relative_strength_6m_pct": 18.08
+      "last_close": 352.45,
+      "change_pct": 0.15,
+      "week52_pct": 96.5,
+      "pct_vs_ma200": 16.67,
+      "drawdown_from_high_pct": -1.07,
+      "return_3m_pct": 13.3,
+      "return_6m_pct": 16.8,
+      "return_12m_pct": 32.24,
+      "relative_strength_6m_pct": 18.27
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 417.70328,
+      "trailing_pe": 421.67032,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 380.11,
-      "change_pct": 0.1,
-      "week52_pct": 42.7,
-      "pct_vs_ma200": -0.56,
-      "drawdown_from_high_pct": -22.41,
-      "return_3m_pct": 8.26,
-      "return_6m_pct": -5.94,
-      "return_12m_pct": -5.99,
-      "relative_strength_6m_pct": -5.76
+      "last_close": 383.72,
+      "change_pct": 0.95,
+      "week52_pct": 44.6,
+      "pct_vs_ma200": 0.43,
+      "drawdown_from_high_pct": -21.67,
+      "return_3m_pct": 11.18,
+      "return_6m_pct": -8.04,
+      "return_12m_pct": -6.16,
+      "relative_strength_6m_pct": -6.57
     },
     {
       "symbol": "005930.KS",
@@ -243,15 +249,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 190300.0,
-      "change_pct": 0.0,
-      "week52_pct": 37.1,
-      "pct_vs_ma200": -19.9,
-      "drawdown_from_high_pct": -46.53,
-      "return_3m_pct": -29.47,
-      "return_6m_pct": -34.52,
-      "return_12m_pct": 96.73,
-      "relative_strength_6m_pct": 3.03
+      "last_close": 191400.0,
+      "change_pct": -1.69,
+      "week52_pct": 37.6,
+      "pct_vs_ma200": -19.52,
+      "drawdown_from_high_pct": -46.23,
+      "return_3m_pct": -27.48,
+      "return_6m_pct": -27.94,
+      "return_12m_pct": 100.5,
+      "relative_strength_6m_pct": 5.33
     },
     {
       "symbol": "000660.KS",
@@ -263,15 +269,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1127000.0,
-      "change_pct": 2.64,
+      "last_close": 1128000.0,
+      "change_pct": -1.4,
       "week52_pct": 25.4,
-      "pct_vs_ma200": -26.07,
-      "drawdown_from_high_pct": -61.38,
-      "return_3m_pct": -31.47,
-      "return_6m_pct": -42.77,
-      "return_12m_pct": 90.61,
-      "relative_strength_6m_pct": -5.22
+      "pct_vs_ma200": -26.1,
+      "drawdown_from_high_pct": -61.35,
+      "return_3m_pct": -32.12,
+      "return_6m_pct": -37.96,
+      "return_12m_pct": 95.06,
+      "relative_strength_6m_pct": -4.69
     }
   ],
   "discovery": [],
