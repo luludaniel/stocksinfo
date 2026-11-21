@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T03:38:53+00:00",
-  "market_date": "2026-11-20",
+  "generated_at": "2026-11-21T03:21:13+00:00",
+  "market_date": "2026-11-21",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,15 +9,15 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 86,
+    "days_collected": 87,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "NVDA",
-      "score": 6.5,
+      "score": 7.5,
       "score_breakdown": {
-        "severity": 5.0,
+        "severity": 6.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -31,72 +31,40 @@
         {
           "symbol": "NVDA",
           "severity": "yellow",
+          "type": "volume_spike",
+          "message": "거래량 20일 평균 대비 2.41배"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 15.7배 — 자체 밴드 하단 이탈 (평균 28.6배)"
+          "message": "PER 13.5배 — 자체 밴드 하단 이탈 (평균 28.4배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 20.4%"
+          "message": "애널리스트 목표주가 7일간 하향 13.8%"
         }
       ],
       "news": [
         {
-          "title": "Jensen Huang's Nvidia comeback: Why the math doesn't add up",
-          "url": "https://finance.yahoo.com/video/jensen-huangs-nvidia-comeback-why-the-math-doesnt-add-up-213021034.html"
+          "title": "Nvidia stock extends $2.7 trillion rout as SEC probe reportedly investigates its accounting",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html"
         },
         {
-          "title": "Nvidia will not be the leader 5 years from now: Tiernan Ray",
-          "url": "https://finance.yahoo.com/video/nvidia-will-not-be-the-leader-5-years-from-now-tiernan-ray-185954396.html"
+          "title": "Trump critiques Jensen Huang's replacement as he wades deeper into Nvidia turmoil",
+          "url": "https://finance.yahoo.com/markets/article/trump-critiques-jensen-huangs-replacement-as-he-wades-deeper-into-nvidia-turmoil-210729338.html"
         },
         {
-          "title": "Why AI competition from China won't be a risk US tech companies",
-          "url": "https://finance.yahoo.com/video/why-ai-competition-from-china-wont-be-a-risk-us-tech-companies-184851467.html"
+          "title": "Market Hang: AI Reset? Anthropic's Outlook, Amodei's Future, and Who Could Dethrone NVIDIA?",
+          "url": "https://finance.yahoo.com/video/market-hang-ai-reset-anthropics-outlook-amodeis-future-and-who-could-dethrone-nvidia-210048852.html"
         }
       ],
       "rank": 1
     },
     {
       "symbol": "TSLA",
-      "score": 5.5,
-      "score_breakdown": {
-        "severity": 4.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "red",
-          "type": "ma200_cross",
-          "message": "200일선 하향 이탈"
-        },
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 411.4배 — 자체 밴드 상단 이탈 (평균 344.7배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Elon Musk on his $500M in political spending: 'I feel pretty foolish'",
-          "url": "https://finance.yahoo.com/video/elon-musk-on-his-500m-in-political-spending-i-feel-pretty-foolish-151142965.html"
-        },
-        {
-          "title": "Tech takes a beating as AI trade comes unstuck despite Anthropic surge",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html"
-        },
-        {
-          "title": "Is Tech in a Bear Market? 20 Tech Stocks Fall Up to 76% From Highs",
-          "url": "https://beincrypto.com/tech-stocks-bear-market-record-highs/"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "AAPL",
       "score": 2.5,
       "score_breakdown": {
         "severity": 1.0,
@@ -105,52 +73,27 @@
       },
       "signals": [
         {
-          "symbol": "AAPL",
+          "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.2배 — 자체 밴드 상단 이탈 (평균 37.6배)"
+          "message": "PER 380.0배 — 자체 밴드 상단 이탈 (평균 345.1배)"
         }
       ],
       "news": [
         {
-          "title": "Tech takes a beating as AI trade comes unstuck despite Anthropic surge",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html"
+          "title": "In 2000, Elon Musk Crashed His Uninsured $1 Million McLaren Trying to Show Peter Thiel What It Could Do. In 2025, Thiel’s Fund Quietly Sold Every Tesla Share It Owned",
+          "url": "https://247wallst.com/investing/2026/11/20/in-2000-elon-musk-crashed-his-uninsured-1-million-mclaren-trying-to-show-peter-thiel-what-it-could-do-in-2025-thiels-fund-quietly-sold-every-tesla-share-it-owned/"
         },
         {
-          "title": "History Says This Brilliant ETF Could Help You Turn $500 Per Month Into $784,100 While Barely Lifting a Finger.",
-          "url": "https://www.fool.com/investing/2026/11/19/history-says-this-brilliant-etf-could-help-you-turn-usd500-per-month-into-usd784-100-while-barely-lifting-a-finger/"
+          "title": "Has AI's honeymoon ended on Wall Street?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ais-honeymoon-ended-wall-street-004604807.html"
         },
         {
-          "title": "1 Unstoppable Stock to Buy Before It Joins NVDA and AAPL in the $1 Trillion Club",
-          "url": "https://www.fool.com/investing/2026/11/19/1-unstoppable-stock-to-buy-before-it-joins-hot-tickers-in-the-1-3-trillion-club/"
+          "title": "Zero To Sixty: Tesla Expands Cybercab To Dallas As Waymo Pauses Freeway Operations This Week",
+          "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-tesla-expands-cybercab-to-dallas-as-waymo-pauses-freeway-operations-this-week/cNbm5YSR91g"
         }
       ],
-      "rank": 3
-    },
-    {
-      "symbol": "005930.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Asia shares drop on AI worries, echoing Wall Street's decline despite the strong Anthropic debut",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asia-shares-drop-ai-worries-031709382.html"
-        },
-        {
-          "title": "South Korea’s Stock Market Sinks 4.6% as KOSPI Heavyweights SK Hynix and Samsung Fall 6% After Wall Street’s AI Selloff",
-          "url": "https://247wallst.com/investing/2026/11/19/south-koreas-stock-market-sinks-4-6-as-kospi-heavyweights-sk-hynix-and-samsung-fall-6-after-wall-streets-ai-selloff/"
-        },
-        {
-          "title": "Record profits but record outflows: 'Sell Korea' trade stalks Seoul market",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/analysis-record-profits-record-outflows-111842731.html"
-        }
-      ],
-      "rank": 4
+      "rank": 2
     },
     {
       "symbol": "000660.KS",
@@ -163,16 +106,66 @@
       "signals": [],
       "news": [
         {
-          "title": "South Korea’s Stock Market Sinks 4.6% as KOSPI Heavyweights SK Hynix and Samsung Fall 6% After Wall Street’s AI Selloff",
-          "url": "https://247wallst.com/investing/2026/11/19/south-koreas-stock-market-sinks-4-6-as-kospi-heavyweights-sk-hynix-and-samsung-fall-6-after-wall-streets-ai-selloff/"
+          "title": "SK hynix Stocks Fall 5.92% as Kospi Rout Hits HBM Leader With 80% Margins",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-5-214132697.html"
         },
         {
-          "title": "Record profits but record outflows: 'Sell Korea' trade stalks Seoul market",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/analysis-record-profits-record-outflows-111842731.html"
+          "title": "Nvidia drops 12%, Broadcom and AMD extend declines as the AI trade melts down",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html"
         },
         {
-          "title": "Nvidia, Broadcom, and Micron stocks decline as Anthropic goes public",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-broadcom-micron-stocks-decline-as-anthropic-goes-public-170845481.html"
+          "title": "Micron Keeps Falling as Memory Stocks Get Agonizingly Cheap",
+          "url": "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Apple's secret AI agent shows John Ternus is done sitting out the AI race",
+          "url": "https://finance.yahoo.com/markets/article/apples-secret-ai-agent-shows-john-ternus-is-done-sitting-out-the-ai-race-164226953.html"
+        },
+        {
+          "title": "Apple's AI agent push: Why the pressure is mounting",
+          "url": "https://finance.yahoo.com/video/apples-ai-agent-push-why-the-pressure-is-mounting-151336671.html"
+        },
+        {
+          "title": "Dow Jones Futures: Market Has Worst Week Since Covid Amid Nvidia, Anthropic. Does Fear Gauge Offer Hope?",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/?src=A00220&yptr=yahoo"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Samsung Stocks Fall 7.01% as AI Selloff Hits Seoul After Record ?107 Trillion Quarter",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-fall-7-01-213859960.html"
+        },
+        {
+          "title": "Micron’s President Says “We Can’t Support Every Customer.” Apple Just Locked In Samsung’s DRAM",
+          "url": "https://www.tikr.com/blog/microns-president-says-we-cant-support-every-customer-apple-just-locked-in-samsungs-dram?ref=yahoofinance&tlnk=yf-261120-2c7wfx6r"
+        },
+        {
+          "title": "Micron Keeps Falling as Memory Stocks Get Agonizingly Cheap",
+          "url": "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734?siteid=yhoof2&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -183,61 +176,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 15.679913,
+      "trailing_pe": 13.483351,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 145.98,
-      "change_pct": -3.3,
+      "last_close": 125.53,
+      "change_pct": -14.01,
       "week52_pct": 0.0,
-      "pct_vs_ma200": -28.2,
-      "drawdown_from_high_pct": -38.98,
-      "return_3m_pct": -31.94,
-      "return_6m_pct": -33.35,
-      "return_12m_pct": -19.32,
-      "relative_strength_6m_pct": -29.73
+      "pct_vs_ma200": -38.19,
+      "drawdown_from_high_pct": -47.53,
+      "return_3m_pct": -39.72,
+      "return_6m_pct": -41.57,
+      "return_12m_pct": -32.54,
+      "relative_strength_6m_pct": -34.04
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.23708,
+      "trailing_pe": 38.146996,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 349.21,
-      "change_pct": -0.92,
-      "week52_pct": 93.6,
-      "pct_vs_ma200": 15.46,
-      "drawdown_from_high_pct": -1.98,
-      "return_3m_pct": 12.97,
-      "return_6m_pct": 14.68,
-      "return_12m_pct": 31.03,
-      "relative_strength_6m_pct": 18.3
+      "last_close": 342.56,
+      "change_pct": -1.9,
+      "week52_pct": 87.6,
+      "pct_vs_ma200": 13.14,
+      "drawdown_from_high_pct": -3.85,
+      "return_3m_pct": 10.47,
+      "return_6m_pct": 11.11,
+      "return_12m_pct": 28.0,
+      "relative_strength_6m_pct": 18.64
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 411.43954,
+      "trailing_pe": 380.02197,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 374.41,
-      "change_pct": -2.43,
-      "week52_pct": 39.7,
-      "pct_vs_ma200": -1.97,
-      "drawdown_from_high_pct": -23.57,
-      "return_3m_pct": 3.18,
-      "return_6m_pct": -10.4,
-      "return_12m_pct": -6.69,
-      "relative_strength_6m_pct": -6.78
+      "last_close": 345.82,
+      "change_pct": -7.64,
+      "week52_pct": 24.8,
+      "pct_vs_ma200": -9.39,
+      "drawdown_from_high_pct": -29.41,
+      "return_3m_pct": -0.9,
+      "return_6m_pct": -18.82,
+      "return_12m_pct": -14.4,
+      "relative_strength_6m_pct": -11.29
     },
     {
       "symbol": "005930.KS",
@@ -249,15 +242,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 183900.0,
-      "change_pct": -6.6,
-      "week52_pct": 34.7,
-      "pct_vs_ma200": -22.74,
-      "drawdown_from_high_pct": -48.33,
-      "return_3m_pct": -24.41,
-      "return_6m_pct": -33.35,
-      "return_12m_pct": 87.47,
-      "relative_strength_6m_pct": 1.66
+      "last_close": 183100.0,
+      "change_pct": -7.01,
+      "week52_pct": 34.4,
+      "pct_vs_ma200": -23.07,
+      "drawdown_from_high_pct": -48.56,
+      "return_3m_pct": -24.74,
+      "return_6m_pct": -33.64,
+      "return_12m_pct": 86.65,
+      "relative_strength_6m_pct": 1.57
     },
     {
       "symbol": "000660.KS",
@@ -269,18 +262,55 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1108000.0,
-      "change_pct": -6.34,
-      "week52_pct": 24.6,
-      "pct_vs_ma200": -27.51,
-      "drawdown_from_high_pct": -62.03,
-      "return_3m_pct": -26.12,
-      "return_6m_pct": -39.76,
-      "return_12m_pct": 83.38,
-      "relative_strength_6m_pct": -4.75
+      "last_close": 1113000.0,
+      "change_pct": -5.92,
+      "week52_pct": 24.8,
+      "pct_vs_ma200": -27.18,
+      "drawdown_from_high_pct": -61.86,
+      "return_3m_pct": -25.78,
+      "return_6m_pct": -39.49,
+      "return_12m_pct": 84.2,
+      "relative_strength_6m_pct": -4.28
     }
   ],
-  "discovery": [],
+  "discovery": [
+    {
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "why": "당일 기사 2건 언급",
+      "headlines": [
+        {
+          "title": "월트 디즈니 이사 로버트 아이거, DIS 주식 약 3,950만 달러어치 매도"
+        }
+      ],
+      "basic": {
+        "trailing_pe": 20.955595,
+        "week52_pct": 85.7,
+        "market_cap_usd": 201513353216
+      }
+    },
+    {
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "why": "당일 기사 3건 언급",
+      "headlines": [
+        {
+          "title": "Wall St ends sharply lower on AI selloff, S&P 500, Dow in correction - Reuters"
+        },
+        {
+          "title": "S&P 500 (^GSPC) Charts, Data & News - Yahoo Finance - Yahoo! Finance Canada"
+        },
+        {
+          "title": "S&P 500 sinks 3.7% and Nasdaq composite goes negative for the year as tech sell-off worsens - AP News"
+        }
+      ],
+      "basic": {
+        "trailing_pe": null,
+        "week52_pct": 38.4,
+        "market_cap_usd": null
+      }
+    }
+  ],
   "calendar": [
     {
       "date": "2026-11-27",
