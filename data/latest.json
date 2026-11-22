@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T03:21:13+00:00",
-  "market_date": "2026-11-21",
+  "generated_at": "2026-11-22T02:28:03+00:00",
+  "market_date": "2026-11-22",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 87,
+    "days_collected": 88,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -38,112 +38,30 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 13.5배 — 자체 밴드 하단 이탈 (평균 28.4배)"
+          "message": "PER 13.5배 — 자체 밴드 하단 이탈 (평균 28.2배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 13.8%"
+          "message": "애널리스트 목표주가 7일간 하향 12.3%"
         }
       ],
       "news": [
         {
-          "title": "Nvidia stock extends $2.7 trillion rout as SEC probe reportedly investigates its accounting",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html"
+          "title": "What just happened to tech stocks?",
+          "url": "https://finance.yahoo.com/markets/article/what-just-happened-to-tech-stocks-162354774.html"
         },
         {
-          "title": "Trump critiques Jensen Huang's replacement as he wades deeper into Nvidia turmoil",
-          "url": "https://finance.yahoo.com/markets/article/trump-critiques-jensen-huangs-replacement-as-he-wades-deeper-into-nvidia-turmoil-210729338.html"
+          "title": "Jensen Huang's next move: Wall Street floats Intel and SpaceX, but bettors are banking on a surprise second act",
+          "url": "https://finance.yahoo.com/markets/article/jensen-huangs-next-move-wall-street-floats-intel-and-spacex-but-bettors-are-banking-on-a-surprise-second-act-123015670.html"
         },
         {
-          "title": "Market Hang: AI Reset? Anthropic's Outlook, Amodei's Future, and Who Could Dethrone NVIDIA?",
-          "url": "https://finance.yahoo.com/video/market-hang-ai-reset-anthropics-outlook-amodeis-future-and-who-could-dethrone-nvidia-210048852.html"
+          "title": "Intel Says It Just Signed Its First Customer for Its Most Advanced Chipmaking Process. The Stock Is Still More Than 60% Below Its June Record.",
+          "url": "https://www.fool.com/investing/2026/11/21/intel-says-it-just-signed-its-first-customer-for-its-most-advanced-chipmaking-process-the-stock-is-still-more-than-60-below-its-june-record/"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "TSLA",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 1.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 380.0배 — 자체 밴드 상단 이탈 (평균 345.1배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "In 2000, Elon Musk Crashed His Uninsured $1 Million McLaren Trying to Show Peter Thiel What It Could Do. In 2025, Thiel’s Fund Quietly Sold Every Tesla Share It Owned",
-          "url": "https://247wallst.com/investing/2026/11/20/in-2000-elon-musk-crashed-his-uninsured-1-million-mclaren-trying-to-show-peter-thiel-what-it-could-do-in-2025-thiels-fund-quietly-sold-every-tesla-share-it-owned/"
-        },
-        {
-          "title": "Has AI's honeymoon ended on Wall Street?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ais-honeymoon-ended-wall-street-004604807.html"
-        },
-        {
-          "title": "Zero To Sixty: Tesla Expands Cybercab To Dallas As Waymo Pauses Freeway Operations This Week",
-          "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-tesla-expands-cybercab-to-dallas-as-waymo-pauses-freeway-operations-this-week/cNbm5YSR91g"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "SK hynix Stocks Fall 5.92% as Kospi Rout Hits HBM Leader With 80% Margins",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-5-214132697.html"
-        },
-        {
-          "title": "Nvidia drops 12%, Broadcom and AMD extend declines as the AI trade melts down",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html"
-        },
-        {
-          "title": "Micron Keeps Falling as Memory Stocks Get Agonizingly Cheap",
-          "url": "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Apple's secret AI agent shows John Ternus is done sitting out the AI race",
-          "url": "https://finance.yahoo.com/markets/article/apples-secret-ai-agent-shows-john-ternus-is-done-sitting-out-the-ai-race-164226953.html"
-        },
-        {
-          "title": "Apple's AI agent push: Why the pressure is mounting",
-          "url": "https://finance.yahoo.com/video/apples-ai-agent-push-why-the-pressure-is-mounting-151336671.html"
-        },
-        {
-          "title": "Dow Jones Futures: Market Has Worst Week Since Covid Amid Nvidia, Anthropic. Does Fear Gauge Offer Hope?",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/?src=A00220&yptr=yahoo"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -156,16 +74,91 @@
       "signals": [],
       "news": [
         {
-          "title": "Samsung Stocks Fall 7.01% as AI Selloff Hits Seoul After Record ?107 Trillion Quarter",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-fall-7-01-213859960.html"
+          "title": "3 Money Moves To Make If You Hear About Layoffs at Your Company",
+          "url": "https://moneylion.com/trending/money/money-moves-hear-about-company-layoffs"
         },
         {
-          "title": "Micron’s President Says “We Can’t Support Every Customer.” Apple Just Locked In Samsung’s DRAM",
-          "url": "https://www.tikr.com/blog/microns-president-says-we-cant-support-every-customer-apple-just-locked-in-samsungs-dram?ref=yahoofinance&tlnk=yf-261120-2c7wfx6r"
+          "title": "Anthropic's 20X Sales Valuation Makes Samsung And Hynix Look Like Bargains, Warns Dan Niles",
+          "url": "https://stocktwits.com/news-articles/markets/equity/anthropic-ipo-20x-sales-valuation-samsung-skhy-bargains-dan-niles/cNbmaipR91K"
         },
         {
-          "title": "Micron Keeps Falling as Memory Stocks Get Agonizingly Cheap",
-          "url": "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734?siteid=yhoof2&yptr=yahoo"
+          "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Pauses Advanced Chip Shipments To China",
+          "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-manufacturing-nyse-tsm-042528694.html"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Intuit vs. Oracle: Which Technology Stock Is a Better Buy for 2027?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/11/21/intuit-vs-oracle-which-technology-stock-is-a-better-buy-for-2027/"
+        },
+        {
+          "title": "Dow Jones Futures: After Nvidia, Anthropic Fuel Worst Week Since Covid, Look For These 'Absolute Losers'",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "T-Mobile leak reveals major phone plan change for core customers",
+          "url": "https://www.thestreet.com/retail/t-mobile-t-select-prepaid-wireless-plans-leak"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "SK hynix Sinks 21% in a Week With Micron and Sandisk. Its U.S. Premium Is an “Extra Special Case”",
+          "url": "https://www.tikr.com/blog/sk-hynix-sinks-21-in-a-week-with-micron-and-sandisk-its-u-s-premium-is-an-extra-special-case?ref=yahoofinance&tlnk=yf-261121-947vrx38"
+        },
+        {
+          "title": "ASML vs. SK Hynix: Which Artificial Intelligence Stock Is a Better Buy for 2027?",
+          "url": "https://www.fool.com/coverage/better-buy/2026/11/21/asml-vs-sk-hynix-which-artificial-intelligence-stock-is-a-better-buy-for-2027/"
+        },
+        {
+          "title": "Coatue Management Bets on SK hynix Stock as Demand for HBM Chips Accelerates",
+          "url": "https://www.barchart.com/story/news/8950911/coatue-management-bets-on-sk-hynix-stock-as-demand-for-hbm-chips-accelerates"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "TSLA",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Cathie Wood, Brad Gerstner and 16 Other Big Funds Bought Tesla Last Quarter, While 15 Sold. Who’s Right?",
+          "url": "https://www.tikr.com/blog/cathie-wood-brad-gerstner-and-16-other-big-funds-bought-tesla-last-quarter-while-15-sold-whos-right?ref=yahoofinance&tlnk=yf-261121-3rm42fg9"
+        },
+        {
+          "title": "Tesla (TSLA) Stock Looks Richly Priced After Its 47% Three Year Run",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-stock-looks-richly-210854263.html"
+        },
+        {
+          "title": "Tesla FSD V15 Rolling Out, Goes 'Wide' Next Month. Elon Musk Says It's 'Something Special.'",
+          "url": "https://www.investors.com/news/tesla-fsd-v15-coming-next-month-elon-musk-says-something-special/?src=A00220&yptr=yahoo"
         }
       ],
       "rank": 5
@@ -273,44 +266,7 @@
       "relative_strength_6m_pct": -4.28
     }
   ],
-  "discovery": [
-    {
-      "symbol": "DIS",
-      "name": "Walt Disney Company (The)",
-      "why": "당일 기사 2건 언급",
-      "headlines": [
-        {
-          "title": "월트 디즈니 이사 로버트 아이거, DIS 주식 약 3,950만 달러어치 매도"
-        }
-      ],
-      "basic": {
-        "trailing_pe": 20.955595,
-        "week52_pct": 85.7,
-        "market_cap_usd": 201513353216
-      }
-    },
-    {
-      "symbol": "^GSPC",
-      "name": "S&P 500",
-      "why": "당일 기사 3건 언급",
-      "headlines": [
-        {
-          "title": "Wall St ends sharply lower on AI selloff, S&P 500, Dow in correction - Reuters"
-        },
-        {
-          "title": "S&P 500 (^GSPC) Charts, Data & News - Yahoo Finance - Yahoo! Finance Canada"
-        },
-        {
-          "title": "S&P 500 sinks 3.7% and Nasdaq composite goes negative for the year as tech sell-off worsens - AP News"
-        }
-      ],
-      "basic": {
-        "trailing_pe": null,
-        "week52_pct": 38.4,
-        "market_cap_usd": null
-      }
-    }
-  ],
+  "discovery": [],
   "calendar": [
     {
       "date": "2026-11-27",
