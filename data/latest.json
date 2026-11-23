@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T02:28:03+00:00",
-  "market_date": "2026-11-22",
+  "generated_at": "2026-11-23T02:57:13+00:00",
+  "market_date": "2026-11-23",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 88,
+    "days_collected": 89,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -38,33 +38,33 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 13.5배 — 자체 밴드 하단 이탈 (평균 28.2배)"
+          "message": "PER 13.5배 — 자체 밴드 하단 이탈 (평균 28.1배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 12.3%"
+          "message": "애널리스트 목표주가 7일간 하향 11.7%"
         }
       ],
       "news": [
         {
-          "title": "What just happened to tech stocks?",
-          "url": "https://finance.yahoo.com/markets/article/what-just-happened-to-tech-stocks-162354774.html"
+          "title": "GPU prices are rising for Nvidia's older chips even as the stock keeps going down: Chart of the Day",
+          "url": "https://finance.yahoo.com/markets/article/gpu-prices-are-rising-for-nvidias-older-chips-even-as-the-stock-keeps-going-down-chart-of-the-day-123721121.html"
         },
         {
-          "title": "Jensen Huang's next move: Wall Street floats Intel and SpaceX, but bettors are banking on a surprise second act",
-          "url": "https://finance.yahoo.com/markets/article/jensen-huangs-next-move-wall-street-floats-intel-and-spacex-but-bettors-are-banking-on-a-surprise-second-act-123015670.html"
+          "title": "From Anthropic to Nvidia, Wall Street just had a bizarre, wild week",
+          "url": "https://finance.yahoo.com/markets/article/from-anthropic-to-nvidia-wall-street-just-had-a-bizarre-wild-week-110000443.html"
         },
         {
-          "title": "Intel Says It Just Signed Its First Customer for Its Most Advanced Chipmaking Process. The Stock Is Still More Than 60% Below Its June Record.",
-          "url": "https://www.fool.com/investing/2026/11/21/intel-says-it-just-signed-its-first-customer-for-its-most-advanced-chipmaking-process-the-stock-is-still-more-than-60-below-its-june-record/"
+          "title": "Kevin O’Leary Says Nvidia CEO Colette Kress Is ‘Pretty Sharp,’ Chip Demand ‘Insatiable’: Crypto Bettors Weigh Jensen Huang Comeback Odds",
+          "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63518223/kevin-oleary-jensen-huang-nvidia-ceo-polymarket-prediction-market?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
         }
       ],
       "rank": 1
     },
     {
-      "symbol": "005930.KS",
+      "symbol": "000660.KS",
       "score": 1.5,
       "score_breakdown": {
         "severity": 0,
@@ -74,16 +74,16 @@
       "signals": [],
       "news": [
         {
-          "title": "3 Money Moves To Make If You Hear About Layoffs at Your Company",
-          "url": "https://moneylion.com/trending/money/money-moves-hear-about-company-layoffs"
+          "title": "Asian tech back in the firing line as traders track Wall St rout",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-tech-back-firing-line-024445930.html"
         },
         {
-          "title": "Anthropic's 20X Sales Valuation Makes Samsung And Hynix Look Like Bargains, Warns Dan Niles",
-          "url": "https://stocktwits.com/news-articles/markets/equity/anthropic-ipo-20x-sales-valuation-samsung-skhy-bargains-dan-niles/cNbmaipR91K"
+          "title": "Can Samsung and SK Hynix Buybacks Stop Korea's $115 Billion Selloff?",
+          "url": "https://beincrypto.com/samsung-sk-hynix-buybacks-korea-selloff/"
         },
         {
-          "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Pauses Advanced Chip Shipments To China",
-          "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-manufacturing-nyse-tsm-042528694.html"
+          "title": "Taiwan stocks suffer worst week since 1990 as AI rout drains emerging Asia",
+          "url": "http://www.intellinews.com/taiwan-stocks-suffer-worst-week-since-1990-as-ai-rout-drains-emerging-asia-487378/"
         }
       ],
       "rank": 2
@@ -99,44 +99,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Intuit vs. Oracle: Which Technology Stock Is a Better Buy for 2027?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/11/21/intuit-vs-oracle-which-technology-stock-is-a-better-buy-for-2027/"
+          "title": "Apple Is Now 25% of Berkshire Hathaway's Stock Portfolio. Here's What Holding Every Share Tells Investors.",
+          "url": "https://www.fool.com/investing/2026/11/22/apple-is-now-25-of-berkshire-hathaway-s-stock-portfolio-here-s-what-holding-every-share-tells-investors/"
         },
         {
-          "title": "Dow Jones Futures: After Nvidia, Anthropic Fuel Worst Week Since Covid, Look For These 'Absolute Losers'",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/?src=A00220&yptr=yahoo"
+          "title": "Charlie Bilello Flags the Nasdaq 100’s First Bear Market Since April 2025",
+          "url": "https://247wallst.com/investing/2026/11/22/charlie-bilello-flags-the-nasdaq-100s-first-bear-market-since-april-2025/"
         },
         {
-          "title": "T-Mobile leak reveals major phone plan change for core customers",
-          "url": "https://www.thestreet.com/retail/t-mobile-t-select-prepaid-wireless-plans-leak"
+          "title": "A $6.4 Billion Fund Just Bought These 3 Stocks",
+          "url": "https://www.tikr.com/blog/a-6-4-billion-fund-just-bought-these-3-stocks?ref=yahoofinance&tlnk=yf-261122-hf28rr6f"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "SK hynix Sinks 21% in a Week With Micron and Sandisk. Its U.S. Premium Is an “Extra Special Case”",
-          "url": "https://www.tikr.com/blog/sk-hynix-sinks-21-in-a-week-with-micron-and-sandisk-its-u-s-premium-is-an-extra-special-case?ref=yahoofinance&tlnk=yf-261121-947vrx38"
-        },
-        {
-          "title": "ASML vs. SK Hynix: Which Artificial Intelligence Stock Is a Better Buy for 2027?",
-          "url": "https://www.fool.com/coverage/better-buy/2026/11/21/asml-vs-sk-hynix-which-artificial-intelligence-stock-is-a-better-buy-for-2027/"
-        },
-        {
-          "title": "Coatue Management Bets on SK hynix Stock as Demand for HBM Chips Accelerates",
-          "url": "https://www.barchart.com/story/news/8950911/coatue-management-bets-on-sk-hynix-stock-as-demand-for-hbm-chips-accelerates"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "TSLA",
@@ -149,16 +124,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Cathie Wood, Brad Gerstner and 16 Other Big Funds Bought Tesla Last Quarter, While 15 Sold. Who’s Right?",
-          "url": "https://www.tikr.com/blog/cathie-wood-brad-gerstner-and-16-other-big-funds-bought-tesla-last-quarter-while-15-sold-whos-right?ref=yahoofinance&tlnk=yf-261121-3rm42fg9"
+          "title": "Elon Musk Says 2027 AI Cash Crunch Will Be ‘Nuts’ — Analysts Still See SpaceX Emerging As The Biggest AI Hyperscaler",
+          "url": "https://stocktwits.com/news-articles/markets/equity/elon-musk-2027-ai-cash-crunch-analysts-spacex-biggest-ai-hyperscaler/cNbYZvbR9Sb"
         },
         {
-          "title": "Tesla (TSLA) Stock Looks Richly Priced After Its 47% Three Year Run",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-stock-looks-richly-210854263.html"
+          "title": "Forget Flying Roadsters. Tesla Investors Have 3 Bigger Challenges to Watch.",
+          "url": "https://www.fool.com/investing/2026/11/22/forget-flying-roadsters-tesla-investors-have-3-bigger-challenges-to-watch/"
         },
         {
-          "title": "Tesla FSD V15 Rolling Out, Goes 'Wide' Next Month. Elon Musk Says It's 'Something Special.'",
-          "url": "https://www.investors.com/news/tesla-fsd-v15-coming-next-month-elon-musk-says-something-special/?src=A00220&yptr=yahoo"
+          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
+          "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Asian tech back in the firing line as traders track Wall St rout",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-tech-back-firing-line-024445930.html"
+        },
+        {
+          "title": "Can Samsung and SK Hynix Buybacks Stop Korea's $115 Billion Selloff?",
+          "url": "https://beincrypto.com/samsung-sk-hynix-buybacks-korea-selloff/"
+        },
+        {
+          "title": "Taiwan stocks suffer worst week since 1990 as AI rout drains emerging Asia",
+          "url": "http://www.intellinews.com/taiwan-stocks-suffer-worst-week-since-1990-as-ai-rout-drains-emerging-asia-487378/"
         }
       ],
       "rank": 5
@@ -235,15 +235,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 183100.0,
-      "change_pct": -7.01,
-      "week52_pct": 34.4,
-      "pct_vs_ma200": -23.07,
-      "drawdown_from_high_pct": -48.56,
-      "return_3m_pct": -24.74,
-      "return_6m_pct": -33.64,
-      "return_12m_pct": 86.65,
-      "relative_strength_6m_pct": 1.57
+      "last_close": 172500.0,
+      "change_pct": -5.79,
+      "week52_pct": 30.4,
+      "pct_vs_ma200": -27.55,
+      "drawdown_from_high_pct": -51.54,
+      "return_3m_pct": -35.24,
+      "return_6m_pct": -36.23,
+      "return_12m_pct": 70.92,
+      "relative_strength_6m_pct": 0.33
     },
     {
       "symbol": "000660.KS",
@@ -255,15 +255,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1113000.0,
-      "change_pct": -5.92,
-      "week52_pct": 24.8,
-      "pct_vs_ma200": -27.18,
-      "drawdown_from_high_pct": -61.86,
-      "return_3m_pct": -25.78,
-      "return_6m_pct": -39.49,
-      "return_12m_pct": 84.2,
-      "relative_strength_6m_pct": -4.28
+      "last_close": 1051000.0,
+      "change_pct": -5.57,
+      "week52_pct": 22.2,
+      "pct_vs_ma200": -31.3,
+      "drawdown_from_high_pct": -63.99,
+      "return_3m_pct": -37.83,
+      "return_6m_pct": -39.75,
+      "return_12m_pct": 70.29,
+      "relative_strength_6m_pct": -3.19
     }
   ],
   "discovery": [],
