@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24T06:14:53+00:00",
-  "market_date": "2026-11-24",
+  "generated_at": "2026-11-25T04:58:32+00:00",
+  "market_date": "2026-11-25",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,56 +9,12 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 90,
+    "days_collected": 91,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
       "symbol": "NVDA",
-      "score": 4.5,
-      "score_breakdown": {
-        "severity": 3.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "volume_spike",
-          "message": "거래량 20일 평균 대비 2.71배"
-        },
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 13.5배 — 자체 밴드 하단 이탈 (평균 27.9배)"
-        },
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 8.6%"
-        }
-      ],
-      "news": [
-        {
-          "title": "Jensen Huang is back: Does Washington have a seat in the boardroom?",
-          "url": "https://finance.yahoo.com/video/jensen-huang-is-back-does-washington-have-a-seat-in-the-boardroom-221214249.html"
-        },
-        {
-          "title": "Ex-Nvidia employee: 'Stability and accountability can coexist'",
-          "url": "https://finance.yahoo.com/video/ex-nvidia-employee-stability-and-accountability-can-coexist-221105947.html"
-        },
-        {
-          "title": "Dollar perky as renewed AI euphoria fuels Fed hike bets",
-          "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-perky-renewed-ai-euphoria-055648131.html"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "TSLA",
       "score": 3.5,
       "score_breakdown": {
         "severity": 2.0,
@@ -67,83 +23,90 @@
       },
       "signals": [
         {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "ma200_cross",
-          "message": "200일선 상향 돌파 (0.1개월 만)"
-        },
-        {
-          "symbol": "TSLA",
+          "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 423.6배 — 자체 밴드 상단 이탈 (평균 346.7배)"
+          "message": "PER 17.7배 — 자체 밴드 하단 이탈 (평균 27.8배)"
+        },
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "target_price_change",
+          "message": "애널리스트 목표주가 7일간 하향 7.7%"
         }
       ],
       "news": [
         {
-          "title": "Europe new car registrations rise 3.4% in Oct as EV, hybrids maintain lead- ACEA",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/europe-car-registrations-rise-3-055350520.html"
+          "title": "Why Trump wanted Jensen Huang back at the helm of Nvidia",
+          "url": "https://finance.yahoo.com/markets/article/why-trump-wanted-jensen-huang-back-at-the-helm-of-nvidia-224325153.html"
         },
         {
-          "title": "Dow Jones Futures: Tech Stocks, Nvidia Snap Back On Jensen Huang's Return; Elon Musk-Led SpaceX, Tesla Rally",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-nvidia-jensen-huang-elon-musk-spacex-tesla/?src=A00220&yptr=yahoo"
+          "title": "Anthropic falls below IPO price as Nvidia gives back gains",
+          "url": "https://finance.yahoo.com/video/anthropic-falls-below-ipo-price-as-nvidia-gives-back-gains-214558309.html"
         },
         {
-          "title": "How to Invest in Humanoid Robots: 3 Stocks to Watch",
-          "url": "https://www.fool.com/investing/2026/11/23/how-to-invest-in-humanoid-robots-3-stocks-to-watch/"
+          "title": "Why Nvidia is 'bar none' the 'cheapest growth stock in the market'",
+          "url": "https://finance.yahoo.com/video/why-nvidia-is-bar-none-the-cheapest-growth-stock-in-the-market-213425021.html"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "symbol": "000660.KS",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 1.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Asian stocks mostly decline as AI shares fall following a retreat on Wall Street",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-mostly-decline-ai-040526833.html"
+        },
+        {
+          "title": "South Korea's chipmakers rally on Huang's return",
+          "url": "http://www.intellinews.com/south-korea-s-chipmakers-rally-on-huang-s-return-488025/"
+        },
+        {
+          "title": "AI Chip Boom to See Won Build on Best Year in Almost a Decade",
+          "url": "https://finance.yahoo.com/news/ai-chip-boom-see-won-014144127.html"
         }
       ],
       "rank": 2
     },
     {
-      "symbol": "AAPL",
-      "score": 1.5,
+      "symbol": "TSLA",
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
-      "signals": [],
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 422.7배 — 자체 밴드 상단 이탈 (평균 347.6배)"
+        }
+      ],
       "news": [
         {
-          "title": "Jensen Huang back at Nvidia, stock soars; Anthropic slides",
-          "url": "https://finance.yahoo.com/video/jensen-huang-back-at-nvidia-stock-soars-anthropic-slides-161339662.html"
+          "title": "Have robotaxis hit a tipping point? Wall Street and experts are split.",
+          "url": "https://finance.yahoo.com/markets/stocks/article/have-robotaxis-hit-a-tipping-point-wall-street-and-experts-are-split-150000412.html"
         },
         {
-          "title": "Jensen Huang back as Nvidia CEO after 12 days: Shares surge 30%",
-          "url": "https://finance.yahoo.com/video/jensen-huang-back-as-nvidia-ceo-after-12-days-shares-surge-30-161302539.html"
+          "title": "Tesla and SpaceX assemble deal teams for a merger that could give Musk majority control",
+          "url": "https://finance.yahoo.com/technology/article/tesla-and-spacex-assemble-deal-teams-for-a-merger-that-could-give-musk-majority-control-144555932.html"
         },
         {
-          "title": "The 10-Year Topped 5% For The First Time Since 2007. What Happened Next?",
-          "url": "https://www.trefis.com/stock/spy/articles/627401/the-10-year-topped-5-for-the-first-time-since-2007-what-happened-next/2026-11-23"
+          "title": "Tesla's $3.5 trillion merger talks have a surprising catch",
+          "url": "https://www.thestreet.com/investing/teslas-3-5-trillion-merger-talks-have-a-surprising-catch"
         }
       ],
       "rank": 3
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Asian stocks rally after Wall Street rebound as Jensen Huang returns as Nvidia’s CEO",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rally-wall-street-033125464.html"
-        },
-        {
-          "title": "Asia chipmaking stocks soar tracking Nvidia rally; S.Korea, Taiwan lead",
-          "url": "https://finance.yahoo.com/technology/ai/articles/asia-chipmaking-stocks-soar-tracking-021520376.html"
-        },
-        {
-          "title": "Nvidia’s Asian Suppliers Rally as Jensen Huang Returns as CEO: SK Hynix Jumps 8%, SoftBank Shares Rise in Tokyo",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-asian-suppliers-rally-jensen-012213841.html"
-        }
-      ],
-      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -156,16 +119,41 @@
       "signals": [],
       "news": [
         {
-          "title": "Asian stocks rally after Wall Street rebound as Jensen Huang returns as Nvidia’s CEO",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rally-wall-street-033125464.html"
+          "title": "Asian stocks mostly decline as AI shares fall following a retreat on Wall Street",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-mostly-decline-ai-040526833.html"
         },
         {
-          "title": "Asia chipmaking stocks soar tracking Nvidia rally; S.Korea, Taiwan lead",
-          "url": "https://finance.yahoo.com/technology/ai/articles/asia-chipmaking-stocks-soar-tracking-021520376.html"
+          "title": "South Korea's chipmakers rally on Huang's return",
+          "url": "http://www.intellinews.com/south-korea-s-chipmakers-rally-on-huang-s-return-488025/"
         },
         {
-          "title": "Nvidia’s Asian Suppliers Rally as Jensen Huang Returns as CEO: SK Hynix Jumps 8%, SoftBank Shares Rise in Tokyo",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-asian-suppliers-rally-jensen-012213841.html"
+          "title": "AI Chip Boom to See Won Build on Best Year in Almost a Decade",
+          "url": "https://finance.yahoo.com/news/ai-chip-boom-see-won-014144127.html"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "symbol": "AAPL",
+      "score": 1.5,
+      "score_breakdown": {
+        "severity": 0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [],
+      "news": [
+        {
+          "title": "Why the Jensen Huang rally faded so quickly",
+          "url": "https://finance.yahoo.com/video/why-the-jensen-huang-rally-faded-so-quickly-194511286.html"
+        },
+        {
+          "title": "Stocks give back gains as Anthropic dips below IPO price",
+          "url": "https://finance.yahoo.com/video/stocks-give-back-gains-as-anthropic-dips-below-ipo-price-154408548.html"
+        },
+        {
+          "title": "Who is holding Jensen Huang accountable? It sure looks like nobody",
+          "url": "https://finance.yahoo.com/video/who-is-holding-jensen-huang-accountable-it-sure-looks-like-nobody-154255467.html"
         }
       ],
       "rank": 5
@@ -176,61 +164,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 13.484478,
+      "trailing_pe": 17.737444,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 165.05,
-      "change_pct": 31.48,
-      "week52_pct": 34.8,
-      "pct_vs_ma200": -18.69,
-      "drawdown_from_high_pct": -31.01,
-      "return_3m_pct": -22.44,
-      "return_6m_pct": -23.01,
-      "return_12m_pct": -8.41,
-      "relative_strength_6m_pct": -19.26
+      "last_close": 155.38,
+      "change_pct": -5.86,
+      "week52_pct": 26.3,
+      "pct_vs_ma200": -23.39,
+      "drawdown_from_high_pct": -35.05,
+      "return_3m_pct": -25.81,
+      "return_6m_pct": -26.75,
+      "return_12m_pct": -12.93,
+      "relative_strength_6m_pct": -22.5
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.15082,
+      "trailing_pe": 38.866085,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 349.08,
-      "change_pct": 1.9,
-      "week52_pct": 93.5,
-      "pct_vs_ma200": 15.15,
-      "drawdown_from_high_pct": -2.02,
-      "return_3m_pct": 12.73,
-      "return_6m_pct": 13.4,
-      "return_12m_pct": 31.57,
-      "relative_strength_6m_pct": 17.15
+      "last_close": 354.07,
+      "change_pct": 1.43,
+      "week52_pct": 98.0,
+      "pct_vs_ma200": 16.64,
+      "drawdown_from_high_pct": -0.62,
+      "return_3m_pct": 13.04,
+      "return_6m_pct": 14.09,
+      "return_12m_pct": 30.87,
+      "relative_strength_6m_pct": 18.34
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 423.5824,
+      "trailing_pe": 422.72525,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 385.46,
-      "change_pct": 11.46,
-      "week52_pct": 45.5,
-      "pct_vs_ma200": 1.03,
-      "drawdown_from_high_pct": -21.32,
-      "return_3m_pct": 10.05,
-      "return_6m_pct": -11.1,
-      "return_12m_pct": -2.47,
-      "relative_strength_6m_pct": -7.35
+      "last_close": 384.68,
+      "change_pct": -0.2,
+      "week52_pct": 45.1,
+      "pct_vs_ma200": 0.87,
+      "drawdown_from_high_pct": -21.47,
+      "return_3m_pct": 11.24,
+      "return_6m_pct": -12.64,
+      "return_12m_pct": -1.64,
+      "relative_strength_6m_pct": -8.39
     },
     {
       "symbol": "005930.KS",
@@ -242,15 +230,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 191600.0,
-      "change_pct": 7.94,
-      "week52_pct": 37.6,
-      "pct_vs_ma200": -19.59,
-      "drawdown_from_high_pct": -46.17,
-      "return_3m_pct": -30.76,
-      "return_6m_pct": -29.3,
-      "return_12m_pct": 90.58,
-      "relative_strength_6m_pct": 0.71
+      "last_close": 171800.0,
+      "change_pct": -9.29,
+      "week52_pct": 30.1,
+      "pct_vs_ma200": -27.92,
+      "drawdown_from_high_pct": -51.73,
+      "return_3m_pct": -31.99,
+      "return_6m_pct": -41.58,
+      "return_12m_pct": 71.39,
+      "relative_strength_6m_pct": -1.93
     },
     {
       "symbol": "000660.KS",
@@ -262,15 +250,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1173000.0,
-      "change_pct": 8.11,
-      "week52_pct": 27.3,
-      "pct_vs_ma200": -23.41,
-      "drawdown_from_high_pct": -59.81,
-      "return_3m_pct": -32.18,
-      "return_6m_pct": -32.75,
-      "return_12m_pct": 90.67,
-      "relative_strength_6m_pct": -2.74
+      "last_close": 1043000.0,
+      "change_pct": -9.93,
+      "week52_pct": 21.9,
+      "pct_vs_ma200": -31.94,
+      "drawdown_from_high_pct": -64.26,
+      "return_3m_pct": -37.57,
+      "return_6m_pct": -46.22,
+      "return_12m_pct": 70.93,
+      "relative_strength_6m_pct": -6.57
     }
   ],
   "discovery": [],
@@ -279,6 +267,12 @@
       "date": "2026-11-27",
       "weekday": "금",
       "label": "SK hynix 배당락",
+      "kind": "ex_dividend"
+    },
+    {
+      "date": "2026-12-02",
+      "weekday": "수",
+      "label": "NVIDIA Corporation 배당락",
       "kind": "ex_dividend"
     }
   ]
