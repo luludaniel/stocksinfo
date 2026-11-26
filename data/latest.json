@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T04:58:32+00:00",
-  "market_date": "2026-11-25",
+  "generated_at": "2026-11-26T04:16:08+00:00",
+  "market_date": "2026-11-26",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,10 +9,48 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 91,
+    "days_collected": 92,
     "per_band_ready_in_days": 0
   },
   "focus": [
+    {
+      "symbol": "TSLA",
+      "score": 5.5,
+      "score_breakdown": {
+        "severity": 4.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "red",
+          "type": "ma200_cross",
+          "message": "200일선 하향 이탈 (0.1개월 만)"
+        },
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 417.7배 — 자체 밴드 상단 이탈 (평균 348.3배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Ten reasons the market is selling off again before Thanksgiving",
+          "url": "https://finance.yahoo.com/video/ten-reasons-the-market-is-selling-off-again-before-thanksgiving-160424234.html"
+        },
+        {
+          "title": "Tesla and SpaceX stocks sink as merger concerns mount",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-and-spacex-stocks-sink-as-merger-concerns-mount-154159372.html"
+        },
+        {
+          "title": "Cathie Wood Buys More SpaceX Amid Tesla Merger Talks — Ron Baron Says SpaceX Could Make $50B A Year From One Data Center",
+          "url": "https://stocktwits.com/news-articles/markets/equity/cathie-wood-buys-spacex-tesla-merger-talks-ron-baron-spacex-50b-one-data-center/cNbxeDKR9Z4"
+        }
+      ],
+      "rank": 1
+    },
     {
       "symbol": "NVDA",
       "score": 3.5,
@@ -26,30 +64,30 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 17.7배 — 자체 밴드 하단 이탈 (평균 27.8배)"
+          "message": "PER 16.7배 — 자체 밴드 하단 이탈 (평균 27.7배)"
         },
         {
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 7.7%"
+          "message": "애널리스트 목표주가 7일간 하향 4.4%"
         }
       ],
       "news": [
         {
-          "title": "Why Trump wanted Jensen Huang back at the helm of Nvidia",
-          "url": "https://finance.yahoo.com/markets/article/why-trump-wanted-jensen-huang-back-at-the-helm-of-nvidia-224325153.html"
+          "title": "Jensen Huang reclaims throne at Nvidia: Here's the bottom line for investors",
+          "url": "https://finance.yahoo.com/video/jensen-huang-reclaims-throne-at-nvidia-heres-the-bottom-line-for-investors-212803135.html"
         },
         {
-          "title": "Anthropic falls below IPO price as Nvidia gives back gains",
-          "url": "https://finance.yahoo.com/video/anthropic-falls-below-ipo-price-as-nvidia-gives-back-gains-214558309.html"
+          "title": "Jensen Huang's return, neocloud risk, and a holiday retail rally",
+          "url": "https://finance.yahoo.com/video/jensen-huangs-return-neocloud-risk-and-a-holiday-retail-rally-222042649.html"
         },
         {
-          "title": "Why Nvidia is 'bar none' the 'cheapest growth stock in the market'",
-          "url": "https://finance.yahoo.com/video/why-nvidia-is-bar-none-the-cheapest-growth-stock-in-the-market-213425021.html"
+          "title": "Nvidia is cheap on paper, so why won't the market buy it?",
+          "url": "https://finance.yahoo.com/video/nvidia-is-cheap-on-paper-so-why-wont-the-market-buy-it-192215326.html"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "symbol": "000660.KS",
@@ -62,22 +100,22 @@
       "signals": [],
       "news": [
         {
-          "title": "Asian stocks mostly decline as AI shares fall following a retreat on Wall Street",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-mostly-decline-ai-040526833.html"
+          "title": "Asian tech stocks jump as bargain buyers boost battered AI trade",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-jump-bargain-030316035.html"
         },
         {
-          "title": "South Korea's chipmakers rally on Huang's return",
-          "url": "http://www.intellinews.com/south-korea-s-chipmakers-rally-on-huang-s-return-488025/"
+          "title": "Asian stocks enjoy another bounce as tech holds court",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-enjoy-another-bounce-023024729.html"
         },
         {
-          "title": "AI Chip Boom to See Won Build on Best Year in Almost a Decade",
-          "url": "https://finance.yahoo.com/news/ai-chip-boom-see-won-014144127.html"
+          "title": "Tech Stocks Stall Into Thanksgiving: Will the AI Rebound Return?",
+          "url": "https://beincrypto.com/tech-stocks-stall-thanksgiving-nvidia-rebound/"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
-      "symbol": "TSLA",
+      "symbol": "AAPL",
       "score": 2.5,
       "score_breakdown": {
         "severity": 1.0,
@@ -86,27 +124,27 @@
       },
       "signals": [
         {
-          "symbol": "TSLA",
+          "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 422.7배 — 자체 밴드 상단 이탈 (평균 347.6배)"
+          "message": "PER 39.6배 — 자체 밴드 상단 이탈 (평균 37.6배)"
         }
       ],
       "news": [
         {
-          "title": "Have robotaxis hit a tipping point? Wall Street and experts are split.",
-          "url": "https://finance.yahoo.com/markets/stocks/article/have-robotaxis-hit-a-tipping-point-wall-street-and-experts-are-split-150000412.html"
+          "title": "Is the market experiencing a 'dead cat' bounce?",
+          "url": "https://finance.yahoo.com/video/is-the-market-experiencing-a-dead-cat-bounce-212704552.html"
         },
         {
-          "title": "Tesla and SpaceX assemble deal teams for a merger that could give Musk majority control",
-          "url": "https://finance.yahoo.com/technology/article/tesla-and-spacex-assemble-deal-teams-for-a-merger-that-could-give-musk-majority-control-144555932.html"
+          "title": "Dow Jones Futures Rise; Market Goes On Wild Ride As Nasdaq Slashes Losses",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Tesla's $3.5 trillion merger talks have a surprising catch",
-          "url": "https://www.thestreet.com/investing/teslas-3-5-trillion-merger-talks-have-a-surprising-catch"
+          "title": "Michael Burry Says He’s Shorting The Market’s ‘Generals’ As Apple Flashes A Warning Last Seen In 2002",
+          "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-shorting-market-generals-apple-warning-last-seen-in-2002/cNbx7IxR9Ze"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "symbol": "005930.KS",
@@ -119,41 +157,16 @@
       "signals": [],
       "news": [
         {
-          "title": "Asian stocks mostly decline as AI shares fall following a retreat on Wall Street",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-mostly-decline-ai-040526833.html"
+          "title": "LayerZero Adds Kakao Pay, Samsung Card and ZAN as Validators for Zero Blockchain",
+          "url": "https://www.cryptoprowl.com/releases/layerzero-adds-kakao-pay-samsung-card-and-zan-as-validators-for-zero-blockchain-8081"
         },
         {
-          "title": "South Korea's chipmakers rally on Huang's return",
-          "url": "http://www.intellinews.com/south-korea-s-chipmakers-rally-on-huang-s-return-488025/"
+          "title": "Asian tech stocks jump as bargain buyers boost battered AI trade",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-jump-bargain-030316035.html"
         },
         {
-          "title": "AI Chip Boom to See Won Build on Best Year in Almost a Decade",
-          "url": "https://finance.yahoo.com/news/ai-chip-boom-see-won-014144127.html"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "symbol": "AAPL",
-      "score": 1.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Why the Jensen Huang rally faded so quickly",
-          "url": "https://finance.yahoo.com/video/why-the-jensen-huang-rally-faded-so-quickly-194511286.html"
-        },
-        {
-          "title": "Stocks give back gains as Anthropic dips below IPO price",
-          "url": "https://finance.yahoo.com/video/stocks-give-back-gains-as-anthropic-dips-below-ipo-price-154408548.html"
-        },
-        {
-          "title": "Who is holding Jensen Huang accountable? It sure looks like nobody",
-          "url": "https://finance.yahoo.com/video/who-is-holding-jensen-huang-accountable-it-sure-looks-like-nobody-154255467.html"
+          "title": "Asian stocks enjoy another bounce as tech holds court",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-enjoy-another-bounce-023024729.html"
         }
       ],
       "rank": 5
@@ -164,61 +177,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 17.737444,
+      "trailing_pe": 16.681564,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 155.38,
-      "change_pct": -5.86,
-      "week52_pct": 26.3,
-      "pct_vs_ma200": -23.39,
-      "drawdown_from_high_pct": -35.05,
-      "return_3m_pct": -25.81,
-      "return_6m_pct": -26.75,
-      "return_12m_pct": -12.93,
-      "relative_strength_6m_pct": -22.5
+      "last_close": 149.3,
+      "change_pct": -3.91,
+      "week52_pct": 20.9,
+      "pct_vs_ma200": -26.32,
+      "drawdown_from_high_pct": -37.59,
+      "return_3m_pct": -34.44,
+      "return_6m_pct": -30.16,
+      "return_12m_pct": -18.02,
+      "relative_strength_6m_pct": -25.12
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 38.866085,
+      "trailing_pe": 39.59688,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 354.07,
-      "change_pct": 1.43,
-      "week52_pct": 98.0,
-      "pct_vs_ma200": 16.64,
-      "drawdown_from_high_pct": -0.62,
-      "return_3m_pct": 13.04,
-      "return_6m_pct": 14.09,
-      "return_12m_pct": 30.87,
-      "relative_strength_6m_pct": 18.34
+      "last_close": 355.58,
+      "change_pct": 0.43,
+      "week52_pct": 99.4,
+      "pct_vs_ma200": 16.98,
+      "drawdown_from_high_pct": -0.19,
+      "return_3m_pct": 13.12,
+      "return_6m_pct": 13.97,
+      "return_12m_pct": 29.32,
+      "relative_strength_6m_pct": 19.01
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 422.72525,
+      "trailing_pe": 417.73627,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 384.68,
-      "change_pct": -0.2,
-      "week52_pct": 45.1,
-      "pct_vs_ma200": 0.87,
-      "drawdown_from_high_pct": -21.47,
-      "return_3m_pct": 11.24,
-      "return_6m_pct": -12.64,
-      "return_12m_pct": -1.64,
-      "relative_strength_6m_pct": -8.39
+      "last_close": 380.14,
+      "change_pct": -1.18,
+      "week52_pct": 42.7,
+      "pct_vs_ma200": -0.26,
+      "drawdown_from_high_pct": -22.4,
+      "return_3m_pct": 7.14,
+      "return_6m_pct": -14.01,
+      "return_12m_pct": -9.01,
+      "relative_strength_6m_pct": -8.97
     },
     {
       "symbol": "005930.KS",
@@ -230,15 +243,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 171800.0,
-      "change_pct": -9.29,
-      "week52_pct": 30.1,
-      "pct_vs_ma200": -27.92,
-      "drawdown_from_high_pct": -51.73,
-      "return_3m_pct": -31.99,
-      "return_6m_pct": -41.58,
-      "return_12m_pct": 71.39,
-      "relative_strength_6m_pct": -1.93
+      "last_close": 173000.0,
+      "change_pct": 1.35,
+      "week52_pct": 30.6,
+      "pct_vs_ma200": -27.44,
+      "drawdown_from_high_pct": -51.39,
+      "return_3m_pct": -31.52,
+      "return_6m_pct": -39.76,
+      "return_12m_pct": 82.53,
+      "relative_strength_6m_pct": -0.35
     },
     {
       "symbol": "000660.KS",
@@ -250,15 +263,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1043000.0,
-      "change_pct": -9.93,
-      "week52_pct": 21.9,
-      "pct_vs_ma200": -31.94,
-      "drawdown_from_high_pct": -64.26,
-      "return_3m_pct": -37.57,
-      "return_6m_pct": -46.22,
-      "return_12m_pct": 70.93,
-      "relative_strength_6m_pct": -6.57
+      "last_close": 1063000.0,
+      "change_pct": 3.2,
+      "week52_pct": 22.7,
+      "pct_vs_ma200": -30.67,
+      "drawdown_from_high_pct": -63.58,
+      "return_3m_pct": -36.64,
+      "return_6m_pct": -45.21,
+      "return_12m_pct": 90.38,
+      "relative_strength_6m_pct": -5.8
     }
   ],
   "discovery": [],
