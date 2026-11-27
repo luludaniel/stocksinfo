@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T04:16:08+00:00",
-  "market_date": "2026-11-26",
+  "generated_at": "2026-11-27T04:23:58+00:00",
+  "market_date": "2026-11-27",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,7 +9,7 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 92,
+    "days_collected": 93,
     "per_band_ready_in_days": 0
   },
   "focus": [
@@ -32,62 +32,24 @@
           "symbol": "TSLA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 417.7배 — 자체 밴드 상단 이탈 (평균 348.3배)"
+          "message": "PER 417.7배 — 자체 밴드 상단 이탈 (평균 349.1배)"
         }
       ],
       "news": [
         {
-          "title": "Ten reasons the market is selling off again before Thanksgiving",
-          "url": "https://finance.yahoo.com/video/ten-reasons-the-market-is-selling-off-again-before-thanksgiving-160424234.html"
+          "title": "‘How Can TSLA Compete With Waymo?’ Gary Black Questions Tesla’s Robotaxi Strategy, Predicts Waymo Will Lead in Miles and Trips",
+          "url": "https://finance.yahoo.com/technology/articles/tsla-compete-waymo-gary-black-013007370.html"
         },
         {
-          "title": "Tesla and SpaceX stocks sink as merger concerns mount",
-          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-and-spacex-stocks-sink-as-merger-concerns-mount-154159372.html"
+          "title": "What Could Tesla (TSLA) Merger Talks Mean For Its Stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/could-tesla-tsla-merger-talks-013007632.html"
         },
         {
-          "title": "Cathie Wood Buys More SpaceX Amid Tesla Merger Talks — Ron Baron Says SpaceX Could Make $50B A Year From One Data Center",
-          "url": "https://stocktwits.com/news-articles/markets/equity/cathie-wood-buys-spacex-tesla-merger-talks-ron-baron-spacex-50b-one-data-center/cNbxeDKR9Z4"
+          "title": "Should You Buy Tesla Stock Before December?",
+          "url": "https://www.fool.com/investing/2026/11/26/should-you-buy-tesla-stock-before-december/"
         }
       ],
       "rank": 1
-    },
-    {
-      "symbol": "NVDA",
-      "score": 3.5,
-      "score_breakdown": {
-        "severity": 2.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 16.7배 — 자체 밴드 하단 이탈 (평균 27.7배)"
-        },
-        {
-          "symbol": "NVDA",
-          "severity": "yellow",
-          "type": "target_price_change",
-          "message": "애널리스트 목표주가 7일간 하향 4.4%"
-        }
-      ],
-      "news": [
-        {
-          "title": "Jensen Huang reclaims throne at Nvidia: Here's the bottom line for investors",
-          "url": "https://finance.yahoo.com/video/jensen-huang-reclaims-throne-at-nvidia-heres-the-bottom-line-for-investors-212803135.html"
-        },
-        {
-          "title": "Jensen Huang's return, neocloud risk, and a holiday retail rally",
-          "url": "https://finance.yahoo.com/video/jensen-huangs-return-neocloud-risk-and-a-holiday-retail-rally-222042649.html"
-        },
-        {
-          "title": "Nvidia is cheap on paper, so why won't the market buy it?",
-          "url": "https://finance.yahoo.com/video/nvidia-is-cheap-on-paper-so-why-wont-the-market-buy-it-192215326.html"
-        }
-      ],
-      "rank": 2
     },
     {
       "symbol": "000660.KS",
@@ -100,19 +62,19 @@
       "signals": [],
       "news": [
         {
-          "title": "Asian tech stocks jump as bargain buyers boost battered AI trade",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-jump-bargain-030316035.html"
+          "title": "Asian stocks mostly rise as markets calm after tech rout",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-mostly-rise-markets-025702679.html"
         },
         {
-          "title": "Asian stocks enjoy another bounce as tech holds court",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-enjoy-another-bounce-023024729.html"
+          "title": "Samsung, SK Hynix adopt China’s YMTC memory technology, Nikkei reports",
+          "url": "https://finance.yahoo.com/technology/articles/samsung-sk-hynix-adopt-china-004553544.html"
         },
         {
-          "title": "Tech Stocks Stall Into Thanksgiving: Will the AI Rebound Return?",
-          "url": "https://beincrypto.com/tech-stocks-stall-thanksgiving-nvidia-rebound/"
+          "title": "SK hynix Stocks Rise 2.23% as Seoul Chip Rebound Fades From a 5.7% Gain",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-rise-2-191120627.html"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "symbol": "AAPL",
@@ -127,21 +89,53 @@
           "symbol": "AAPL",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.6배 — 자체 밴드 상단 이탈 (평균 37.6배)"
+          "message": "PER 39.6배 — 자체 밴드 상단 이탈 (평균 37.7배)"
         }
       ],
       "news": [
         {
-          "title": "Is the market experiencing a 'dead cat' bounce?",
-          "url": "https://finance.yahoo.com/video/is-the-market-experiencing-a-dead-cat-bounce-212704552.html"
+          "title": "Apple (AAPL) Has Found a New AI Opportunity That Has Little to Do With the iPhone",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apple-aapl-found-ai-opportunity-031905510.html"
         },
         {
-          "title": "Dow Jones Futures Rise; Market Goes On Wild Ride As Nasdaq Slashes Losses",
+          "title": "Target cut its Apple Black Friday discount in half",
+          "url": "https://www.thestreet.com/retail/target-cut-its-apple-black-friday-discount-in-half"
+        },
+        {
+          "title": "Apple Enters the AI Agent Race as It Takes on OpenAI, Anthropic, and Meta. What That Means for AAPL Stock.",
+          "url": "https://www.barchart.com/story/news/9022924/apple-enters-the-ai-agent-race-as-it-takes-on-openai-anthropic-and-meta-what-that-means-for-aapl-stock"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "NVDA",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "NVDA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 16.0배 — 자체 밴드 하단 이탈 (평균 27.5배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "Will Jensen Huang's second act as Nvidia CEO be different?",
+          "url": "https://finance.yahoo.com/video/jensen-huangs-second-act-nvidia-140000599.html"
+        },
+        {
+          "title": "Jensen Huang 'absolutely could be fired again,' legal expert says",
+          "url": "https://finance.yahoo.com/video/jensen-huang-absolutely-could-fired-130000374.html"
+        },
+        {
+          "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
           "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Michael Burry Says He’s Shorting The Market’s ‘Generals’ As Apple Flashes A Warning Last Seen In 2002",
-          "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-shorting-market-generals-apple-warning-last-seen-in-2002/cNbx7IxR9Ze"
         }
       ],
       "rank": 4
@@ -157,16 +151,16 @@
       "signals": [],
       "news": [
         {
-          "title": "LayerZero Adds Kakao Pay, Samsung Card and ZAN as Validators for Zero Blockchain",
-          "url": "https://www.cryptoprowl.com/releases/layerzero-adds-kakao-pay-samsung-card-and-zan-as-validators-for-zero-blockchain-8081"
+          "title": "Asian stocks mostly rise as markets calm after tech rout",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-mostly-rise-markets-025702679.html"
         },
         {
-          "title": "Asian tech stocks jump as bargain buyers boost battered AI trade",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-jump-bargain-030316035.html"
+          "title": "Samsung, SK Hynix adopt China’s YMTC memory technology, Nikkei reports",
+          "url": "https://finance.yahoo.com/technology/articles/samsung-sk-hynix-adopt-china-004553544.html"
         },
         {
-          "title": "Asian stocks enjoy another bounce as tech holds court",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-enjoy-another-bounce-023024729.html"
+          "title": "Samsung Electronics Stocks Rise as Early 3.2% Rebound Fades in Seoul",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-rise-early-190702339.html"
         }
       ],
       "rank": 5
@@ -177,7 +171,7 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 16.681564,
+      "trailing_pe": 16.03652,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
@@ -243,15 +237,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 173000.0,
-      "change_pct": 1.35,
-      "week52_pct": 30.6,
-      "pct_vs_ma200": -27.44,
-      "drawdown_from_high_pct": -51.39,
-      "return_3m_pct": -31.52,
-      "return_6m_pct": -39.76,
-      "return_12m_pct": 82.53,
-      "relative_strength_6m_pct": -0.35
+      "last_close": 178700.0,
+      "change_pct": 4.32,
+      "week52_pct": 32.7,
+      "pct_vs_ma200": -25.09,
+      "drawdown_from_high_pct": -49.79,
+      "return_3m_pct": -30.48,
+      "return_6m_pct": -39.13,
+      "return_12m_pct": 82.17,
+      "relative_strength_6m_pct": 0.15
     },
     {
       "symbol": "000660.KS",
@@ -263,15 +257,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1063000.0,
-      "change_pct": 3.2,
-      "week52_pct": 22.7,
-      "pct_vs_ma200": -30.67,
-      "drawdown_from_high_pct": -63.58,
-      "return_3m_pct": -36.64,
-      "return_6m_pct": -45.21,
-      "return_12m_pct": 90.38,
-      "relative_strength_6m_pct": -5.8
+      "last_close": 1101000.0,
+      "change_pct": 6.58,
+      "week52_pct": 25.2,
+      "pct_vs_ma200": -26.87,
+      "drawdown_from_high_pct": -61.54,
+      "return_3m_pct": -33.5,
+      "return_6m_pct": -45.29,
+      "return_12m_pct": 85.75,
+      "relative_strength_6m_pct": -6.01
     }
   ],
   "discovery": [],
