@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T04:23:58+00:00",
-  "market_date": "2026-11-27",
+  "generated_at": "2026-11-28T04:05:25+00:00",
+  "market_date": "2026-11-28",
   "trigger": "schedule",
   "status": {
     "ok": true,
@@ -9,78 +9,15 @@
     "collector_errors": []
   },
   "history_status": {
-    "days_collected": 93,
+    "days_collected": 94,
     "per_band_ready_in_days": 0
   },
   "focus": [
     {
-      "symbol": "TSLA",
-      "score": 5.5,
-      "score_breakdown": {
-        "severity": 4.0,
-        "news": 1.5,
-        "event": 0.0
-      },
-      "signals": [
-        {
-          "symbol": "TSLA",
-          "severity": "red",
-          "type": "ma200_cross",
-          "message": "200일선 하향 이탈 (0.1개월 만)"
-        },
-        {
-          "symbol": "TSLA",
-          "severity": "yellow",
-          "type": "valuation_band",
-          "message": "PER 417.7배 — 자체 밴드 상단 이탈 (평균 349.1배)"
-        }
-      ],
-      "news": [
-        {
-          "title": "‘How Can TSLA Compete With Waymo?’ Gary Black Questions Tesla’s Robotaxi Strategy, Predicts Waymo Will Lead in Miles and Trips",
-          "url": "https://finance.yahoo.com/technology/articles/tsla-compete-waymo-gary-black-013007370.html"
-        },
-        {
-          "title": "What Could Tesla (TSLA) Merger Talks Mean For Its Stock?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/could-tesla-tsla-merger-talks-013007632.html"
-        },
-        {
-          "title": "Should You Buy Tesla Stock Before December?",
-          "url": "https://www.fool.com/investing/2026/11/26/should-you-buy-tesla-stock-before-december/"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "symbol": "000660.KS",
-      "score": 2.5,
-      "score_breakdown": {
-        "severity": 0,
-        "news": 1.5,
-        "event": 1.0
-      },
-      "signals": [],
-      "news": [
-        {
-          "title": "Asian stocks mostly rise as markets calm after tech rout",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-mostly-rise-markets-025702679.html"
-        },
-        {
-          "title": "Samsung, SK Hynix adopt China’s YMTC memory technology, Nikkei reports",
-          "url": "https://finance.yahoo.com/technology/articles/samsung-sk-hynix-adopt-china-004553544.html"
-        },
-        {
-          "title": "SK hynix Stocks Rise 2.23% as Seoul Chip Rebound Fades From a 5.7% Gain",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-rise-2-191120627.html"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "symbol": "AAPL",
-      "score": 2.5,
+      "score": 3.5,
       "score_breakdown": {
-        "severity": 1.0,
+        "severity": 2.0,
         "news": 1.5,
         "event": 0.0
       },
@@ -88,25 +25,69 @@
         {
           "symbol": "AAPL",
           "severity": "yellow",
+          "type": "week52_high",
+          "message": "52주 신고가 경신"
+        },
+        {
+          "symbol": "AAPL",
+          "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 39.6배 — 자체 밴드 상단 이탈 (평균 37.7배)"
+          "message": "PER 39.9배 — 자체 밴드 상단 이탈 (평균 37.7배)"
         }
       ],
       "news": [
         {
-          "title": "Apple (AAPL) Has Found a New AI Opportunity That Has Little to Do With the iPhone",
-          "url": "https://finance.yahoo.com/technology/ai/articles/apple-aapl-found-ai-opportunity-031905510.html"
+          "title": "Apple gains smartphone share as memory crunch squeezes budget Android phones",
+          "url": "https://finance.yahoo.com/technology/article/apple-gains-smartphone-share-as-memory-crunch-squeezes-budget-android-phones-134124966.html"
         },
         {
-          "title": "Target cut its Apple Black Friday discount in half",
-          "url": "https://www.thestreet.com/retail/target-cut-its-apple-black-friday-discount-in-half"
+          "title": "Apple Is Beating the Rest of the \"Magnificent Seven\" in 2026. Can It Do It Again in 2027?",
+          "url": "https://www.fool.com/investing/2026/11/27/apple-is-beating-the-rest-of-the-magnificent-seven-in-2026-can-it-do-it-again-in-2027/"
         },
         {
-          "title": "Apple Enters the AI Agent Race as It Takes on OpenAI, Anthropic, and Meta. What That Means for AAPL Stock.",
-          "url": "https://www.barchart.com/story/news/9022924/apple-enters-the-ai-agent-race-as-it-takes-on-openai-anthropic-and-meta-what-that-means-for-aapl-stock"
+          "title": "Vanguard's Growth ETF Has 3 Stocks Making Up More Than a Third of It. Only 1 Has Held Up in the Tech Sell-Off.",
+          "url": "https://www.fool.com/investing/2026/11/27/vanguard-s-growth-etf-has-3-stocks-making-up-more-than-a-third-of-it-only-1-has-held-up-in-the-tech-sell-off/"
         }
       ],
-      "rank": 3
+      "rank": 1
+    },
+    {
+      "symbol": "TSLA",
+      "score": 3.5,
+      "score_breakdown": {
+        "severity": 2.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "ma200_cross",
+          "message": "200일선 상향 돌파"
+        },
+        {
+          "symbol": "TSLA",
+          "severity": "yellow",
+          "type": "valuation_band",
+          "message": "PER 439.6배 — 자체 밴드 상단 이탈 (평균 350.0배)"
+        }
+      ],
+      "news": [
+        {
+          "title": "SpaceX, Tesla have had a bumpy 2026 thus far: What to know",
+          "url": "https://finance.yahoo.com/video/spacex-tesla-have-had-a-bumpy-2026-thus-far-what-to-know-145849441.html"
+        },
+        {
+          "title": "Zero To Sixty: Tesla Cybercab Fleet Tops 1,000 In Texas, Lucid Starts Fully Driverless Tests And Chinese EV Maker Posts Stronger Margins",
+          "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-tesla-cybercab-fleet-tops-1-000-in-texas-lucid-starts-fully-driverless-tests-and-chinese-ev-maker-posts-stronger-margins/cNRRKv9R9Vl"
+        },
+        {
+          "title": "Texas Is Racing to Approve SpaceX’s $24 Billion Starbase Data Center Before Its New Governor Can Halt It",
+          "url": "https://www.tikr.com/blog/texas-is-racing-to-approve-spacexs-24-billion-starbase-data-center-before-its-new-governor-can-halt-it?ref=yahoofinance&tlnk=yf-261127-5cjgmqwx"
+        }
+      ],
+      "rank": 2
     },
     {
       "symbol": "NVDA",
@@ -121,46 +102,85 @@
           "symbol": "NVDA",
           "severity": "yellow",
           "type": "valuation_band",
-          "message": "PER 16.0배 — 자체 밴드 하단 이탈 (평균 27.5배)"
+          "message": "PER 16.2배 — 자체 밴드 하단 이탈 (평균 27.4배)"
         }
       ],
       "news": [
         {
-          "title": "Will Jensen Huang's second act as Nvidia CEO be different?",
-          "url": "https://finance.yahoo.com/video/jensen-huangs-second-act-nvidia-140000599.html"
+          "title": "Stocks snap from a $6 trillion washout to a $3.5 trillion surge as Nvidia, Micron, and SpaceX bounce back",
+          "url": "https://finance.yahoo.com/markets/article/stocks-snap-from-a-6-trillion-washout-to-a-3-trillion-surge-as-nvidia-micron-and-spacex-bounce-back-151218930.html"
         },
         {
-          "title": "Jensen Huang 'absolutely could be fired again,' legal expert says",
-          "url": "https://finance.yahoo.com/video/jensen-huang-absolutely-could-fired-130000374.html"
+          "title": "Why this portfolio manager says investors should 'avoid the neoclouds'",
+          "url": "https://finance.yahoo.com/video/why-this-portfolio-manager-says-investors-should-avoid-the-neoclouds-160003179.html"
         },
         {
-          "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo"
+          "title": "PacSun CEO talks brand resurgence, holiday shopping season boom",
+          "url": "https://finance.yahoo.com/video/pacsun-ceo-talks-brand-resurgence-holiday-shopping-season-boom-154316985.html"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "symbol": "005930.KS",
+      "score": 2.5,
+      "score_breakdown": {
+        "severity": 1.0,
+        "news": 1.5,
+        "event": 0.0
+      },
+      "signals": [
+        {
+          "symbol": "005930.KS",
+          "severity": "yellow",
+          "type": "target_price_change",
+          "message": "애널리스트 목표주가 7일간 하향 3.5%"
+        }
+      ],
+      "news": [
+        {
+          "title": "Samsung Electronics Stocks Jump 4.55% as Seoul Rallies on Stabilization Hopes",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-jump-4-192812989.html"
+        },
+        {
+          "title": "Micron Faces New AI Memory Threat as Huawei Develops HBM Chip",
+          "url": "https://finance.yahoo.com/technology/ai/articles/micron-faces-ai-memory-threat-171328560.html"
+        },
+        {
+          "title": "Micron Technology Has a New Threat -- Huawei Is Coming for the AI Memory Market",
+          "url": "https://finance.yahoo.com/technology/ai/articles/micron-technology-threat-huawei-coming-111412741.html"
         }
       ],
       "rank": 4
     },
     {
-      "symbol": "005930.KS",
-      "score": 1.5,
+      "symbol": "000660.KS",
+      "score": 2.5,
       "score_breakdown": {
-        "severity": 0,
+        "severity": 1.0,
         "news": 1.5,
         "event": 0.0
       },
-      "signals": [],
+      "signals": [
+        {
+          "symbol": "000660.KS",
+          "severity": "yellow",
+          "type": "target_price_change",
+          "message": "애널리스트 목표주가 7일간 하향 3.2%"
+        }
+      ],
       "news": [
         {
-          "title": "Asian stocks mostly rise as markets calm after tech rout",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-mostly-rise-markets-025702679.html"
+          "title": "SK hynix Stocks Jump 5.41% as 100 Trillion Won Payout Plan Sinks In",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-jump-5-194459285.html"
         },
         {
-          "title": "Samsung, SK Hynix adopt China’s YMTC memory technology, Nikkei reports",
-          "url": "https://finance.yahoo.com/technology/articles/samsung-sk-hynix-adopt-china-004553544.html"
+          "title": "Samsung Electronics Stocks Jump 4.55% as Seoul Rallies on Stabilization Hopes",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-jump-4-192812989.html"
         },
         {
-          "title": "Samsung Electronics Stocks Rise as Early 3.2% Rebound Fades in Seoul",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-rise-early-190702339.html"
+          "title": "Micron Faces New AI Memory Threat as Huawei Develops HBM Chip",
+          "url": "https://finance.yahoo.com/technology/ai/articles/micron-faces-ai-memory-threat-171328560.html"
         }
       ],
       "rank": 5
@@ -171,61 +191,61 @@
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "profile": "watching",
-      "trailing_pe": 16.03652,
+      "trailing_pe": 16.16434,
       "next_earnings_date": "2026-11-17",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 149.3,
-      "change_pct": -3.91,
-      "week52_pct": 20.9,
-      "pct_vs_ma200": -26.32,
-      "drawdown_from_high_pct": -37.59,
-      "return_3m_pct": -34.44,
-      "return_6m_pct": -30.16,
-      "return_12m_pct": -18.02,
-      "relative_strength_6m_pct": -25.12
+      "last_close": 150.49,
+      "change_pct": 0.8,
+      "week52_pct": 22.0,
+      "pct_vs_ma200": -25.66,
+      "drawdown_from_high_pct": -37.1,
+      "return_3m_pct": -30.75,
+      "return_6m_pct": -28.56,
+      "return_12m_pct": -15.17,
+      "relative_strength_6m_pct": -24.83
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "profile": "watching",
-      "trailing_pe": 39.59688,
+      "trailing_pe": 39.926506,
       "next_earnings_date": "2027-01-28",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 355.58,
-      "change_pct": 0.43,
-      "week52_pct": 99.4,
-      "pct_vs_ma200": 16.98,
-      "drawdown_from_high_pct": -0.19,
-      "return_3m_pct": 13.12,
-      "return_6m_pct": 13.97,
-      "return_12m_pct": 29.32,
-      "relative_strength_6m_pct": 19.01
+      "last_close": 358.54,
+      "change_pct": 0.83,
+      "week52_pct": 100.0,
+      "pct_vs_ma200": 17.79,
+      "drawdown_from_high_pct": 0.0,
+      "return_3m_pct": 12.23,
+      "return_6m_pct": 15.08,
+      "return_12m_pct": 29.9,
+      "relative_strength_6m_pct": 18.81
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
       "profile": "watching",
-      "trailing_pe": 417.73627,
+      "trailing_pe": 439.56042,
       "next_earnings_date": "2027-01-27",
       "shares": null,
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 380.14,
-      "change_pct": -1.18,
-      "week52_pct": 42.7,
-      "pct_vs_ma200": -0.26,
-      "drawdown_from_high_pct": -22.4,
-      "return_3m_pct": 7.14,
-      "return_6m_pct": -14.01,
-      "return_12m_pct": -9.01,
-      "relative_strength_6m_pct": -8.97
+      "last_close": 400.0,
+      "change_pct": 5.22,
+      "week52_pct": 53.1,
+      "pct_vs_ma200": 4.99,
+      "drawdown_from_high_pct": -18.35,
+      "return_3m_pct": 14.7,
+      "return_6m_pct": -8.21,
+      "return_12m_pct": -4.63,
+      "relative_strength_6m_pct": -4.48
     },
     {
       "symbol": "005930.KS",
@@ -237,15 +257,15 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 178700.0,
-      "change_pct": 4.32,
-      "week52_pct": 32.7,
-      "pct_vs_ma200": -25.09,
-      "drawdown_from_high_pct": -49.79,
-      "return_3m_pct": -30.48,
-      "return_6m_pct": -39.13,
-      "return_12m_pct": 82.17,
-      "relative_strength_6m_pct": 0.15
+      "last_close": 179100.0,
+      "change_pct": 4.55,
+      "week52_pct": 32.9,
+      "pct_vs_ma200": -24.92,
+      "drawdown_from_high_pct": -49.68,
+      "return_3m_pct": -30.32,
+      "return_6m_pct": -38.99,
+      "return_12m_pct": 82.58,
+      "relative_strength_6m_pct": -0.07
     },
     {
       "symbol": "000660.KS",
@@ -257,25 +277,19 @@
       "avg_price": null,
       "market_value": null,
       "unrealized_return_pct": null,
-      "last_close": 1101000.0,
-      "change_pct": 6.58,
-      "week52_pct": 25.2,
-      "pct_vs_ma200": -26.87,
-      "drawdown_from_high_pct": -61.54,
-      "return_3m_pct": -33.5,
-      "return_6m_pct": -45.29,
-      "return_12m_pct": 85.75,
-      "relative_strength_6m_pct": -6.01
+      "last_close": 1110000.0,
+      "change_pct": 7.45,
+      "week52_pct": 25.6,
+      "pct_vs_ma200": -26.27,
+      "drawdown_from_high_pct": -61.23,
+      "return_3m_pct": -32.95,
+      "return_6m_pct": -44.84,
+      "return_12m_pct": 87.27,
+      "relative_strength_6m_pct": -5.92
     }
   ],
   "discovery": [],
   "calendar": [
-    {
-      "date": "2026-11-27",
-      "weekday": "금",
-      "label": "SK hynix 배당락",
-      "kind": "ex_dividend"
-    },
     {
       "date": "2026-12-02",
       "weekday": "수",
